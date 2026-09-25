@@ -70,8 +70,6 @@ pages:
             title: FHIR
         mapping.md:
             title: Mapping ML/CDA/FHIR
-    change-log.md:
-        title: Historique des versions
     autres_ressources.md:
         title: Autres Ressources
         securite.md:
@@ -106,7 +104,6 @@ menu:
         "Documentation des guides d'implémentation de l'ANS": new-tab https://interop.esante.gouv.fr/ig/documentation/index.html
         Téléchargements et usage: annexe-downloads.html
     Documentation: new-tab https://interop.esante.gouv.fr/ig/documentation/
-    Historique: change-log.html
 
 groups:
   Modèles logiques métier IPS:
