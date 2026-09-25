@@ -27,34 +27,34 @@ Le Cadre d'interopérabilité des Systèmes d'Information de Santé (CI-SIS) fix
 * compréhensibles par les professionnels des secteurs sanitaire et médico-social et les patients/usagers,
 * exploitables par les SI pour permettre la mise en œuvre de services à valeurs ajoutées à partir des données structurées contenues dans ces documents.
 
-**Ce guide** **interop-ig-fhir-document-patient-summary** **décrit le modèle logique de la synthèse médicale et son implémentation en FHIR, avec un mapping détaillé entre le modèle logique, le CDA et le FHIR.**
+**Ce guide** (FR Patient Summary FHIR) **spécifie l'implémentation en FHIR de la synthèse médicale**. Il est complété par le modèle logique métier de la synthèse médicale et par le mapping entre ce modèle logique, CDA et FHIR.
 
-#### Modèle logique
+#### Implémentation FHIR
 
-Le modèle logique de la synthèse médicale est élaboré à partir de :
+Ce guide spécifie l'implémentation de la Synthèse médicale en FHIR, basée sur les ressources FHIR R4.0.1, permettant une interopérabilité horizontale et une exploitation des données structurées par les systèmes modernes.
+
+Les profils FHIR et les exemples sont présentés dans la page [Implémentation FHIR](fhir.html).
+
+#### Modèle logique métier
+
+Le modèle logique métier est publié dans ce guide en complément de l'implémentation FHIR : [Modèle logique - Document Patient Summary](StructureDefinition-fr-lm-patient-summary-document.html). Il formalise l'ensemble des données cliniques et administratives que doit contenir une synthèse médicale.
+
+Il est aligné avec les modèles métier européens (EHDS) et élaboré à partir de :
 
 * La norme NF EN ISO 27269:2022 de l'International Patient Summary (IPS)
 * Les eHN Guidelines V3.3 de juin 2023 : Spécifications fonctionnelles européennes du Patient Summary
 * Le document de la HAS 2024 "Harmonisation de synthèses médicales en vue de leur numérisation" de mars 2024
 * Les spécifications de la Délégation au numérique en santé (DNS) du Ministère de la Santé
 
-Il formalise l'ensemble des données cliniques et administratives que doit contenir une synthèse médicale.
+#### Mapping modèle logique et FHIR
 
-#### Implémentation FHIR
+Un mapping détaillé, publié dans ce guide en complément de l'implémentation FHIR, établit la correspondance entre les éléments du modèle logique métier, les éléments du CDA et leur représentation en FHIR, assurant la cohérence sémantique de l'implémentation. Voir la page [Mapping ML/CDA/FHIR](mapping.html).
 
-Ce guide spécifie l'implémentation de la Synthèse médicale en FHIR, basée sur les ressources FHIR R4.0.1, permettant une interopérabilité horizontale et une exploitation des données structurées par les systèmes modernes.
-
-#### Implémentation CDA
-
-L'implémentation CDA R2 niveau 3 de la Synthèse médicale fait l'objet d'un guide d'implémentation distinct. Il reprend le même modèle logique métier et les mêmes mappings, publiés dans le présent guide.
-
-#### Mapping modèle logique, CDA et FHIR
-
-Un mapping détaillé établit la correspondance entre le modèle logique métier et ses deux implémentations (CDA et FHIR), assurant une cohérence sémantique entre les deux représentations. Ce mapping est publié dans le présent guide.
+L'implémentation CDA de la Synthèse médicale ne fait pas partie de ce guide : elle fait l'objet d'un guide d'implémentation distinct, qui s'appuie sur le même modèle logique métier et sur ce mapping.
 
 ### Gouvernance
 
-Ce guide d’implémentation FR Document Core est géré par l'Agence du Numérique en Santé (ANS).
+Ce guide d’implémentation FR Patient Summary (FHIR) est géré par l'Agence du Numérique en Santé (ANS).
 
 ### Droits de propriété intellectuelle
 
