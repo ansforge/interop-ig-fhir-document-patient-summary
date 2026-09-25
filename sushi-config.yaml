@@ -50,7 +50,8 @@ dependencies:
   ihe.pharm.mpd: 1.0.0-comment-2
   ans.fr.terminologies: latest
   ans.fhir.fr.document-core: current
-  ans.fr.document-core: current # modèle logique métier (parent de FRLMPatientSummaryDocument)
+  # ans.fr.document-core : modèle logique métier (parent de FRLMPatientSummaryDocument)
+  ans.fr.document-core: current
 
 pages:
     index.md:
