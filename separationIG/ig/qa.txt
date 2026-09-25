@@ -3,7 +3,7 @@ FRPatientSummary : Validation Results
 
 err = 588, warn = 282, info = 671
 IG Publisher Version: 2.3.4
-Generated Fri Sep 25 08:51:15 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.fr-patient-summary#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary)
+Generated Fri Sep 25 09:34:19 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.fr-patient-summary#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary)
  Build Errors : 1 / 5 / 0
  /__w/interop-ig-fhir-document-patient-summary/interop-ig-fhir-document-patient-summary/igSource/fsh-generated/resources/Bundle-Bundle-IPS-FR : 289 / 105 / 499
  /__w/interop-ig-fhir-document-patient-summary/interop-ig-fhir-document-patient-summary/igSource/fsh-generated/resources/Bundle-Bundle-IPS-FR-DLU : 293 / 101 / 491

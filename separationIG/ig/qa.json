@@ -6,8 +6,8 @@
   "status" : "draft",
   "package-id" : "ans.fhir.fr.fr-patient-summary",
   "ig-ver" : "0.1.0",
-  "date" : "Fri, 25 Sep, 2026 08:46:53 +0000",
-  "dateISO8601" : "2026-09-25T08:46:53+00:00",
+  "date" : "Fri, 25 Sep, 2026 09:30:48 +0000",
+  "dateISO8601" : "2026-09-25T09:30:48+00:00",
   "errs" : 588,
   "warnings" : 282,
   "hints" : 671,
@@ -15,5 +15,5 @@
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 5391545608
+  "maxMemory" : 4836145280
 }

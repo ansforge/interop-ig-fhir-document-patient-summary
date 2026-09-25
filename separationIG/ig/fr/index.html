@@ -350,11 +350,19 @@ Implementation guide for the Medical Summary (International Patient Summary) in 
   <li>exploitables par les SI pour permettre la mise en œuvre de services à valeurs ajoutées à partir des données structurées contenues dans ces documents.</li>
 </ul>
 
-<p><strong>Ce guide</strong> <strong>interop-ig-fhir-document-patient-summary</strong> <strong>décrit le modèle logique de la synthèse médicale et son implémentation en FHIR, avec un mapping détaillé entre le modèle logique, le CDA et le FHIR.</strong></p>
+<p><strong>Ce guide</strong> (FR Patient Summary FHIR) <strong>spécifie l'implémentation en FHIR de la synthèse médicale</strong>. Il est complété par le modèle logique métier de la synthèse médicale et par le mapping entre ce modèle logique, CDA et FHIR.</p>
 
-<h4 id="modèle-logique">Modèle logique</h4>
+<h4 id="implémentation-fhir">Implémentation FHIR</h4>
 
-<p>Le modèle logique de la synthèse médicale est élaboré à partir de :</p>
+<p>Ce guide spécifie l'implémentation de la Synthèse médicale en FHIR, basée sur les ressources FHIR R4.0.1, permettant une interopérabilité horizontale et une exploitation des données structurées par les systèmes modernes.</p>
+
+<p>Les profils FHIR et les exemples sont présentés dans la page <a href="fhir.html">Implémentation FHIR</a>.</p>
+
+<h4 id="modèle-logique-métier">Modèle logique métier</h4>
+
+<p>Le modèle logique métier est publié dans ce guide en complément de l'implémentation FHIR : <a href="StructureDefinition-fr-lm-patient-summary-document.html">Modèle logique - Document Patient Summary</a>. Il formalise l'ensemble des données cliniques et administratives que doit contenir une synthèse médicale.</p>
+
+<p>Il est aligné avec les modèles métier européens (EHDS) et élaboré à partir de :</p>
 
 <ul>
   <li>La norme NF EN ISO 27269:2022 de l'International Patient Summary (IPS)</li>
@@ -363,23 +371,15 @@ Implementation guide for the Medical Summary (International Patient Summary) in 
   <li>Les spécifications de la Délégation au numérique en santé (DNS) du Ministère de la Santé</li>
 </ul>
 
-<p>Il formalise l'ensemble des données cliniques et administratives que doit contenir une synthèse médicale.</p>
+<h4 id="mapping-modèle-logique-et-fhir">Mapping modèle logique et FHIR</h4>
 
-<h4 id="implémentation-fhir">Implémentation FHIR</h4>
+<p>Un mapping détaillé, publié dans ce guide en complément de l'implémentation FHIR, établit la correspondance entre les éléments du modèle logique métier, les éléments du CDA et leur représentation en FHIR, assurant la cohérence sémantique de l'implémentation. Voir la page <a href="mapping.html">Mapping ML/CDA/FHIR</a>.</p>
 
-<p>Ce guide spécifie l'implémentation de la Synthèse médicale en FHIR, basée sur les ressources FHIR R4.0.1, permettant une interopérabilité horizontale et une exploitation des données structurées par les systèmes modernes.</p>
-
-<h4 id="implémentation-cda">Implémentation CDA</h4>
-
-<p>L'implémentation CDA R2 niveau 3 de la Synthèse médicale fait l'objet d'un guide d'implémentation distinct. Il reprend le même modèle logique métier et les mêmes mappings, publiés dans le présent guide.</p>
-
-<h4 id="mapping-modèle-logique-cda-et-fhir">Mapping modèle logique, CDA et FHIR</h4>
-
-<p>Un mapping détaillé établit la correspondance entre le modèle logique métier et ses deux implémentations (CDA et FHIR), assurant une cohérence sémantique entre les deux représentations. Ce mapping est publié dans le présent guide.</p>
+<p>L'implémentation CDA de la Synthèse médicale ne fait pas partie de ce guide : elle fait l'objet d'un guide d'implémentation distinct, qui s'appuie sur le même modèle logique métier et sur ce mapping.</p>
 
 <h3 id="gouvernance">Gouvernance</h3>
 
-<p>Ce guide d’implémentation FR Document Core est géré par l'Agence du Numérique en Santé (ANS).</p>
+<p>Ce guide d’implémentation FR Patient Summary (FHIR) est géré par l'Agence du Numérique en Santé (ANS).</p>
 
 <h3 id="droits-de-propriété-intellectuelle">Droits de propriété intellectuelle</h3>
 
@@ -601,7 +601,7 @@ Contact licensing@who.int to obtain further information.<div data-fhir="generate
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.fr-patient-summary#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-09-25 08:46:00 +0000">
+  <span title="2026-09-25 09:30:00 +0000">
     2026-09-25
   </span>
 
