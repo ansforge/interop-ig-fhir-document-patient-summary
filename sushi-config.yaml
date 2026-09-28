@@ -3,7 +3,7 @@
 id: ans.fhir.fr.fr-patient-summary
 canonical: https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary # the last part of canonical and id must be the same
 name: FRPatientSummary # Should be an acronym
-title: FR Patient Summary (FHIR)
+title: Volet de Synthèse Médicale (International Patient Summary - FHIR)
 description: Volet de Synthèse Médicale (International Patient Summary) - Spécifications FHIR
 publisher:
   name: Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris

@@ -182,7 +182,7 @@ Usage: #inline
 
 // Participant :  Médecin traitant
 * extension[participant].extension[type].url = "type"
-* extension[participant].extension[type].valueCodeableConcept.coding[0].system = "https://mos.esante.gouv.fr/NOS/TRE_A13-HL7ParticipationType/FHIR/TRE-A13-HL7ParticipationType"
+* extension[participant].extension[type].valueCodeableConcept.coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
 * extension[participant].extension[type].valueCodeableConcept.coding[0].code = #INF
 * extension[participant].extension[type].valueCodeableConcept.coding[0].display = "Informateur"
 * extension[participant].extension[time].valuePeriod.start = "2024-04-02T07:35:00+01:00"
@@ -328,6 +328,7 @@ Title: "Patient"
 Usage: #inline
 Description: "Patient"
 * id = "00f54e2e-22f2-4162-87b4-4826d855feac"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-patient-ins-document|0.1.0"
 // Identifiant INS
 * identifier[INS-NIR].use = #official
 * identifier[INS-NIR].type.coding[0].system = "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"
@@ -434,6 +435,7 @@ Instance: practitioner-role-exemple-1
 InstanceOf: FRPractitionerRoleDocument
 Usage: #inline
 * id = "a11d31c5-77ff-4642-91f7-66c4d10d18c9"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document|0.1.0"
 * practitioner = Reference(urn:uuid:b5941194-08be-4893-a629-652f97587b39)
 * organization = Reference(urn:uuid:579f1274-8265-4bb1-91ba-d093a11be4f5)
 * code[functionCode] = $TRE-R259-HL7ParticipationFunction#PCP "Médecin traitant"
@@ -443,6 +445,7 @@ Instance: practitioner-exemple-1
 InstanceOf: FRPractitionerDocument
 Usage: #inline
 * id = "b5941194-08be-4893-a629-652f97587b39"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document|0.1.0"
 * identifier[rpps].system = "https://rpps.esante.gouv.fr"
 * identifier[rpps].value = "801234567897"
 * identifier[rpps].type.coding[0].system = "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"
@@ -470,6 +473,7 @@ Instance: organizationExemple
 InstanceOf: FROrganizationDocument
 Usage: #inline
 * id = "579f1274-8265-4bb1-91ba-d093a11be4f5"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document|0.1.0"
 * identifier.system = "urn:oid:1.2.250.1.71.4.2.2"
 * identifier.value = "2801234567"
 * type = $JDV_J04-XdsPracticeSettingCode-CISIS#ETABLISSEMENT "Etablissement de santé"
@@ -482,6 +486,7 @@ Instance: encounterExemple
 InstanceOf: FREncounterDocument
 Usage: #inline
 * id = "51807e91-cb17-4ca1-bc58-1efa85cf9d72"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-encounter-document|0.1.0"
 * identifier.type = $v2-0203#VN "Visit Number"
 * identifier.system = "urn:uuid:1.2.250.1.71.4.2.1"
 * identifier.value = "801234534765"
@@ -495,12 +500,14 @@ Instance: locationExemple
 InstanceOf: FRLocationDocument
 Usage: #inline
 * id = "648170b7-1538-44a7-8820-df04dcc32fad"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-location-document|0.1.0"
 * type = $JDV_J02-XdsHealthcareFacilityTypeCode-CISIS#SA04 "Etablissement privé non PSPH"
 
 Instance: Condition-Exemple-1
 InstanceOf: FRConditionDocument
 Usage: #inline
 * id = "257427f5-dffa-4a97-9475-4ebb988589af"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:257427f5-dffa-4a97-9475-4ebb988589af"
 * clinicalStatus = #active "Actif"
@@ -517,6 +524,7 @@ Instance: Condition-Exemple-2
 InstanceOf: FRConditionDocument
 Usage: #inline
 * id = "4d6a4b74-b2a7-4ec1-8db1-8925f435a916"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:4d6a4b74-b2a7-4ec1-8db1-8925f435a916"
 * clinicalStatus = #active "Actif"
@@ -533,6 +541,7 @@ Instance: Condition-Exemple-3
 InstanceOf: FRConditionDocument
 Usage: #inline
 * id = "af0e13e5-d0a2-4dbc-b892-7328eca72ff4"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:12DA3A06-18E7-40B7-9397-1FA5B1552472"
 * clinicalStatus = #active "Actif"
@@ -549,6 +558,7 @@ Instance: Condition-Exemple-4
 InstanceOf: FRConditionDocument
 Usage: #inline
 * id = "a4d49149-cda7-470d-a2e3-08f8d7db1bad"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:a4d49149-cda7-470d-a2e3-08f8d7db1bad"
 * clinicalStatus = #active "Actif"
@@ -566,6 +576,7 @@ Instance: DocumentReference-Exemple-Orphanet
 InstanceOf: FRDocumentReferenceDocument
 Usage: #inline
 * id = "c7d8e9f0-1a2b-3c4d-5e6f-7a8b9c0d1e2f"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-document-reference-document|0.1.0"
 * identifier.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 * identifier.extension.valueCode = #unknown
 * status = #current
@@ -578,6 +589,7 @@ Instance: Condition-Exemple-5
 InstanceOf: FRConditionDocument
 Usage: #inline
 * id = "803caba9-c128-4faa-94a0-d344738ebc63"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:803caba9-c128-4faa-94a0-d344738ebc63"
 * clinicalStatus = #recurrence "Récurrent"
@@ -594,6 +606,7 @@ Instance: Condition-Exemple-6
 InstanceOf: FRConditionDocument
 Usage: #inline
 * id = "effd6c8a-6122-46cb-82ed-ef3f300ec17b"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:effd6c8a-6122-46cb-82ed-ef3f300ec17b"
 * clinicalStatus = #resolved "Résolu"
@@ -610,6 +623,7 @@ Instance: Condition-Exemple-7
 InstanceOf: FRConditionDocument
 Usage: #inline
 * id = "18492799-4e37-47a7-b79b-18a4d0597963"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:18492799-4e37-47a7-b79b-18a4d0597963"
 * clinicalStatus = #resolved "Résolu"
@@ -626,6 +640,7 @@ Instance: Procedure-Exemple-1
 InstanceOf: FRProcedureDocument
 Usage: #inline
 * id = "4e00844f-241b-47c0-85a4-9d612c46b3ad"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-procedure-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:4e00844f-241b-47c0-85a4-9d612c46b3ad"
 * status = #completed
@@ -644,6 +659,7 @@ Instance: practitioner-role-exemple-2
 InstanceOf: FRPractitionerRoleDocument
 Usage: #inline
 * id = "5b0fcb3b-91fb-4870-bd97-8faa2794ea01"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document|0.1.0"
 * practitioner = Reference(urn:uuid:9e55af45-e661-472f-b713-4aaa2cfd1a77)
 * organization = Reference(urn:uuid:da9eb2be-5993-4e39-827b-728fe3943a93)
 
@@ -651,6 +667,7 @@ Instance: organizationExemple2
 InstanceOf: FROrganizationDocument
 Usage: #inline
 * id = "da9eb2be-5993-4e39-827b-728fe3943a93"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document|0.1.0"
 * identifier.system = "urn:oid:1.2.250.1.71.4.2.2"
 * identifier.value = "2801234567"
 * name = "Hôpital Lariboisière"
@@ -659,6 +676,7 @@ Instance: practitioner-exemple-2
 InstanceOf: FRPractitionerDocument
 Usage: #inline
 * id = "9e55af45-e661-472f-b713-4aaa2cfd1a77"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document|0.1.0"
 * identifier[rpps].system = "https://rpps.esante.gouv.fr"
 * identifier[rpps].value = "801234567897"
 * identifier[rpps].type.coding[0].system = "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"
@@ -678,6 +696,7 @@ Instance: Condition-Exemple-8
 InstanceOf: FRConditionDocument
 Usage: #inline
 * id = "be247a4c-f8fe-4224-b51c-8c35d7124a2d"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:be247a4c-f8fe-4224-b51c-8c35d7124a2d"
 * clinicalStatus = #resolved "Résolu"
@@ -690,6 +709,7 @@ Instance: Procedure-Exemple-2
 InstanceOf: FRProcedureDocument
 Usage: #inline
 * id = "3c6ec5d8-182d-4dfc-871b-59c9eb91aa51"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-procedure-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:3c6ec5d8-182d-4dfc-871b-59c9eb91aa51"
 * status = #completed
@@ -702,6 +722,7 @@ Instance: AllergieIntolerance-Exemple-1
 InstanceOf: FRAllergyIntoleranceDocument
 Usage: #inline
 * id = "0ccf6c51-d3f5-4817-bc24-7f63a2ef3c7f"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-allergy-intolerance-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:0ccf6c51-d3f5-4817-bc24-7f63a2ef3c7f"
 * clinicalStatus.coding.code = #active
@@ -726,6 +747,7 @@ Instance: AllergieIntolerance-Exemple-2
 InstanceOf: FRAllergyIntoleranceDocument
 Usage: #inline
 * id = "d1e2f3a4-b5c6-7d8e-9f0a-1b2c3d4e5f6a"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-allergy-intolerance-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:d1e2f3a4-b5c6-7d8e-9f0a-1b2c3d4e5f6a"
 * clinicalStatus.coding.code = #active
@@ -746,6 +768,7 @@ Instance: EffetIndesirable-Exemple-1
 InstanceOf: FRAdverseEventDocument
 Usage: #inline
 * id = "23f1c0a3-ce38-4817-9408-7feaeb04002d"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-adverse-event-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:23f1c0a3-ce38-4817-9408-7feaeb04002d"
 * actuality = #actual
@@ -764,6 +787,7 @@ Instance: MedicationAdministration-Exemple-1
 InstanceOf: FRMedicationAdministrationDocument
 Usage: #inline
 * id = "0409af90-4717-4a93-9800-fcf546875dc8"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"
 * extension.url = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-administration-frequency"
 * extension.valueTiming.repeat.frequency = 1
 * extension.valueTiming.repeat.period = 12
@@ -781,6 +805,7 @@ Instance: Medication-Exemple-1
 InstanceOf: FRMedicationDocument
 Usage: #inline
 * id = "f995f9bb-4043-45db-8b12-50dc7e9acc5a"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document|0.1.0"
 * extension[productName].valueString = "AMOXICILLINE EG 1G BUV SACH 6"
 * extension[classification].valueCodeableConcept = $terminologie-atc#J01CA04 "amoxicilline"
 * extension[classification].valueCodeableConcept.text = "amoxicilline"
@@ -795,6 +820,7 @@ Instance: Condition-Exemple-9
 InstanceOf: FRConditionDocument
 Usage: #inline
 * id = "a4e1cafa-05e4-40c7-82dc-641f54281671"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:a4e1cafa-05e4-40c7-82dc-641f54281671"
 * clinicalStatus = #resolved "Résolu"
@@ -807,6 +833,7 @@ Instance: MedicationAdministration-Exemple-2
 InstanceOf: FRMedicationAdministrationDocument
 Usage: #inline
 * id = "1ff316e0-edde-4bb9-a5fe-822d486d8230"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"
 * extension.url = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-administration-frequency"
 * extension.valueTiming.repeat.frequency = 1
 * extension.valueTiming.repeat.periodUnit = #d
@@ -828,6 +855,7 @@ Instance: Medication-Exemple-2
 InstanceOf: FRMedicationDocument
 Usage: #inline
 * id = "fb88edae-4d3f-4b00-ae17-71c8f03adc71"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document|0.1.0"
 * extension[productName].valueString = "LEVOTHYROX 75 microgrammes"
 * extension[classification].valueCodeableConcept = $terminologie-atc#H03AA01 "lévothyroxine sodique"
 * extension[classification].valueCodeableConcept.text = "lévothyroxine sodique"
@@ -842,6 +870,7 @@ Instance: DeviceUseStatement-Exemple-1
 InstanceOf: FRDeviceUseStatementDocument
 Usage: #inline
 * id = "034d19b3-3c4e-488a-a7c0-9181dfc721e3"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-device-use-statement-document|0.1.0"
 * identifier.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 * identifier.extension.valueCode = #unknown
 * status = #active
@@ -859,6 +888,7 @@ Instance: DeviceUseStatement-Exemple-2
 InstanceOf: FRDeviceUseStatementDocument
 Usage: #inline
 * id = "41465f6b-d169-40b9-8d84-96064b4c3d28"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-device-use-statement-document|0.1.0"
 * identifier.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 * identifier.extension.valueCode = #unknown
 * status = #active
@@ -876,6 +906,7 @@ Instance: Observation-Exemple1-Groupe-de-questionnaires-d-evaluation
 InstanceOf: FRObservationAssessmentDocument
 Usage: #inline
 * id = "960ebfbc-4b56-40b9-9990-cae5944d6e9b"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:960ebfbc-4b56-40b9-9990-cae5944d6e9b"
 * status = #final
@@ -891,6 +922,7 @@ Instance: Observation-Exemple-1-Evaluation
 InstanceOf: FRObservationAssessmentDocument
 Usage: #inline
 * id = "e102b4b3-91b6-4b89-9065-560bc68c024c"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document|0.1.0"
 * status = #final
 * category.coding.code = #survey
 * code = $LNC#89247-1 "Score de performance ECOG"
@@ -902,6 +934,7 @@ Instance: Observation-Exemple-2-Evaluation
 InstanceOf: FRObservationAssessmentDocument
 Usage: #inline
 * id = "b9bca1ce-b850-408c-966c-26a1a87adf65"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document|0.1.0"
 * status = #final
 * category.coding.code = #survey
 * code = $icf-nl#d450 "Marcher"
@@ -913,6 +946,7 @@ Instance: Observation-Exemple-3-Evaluation
 InstanceOf: FRObservationAssessmentDocument
 Usage: #inline
 * id = "c3d4e5f6-a7b8-9012-cdef-345678901234"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document|0.1.0"
 * status = #final
 * category.coding.code = #survey
 * code = $terminologie-cisis#GEN-092.04.23 "Autre statut fonctionnel"
@@ -925,6 +959,7 @@ Instance: Observation-Exemple-3-Signe-vital-observe
 InstanceOf: FRObservationVitalSignsDocument
 Usage: #inline
 * id = "ae1c9c50-9620-4755-a7a0-f72af5a82229"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-vital-signs-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:ae1c9c50-9620-4755-a7a0-f72af5a82229"
 * status = #final
@@ -939,6 +974,7 @@ Instance: Observation-Exemple-4-Signe-vital-observe
 InstanceOf: FRObservationVitalSignsDocument
 Usage: #inline
 * id = "44da5856-6555-4b43-b03f-176f45c29432"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-vital-signs-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:44da5856-6555-4b43-b03f-176f45c29432"
 * status = #final
@@ -953,6 +989,7 @@ Instance: Observation-Exemple-5-Habitus-Mode-De-Vie
 InstanceOf: FRObservationSocialHistoryDocument
 Usage: #inline
 * id = "48129cb5-0a81-4a17-aebd-8c6584b20cd4"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-social-history-document|0.1.0"
 * status = #final
 * code = $LNC#72166-2 "Statut tabagique"
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
@@ -965,6 +1002,7 @@ Instance: Observation-Exemple-6-Habitus-Mode-De-Vie
 InstanceOf: FRObservationSocialHistoryDocument
 Usage: #inline
 * id = "3618f351-cea4-4834-8cf9-10151b74436b"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-social-history-document|0.1.0"
 * status = #final
 * code = $LNC#74011-8 "Consommation tabagique"
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
@@ -977,6 +1015,7 @@ Instance: Observation-Exemple-7-Habitus-Mode-De-Vie
 InstanceOf: FRObservationSocialHistoryDocument
 Usage: #inline
 * id = "4f0f3856-74a9-4a57-b173-e8342735d6c9"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-social-history-document|0.1.0"
 * status = #final
 * code = $LNC#74013-4 "Consommation d'alcool"
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
@@ -989,6 +1028,7 @@ Instance: Observation-Exemple-8-Habitus-Mode-De-Vie
 InstanceOf: FRObservationSocialHistoryDocument
 Usage: #inline
 * id = "3799b968-d637-4a16-ad7b-5f79987dcdb1"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-social-history-document|0.1.0"
 * status = #final
 * code = $LNC#11343-1 "Consommation de drogue non médicales"
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
@@ -1001,6 +1041,7 @@ Instance: FamilyMemberHistory-Exemple-1
 InstanceOf: FRFamilyMemberHistoryDocument
 Usage: #inline
 * id = "541404fa-fc9c-4552-8d36-10adcc37f34e"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-family-member-history-document|0.1.0"
 * status = #completed
 * patient = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * date.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
@@ -1014,6 +1055,7 @@ Instance: Immunizations-Exemple-1
 InstanceOf: FRImmunizationDocument
 Usage: #inline
 * id = "7f0d585b-9a48-4605-baab-30e93603a563"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-immunization-document|0.1.0"
 * extension[author].extension[actor].valueReference = Reference(urn:uuid:f3062170-ef7b-45a7-802f-47e461a7d05d)
 * extension[author].extension[type].valueCode = #AUT
 * identifier.system = "urn:ietf:rfc:3986"
@@ -1037,6 +1079,7 @@ Instance: Immunizations-Exemple-2
 InstanceOf: FRImmunizationDocument
 Usage: #inline
 * id = "3a7417c1-d483-4f56-833d-43bf8e438874"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-immunization-document|0.1.0"
 * extension[author].extension[actor].valueReference = Reference(urn:uuid:f3062170-ef7b-45a7-802f-47e461a7d05d)
 * extension[author].extension[type].valueCode = #AUT
 * identifier.system = "urn:ietf:rfc:3986"
@@ -1062,6 +1105,7 @@ Instance: practitioner-role-exemple-3
 InstanceOf: FRPractitionerRoleDocument
 Usage: #inline
 * id = "f3062170-ef7b-45a7-802f-47e461a7d05d"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document|0.1.0"
 * practitioner = Reference(urn:uuid:ab96b0ff-374a-45c7-82e4-aaa8888a2fec)
 * organization = Reference(urn:uuid:4dbc2eff-6a94-4c7b-b49f-0f7a9790bef6)
 
@@ -1069,6 +1113,7 @@ Instance: organization-Exemple-3
 InstanceOf: FROrganizationDocument
 Usage: #inline
 * id = "4dbc2eff-6a94-4c7b-b49f-0f7a9790bef6"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document|0.1.0"
 * identifier.system = "urn:oid:1.2.250.1.71.4.2.2"
 * identifier.value = "21750803447"
 * type = $TRE-A01-CadreExercice#AMBULATOIRE "Ambulatoire"
@@ -1078,6 +1123,7 @@ Instance: practitioner-exemple-3
 InstanceOf: FRPractitionerDocument
 Usage: #inline
 * id = "ab96b0ff-374a-45c7-82e4-aaa8888a2fec"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document|0.1.0"
 * identifier[rpps].system = "https://rpps.esante.gouv.fr"
 * identifier[rpps].value = "801234567897"
 * identifier[rpps].type.coding[0].system = "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"
@@ -1096,6 +1142,7 @@ Instance: Condition-Exemple-10
 InstanceOf: FRConditionDocument
 Usage: #inline
 * id = "80c62f71-7c99-458d-884d-725bc410a14d"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:F9E020E2-D219-43D4-8BF8-6B275E1F726D"
 * clinicalStatus = #active "Actif"
@@ -1108,6 +1155,7 @@ Instance: Observation-Exemple-8-sur-la-grossesse
 InstanceOf: FRObservationPregnancyDocument
 Usage: #inline
 * id = "bea6c387-6dca-4f55-93b7-7079e1c88dfb"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-pregnancy-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:4FD525FD-8712-40F9-BF31-EF9A25069C25"
 * status = #final
@@ -1121,6 +1169,7 @@ Instance: Observation-Exemple-9-sur-la-grossesse
 InstanceOf: FRObservationPregnancyDocument
 Usage: #inline
 * id = "bdc0e3ae-128b-46de-b1a7-1c564cca6a61"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-pregnancy-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:4FD525FD-8712-40F9-BF31-EF9A25069C32"
 * status = #final
@@ -1134,6 +1183,7 @@ Instance: Observation-Exemple-10-sur-la-grossesse
 InstanceOf: FRObservationPregnancyDocument
 Usage: #inline
 * id = "e4299828-2563-4265-9297-c27a8240b6ba"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-pregnancy-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:4FD525FD-8712-40F9-BF31-EF9A25069C65"
 * status = #final
@@ -1147,6 +1197,7 @@ Instance: Observation-Exemple-11-sur-la-grossesse
 InstanceOf: FRObservationPregnancyDocument
 Usage: #inline
 * id = "091bf5bc-2ed8-4328-a5e6-7d78aeeeb20b"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-pregnancy-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:4FD525FD-8712-40F9-BF31-EF9A25069C65"
 * status = #final
@@ -1160,6 +1211,7 @@ Instance: MedicationAdministration-Exemple-3
 InstanceOf: FRMedicationAdministrationDocument
 Usage: #inline
 * id = "73af1b58-f567-4c03-a1a6-d65d3b3fd079"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:AADC9C14-F1CA-4177-B2C8-A5178D5B3CA0"
 * status = #completed
@@ -1172,6 +1224,7 @@ Instance: MedicationAdministration-Exemple-4
 InstanceOf: FRMedicationAdministrationDocument
 Usage: #inline
 * id = "83e3e384-84ca-46dd-aa8c-c847a70b1fb5"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:AADC9C14-F1CA-4177-B2C8-A5178D5B3CA0"
 * status = #completed
@@ -1184,6 +1237,7 @@ Instance: Medication-Exemple-3
 InstanceOf: FRMedicationDocument
 Usage: #inline
 * id = "2f861880-31d2-4969-a2ce-b78f750f430e"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document|0.1.0"
 * extension[productName].valueString = "ROSUVASTATINE EG 5 mg, comprimé pelliculé"
 * code = $terminologie-atc#69473265 "ROSUVASTATINE EG 5 mg, comprimé pelliculé"
 * ingredient.itemCodeableConcept = $terminologie-sms#100000090079 "ROSUVASTATINE"
@@ -1196,6 +1250,7 @@ Instance: Medication-Exemple-4
 InstanceOf: FRMedicationDocument
 Usage: #inline
 * id = "6349c4d2-bdba-41b1-b5d6-1ce8c359205d"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document|0.1.0"
 * extension[productName].valueString.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 * extension[productName].valueString.extension.valueCode = #unknown
 * code = $terminologie-cisis#GEN-092.03.01 "Autre(s) traitement(s)"
@@ -1206,6 +1261,7 @@ Instance: ServiceRequest-Exemple-1
 InstanceOf: FRServiceRequestDocument
 Usage: #inline
 * id = "d2b7c8e1-3f4a-4b5c-9d6e-7f8a9b0c1d2e"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-service-request-document|0.1.0"
 * status = #active
 * intent = #order
 * category = $SCT#386053000 "Procédure d'évaluation"
@@ -1221,6 +1277,7 @@ Instance: AdvanceDirective-IPS-1
 InstanceOf: FRAdvanceDirectiveDocument
 Usage: #inline
 * id = "c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a1"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a1"
 * status = #active
@@ -1237,6 +1294,7 @@ Instance: AdvanceDirective-IPS-2
 InstanceOf: FRAdvanceDirectiveDocument
 Usage: #inline
 * id = "c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a2"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a2"
 * status = #active
@@ -1253,6 +1311,7 @@ Instance: AdvanceDirective-IPS-3
 InstanceOf: FRAdvanceDirectiveDocument
 Usage: #inline
 * id = "c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a3"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a3"
 * status = #active
@@ -1269,6 +1328,7 @@ Instance: AdvanceDirective-IPS-4
 InstanceOf: FRAdvanceDirectiveDocument
 Usage: #inline
 * id = "c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a4"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a4"
 * status = #active
@@ -1285,6 +1345,7 @@ Instance: AdvanceDirective-IPS-5
 InstanceOf: FRAdvanceDirectiveDocument
 Usage: #inline
 * id = "c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a5"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a5"
 * status = #active
@@ -1301,6 +1362,7 @@ Instance: AdvanceDirective-IPS-6
 InstanceOf: FRAdvanceDirectiveDocument
 Usage: #inline
 * id = "c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a6"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a6"
 * status = #active
@@ -1317,6 +1379,7 @@ Instance: AdvanceDirective-IPS-7
 InstanceOf: FRAdvanceDirectiveDocument
 Usage: #inline
 * id = "c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a7"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a7"
 * status = #active
@@ -1333,6 +1396,7 @@ Instance: AdvanceDirective-IPS-8
 InstanceOf: FRAdvanceDirectiveDocument
 Usage: #inline
 * id = "c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a8"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a8"
 * status = #active
@@ -1352,6 +1416,7 @@ Instance: DiagnosticReport-IPS-Biologie
 InstanceOf: FRDiagnosticReportDocument
 Usage: #inline
 * id = "aa001111-2222-3333-4444-555566667777"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-diagnostic-report-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:D5C3639B-2A68-4C87-8019-CBD941B7B429"
 * status = #final
@@ -1371,6 +1436,7 @@ Instance: ObservationResult-IPS-1
 InstanceOf: FRObservationResultDocument
 Usage: #inline
 * id = "bb112222-3333-4444-5555-666677778888"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-result-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:8D40D39D-3574-496A-91EA-B7BE236ABD1A"
 * status = #final
@@ -1385,6 +1451,7 @@ Instance: practitioner-role-IPS-4
 InstanceOf: FRPractitionerRoleDocument
 Usage: #inline
 * id = "cc223333-4444-5555-6666-777788889999"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document|0.1.0"
 * practitioner = Reference(urn:uuid:dd334444-5555-6666-7777-888899990000)
 * organization = Reference(urn:uuid:ee445555-6666-7777-8888-999900001111)
 
@@ -1392,6 +1459,7 @@ Instance: practitioner-IPS-4
 InstanceOf: FRPractitionerDocument
 Usage: #inline
 * id = "dd334444-5555-6666-7777-888899990000"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document|0.1.0"
 * identifier[rpps].system = "https://rpps.esante.gouv.fr"
 * identifier[rpps].value = "801234534765"
 * identifier[rpps].type.coding[0].system = "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"
@@ -1411,6 +1479,7 @@ Instance: organization-IPS-4
 InstanceOf: FROrganizationDocument
 Usage: #inline
 * id = "ee445555-6666-7777-8888-999900001111"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document|0.1.0"
 * identifier.system = "urn:oid:1.2.250.1.71.4.2.2"
 * identifier.value = "1120459876"
 * type = $TRE-A01-CadreExercice#AMBULATOIRE "Ambulatoire"
@@ -1426,6 +1495,7 @@ Instance: DiagnosticReport-IPS-Imagerie
 InstanceOf: FRDiagnosticReportDocument
 Usage: #inline
 * id = "ff556666-7777-8888-9999-000011112222"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-diagnostic-report-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:D5C3639B-2A68-4C87-8019-CBD941B7B430"
 * status = #final
@@ -1445,6 +1515,7 @@ Instance: ObservationResult-IPS-2
 InstanceOf: FRObservationResultDocument
 Usage: #inline
 * id = "11667777-8888-9999-aaaa-111122223333"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-result-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:8D40D39D-3574-496A-91EA-B7BE236ABD1B"
 * status = #final
@@ -1460,6 +1531,7 @@ Instance: practitioner-role-IPS-5
 InstanceOf: FRPractitionerRoleDocument
 Usage: #inline
 * id = "22778888-9999-aaaa-bbbb-222233334444"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document|0.1.0"
 * practitioner = Reference(urn:uuid:33889999-aaaa-bbbb-cccc-333344445555)
 * organization = Reference(urn:uuid:4499aaaa-bbbb-cccc-dddd-444455556666)
 
@@ -1467,6 +1539,7 @@ Instance: practitioner-IPS-5
 InstanceOf: FRPractitionerDocument
 Usage: #inline
 * id = "33889999-aaaa-bbbb-cccc-333344445555"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document|0.1.0"
 * identifier[rpps].system = "https://rpps.esante.gouv.fr"
 * identifier[rpps].value = "801234560801"
 * identifier[rpps].type.coding[0].system = "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"
@@ -1486,6 +1559,7 @@ Instance: organization-IPS-5
 InstanceOf: FROrganizationDocument
 Usage: #inline
 * id = "4499aaaa-bbbb-cccc-dddd-444455556666"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document|0.1.0"
 * identifier.system = "urn:oid:1.2.250.1.71.4.2.2"
 * identifier.value = "101235555"
 * type = $TRE-A01-CadreExercice#AMBULATOIRE "Ambulatoire"
@@ -1501,6 +1575,7 @@ Instance: DocumentReference-IPS-DocAjoute-1
 InstanceOf: FRDocumentReferenceDocument
 Usage: #inline
 * id = "55aa1111-bbbb-cccc-dddd-555566660001"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-document-reference-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:88BEB395-3B4C-37F5-9A31-03BEA73A8D8B"
 * status = #current
@@ -1513,6 +1588,7 @@ Instance: DocumentReference-IPS-DocAjoute-2
 InstanceOf: FRDocumentReferenceDocument
 Usage: #inline
 * id = "66bb2222-cccc-dddd-eeee-666677770002"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-document-reference-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:88BEB395-3B4C-37F5-9A31-03BEA73A8D8C"
 * status = #current
