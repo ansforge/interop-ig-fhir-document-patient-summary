@@ -119,6 +119,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 * [identifierType](http://terminology.hl7.org/7.4.0/CodeSystem-v2-0203.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
 * [ActCode](http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActCode.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
 * [ParticipationType](http://terminology.hl7.org/7.4.0/CodeSystem-v3-ParticipationType.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md), [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md) and [FRCompositionDocumentIPS](StructureDefinition-fr-composition-document-ips.md)
+* [RoleClass](http://terminology.hl7.org/7.4.0/CodeSystem-v3-RoleClass.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
 * [RoleCode](http://terminology.hl7.org/7.4.0/CodeSystem-v3-RoleCode.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
 
 

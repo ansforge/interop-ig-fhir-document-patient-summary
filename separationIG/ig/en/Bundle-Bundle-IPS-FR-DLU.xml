@@ -549,14 +549,14 @@
         <contact>
           <relationship>
             <coding>
-              <system value="https://mos.esante.gouv.fr/NOS/JDV_J11-RelationPatient-CISIS/FHIR/JDV-J11-RelationPatient-CISIS"/>
+              <system value="https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"/>
               <code value="SIS"/>
               <display value="Soeur"/>
             </coding>
           </relationship>
           <relationship>
             <coding>
-              <system value="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role"/>
+              <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
               <code value="ECON"/>
               <display value="Personne à prévenir en cas d'urgence"/>
             </coding>
@@ -573,14 +573,14 @@
         <contact>
           <relationship>
             <coding>
-              <system value="https://mos.esante.gouv.fr/NOS/JDV_J11-RelationPatient-CISIS/FHIR/JDV-J11-RelationPatient-CISIS"/>
+              <system value="https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"/>
               <code value="SIS"/>
               <display value="Soeur"/>
             </coding>
           </relationship>
           <relationship>
             <coding>
-              <system value="https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-doc-vs-patient-contact-role"/>
+              <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
               <code value="NOK"/>
               <display value="Personne de confiance"/>
             </coding>
@@ -597,7 +597,7 @@
         <contact>
           <relationship>
             <coding>
-              <system value="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role"/>
+              <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
               <code value="GUARD"/>
               <display value="Responsable légal"/>
             </coding>
