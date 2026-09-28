@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-composition-do
   "name" : "FRCompositionDocumentIPS",
   "title" : "FR Composition Document IPS",
   "status" : "draft",
-  "date" : "2026-09-28T15:35:27+00:00",
+  "date" : "2026-09-28T21:40:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -1325,6 +1325,69 @@ Other representations of profile: [CSV](../StructureDefinition-fr-composition-do
       "id" : "Composition.section:sectionUncodedOccupationalRiskFactors.entry",
       "path" : "Composition.section.entry",
       "max" : "0"
+    },
+    {
+      "id" : "Composition.section:sectionDocumentReference",
+      "path" : "Composition.section",
+      "sliceName" : "sectionDocumentReference",
+      "short" : "Section Documents ajoutés",
+      "definition" : "Section Section Documents ajoutés du document IPS",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Composition.section:sectionDocumentReference.title",
+      "path" : "Composition.section.title",
+      "short" : "Titre de la section Section Documents ajoutés"
+    },
+    {
+      "id" : "Composition.section:sectionDocumentReference.code",
+      "path" : "Composition.section.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "55107-7"
+        }]
+      }
+    },
+    {
+      "id" : "Composition.section:sectionDocumentReference.text",
+      "path" : "Composition.section.text",
+      "short" : "Description narrative de la section Section Documents ajoutés"
+    },
+    {
+      "id" : "Composition.section:sectionDocumentReference.entry",
+      "path" : "Composition.section.entry",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "resolve()"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Composition.section:sectionDocumentReference.entry:documentReference",
+      "path" : "Composition.section.entry",
+      "sliceName" : "documentReference",
+      "short" : "Entrée Document ajouté",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-document-reference-document|0.1.0"]
+      }]
+    },
+    {
+      "id" : "Composition.section:sectionDocumentReference.emptyReason",
+      "path" : "Composition.section.emptyReason",
+      "short" : "Motif d'absence d'entrée dans la section",
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/list-empty-reason|4.0.1"
+      }
     }]
   }
 }

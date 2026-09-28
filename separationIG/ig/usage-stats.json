@@ -28,6 +28,9 @@
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-Composition.version|0.1.0": [
       "Composition"
     ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence": [
+      "Bundle.entry.resource"
+    ],
     "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
       "Bundle.entry.resource.code",
       "Bundle.entry.resource.date",
@@ -61,8 +64,7 @@
       "Composition"
     ],
     "http://hl7.org/fhir/StructureDefinition/event-performerFunction": [
-      "Bundle.entry.resource.performer",
-      "Bundle.entry.resource.resultsInterpreter"
+      "Bundle.entry.resource.performer"
     ],
     "http://hl7.org/fhir/StructureDefinition/note|5.3.0": [
       "Composition.section"
@@ -130,17 +132,9 @@
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name": [
       "Bundle.entry.resource.name"
     ],
-    "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension": [
-      "Bundle.entry.resource.recorder"
-    ],
-    "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-administration-frequency": [
-      "Bundle.entry.resource"
-    ],
-    "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-author-time": [
-      "Bundle.entry.resource.author"
-    ],
     "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-actor-extension": [
       "Bundle.entry.resource",
+      "Bundle.entry.resource.recorder",
       "Bundle.entry.resource.resultsInterpreter"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-author-time-extension": [

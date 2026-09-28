@@ -13,7 +13,7 @@
   <name value="FRPatientSummary"/>
   <title value="Volet de Synthèse Médicale (International Patient Summary - FHIR)"/>
   <status value="draft"/>
-  <date value="2026-09-28T15:35:27+00:00"/>
+  <date value="2026-09-28T21:40:58+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -74,7 +74,7 @@
   <dependsOn id="ans_fr_terminologies">
     <uri value="https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies"/>
     <packageId value="ans.fr.terminologies"/>
-    <version value="1.13.0"/>
+    <version value="1.14.0"/>
   </dependsOn>
   <dependsOn id="ans_fhir_fr_document_core">
     <uri value="https://interop.esante.gouv.fr/ig/fhir/document-core/ImplementationGuide/ans.fhir.fr.document-core"/>
@@ -687,10 +687,10 @@
         <valueString value="true"/>
       </extension>
     </extension>
-    <grouping id="Modèles logiques métier IPS">
+    <grouping id="modeles-logiques-metier-ips">
       <name value="Modèles logiques métier d'un document IPS"/>
     </grouping>
-    <grouping id="Ressources FHIR IPS">
+    <grouping id="ressources-fhir-ips">
       <name value="Profils FHIR IPS"/>
     </grouping>
     <resource>
@@ -703,7 +703,7 @@
       <name value="Bundle (IPS)"/>
       <description value="Synthèse médicale française, basée sur le modèle International Patient Summary d'HL7."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Ressources FHIR IPS"/>
+      <groupingId value="ressources-fhir-ips"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -735,7 +735,7 @@
       <name value="FR Composition Document IPS"/>
       <description value="Profil Composition du document IPS-FR, derive de FRCompositionDocument."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Ressources FHIR IPS"/>
+      <groupingId value="ressources-fhir-ips"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -747,7 +747,7 @@
       <name value="Modèle logique métier - FR LM Patient Summary Document"/>
       <description value="Éléments d'en-tête et de corps d'une Synthèse Médicale (International Patient Summary) contenant l'ensemble des sections cliniques et administratives."/>
       <exampleBoolean value="false"/>
-      <groupingId value="Modèles logiques métier IPS"/>
+      <groupingId value="modeles-logiques-metier-ips"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

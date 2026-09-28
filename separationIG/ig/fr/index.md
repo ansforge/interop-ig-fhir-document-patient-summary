@@ -64,15 +64,15 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 
 * [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode) 
 
-* [European Medical device nomenclature](https://interop.esante.gouv.fr/terminologies/1.13.0/CodeSystem-terminologie-emdn.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
-* [Dictionnaire européen multilingue des substances entrant dans la composition de médicaments](https://interop.esante.gouv.fr/terminologies/1.13.0/CodeSystem-terminologie-sms.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
-* [Standard Terms Data Base Dictionnaire européen multilingue de termes normalisés descripteurs de médicaments](https://interop.esante.gouv.fr/terminologies/1.13.0/CodeSystem-terminologie-standardterms.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
+* [European Medical device nomenclature](https://interop.esante.gouv.fr/terminologies/1.14.0/CodeSystem-terminologie-emdn.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
+* [Dictionnaire européen multilingue des substances entrant dans la composition de médicaments](https://interop.esante.gouv.fr/terminologies/1.14.0/CodeSystem-terminologie-sms.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
+* [Standard Terms Data Base Dictionnaire européen multilingue de termes normalisés descripteurs de médicaments](https://interop.esante.gouv.fr/terminologies/1.14.0/CodeSystem-terminologie-standardterms.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
 
 
 * [LOv2](https://github.com/etalab/licence-ouverte/blob/master/LO.md) 
 
-* [Base de données publique du médicament](https://interop.esante.gouv.fr/terminologies/1.13.0/CodeSystem-terminologie-bdpm.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
-* [Classification Commune des Actes Médicaux](https://interop.esante.gouv.fr/terminologies/1.13.0/CodeSystem-terminologie-ccam.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
+* [Base de données publique du médicament](https://interop.esante.gouv.fr/terminologies/1.14.0/CodeSystem-terminologie-bdpm.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
+* [Classification Commune des Actes Médicaux](https://interop.esante.gouv.fr/terminologies/1.14.0/CodeSystem-terminologie-ccam.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
 
 
 * ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
@@ -112,7 +112,10 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
 
-* [ConditionVerificationStatus](http://terminology.hl7.org/7.4.0/CodeSystem-condition-ver-status.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
+* [AllergyIntolerance Clinical Status Codes](http://terminology.hl7.org/7.4.0/CodeSystem-allergyintolerance-clinical.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
+* [AllergyIntolerance Verification Status](http://terminology.hl7.org/7.4.0/CodeSystem-allergyintolerance-verification.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
+* [Condition Clinical Status Codes](https://interop.esante.gouv.fr/terminologies/1.14.0/CodeSystem-condition-clinical.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
+* [ConditionVerificationStatus](https://interop.esante.gouv.fr/terminologies/1.14.0/CodeSystem-condition-ver-status.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
 * [Consent Scope Codes](http://terminology.hl7.org/7.4.0/CodeSystem-consentscope.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
 * [List Empty Reasons](http://terminology.hl7.org/7.4.0/CodeSystem-list-empty-reason.html): [FRCompositionDocumentIPS](StructureDefinition-fr-composition-document-ips.md)
 * [Observation Category Codes](http://terminology.hl7.org/7.4.0/CodeSystem-observation-category.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)

@@ -20,7 +20,7 @@
         <id value="a1b2c3d4-e5f6-7890-abcd-ef1234567890"/>
         <meta>
           <lastUpdated value="2024-04-02T11:17:00+01:00"/>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-composition-document-ips"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-composition-document-ips|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -91,7 +91,7 @@
         </encounter>
         <date value="2024-04-02T11:17:00+01:00"/>
         <author>
-          <extension url="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-author-time">
+          <extension url="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-author-time-extension">
             <valueDateTime value="2024-04-02T11:17:00+01:00"/>
           </extension>
           <reference value="urn:uuid:c3d4e5f6-a7b8-9012-cdef-012345678902"/>
@@ -350,6 +350,25 @@
           <text>
             <status value="generated"/><div><p>(texte libre)</p></div>
           </text>
+        </section>
+        <section>
+          <title value="Documents ajoutés"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="55107-7"/>
+              <display value="Documents ajoutés"/>
+            </coding>
+          </code>
+          <text>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>Attestation de la carte vitale, attestation de mutuelle</p></div>
+          </text>
+          <entry>
+            <reference value="urn:uuid:66aa1111-cccc-dddd-eeee-555566667777"/>
+          </entry>
+          <entry>
+            <reference value="urn:uuid:77bb2222-dddd-eeee-ffff-666677778888"/>
+          </entry>
         </section>
         <section>
           <title value="Historique des pathologies familiales"/>
@@ -822,6 +841,7 @@
         </identifier>
         <clinicalStatus>
           <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
             <code value="active"/>
             <display value="Active"/>
           </coding>
@@ -891,6 +911,7 @@
         </identifier>
         <clinicalStatus>
           <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
             <code value="active"/>
             <display value="Active"/>
           </coding>
@@ -960,6 +981,7 @@
         </identifier>
         <clinicalStatus>
           <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
             <code value="active"/>
             <display value="Active"/>
           </coding>
@@ -1029,6 +1051,7 @@
         </identifier>
         <clinicalStatus>
           <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
             <code value="active"/>
             <display value="Active"/>
           </coding>
@@ -1135,6 +1158,7 @@
         </identifier>
         <clinicalStatus>
           <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
             <code value="recurrence"/>
             <display value="Recurrence"/>
           </coding>
@@ -1204,6 +1228,7 @@
         </identifier>
         <clinicalStatus>
           <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
             <code value="resolved"/>
             <display value="Resolved"/>
           </coding>
@@ -1276,6 +1301,7 @@
         </identifier>
         <clinicalStatus>
           <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
             <code value="resolved"/>
             <display value="Resolved"/>
           </coding>
@@ -1467,6 +1493,7 @@
         </identifier>
         <clinicalStatus>
           <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
             <code value="resolved"/>
             <display value="Résolu"/>
           </coding>
@@ -1521,7 +1548,7 @@
         </subject>
         <performedDateTime value="2018-01-14"/>
         <recorder>
-          <extension url="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension">
+          <extension url="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-actor-extension">
             <extension url="actor">
               <valueReference>
                 <reference value="urn:uuid:d6e7f8a9-b0c1-2345-d101-345678901235"/>
@@ -1598,11 +1625,13 @@
         </identifier>
         <clinicalStatus>
           <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
             <code value="active"/>
           </coding>
         </clinicalStatus>
         <verificationStatus>
           <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
             <code value="confirmed"/>
           </coding>
         </verificationStatus>
@@ -1739,7 +1768,7 @@
         <text>
           <status value="extensions"/>
         </text>
-        <extension url="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-administration-frequency">
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence">
           <valueTiming>
             <repeat>
               <frequency value="1"/>
@@ -1852,6 +1881,7 @@
         </identifier>
         <clinicalStatus>
           <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
             <code value="resolved"/>
             <display value="Résolu"/>
           </coding>
@@ -1889,7 +1919,7 @@
         <text>
           <status value="extensions"/>
         </text>
-        <extension url="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-administration-frequency">
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence">
           <valueTiming>
             <repeat>
               <frequency value="1"/>
@@ -2009,7 +2039,7 @@
         <text>
           <status value="extensions"/>
         </text>
-        <extension url="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-administration-frequency">
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence">
           <valueTiming>
             <repeat>
               <frequency value="4"/>
@@ -2764,7 +2794,7 @@
           <reference value="urn:uuid:c1d2e3f4-a5b6-7891-c456-890123456780"/>
         </reasonReference>
         <protocolApplied>
-          <series value="1"/>
+          <series value="INITIMMUNIZ"/>
           <doseNumberPositiveInt value="2"/>
         </protocolApplied>
       </Immunization>
@@ -2835,7 +2865,7 @@
           <reference value="urn:uuid:c1d2e3f4-a5b6-7891-c456-890123456780"/>
         </reasonReference>
         <protocolApplied>
-          <series value="1"/>
+          <series value="INITIMMUNIZ"/>
           <doseNumberPositiveInt value="1"/>
         </protocolApplied>
       </Immunization>
@@ -2951,8 +2981,9 @@
         </identifier>
         <clinicalStatus>
           <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
             <code value="active"/>
-            <display value="Actif"/>
+            <display value="Active"/>
           </coding>
         </clinicalStatus>
         <category>
@@ -3208,13 +3239,6 @@
           <display value="Dr Marcel CAMPARINI"/>
         </performer>
         <resultsInterpreter>
-          <extension url="http://hl7.org/fhir/StructureDefinition/event-performerFunction">
-            <valueCodeableConcept>
-              <coding>
-                <code value="AUT"/>
-              </coding>
-            </valueCodeableConcept>
-          </extension>
           <extension url="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-actor-extension">
             <extension url="type"/>
             <extension url="actor"/>
@@ -3418,13 +3442,6 @@
           <display value="Dr Jacques BIDEAULT"/>
         </performer>
         <resultsInterpreter>
-          <extension url="http://hl7.org/fhir/StructureDefinition/event-performerFunction">
-            <valueCodeableConcept>
-              <coding>
-                <code value="AUT"/>
-              </coding>
-            </valueCodeableConcept>
-          </extension>
           <extension url="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-actor-extension">
             <extension url="type"/>
             <extension url="actor"/>
@@ -3691,6 +3708,9 @@
           <reference value="urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891"/>
         </patient>
         <dateTime value="2018-01-01"/>
+        <policyRule>
+          <text value="Directive anticipée exprimée par le patient"/>
+        </policyRule>
         <provision>
           <type value="deny"/>
           <code>
@@ -3739,6 +3759,9 @@
           <reference value="urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891"/>
         </patient>
         <dateTime value="2018-01-01"/>
+        <policyRule>
+          <text value="Directive anticipée exprimée par le patient"/>
+        </policyRule>
         <provision>
           <type value="deny"/>
           <code>
@@ -3787,6 +3810,9 @@
           <reference value="urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891"/>
         </patient>
         <dateTime value="2018-01-01"/>
+        <policyRule>
+          <text value="Directive anticipée exprimée par le patient"/>
+        </policyRule>
         <provision>
           <type value="deny"/>
           <code>
@@ -3835,6 +3861,9 @@
           <reference value="urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891"/>
         </patient>
         <dateTime value="2018-01-01"/>
+        <policyRule>
+          <text value="Directive anticipée exprimée par le patient"/>
+        </policyRule>
         <provision>
           <type value="permit"/>
           <code>
@@ -3883,6 +3912,9 @@
           <reference value="urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891"/>
         </patient>
         <dateTime value="2018-01-01"/>
+        <policyRule>
+          <text value="Directive anticipée exprimée par le patient"/>
+        </policyRule>
         <provision>
           <type value="deny"/>
           <code>
@@ -3931,6 +3963,9 @@
           <reference value="urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891"/>
         </patient>
         <dateTime value="2018-01-01"/>
+        <policyRule>
+          <text value="Directive anticipée exprimée par le patient"/>
+        </policyRule>
         <provision>
           <type value="permit"/>
           <code>
@@ -3979,6 +4014,9 @@
           <reference value="urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891"/>
         </patient>
         <dateTime value="2018-01-01"/>
+        <policyRule>
+          <text value="Directive anticipée exprimée par le patient"/>
+        </policyRule>
         <provision>
           <type value="permit"/>
           <code>
@@ -4031,6 +4069,9 @@
           <contentType value="application/pdf"/>
           <data value="JVBERi0="/>
         </sourceAttachment>
+        <policyRule>
+          <text value="Directive anticipée exprimée par le patient"/>
+        </policyRule>
         <provision>
           <code>
             <coding>

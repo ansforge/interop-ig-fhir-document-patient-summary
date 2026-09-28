@@ -14,7 +14,7 @@
   "name" : "FRPatientSummary",
   "title" : "Volet de Synthèse Médicale (International Patient Summary - FHIR)",
   "status" : "draft",
-  "date" : "2026-09-28T15:35:27+00:00",
+  "date" : "2026-09-28T21:40:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -84,7 +84,7 @@
     "id" : "ans_fr_terminologies",
     "uri" : "https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies",
     "packageId" : "ans.fr.terminologies",
-    "version" : "1.13.0"
+    "version" : "1.14.0"
   },
   {
     "id" : "ans_fhir_fr_document_core",
@@ -924,11 +924,11 @@
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     }],
     "grouping" : [{
-      "id" : "Modèles logiques métier IPS",
+      "id" : "modeles-logiques-metier-ips",
       "name" : "Modèles logiques métier d'un document IPS"
     },
     {
-      "id" : "Ressources FHIR IPS",
+      "id" : "ressources-fhir-ips",
       "name" : "Profils FHIR IPS"
     }],
     "resource" : [{
@@ -946,7 +946,7 @@
       "name" : "Bundle (IPS)",
       "description" : "Synthèse médicale française, basée sur le modèle International Patient Summary d'HL7.",
       "exampleBoolean" : false,
-      "groupingId" : "Ressources FHIR IPS"
+      "groupingId" : "ressources-fhir-ips"
     },
     {
       "extension" : [{
@@ -993,7 +993,7 @@
       "name" : "FR Composition Document IPS",
       "description" : "Profil Composition du document IPS-FR, derive de FRCompositionDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Ressources FHIR IPS"
+      "groupingId" : "ressources-fhir-ips"
     },
     {
       "extension" : [{
@@ -1010,7 +1010,7 @@
       "name" : "Modèle logique métier - FR LM Patient Summary Document",
       "description" : "Éléments d'en-tête et de corps d'une Synthèse Médicale (International Patient Summary) contenant l'ensemble des sections cliniques et administratives.",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier IPS"
+      "groupingId" : "modeles-logiques-metier-ips"
     }],
     "page" : {
       "extension" : [{

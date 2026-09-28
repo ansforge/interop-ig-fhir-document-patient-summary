@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.name [ fhir:value "FRPatientSummary"] ;
   fhir:ImplementationGuide.title [ fhir:value "Volet de Synthèse Médicale (International Patient Summary - FHIR)"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-09-28T15:35:27+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-09-28T21:40:58+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ;
   fhir:ImplementationGuide.contact [
      fhir:index 0 ;
@@ -121,7 +121,7 @@
        fhir:link <https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies>
      ] ;
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "ans.fr.terminologies" ] ;
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.13.0" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.14.0" ]
   ], [
      fhir:index 8 ;
      fhir:Element.id [ fhir:value "ans_fhir_fr_document_core" ] ;
@@ -1044,11 +1044,11 @@
      ] ;
      fhir:ImplementationGuide.definition.grouping [
        fhir:index 0 ;
-       fhir:Element.id [ fhir:value "Modèles logiques métier IPS" ] ;
+       fhir:Element.id [ fhir:value "modeles-logiques-metier-ips" ] ;
        fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Modèles logiques métier d'un document IPS" ]
      ], [
        fhir:index 1 ;
-       fhir:Element.id [ fhir:value "Ressources FHIR IPS" ] ;
+       fhir:Element.id [ fhir:value "ressources-fhir-ips" ] ;
        fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Profils FHIR IPS" ]
      ] ;
      fhir:ImplementationGuide.definition.resource [
@@ -1065,7 +1065,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundle (IPS)" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Synthèse médicale française, basée sur le modèle International Patient Summary d'HL7." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "Ressources FHIR IPS" ]
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "ressources-fhir-ips" ]
      ], [
        fhir:index 1 ;
        fhir:Element.extension [
@@ -1112,7 +1112,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Composition Document IPS" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profil Composition du document IPS-FR, derive de FRCompositionDocument." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "Ressources FHIR IPS" ]
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "ressources-fhir-ips" ]
      ], [
        fhir:index 4 ;
        fhir:Element.extension [
@@ -1127,7 +1127,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Modèle logique métier - FR LM Patient Summary Document" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Éléments d'en-tête et de corps d'une Synthèse Médicale (International Patient Summary) contenant l'ensemble des sections cliniques et administratives." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "Modèles logiques métier IPS" ]
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "modeles-logiques-metier-ips" ]
      ] ;
      fhir:ImplementationGuide.definition.page [
        fhir:Element.extension [

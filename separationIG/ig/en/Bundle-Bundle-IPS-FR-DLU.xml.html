@@ -327,7 +327,7 @@
         &lt;<a href="http://hl7.org/fhir/R4/resource.html#Composition.meta">meta</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a> <a href="http://hl7.org/fhir/R4/datatypes.html#instant">value</a>=&quot;2024-04-02T11:17:00+01:00&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-composition-document-ips&quot;/&gt;
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-composition-document-ips|0.1.0&quot;/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/resource.html#Composition.meta">meta</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/resource.html#Composition.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#Composition.text">text</a>&gt;
@@ -407,7 +407,7 @@
         &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2024-04-02T11:17:00+01:00&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.author">author</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Reference.extension">extension</a>
-                     <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-author-time&quot;&gt;
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-author-time-extension&quot;&gt;
             &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDateTime</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2024-04-02T11:17:00+01:00&quot;/&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Reference.extension">extension</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;urn:uuid:c3d4e5f6-a7b8-9012-cdef-012345678902&quot;/&gt;
@@ -683,6 +683,26 @@
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
             &lt;div&gt;&lt;p&gt;(texte libre)&lt;/p&gt;&lt;/div&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section">section</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section">section</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Documents ajoutés&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;55107-7&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Documents ajoutés&quot;/&gt;
+            &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+            &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;Attestation de la carte vitale, attestation de mutuelle&lt;/p&gt;&lt;/div&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;urn:uuid:66aa1111-cccc-dddd-eeee-555566667777&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;urn:uuid:77bb2222-dddd-eeee-ffff-666677778888&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/composition.html#Composition.section">section</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section">section</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Historique des pathologies familiales&quot;/&gt;
@@ -1187,6 +1207,8 @@
         &lt;/<a href="http://hl7.org/fhir/R4/condition.html#Condition.identifier">identifier</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/condition.html#Condition.clinicalStatus">clinicalStatus</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Active&quot;/&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
@@ -1258,6 +1280,8 @@
         &lt;/<a href="http://hl7.org/fhir/R4/condition.html#Condition.identifier">identifier</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/condition.html#Condition.clinicalStatus">clinicalStatus</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Active&quot;/&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
@@ -1329,6 +1353,8 @@
         &lt;/<a href="http://hl7.org/fhir/R4/condition.html#Condition.identifier">identifier</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/condition.html#Condition.clinicalStatus">clinicalStatus</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Active&quot;/&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
@@ -1400,6 +1426,8 @@
         &lt;/<a href="http://hl7.org/fhir/R4/condition.html#Condition.identifier">identifier</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/condition.html#Condition.clinicalStatus">clinicalStatus</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Active&quot;/&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
@@ -1513,6 +1541,8 @@
         &lt;/<a href="http://hl7.org/fhir/R4/condition.html#Condition.identifier">identifier</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/condition.html#Condition.clinicalStatus">clinicalStatus</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;recurrence&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Recurrence&quot;/&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
@@ -1585,6 +1615,8 @@
         &lt;/<a href="http://hl7.org/fhir/R4/condition.html#Condition.identifier">identifier</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/condition.html#Condition.clinicalStatus">clinicalStatus</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;resolved&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Resolved&quot;/&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
@@ -1660,6 +1692,8 @@
         &lt;/<a href="http://hl7.org/fhir/R4/condition.html#Condition.identifier">identifier</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/condition.html#Condition.clinicalStatus">clinicalStatus</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;resolved&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Resolved&quot;/&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
@@ -1860,6 +1894,8 @@
         &lt;/<a href="http://hl7.org/fhir/R4/condition.html#Condition.identifier">identifier</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/condition.html#Condition.clinicalStatus">clinicalStatus</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;resolved&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Résolu&quot;/&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
@@ -1918,7 +1954,7 @@
         &lt;<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.performed_x_">performedDateTime</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2018-01-14&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.recorder">recorder</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Reference.extension">extension</a>
-                     <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension&quot;&gt;
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-actor-extension&quot;&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;actor&quot;&gt;
               &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueReference</a>&gt;
                 &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
@@ -1999,11 +2035,15 @@
         &lt;/<a href="http://hl7.org/fhir/R4/allergyintolerance.html#AllergyIntolerance.identifier">identifier</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/allergyintolerance.html#AllergyIntolerance.clinicalStatus">clinicalStatus</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/allergyintolerance.html#AllergyIntolerance.clinicalStatus">clinicalStatus</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/allergyintolerance.html#AllergyIntolerance.verificationStatus">verificationStatus</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/allergyintolerance-verification&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;confirmed&quot;/&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/allergyintolerance.html#AllergyIntolerance.verificationStatus">verificationStatus</a>&gt;
@@ -2144,7 +2184,7 @@
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;extensions&quot;/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#MedicationAdministration.text">text</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#MedicationAdministration.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-administration-frequency&quot;&gt;
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueTiming</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat">repeat</a>&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.frequency">frequency</a> <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">value</a>=&quot;1&quot;/&gt;
@@ -2261,6 +2301,8 @@
         &lt;/<a href="http://hl7.org/fhir/R4/condition.html#Condition.identifier">identifier</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/condition.html#Condition.clinicalStatus">clinicalStatus</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;resolved&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Résolu&quot;/&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
@@ -2301,7 +2343,7 @@
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;extensions&quot;/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#MedicationAdministration.text">text</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#MedicationAdministration.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-administration-frequency&quot;&gt;
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueTiming</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat">repeat</a>&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.frequency">frequency</a> <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">value</a>=&quot;1&quot;/&gt;
@@ -2428,7 +2470,7 @@
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;extensions&quot;/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#MedicationAdministration.text">text</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#MedicationAdministration.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-administration-frequency&quot;&gt;
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueTiming</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat">repeat</a>&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.frequency">frequency</a> <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">value</a>=&quot;4&quot;/&gt;
@@ -3225,7 +3267,7 @@
           &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;urn:uuid:c1d2e3f4-a5b6-7891-c456-890123456780&quot;/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.reasonReference">reasonReference</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.protocolApplied">protocolApplied</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.protocolApplied.series">series</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.protocolApplied.series">series</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;INITIMMUNIZ&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.protocolApplied.doseNumber_x_">doseNumberPositiveInt</a> <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">value</a>=&quot;2&quot;/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.protocolApplied">protocolApplied</a>&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/immunization.html#Immunization">Immunization</a>&gt;
@@ -3301,7 +3343,7 @@
           &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;urn:uuid:c1d2e3f4-a5b6-7891-c456-890123456780&quot;/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.reasonReference">reasonReference</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.protocolApplied">protocolApplied</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.protocolApplied.series">series</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.protocolApplied.series">series</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;INITIMMUNIZ&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.protocolApplied.doseNumber_x_">doseNumberPositiveInt</a> <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">value</a>=&quot;1&quot;/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.protocolApplied">protocolApplied</a>&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/immunization.html#Immunization">Immunization</a>&gt;
@@ -3424,8 +3466,10 @@
         &lt;/<a href="http://hl7.org/fhir/R4/condition.html#Condition.identifier">identifier</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/condition.html#Condition.clinicalStatus">clinicalStatus</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Actif&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Active&quot;/&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/condition.html#Condition.clinicalStatus">clinicalStatus</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/condition.html#Condition.category">category</a>&gt;
@@ -3696,14 +3740,6 @@
         &lt;/<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.performer">performer</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.resultsInterpreter">resultsInterpreter</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Reference.extension">extension</a>
-                     <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/event-performerFunction&quot;&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-                &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;AUT&quot;/&gt;
-              &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-            &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Reference.extension">extension</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Reference.extension">extension</a>
                      <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-actor-extension&quot;&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;type&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;actor&quot;/&gt;
@@ -3917,14 +3953,6 @@
           &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Dr Jacques BIDEAULT&quot;/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.performer">performer</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.resultsInterpreter">resultsInterpreter</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Reference.extension">extension</a>
-                     <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/event-performerFunction&quot;&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-                &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;AUT&quot;/&gt;
-              &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-            &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Reference.extension">extension</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Reference.extension">extension</a>
                      <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-actor-extension&quot;&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;type&quot;/&gt;
@@ -4206,6 +4234,9 @@
           &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891&quot;/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/consent.html#Consent.patient">patient</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.dateTime">dateTime</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2018-01-01&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.policyRule">policyRule</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Directive anticipée exprimée par le patient&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/consent.html#Consent.policyRule">policyRule</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision">provision</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;deny&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.code">code</a>&gt;
@@ -4256,6 +4287,9 @@
           &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891&quot;/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/consent.html#Consent.patient">patient</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.dateTime">dateTime</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2018-01-01&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.policyRule">policyRule</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Directive anticipée exprimée par le patient&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/consent.html#Consent.policyRule">policyRule</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision">provision</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;deny&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.code">code</a>&gt;
@@ -4306,6 +4340,9 @@
           &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891&quot;/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/consent.html#Consent.patient">patient</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.dateTime">dateTime</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2018-01-01&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.policyRule">policyRule</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Directive anticipée exprimée par le patient&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/consent.html#Consent.policyRule">policyRule</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision">provision</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;deny&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.code">code</a>&gt;
@@ -4356,6 +4393,9 @@
           &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891&quot;/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/consent.html#Consent.patient">patient</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.dateTime">dateTime</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2018-01-01&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.policyRule">policyRule</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Directive anticipée exprimée par le patient&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/consent.html#Consent.policyRule">policyRule</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision">provision</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;permit&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.code">code</a>&gt;
@@ -4406,6 +4446,9 @@
           &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891&quot;/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/consent.html#Consent.patient">patient</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.dateTime">dateTime</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2018-01-01&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.policyRule">policyRule</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Directive anticipée exprimée par le patient&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/consent.html#Consent.policyRule">policyRule</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision">provision</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;deny&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.code">code</a>&gt;
@@ -4456,6 +4499,9 @@
           &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891&quot;/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/consent.html#Consent.patient">patient</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.dateTime">dateTime</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2018-01-01&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.policyRule">policyRule</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Directive anticipée exprimée par le patient&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/consent.html#Consent.policyRule">policyRule</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision">provision</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;permit&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.code">code</a>&gt;
@@ -4506,6 +4552,9 @@
           &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891&quot;/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/consent.html#Consent.patient">patient</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.dateTime">dateTime</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2018-01-01&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.policyRule">policyRule</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Directive anticipée exprimée par le patient&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/consent.html#Consent.policyRule">policyRule</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision">provision</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;permit&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.code">code</a>&gt;
@@ -4562,6 +4611,9 @@
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.contentType">contentType</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;application/pdf&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.data">data</a> <a href="http://hl7.org/fhir/R4/datatypes.html#base64Binary">value</a>=&quot;JVBERi0=&quot;/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/consent.html#Consent.source_x_">sourceAttachment</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.policyRule">policyRule</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Directive anticipée exprimée par le patient&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/consent.html#Consent.policyRule">policyRule</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision">provision</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.code">code</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
@@ -4628,7 +4680,7 @@
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Package ans.fhir.fr.fr-patient-summary#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-09-28 15:35:00 +0000">
+  <span title="2026-09-28 21:40:00 +0000">
     2026-09-28
   </span>
 

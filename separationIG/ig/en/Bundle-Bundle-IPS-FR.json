@@ -19,7 +19,7 @@
       "id" : "09275181-4d85-43b8-89b0-6dd68182bc52",
       "meta" : {
         "lastUpdated" : "2025-09-09T13:28:17.000+00:00",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-composition-document-ips"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-composition-document-ips|0.1.0"]
       },
       "language" : "en",
       "text" : {
@@ -365,6 +365,26 @@
           "status" : "generated",
           "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Contact répété avec solvants organiques (atelier peinture)</p></div>"
         }
+      },
+      {
+        "title" : "Documents ajoutés",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "55107-7",
+            "display" : "Documents ajoutés"
+          }]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Attestation de la carte vitale, attestation de mutuelle</p></div>"
+        },
+        "entry" : [{
+          "reference" : "urn:uuid:55aa1111-bbbb-cccc-dddd-555566660001"
+        },
+        {
+          "reference" : "urn:uuid:66bb2222-cccc-dddd-eeee-666677770002"
+        }]
       },
       {
         "title" : "Historique des pathologies familiales",
@@ -873,6 +893,7 @@
       }],
       "clinicalStatus" : {
         "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
           "code" : "active",
           "display" : "Active"
         }]
@@ -941,6 +962,7 @@
       }],
       "clinicalStatus" : {
         "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
           "code" : "active",
           "display" : "Active"
         }]
@@ -1009,6 +1031,7 @@
       }],
       "clinicalStatus" : {
         "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
           "code" : "active",
           "display" : "Active"
         }]
@@ -1077,6 +1100,7 @@
       }],
       "clinicalStatus" : {
         "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
           "code" : "active",
           "display" : "Active"
         }]
@@ -1183,6 +1207,7 @@
       }],
       "clinicalStatus" : {
         "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
           "code" : "recurrence",
           "display" : "Recurrence"
         }]
@@ -1251,6 +1276,7 @@
       }],
       "clinicalStatus" : {
         "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
           "code" : "resolved",
           "display" : "Resolved"
         }]
@@ -1319,6 +1345,7 @@
       }],
       "clinicalStatus" : {
         "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
           "code" : "resolved",
           "display" : "Resolved"
         }]
@@ -1408,7 +1435,7 @@
           {
             "url" : "type"
           }],
-          "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"
+          "url" : "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-actor-extension"
         }]
       },
       "reasonReference" : [{
@@ -1526,6 +1553,7 @@
       }],
       "clinicalStatus" : {
         "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
           "code" : "resolved",
           "display" : "Résolu"
         }]
@@ -1601,11 +1629,13 @@
       }],
       "clinicalStatus" : {
         "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
           "code" : "active"
         }]
       },
       "verificationStatus" : {
         "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
           "code" : "confirmed"
         }]
       },
@@ -1684,11 +1714,13 @@
       }],
       "clinicalStatus" : {
         "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
           "code" : "active"
         }]
       },
       "verificationStatus" : {
         "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
           "code" : "confirmed"
         }]
       },
@@ -1806,7 +1838,7 @@
         "status" : "extensions"
       },
       "extension" : [{
-        "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-administration-frequency",
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence",
         "valueTiming" : {
           "repeat" : {
             "frequency" : 1,
@@ -1919,6 +1951,7 @@
       }],
       "clinicalStatus" : {
         "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
           "code" : "resolved",
           "display" : "Résolu"
         }]
@@ -1956,7 +1989,7 @@
         "status" : "extensions"
       },
       "extension" : [{
-        "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-administration-frequency",
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence",
         "valueTiming" : {
           "repeat" : {
             "frequency" : 1,
@@ -2732,7 +2765,7 @@
         "reference" : "urn:uuid:80c62f71-7c99-458d-884d-725bc410a14d"
       }],
       "protocolApplied" : [{
-        "series" : "1",
+        "series" : "INITIMMUNIZ",
         "doseNumberPositiveInt" : 2
       }]
     }
@@ -2805,7 +2838,7 @@
         "reference" : "urn:uuid:80c62f71-7c99-458d-884d-725bc410a14d"
       }],
       "protocolApplied" : [{
-        "series" : "1",
+        "series" : "INITIMMUNIZ",
         "doseNumberPositiveInt" : 1
       }]
     }
@@ -2917,8 +2950,9 @@
       }],
       "clinicalStatus" : {
         "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
           "code" : "active",
-          "display" : "Actif"
+          "display" : "Active"
         }]
       },
       "category" : [{
@@ -3140,7 +3174,7 @@
       }],
       "status" : "completed",
       "medicationReference" : {
-        "reference" : "urn:uuid:26349c4d2-bdba-41b1-b5d6-1ce8c359205d"
+        "reference" : "urn:uuid:6349c4d2-bdba-41b1-b5d6-1ce8c359205d"
       },
       "subject" : {
         "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
@@ -3310,6 +3344,9 @@
         "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
       },
       "dateTime" : "2018-01-01",
+      "policyRule" : {
+        "text" : "Directive anticipée exprimée par le patient"
+      },
       "provision" : {
         "type" : "deny",
         "code" : [{
@@ -3357,6 +3394,9 @@
         "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
       },
       "dateTime" : "2018-01-01",
+      "policyRule" : {
+        "text" : "Directive anticipée exprimée par le patient"
+      },
       "provision" : {
         "type" : "deny",
         "code" : [{
@@ -3404,6 +3444,9 @@
         "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
       },
       "dateTime" : "2018-01-01",
+      "policyRule" : {
+        "text" : "Directive anticipée exprimée par le patient"
+      },
       "provision" : {
         "type" : "deny",
         "code" : [{
@@ -3451,6 +3494,9 @@
         "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
       },
       "dateTime" : "2018-01-01",
+      "policyRule" : {
+        "text" : "Directive anticipée exprimée par le patient"
+      },
       "provision" : {
         "type" : "permit",
         "code" : [{
@@ -3498,6 +3544,9 @@
         "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
       },
       "dateTime" : "2018-01-01",
+      "policyRule" : {
+        "text" : "Directive anticipée exprimée par le patient"
+      },
       "provision" : {
         "type" : "deny",
         "code" : [{
@@ -3545,6 +3594,9 @@
         "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
       },
       "dateTime" : "2018-01-01",
+      "policyRule" : {
+        "text" : "Directive anticipée exprimée par le patient"
+      },
       "provision" : {
         "type" : "permit",
         "code" : [{
@@ -3592,6 +3644,9 @@
         "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
       },
       "dateTime" : "2018-01-01",
+      "policyRule" : {
+        "text" : "Directive anticipée exprimée par le patient"
+      },
       "provision" : {
         "type" : "permit",
         "code" : [{
@@ -3642,6 +3697,9 @@
       "sourceAttachment" : {
         "contentType" : "application/pdf",
         "data" : "JVBERi0="
+      },
+      "policyRule" : {
+        "text" : "Directive anticipée exprimée par le patient"
       },
       "provision" : {
         "code" : [{
@@ -3703,14 +3761,6 @@
       }],
       "resultsInterpreter" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/event-performerFunction",
-          "valueCodeableConcept" : {
-            "coding" : [{
-              "code" : "AUT"
-            }]
-          }
-        },
-        {
           "extension" : [{
             "url" : "type"
           },
@@ -3915,14 +3965,6 @@
       }],
       "resultsInterpreter" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/event-performerFunction",
-          "valueCodeableConcept" : {
-            "coding" : [{
-              "code" : "AUT"
-            }]
-          }
-        },
-        {
           "extension" : [{
             "url" : "type"
           },
