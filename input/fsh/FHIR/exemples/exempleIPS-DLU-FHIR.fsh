@@ -211,7 +211,7 @@ Usage: #inline
 * section[sectionProblems].title = "Problèmes (problèmes actifs et antécédents médicaux)"
 * section[sectionProblems].code = $LNC#11450-4 "Liste des problèmes actifs"
 * section[sectionProblems].text.status = #generated
-* section[sectionProblems].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Problème</th><th>Sévérité</th><th>Statut du problème</th><th>Statut clinique du patient</th><th>Certitude</th><th>Commentaire</th><th>Document référencé</th></tr></thead><tbody><tr><td>11/01/2024</td><td>interprétation diagnostique</td><td>Thyroïdite auto-immune (CIM-10 : E06.3)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>05/07/2023</td><td>interprétation diagnostique</td><td>Diabète insulino-dépendant (CISP2 : T89)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>21/05/2023</td><td>interprétation diagnostique</td><td>Epilepsie (DRC : 114)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>11/02/2022</td><td>interprétation diagnostique</td><td>Angi&#x0153;dème bradykinique (OrphaCode : 658)</td><td>léger à modéré</td><td>Actif</td><td>asymptomatique</td><td>Confirmé</td><td>(texte libre)</td><td><a href=\"https://www.orpha.net/pdfs/data/patho/Emg/Int/fr/AngioedemeBradykinique_FR_fr_EMG_ORPHA658.pdf\">Fiche Orphanet Urgences - Angi&#x0153;dème bradykinique</a></td></tr><tr><td>11/02/2022</td><td>symptôme rapporté par le patient ou le répondant</td><td>Autre problème (texte libre)</td><td>léger</td><td>Récurrent</td><td>fonction corporelle générale : normale</td><td>Non confirmé</td><td>(texte libre)</td><td/></tr></tbody></table></div>"
+* section[sectionProblems].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Problème</th><th>Sévérité</th><th>Statut du problème</th><th>Statut clinique du patient</th><th>Certitude</th><th>Commentaire</th><th>Document référencé</th></tr></thead><tbody><tr><td>11/01/2024</td><td>interprétation diagnostique</td><td>Thyroïdite auto-immune (CIM-10 : E06.3)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>05/07/2023</td><td>interprétation diagnostique</td><td>Diabète insulino-dépendant (CISP2 : T89)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>21/05/2023</td><td>interprétation diagnostique</td><td>Epilepsie (DRC : 114)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>11/02/2022</td><td>interprétation diagnostique</td><td>Angi&#x0153;dème bradykinique (OrphaCode : 658)</td><td>gravité modérée</td><td>Actif</td><td>asymptomatique</td><td>Confirmé</td><td>(texte libre)</td><td><a href=\"https://www.orpha.net/pdfs/data/patho/Emg/Int/fr/AngioedemeBradykinique_FR_fr_EMG_ORPHA658.pdf\">Fiche Orphanet Urgences - Angi&#x0153;dème bradykinique</a></td></tr><tr><td>11/02/2022</td><td>symptôme rapporté par le patient ou le répondant</td><td>Autre problème (texte libre)</td><td>léger</td><td>Récurrent</td><td>fonction corporelle générale : normale</td><td>Non confirmé</td><td>(texte libre)</td><td/></tr></tbody></table></div>"
 * section[sectionProblems].entry[0] = Reference(urn:uuid:b8c9d0e1-f2a3-4567-b023-567890123457)
 * section[sectionProblems].entry[+] = Reference(urn:uuid:c9d0e1f2-a3b4-5678-c034-678901234568)
 * section[sectionProblems].entry[+] = Reference(urn:uuid:d0e1f2a3-b4c5-6789-d045-789012345679)
@@ -494,7 +494,7 @@ Usage: #inline
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:b8c9d0e1-f2a3-4567-b023-567890123457"
-* clinicalStatus = #active "Actif"
+* clinicalStatus = #active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmé"
 * category = $SCT#282291009 "interprétation diagnostique"
 * severity = $SCT#6736007 "gravité modérée"
@@ -511,7 +511,7 @@ Usage: #inline
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:c9d0e1f2-a3b4-5678-c034-678901234568"
-* clinicalStatus = #active "Actif"
+* clinicalStatus = #active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmé"
 * category = $SCT#282291009 "interprétation diagnostique"
 * severity = $SCT#6736007 "gravité modérée"
@@ -528,7 +528,7 @@ Usage: #inline
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:d0e1f2a3-b4c5-6789-d045-789012345679"
-* clinicalStatus = #active "Actif"
+* clinicalStatus = #active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmé"
 * category = $SCT#282291009 "interprétation diagnostique"
 * severity = $SCT#6736007 "gravité modérée"
@@ -545,10 +545,10 @@ Usage: #inline
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:e1f2a3b4-c5d6-7890-e056-890123456780"
-* clinicalStatus = #active "Actif"
+* clinicalStatus = #active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmé"
 * category = $SCT#282291009 "interprétation diagnostique"
-* severity = $SCT#371923003 "gravité léger à modéré"
+* severity = $SCT#6736007 "gravité modérée"
 * code = $terminologie-orpha#658 "Angiœdème bradykinique"
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * onsetDateTime = "2022-02-11"
@@ -576,7 +576,7 @@ Usage: #inline
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:f2a3b4c5-d6e7-8901-f067-901234567891"
-* clinicalStatus = #recurrence "Récurrent"
+* clinicalStatus = #recurrence "Recurrence"
 * verificationStatus = $condition-ver-status#unconfirmed "Non confirmé"
 * category = $SCT#418799008 "symptôme rapporté par le patient ou le répondant"
 * severity = $SCT#255604002 "léger"
@@ -594,7 +594,7 @@ Usage: #inline
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:a3b4c5d6-e7f8-9012-a078-012345678902"
-* clinicalStatus = #resolved "Résolu"
+* clinicalStatus = #resolved "Resolved"
 * verificationStatus = $condition-ver-status#confirmed "Confirmé"
 * category = $SCT#282291009 "interprétation diagnostique"
 * severity = $SCT#6736007 "gravité modérée"
@@ -612,7 +612,7 @@ Usage: #inline
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:b4c5d6e7-f8a9-0123-b089-123456789013"
-* clinicalStatus = #resolved "Résolu"
+* clinicalStatus = #resolved "Resolved"
 * verificationStatus = $condition-ver-status#confirmed "Confirmé"
 * category = $SCT#282291009 "interprétation diagnostique"
 * severity = $SCT#6736007 "gravité modérée"
@@ -758,8 +758,7 @@ Usage: #inline
 * date = "2021-12-04"
 * detected = "2021-12-04"
 * resultingCondition = Reference(urn:uuid:b6c7d8e9-f0a1-2345-b201-345678901235)
-* severity = #mild
-* seriousness = $SCT#255604002 "gravité légère"
+* severity = $SCT#255604002 "gravité légère"
 * outcome = $SCT#1352007006 "Guérison sans séquelle"
 * suspectEntity.instance = Reference(urn:uuid:f4a5b6c7-d8e9-0123-f189-123456789013)
 * suspectEntity.causality.assessment = $SCT#2931005 "probable"
