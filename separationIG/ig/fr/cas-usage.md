@@ -1,4 +1,4 @@
-# Cas d'usage - FR Patient Summary (FHIR) v0.1.0
+# Cas d'usage - Volet de Synthèse Médicale (International Patient Summary - FHIR) v0.1.0
 
 ## Cas d'usage
 

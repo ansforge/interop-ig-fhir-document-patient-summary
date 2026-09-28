@@ -1,4 +1,4 @@
-# ans.fhir.fr.fr-patient-summary#0.1.0: FR Patient Summary (FHIR)(fr)
+# ans.fhir.fr.fr-patient-summary#0.1.0: Volet de Synthèse Médicale (International Patient Summary - FHIR)(fr)
 
 ## Pages
 
@@ -29,7 +29,7 @@
 
 ### ImplementationGuides
 
-* [FR Patient Summary (FHIR)](ImplementationGuide-ans.fhir.fr.fr-patient-summary.md)
+* [Volet de Synthèse Médicale (International Patient Summary - FHIR)](ImplementationGuide-ans.fhir.fr.fr-patient-summary.md)
 
 ### Examples
 

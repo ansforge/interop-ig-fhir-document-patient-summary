@@ -49,7 +49,7 @@
           <extension url="type">
             <valueCodeableConcept>
               <coding>
-                <system value="https://mos.esante.gouv.fr/NOS/TRE_A13-HL7ParticipationType/FHIR/TRE-A13-HL7ParticipationType"/>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
                 <code value="INF"/>
                 <display value="Informateur"/>
               </coding>
@@ -488,7 +488,7 @@
       <Patient>
         <id value="00f54e2e-22f2-4162-87b4-4826d855feac"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-patient-ins-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-patient-ins-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -646,7 +646,7 @@
       <PractitionerRole>
         <id value="a11d31c5-77ff-4642-91f7-66c4d10d18c9"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -681,7 +681,7 @@
       <Practitioner>
         <id value="b5941194-08be-4893-a629-652f97587b39"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -739,7 +739,7 @@
       <Organization>
         <id value="579f1274-8265-4bb1-91ba-d093a11be4f5"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -771,7 +771,7 @@
       <Encounter>
         <id value="51807e91-cb17-4ca1-bc58-1efa85cf9d72"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-encounter-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-encounter-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -813,7 +813,7 @@
       <Location>
         <id value="648170b7-1538-44a7-8820-df04dcc32fad"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-location-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-location-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -835,7 +835,7 @@
       <Condition>
         <id value="257427f5-dffa-4a97-9475-4ebb988589af"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -904,7 +904,7 @@
       <Condition>
         <id value="4d6a4b74-b2a7-4ec1-8db1-8925f435a916"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -973,7 +973,7 @@
       <Condition>
         <id value="af0e13e5-d0a2-4dbc-b892-7328eca72ff4"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -1042,7 +1042,7 @@
       <Condition>
         <id value="a4d49149-cda7-470d-a2e3-08f8d7db1bad"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -1116,7 +1116,7 @@
       <DocumentReference>
         <id value="c7d8e9f0-1a2b-3c4d-5e6f-7a8b9c0d1e2f"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-document-reference-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-document-reference-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -1148,7 +1148,7 @@
       <Condition>
         <id value="803caba9-c128-4faa-94a0-d344738ebc63"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -1217,7 +1217,7 @@
       <Condition>
         <id value="effd6c8a-6122-46cb-82ed-ef3f300ec17b"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -1286,7 +1286,7 @@
       <Condition>
         <id value="18492799-4e37-47a7-b79b-18a4d0597963"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -1355,7 +1355,7 @@
       <Procedure>
         <id value="4e00844f-241b-47c0-85a4-9d612c46b3ad"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-procedure-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-procedure-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -1409,7 +1409,7 @@
       <PractitionerRole>
         <id value="5b0fcb3b-91fb-4870-bd97-8faa2794ea01"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -1430,7 +1430,7 @@
       <Organization>
         <id value="da9eb2be-5993-4e39-827b-728fe3943a93"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -1450,7 +1450,7 @@
       <Practitioner>
         <id value="9e55af45-e661-472f-b713-4aaa2cfd1a77"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -1494,7 +1494,7 @@
       <Condition>
         <id value="be247a4c-f8fe-4224-b51c-8c35d7124a2d"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -1537,7 +1537,7 @@
       <Procedure>
         <id value="3c6ec5d8-182d-4dfc-871b-59c9eb91aa51"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-procedure-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-procedure-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -1571,7 +1571,7 @@
       <AllergyIntolerance>
         <id value="0ccf6c51-d3f5-4817-bc24-7f63a2ef3c7f"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-allergy-intolerance-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-allergy-intolerance-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -1655,7 +1655,7 @@
       <AllergyIntolerance>
         <id value="d1e2f3a4-b5c6-7d8e-9f0a-1b2c3d4e5f6a"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-allergy-intolerance-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-allergy-intolerance-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -1721,7 +1721,7 @@
       <AdverseEvent>
         <id value="23f1c0a3-ce38-4817-9408-7feaeb04002d"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-adverse-event-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-adverse-event-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -1789,7 +1789,7 @@
       <MedicationAdministration>
         <id value="0409af90-4717-4a93-9800-fcf546875dc8"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -1842,7 +1842,7 @@
       <Medication>
         <id value="f995f9bb-4043-45db-8b12-50dc7e9acc5a"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -1896,7 +1896,7 @@
       <Condition>
         <id value="a4e1cafa-05e4-40c7-82dc-641f54281671"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -1939,7 +1939,7 @@
       <MedicationAdministration>
         <id value="1ff316e0-edde-4bb9-a5fe-822d486d8230"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -2008,7 +2008,7 @@
       <Medication>
         <id value="fb88edae-4d3f-4b00-ae17-71c8f03adc71"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -2062,7 +2062,7 @@
       <DeviceUseStatement>
         <id value="034d19b3-3c4e-488a-a7c0-9181dfc721e3"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-device-use-statement-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-device-use-statement-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -2115,7 +2115,7 @@
       <DeviceUseStatement>
         <id value="41465f6b-d169-40b9-8d84-96064b4c3d28"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-device-use-statement-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-device-use-statement-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -2168,7 +2168,7 @@
       <Observation>
         <id value="960ebfbc-4b56-40b9-9990-cae5944d6e9b"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -2211,7 +2211,7 @@
       <Observation>
         <id value="e102b4b3-91b6-4b89-9065-560bc68c024c"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -2252,7 +2252,7 @@
       <Observation>
         <id value="b9bca1ce-b850-408c-966c-26a1a87adf65"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -2293,7 +2293,7 @@
       <Observation>
         <id value="c3d4e5f6-a7b8-9012-cdef-345678901234"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -2332,7 +2332,7 @@
       <Observation>
         <id value="ae1c9c50-9620-4755-a7a0-f72af5a82229"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-vital-signs-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-vital-signs-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -2378,7 +2378,7 @@
       <Observation>
         <id value="44da5856-6555-4b43-b03f-176f45c29432"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-vital-signs-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-vital-signs-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -2424,7 +2424,7 @@
       <Observation>
         <id value="48129cb5-0a81-4a17-aebd-8c6584b20cd4"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-social-history-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-social-history-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -2472,7 +2472,7 @@
       <Observation>
         <id value="3618f351-cea4-4834-8cf9-10151b74436b"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-social-history-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-social-history-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -2519,7 +2519,7 @@
       <Observation>
         <id value="4f0f3856-74a9-4a57-b173-e8342735d6c9"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-social-history-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-social-history-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -2566,7 +2566,7 @@
       <Observation>
         <id value="3799b968-d637-4a16-ad7b-5f79987dcdb1"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-social-history-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-social-history-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -2614,7 +2614,7 @@
       <FamilyMemberHistory>
         <id value="541404fa-fc9c-4552-8d36-10adcc37f34e"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-family-member-history-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-family-member-history-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -2664,7 +2664,7 @@
       <Immunization>
         <id value="7f0d585b-9a48-4605-baab-30e93603a563"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-immunization-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-immunization-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -2735,7 +2735,7 @@
       <Immunization>
         <id value="3a7417c1-d483-4f56-833d-43bf8e438874"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-immunization-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-immunization-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -2806,7 +2806,7 @@
       <PractitionerRole>
         <id value="f3062170-ef7b-45a7-802f-47e461a7d05d"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -2827,7 +2827,7 @@
       <Organization>
         <id value="4dbc2eff-6a94-4c7b-b49f-0f7a9790bef6"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -2854,7 +2854,7 @@
       <Practitioner>
         <id value="ab96b0ff-374a-45c7-82e4-aaa8888a2fec"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -2898,7 +2898,7 @@
       <Condition>
         <id value="80c62f71-7c99-458d-884d-725bc410a14d"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -2941,7 +2941,7 @@
       <Observation>
         <id value="bea6c387-6dca-4f55-93b7-7079e1c88dfb"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-pregnancy-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-pregnancy-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -2983,7 +2983,7 @@
       <Observation>
         <id value="bdc0e3ae-128b-46de-b1a7-1c564cca6a61"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-pregnancy-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-pregnancy-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -3019,7 +3019,7 @@
       <Observation>
         <id value="e4299828-2563-4265-9297-c27a8240b6ba"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-pregnancy-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-pregnancy-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -3055,7 +3055,7 @@
       <Observation>
         <id value="091bf5bc-2ed8-4328-a5e6-7d78aeeeb20b"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-pregnancy-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-pregnancy-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -3091,7 +3091,7 @@
       <MedicationAdministration>
         <id value="73af1b58-f567-4c03-a1a6-d65d3b3fd079"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -3123,7 +3123,7 @@
       <MedicationAdministration>
         <id value="83e3e384-84ca-46dd-aa8c-c847a70b1fb5"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -3155,7 +3155,7 @@
       <Medication>
         <id value="2f861880-31d2-4969-a2ce-b78f750f430e"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -3199,7 +3199,7 @@
       <Medication>
         <id value="6349c4d2-bdba-41b1-b5d6-1ce8c359205d"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -3235,7 +3235,7 @@
       <ServiceRequest>
         <id value="d2b7c8e1-3f4a-4b5c-9d6e-7f8a9b0c1d2e"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-service-request-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-service-request-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -3276,7 +3276,7 @@
       <Consent>
         <id value="c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a1"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -3324,7 +3324,7 @@
       <Consent>
         <id value="c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a2"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -3372,7 +3372,7 @@
       <Consent>
         <id value="c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a3"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -3420,7 +3420,7 @@
       <Consent>
         <id value="c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a4"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -3468,7 +3468,7 @@
       <Consent>
         <id value="c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a5"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -3516,7 +3516,7 @@
       <Consent>
         <id value="c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a6"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -3564,7 +3564,7 @@
       <Consent>
         <id value="c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a7"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -3612,7 +3612,7 @@
       <Consent>
         <id value="c1c2c3c4-d1d2-e1e2-f1f2-a1a2a3a4a5a8"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -3663,7 +3663,7 @@
       <DiagnosticReport>
         <id value="aa001111-2222-3333-4444-555566667777"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-diagnostic-report-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-diagnostic-report-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -3734,7 +3734,7 @@
       <Observation>
         <id value="bb112222-3333-4444-5555-666677778888"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-result-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-result-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -3769,7 +3769,7 @@
       <PractitionerRole>
         <id value="cc223333-4444-5555-6666-777788889999"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -3790,7 +3790,7 @@
       <Practitioner>
         <id value="dd334444-5555-6666-7777-888899990000"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -3837,7 +3837,7 @@
       <Organization>
         <id value="ee445555-6666-7777-8888-999900001111"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -3873,7 +3873,7 @@
       <DiagnosticReport>
         <id value="ff556666-7777-8888-9999-000011112222"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-diagnostic-report-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-diagnostic-report-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -3944,7 +3944,7 @@
       <Observation>
         <id value="11667777-8888-9999-aaaa-111122223333"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-result-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-result-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -3986,7 +3986,7 @@
       <PractitionerRole>
         <id value="22778888-9999-aaaa-bbbb-222233334444"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -4007,7 +4007,7 @@
       <Practitioner>
         <id value="33889999-aaaa-bbbb-cccc-333344445555"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -4054,7 +4054,7 @@
       <Organization>
         <id value="4499aaaa-bbbb-cccc-dddd-444455556666"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -4090,7 +4090,7 @@
       <DocumentReference>
         <id value="55aa1111-bbbb-cccc-dddd-555566660001"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-document-reference-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-document-reference-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -4124,7 +4124,7 @@
       <DocumentReference>
         <id value="66bb2222-cccc-dddd-eeee-666677770002"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-document-reference-document"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-document-reference-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>

@@ -9,7 +9,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Bundle-IPS-FR-DLU - TTL Representation - FR Patient Summary (FHIR) v0.1.0</title>
+    <title>Bundle-IPS-FR-DLU - TTL Representation - Volet de Synthèse Médicale (International Patient Summary - FHIR) v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -71,7 +71,7 @@
 
 
         <div id="ig-status" data-fhir="generated">
-          <p><span style="font-size:12pt;font-weight:bold">FR Patient Summary (FHIR)</span>
+          <p><span style="font-size:12pt;font-weight:bold">Volet de Synthèse Médicale (International Patient Summary - FHIR)</span>
             <br/>
             <span style="display:inline-block;">0.1.0 - ci-build
 
@@ -243,7 +243,7 @@
 
 <!-- layouts\layout-instance-format -->
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">FR Patient Summary (FHIR) - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Volet de Synthèse Médicale (International Patient Summary - FHIR) - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -687,7 +687,7 @@
        <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueCodeableConcept</a> [
          <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
            <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://mos.esante.gouv.fr/NOS/TRE_A13-HL7ParticipationType/FHIR/TRE-A13-HL7ParticipationType&quot; ] ;
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/v3-ParticipationType&quot; ] ;
            <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;INF&quot; ] ;
            <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Informateur&quot; ]
          ]
@@ -1181,9 +1181,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Patient.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;b2c3d4e5-f6a7-8901-bcde-f01234567891&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Patient.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-patient-ins-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-patient-ins-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-patient-ins-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-patient-ins-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Patient.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -1392,9 +1392,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#PractitionerRole.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;c3d4e5f6-a7b8-9012-cdef-012345678902&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#PractitionerRole.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#PractitionerRole.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -1429,9 +1429,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Practitioner.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;d4e5f6a7-b8c9-0123-def0-123456789013&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Practitioner.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Practitioner.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -1490,9 +1490,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Organization.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;e5f6a7b8-c9d0-1234-ef01-234567890124&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Organization.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Organization.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -1528,9 +1528,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Encounter.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;f6a7b8c9-d0e1-2345-f012-345678901235&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Encounter.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-encounter-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-encounter-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-encounter-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-encounter-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Encounter.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -1574,9 +1574,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Location.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;a7b8c9d0-e1f2-3456-a012-456789012346&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Location.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-location-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-location-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-location-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-location-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Location.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -1597,9 +1597,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Condition.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;b8c9d0e1-f2a3-4567-b023-567890123457&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Condition.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Condition.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -1678,9 +1678,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Condition.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;c9d0e1f2-a3b4-5678-c034-678901234568&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Condition.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Condition.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -1759,9 +1759,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Condition.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;d0e1f2a3-b4c5-6789-d045-789012345679&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Condition.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Condition.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -1840,9 +1840,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Condition.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;e1f2a3b4-c5d6-7890-e056-890123456780&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Condition.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Condition.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -1928,9 +1928,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#DocumentReference.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;11223344-5566-7788-99aa-bbccddeeff00&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#DocumentReference.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-document-reference-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-document-reference-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-document-reference-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-document-reference-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#DocumentReference.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -1965,9 +1965,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Condition.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;f2a3b4c5-d6e7-8901-f067-901234567891&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Condition.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Condition.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -2046,9 +2046,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Condition.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;a3b4c5d6-e7f8-9012-a078-012345678902&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Condition.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Condition.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -2130,9 +2130,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Condition.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;b4c5d6e7-f8a9-0123-b089-123456789013&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Condition.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Condition.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -2214,9 +2214,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Procedure.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;c5d6e7f8-a9b0-1234-c090-234567890124&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Procedure.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-procedure-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-procedure-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-procedure-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-procedure-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Procedure.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -2251,9 +2251,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#PractitionerRole.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;d6e7f8a9-b0c1-2345-d101-345678901235&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#PractitionerRole.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#PractitionerRole.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -2271,9 +2271,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Organization.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;e7f8a9b0-c1d2-3456-e112-456789012346&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Organization.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Organization.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -2291,9 +2291,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Practitioner.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;f8a9b0c1-d2e3-4567-f123-567890123457&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Practitioner.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Practitioner.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -2348,9 +2348,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Condition.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;a9b0c1d2-e3f4-5678-a134-678901234568&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Condition.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Condition.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -2396,9 +2396,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Procedure.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;b0c1d2e3-f4a5-6789-b145-789012345679&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Procedure.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-procedure-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-procedure-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-procedure-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-procedure-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Procedure.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -2462,9 +2462,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Procedure.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;c1d2e3f4-a5b6-7890-c156-890123456780&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Procedure.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-procedure-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-procedure-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-procedure-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-procedure-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Procedure.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -2498,9 +2498,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#AllergyIntolerance.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;d2e3f4a5-b6c7-8901-d167-901234567891&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#AllergyIntolerance.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-allergy-intolerance-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-allergy-intolerance-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-allergy-intolerance-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-allergy-intolerance-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#AllergyIntolerance.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -2597,9 +2597,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#AdverseEvent.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;e3f4a5b6-c7d8-9012-e178-012345678902&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#AdverseEvent.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-adverse-event-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-adverse-event-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-adverse-event-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-adverse-event-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#AdverseEvent.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -2677,9 +2677,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#MedicationAdministration.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;f4a5b6c7-d8e9-0123-f189-123456789013&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#MedicationAdministration.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#MedicationAdministration.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -2734,9 +2734,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Medication.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;a5b6c7d8-e9f0-1234-a190-234567890124&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Medication.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Medication.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -2794,9 +2794,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Condition.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;b6c7d8e9-f0a1-2345-b201-345678901235&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Condition.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Condition.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -2842,9 +2842,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#MedicationAdministration.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;c7d8e9f0-a1b2-3456-c212-456789012346&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#MedicationAdministration.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#MedicationAdministration.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -2915,9 +2915,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Medication.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;d8e9f0a1-b2c3-4567-d223-567890123457&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Medication.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Medication.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -2975,9 +2975,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#MedicationAdministration.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;e9f0a1b2-c3d4-5678-e234-678901234568&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#MedicationAdministration.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#MedicationAdministration.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -3042,9 +3042,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Medication.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;f0a1b2c3-d4e5-6789-f245-789012345679&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Medication.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Medication.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -3102,9 +3102,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#DeviceUseStatement.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;a1b2c3d4-e5f6-7891-a256-890123456780&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#DeviceUseStatement.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-device-use-statement-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-device-use-statement-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-device-use-statement-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-device-use-statement-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#DeviceUseStatement.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -3154,9 +3154,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#DeviceUseStatement.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;c3d4e5f6-a7b8-9013-c278-012345678902&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#DeviceUseStatement.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-device-use-statement-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-device-use-statement-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-device-use-statement-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-device-use-statement-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#DeviceUseStatement.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -3206,9 +3206,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;e5f6a7b8-c9d0-1235-e290-234567890124&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -3254,9 +3254,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;f6a7b8c9-d0e1-2346-f301-345678901235&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -3293,9 +3293,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;a7b8c9d0-e1f2-3457-a312-456789012346&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -3332,9 +3332,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;b8c9d0e1-f2a3-4568-b323-567890123457&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-assessment-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -3371,9 +3371,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;c9d0e1f2-a3b4-5679-c334-678901234568&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-vital-signs-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-vital-signs-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-vital-signs-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-vital-signs-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -3422,9 +3422,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;d0e1f2a3-b4c5-6780-d345-789012345679&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-vital-signs-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-vital-signs-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-vital-signs-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-vital-signs-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -3473,9 +3473,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;e1f2a3b4-c5d6-7891-e356-890123456780&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-social-history-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-social-history-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-social-history-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-social-history-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -3529,9 +3529,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;f2a3b4c5-d6e7-8902-f367-901234567891&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-social-history-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-social-history-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-social-history-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-social-history-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -3582,9 +3582,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;a3b4c5d6-e7f8-9013-a378-012345678902&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-social-history-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-social-history-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-social-history-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-social-history-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -3635,9 +3635,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;b4c5d6e7-f8a9-0124-b389-123456789013&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-social-history-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-social-history-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-social-history-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-social-history-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -3691,9 +3691,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#FamilyMemberHistory.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;c5d6e7f8-a9b0-1235-c390-234567890124&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#FamilyMemberHistory.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-family-member-history-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-family-member-history-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-family-member-history-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-family-member-history-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#FamilyMemberHistory.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -3748,9 +3748,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Immunization.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;d6e7f8a9-b0c1-2346-d401-345678901235&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Immunization.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-immunization-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-immunization-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-immunization-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-immunization-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Immunization.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -3832,9 +3832,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Immunization.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;e7f8a9b0-c1d2-3457-e412-456789012346&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Immunization.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-immunization-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-immunization-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-immunization-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-immunization-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Immunization.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -3917,9 +3917,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#PractitionerRole.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;f8a9b0c1-d2e3-4568-f423-567890123457&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#PractitionerRole.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#PractitionerRole.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -3937,9 +3937,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Organization.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;a9b0c1d2-e3f4-5679-a434-678901234568&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Organization.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Organization.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -3966,9 +3966,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Practitioner.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;b0c1d2e3-f4a5-6780-b445-789012345679&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Practitioner.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Practitioner.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -4023,9 +4023,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Condition.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;c1d2e3f4-a5b6-7891-c456-890123456780&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Condition.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Condition.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -4071,9 +4071,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#MedicationAdministration.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;d2e3f4a5-b6c7-8902-d467-901234567891&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#MedicationAdministration.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#MedicationAdministration.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -4104,9 +4104,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#MedicationAdministration.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;e3f4a5b6-c7d8-9013-e478-012345678902&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#MedicationAdministration.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#MedicationAdministration.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -4137,9 +4137,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Medication.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;f4a5b6c7-d8e9-0124-f489-123456789013&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Medication.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Medication.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -4185,9 +4185,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Medication.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;a5b6c7d8-e9f0-1235-a490-234567890124&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Medication.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Medication.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -4228,9 +4228,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#ServiceRequest.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;b6c7d8e9-f0a1-2346-b501-345678901235&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#ServiceRequest.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-service-request-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-service-request-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-service-request-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-service-request-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#ServiceRequest.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -4274,9 +4274,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#DiagnosticReport.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cc001111-2222-3333-4444-555566667777&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#DiagnosticReport.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-diagnostic-report-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-diagnostic-report-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-diagnostic-report-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-diagnostic-report-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#DiagnosticReport.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -4366,9 +4366,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;dd112222-3333-4444-5555-666677778888&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-result-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-result-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-result-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-result-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -4403,9 +4403,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#PractitionerRole.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;ee223333-4444-5555-6666-777788889999&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#PractitionerRole.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#PractitionerRole.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -4423,9 +4423,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Practitioner.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;ff334444-5555-6666-7777-888899990000&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Practitioner.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Practitioner.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -4484,9 +4484,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Organization.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;00445555-6666-7777-8888-999900001111&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Organization.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Organization.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -4527,9 +4527,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#DiagnosticReport.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;11556666-7777-8888-9999-000011112222&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#DiagnosticReport.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-diagnostic-report-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-diagnostic-report-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-diagnostic-report-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-diagnostic-report-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#DiagnosticReport.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -4619,9 +4619,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;22667777-8888-9999-aaaa-111122223333&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-result-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-result-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-result-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-observation-result-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Observation.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -4666,9 +4666,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#PractitionerRole.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;33778888-9999-aaaa-bbbb-222233334444&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#PractitionerRole.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitionerRole-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#PractitionerRole.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -4686,9 +4686,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Practitioner.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;44889999-aaaa-bbbb-cccc-333344445555&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Practitioner.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-practitioner-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Practitioner.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -4747,9 +4747,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Organization.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;5599aaaa-bbbb-cccc-dddd-444455556666&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Organization.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-organization-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Organization.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -4790,9 +4790,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#DocumentReference.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;66aa1111-cccc-dddd-eeee-555566667777&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#DocumentReference.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-document-reference-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-document-reference-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-document-reference-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-document-reference-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#DocumentReference.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -4826,9 +4826,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#DocumentReference.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;77bb2222-dddd-eeee-ffff-666677778888&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#DocumentReference.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-document-reference-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-document-reference-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-document-reference-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-document-reference-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#DocumentReference.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -4862,9 +4862,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Consent.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b1&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Consent.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Consent.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -4917,9 +4917,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Consent.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b2&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Consent.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Consent.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -4972,9 +4972,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Consent.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b3&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Consent.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Consent.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -5027,9 +5027,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Consent.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b4&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Consent.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Consent.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -5082,9 +5082,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Consent.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b5&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Consent.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Consent.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -5137,9 +5137,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Consent.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b6&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Consent.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Consent.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -5192,9 +5192,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Consent.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b7&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Consent.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Consent.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -5246,9 +5246,9 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Consent.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;d1d2d3d4-e1e2-f1f2-a1a2-b1b2b3b4b5b8&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Consent.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-advance-directive-document|0.1.0&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Consent.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -5361,8 +5361,8 @@
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Package ans.fhir.fr.fr-patient-summary#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-09-25 09:30:00 +0000">
-    2026-09-25
+  <span title="2026-09-28 09:51:00 +0000">
+    2026-09-28
   </span>
 
           <br/>

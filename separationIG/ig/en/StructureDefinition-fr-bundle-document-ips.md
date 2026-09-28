@@ -1,4 +1,4 @@
-# Bundle (IPS) - FR Patient Summary (FHIR) v0.1.0
+# Bundle (IPS) - Volet de Synthèse Médicale (International Patient Summary - FHIR) v0.1.0
 
 ## Resource Profile: Bundle (IPS) 
 
@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-bundle-documen
   "name" : "FRBundleDocumentIPS",
   "title" : "Bundle (IPS)",
   "status" : "draft",
-  "date" : "2026-09-25T09:30:48+00:00",
+  "date" : "2026-09-28T09:51:12+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

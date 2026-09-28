@@ -1,4 +1,4 @@
-# Téléchargements et usages - FR Patient Summary (FHIR) v0.1.0
+# Téléchargements et usages - Volet de Synthèse Médicale (International Patient Summary - FHIR) v0.1.0
 
 ## Téléchargements et usages
 

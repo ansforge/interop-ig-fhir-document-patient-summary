@@ -1,4 +1,4 @@
-# Mapping ML/CDA/FHIR - FR Patient Summary (FHIR) v0.1.0
+# Mapping ML/CDA/FHIR - Volet de Synthèse Médicale (International Patient Summary - FHIR) v0.1.0
 
 ## Mapping ML/CDA/FHIR
 
