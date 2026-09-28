@@ -106,12 +106,12 @@ menu:
     Documentation: new-tab https://interop.esante.gouv.fr/ig/documentation/
 
 groups:
-  Modèles logiques métier IPS:
+  modeles-logiques-metier-ips:
     name: Modèles logiques métier d'un document IPS
     resources:
       - StructureDefinition/fr-lm-patient-summary-document
 
-  Ressources FHIR IPS:
+  ressources-fhir-ips:
     name: Profils FHIR IPS
     resources:
       - StructureDefinition/fr-bundle-document-ips

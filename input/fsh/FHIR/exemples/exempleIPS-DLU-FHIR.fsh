@@ -165,6 +165,7 @@ Usage: #example
 Instance: Composition-IPS-FR-DLU
 InstanceOf: FRCompositionDocumentIPS
 Usage: #inline
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-composition-document-ips|0.1.0"
 * meta.lastUpdated = "2024-04-02T11:17:00+01:00"
 * id = "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
 * language = #fr-FR
@@ -190,8 +191,7 @@ Usage: #inline
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * encounter = Reference(urn:uuid:f6a7b8c9-d0e1-2345-f012-345678901235)
 * date = "2024-04-02T11:17:00+01:00"
-* author.extension.url = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-author-time"
-* author.extension.valueDateTime = "2024-04-02T11:17:00+01:00"
+* author.extension[time].valueDateTime = "2024-04-02T11:17:00+01:00"
 * author = Reference(urn:uuid:c3d4e5f6-a7b8-9012-cdef-012345678902) "DR Charles BOILEAU"
 * title = "SYNTHESE MEDICALE"
 * confidentiality = #N
@@ -276,6 +276,12 @@ Usage: #inline
 * section[sectionUncodedOccupationalRiskFactors].code = $LNC#10161-8 "Facteurs de risques professionnels"
 * section[sectionUncodedOccupationalRiskFactors].text.status = #generated
 * section[sectionUncodedOccupationalRiskFactors].text.div = "<div><p>(texte libre)</p></div>"
+* section[sectionDocumentReference].title = "Documents ajoutés"
+* section[sectionDocumentReference].code = $LNC#55107-7 "Documents ajoutés"
+* section[sectionDocumentReference].text.status = #generated
+* section[sectionDocumentReference].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Attestation de la carte vitale, attestation de mutuelle</p></div>"
+* section[sectionDocumentReference].entry[+] = Reference(urn:uuid:66aa1111-cccc-dddd-eeee-555566667777)
+* section[sectionDocumentReference].entry[+] = Reference(urn:uuid:77bb2222-dddd-eeee-ffff-666677778888)
 * section[sectionFamilyHistory].title = "Historique des pathologies familiales"
 * section[sectionFamilyHistory].code = $LNC#10157-6 "Historique des pathologies familiales"
 * section[sectionFamilyHistory].text.status = #generated
@@ -494,7 +500,7 @@ Usage: #inline
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:b8c9d0e1-f2a3-4567-b023-567890123457"
-* clinicalStatus = #active "Active"
+* clinicalStatus = $condition-clinical#active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmé"
 * category = $SCT#282291009 "interprétation diagnostique"
 * severity = $SCT#6736007 "gravité modérée"
@@ -511,7 +517,7 @@ Usage: #inline
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:c9d0e1f2-a3b4-5678-c034-678901234568"
-* clinicalStatus = #active "Active"
+* clinicalStatus = $condition-clinical#active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmé"
 * category = $SCT#282291009 "interprétation diagnostique"
 * severity = $SCT#6736007 "gravité modérée"
@@ -528,7 +534,7 @@ Usage: #inline
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:d0e1f2a3-b4c5-6789-d045-789012345679"
-* clinicalStatus = #active "Active"
+* clinicalStatus = $condition-clinical#active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmé"
 * category = $SCT#282291009 "interprétation diagnostique"
 * severity = $SCT#6736007 "gravité modérée"
@@ -545,7 +551,7 @@ Usage: #inline
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:e1f2a3b4-c5d6-7890-e056-890123456780"
-* clinicalStatus = #active "Active"
+* clinicalStatus = $condition-clinical#active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmé"
 * category = $SCT#282291009 "interprétation diagnostique"
 * severity = $SCT#6736007 "gravité modérée"
@@ -576,7 +582,7 @@ Usage: #inline
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:f2a3b4c5-d6e7-8901-f067-901234567891"
-* clinicalStatus = #recurrence "Recurrence"
+* clinicalStatus = $condition-clinical#recurrence "Recurrence"
 * verificationStatus = $condition-ver-status#unconfirmed "Non confirmé"
 * category = $SCT#418799008 "symptôme rapporté par le patient ou le répondant"
 * severity = $SCT#255604002 "léger"
@@ -594,7 +600,7 @@ Usage: #inline
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:a3b4c5d6-e7f8-9012-a078-012345678902"
-* clinicalStatus = #resolved "Resolved"
+* clinicalStatus = $condition-clinical#resolved "Resolved"
 * verificationStatus = $condition-ver-status#confirmed "Confirmé"
 * category = $SCT#282291009 "interprétation diagnostique"
 * severity = $SCT#6736007 "gravité modérée"
@@ -612,7 +618,7 @@ Usage: #inline
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:b4c5d6e7-f8a9-0123-b089-123456789013"
-* clinicalStatus = #resolved "Resolved"
+* clinicalStatus = $condition-clinical#resolved "Resolved"
 * verificationStatus = $condition-ver-status#confirmed "Confirmé"
 * category = $SCT#282291009 "interprétation diagnostique"
 * severity = $SCT#6736007 "gravité modérée"
@@ -680,7 +686,7 @@ Usage: #inline
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:a9b0c1d2-e3f4-5678-a134-678901234568"
-* clinicalStatus = #resolved "Résolu"
+* clinicalStatus = $condition-clinical#resolved "Résolu"
 * category = $SCT#282291009 "interprétation diagnostique"
 * code = $terminologie-cim-10#I21.1 "Infarctus transmural aigu du myocarde, de la paroi inférieure"
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
@@ -700,7 +706,7 @@ Usage: #inline
 * recorder.extension.extension[0].url = "actor"
 * recorder.extension.extension[=].valueReference = Reference(urn:uuid:d6e7f8a9-b0c1-2345-d101-345678901235)
 * recorder.extension.extension[+].url = "type"
-* recorder.extension.url = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"
+* recorder.extension.url = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-actor-extension"
 * reasonReference = Reference(urn:uuid:a9b0c1d2-e3f4-5678-a134-678901234568)
 * bodySite = $SCT#41801008 "artère coronaire"
 * note.text = "texte libre"
@@ -726,8 +732,8 @@ Usage: #inline
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-allergy-intolerance-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:d2e3f4a5-b6c7-8901-d167-901234567891"
-* clinicalStatus.coding.code = #active
-* verificationStatus.coding.code = #confirmed
+* clinicalStatus.coding = $allergyintolerance-clinical#active
+* verificationStatus.coding = $allergyintolerance-verification#confirmed
 * type = #allergy
 * category = #medication
 * criticality = #low
@@ -768,10 +774,9 @@ InstanceOf: FRMedicationAdministrationDocument
 Usage: #inline
 * id = "f4a5b6c7-d8e9-0123-f189-123456789013"
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"
-* extension.url = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-administration-frequency"
-* extension.valueTiming.repeat.frequency = 1
-* extension.valueTiming.repeat.period = 12
-* extension.valueTiming.repeat.periodUnit = #h
+* extension[occurenceR5].valueTiming.repeat.frequency = 1
+* extension[occurenceR5].valueTiming.repeat.period = 12
+* extension[occurenceR5].valueTiming.repeat.periodUnit = #h
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:f4a5b6c7-d8e9-0123-f189-123456789013"
 * status = #completed
@@ -803,7 +808,7 @@ Usage: #inline
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:b6c7d8e9-f0a1-2345-b201-345678901235"
-* clinicalStatus = #resolved "Résolu"
+* clinicalStatus = $condition-clinical#resolved "Résolu"
 * category = $SCT#418799008 "symptôme rapporté par le patient ou le répondant"
 * code = $terminologie-cim-10#MD90.0 "Nausée"
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
@@ -815,9 +820,8 @@ InstanceOf: FRMedicationAdministrationDocument
 Usage: #inline
 * id = "c7d8e9f0-a1b2-3456-c212-456789012346"
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"
-* extension.url = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-administration-frequency"
-* extension.valueTiming.repeat.frequency = 1
-* extension.valueTiming.repeat.periodUnit = #d
+* extension[occurenceR5].valueTiming.repeat.frequency = 1
+* extension[occurenceR5].valueTiming.repeat.periodUnit = #d
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:c7d8e9f0-a1b2-3456-c212-456789012346"
 * status = #completed
@@ -851,10 +855,9 @@ InstanceOf: FRMedicationAdministrationDocument
 Usage: #inline
 * id = "e9f0a1b2-c3d4-5678-e234-678901234568"
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"
-* extension.url = "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-administration-frequency"
-* extension.valueTiming.repeat.frequency = 4
-* extension.valueTiming.repeat.period = 6
-* extension.valueTiming.repeat.periodUnit = #h
+* extension[occurenceR5].valueTiming.repeat.frequency = 4
+* extension[occurenceR5].valueTiming.repeat.period = 6
+* extension[occurenceR5].valueTiming.repeat.periodUnit = #h
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:e9f0a1b2-c3d4-5678-e234-678901234568"
 * status = #completed
@@ -1093,7 +1096,7 @@ Usage: #inline
 * performer.actor = Reference(urn:uuid:f8a9b0c1-d2e3-4568-f423-567890123457)
 * note.text = "Prise récente et ponctuelle de solupred (60mg) en une prise pendant 2 jours"
 * reasonReference = Reference(urn:uuid:c1d2e3f4-a5b6-7891-c456-890123456780)
-* protocolApplied.series = "1"
+* protocolApplied.series = "INITIMMUNIZ"
 * protocolApplied.doseNumberPositiveInt = 2
 
 Instance: Immunizations-DLU-2
@@ -1116,7 +1119,7 @@ Usage: #inline
 * vaccineCode = $SCT#764708002 "Vaccine product containing diphtheria, tetanus and inactivated poliovirus antigens"
 * note.text = "texte libre"
 * reasonReference = Reference(urn:uuid:c1d2e3f4-a5b6-7891-c456-890123456780)
-* protocolApplied.series = "1"
+* protocolApplied.series = "INITIMMUNIZ"
 * protocolApplied.doseNumberPositiveInt = 1
 
 //***************Practitioner Role 3 : Dr MULLER (vaccinateur)*********************//
@@ -1165,7 +1168,7 @@ Usage: #inline
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-condition-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:c1d2e3f4-a5b6-7891-c456-890123456780"
-* clinicalStatus = #active "Actif"
+* clinicalStatus = $condition-clinical#active "Active"
 * category = $SCT#418799008 "symptôme rapporté par le patient ou le répondant"
 * code = $terminologie-cim-10#R50.2 "Fièvre due à des médicaments"
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
@@ -1254,7 +1257,6 @@ Usage: #inline
 * presentedForm.data = "VGhpcyByZXN1bHQgaXMgaW4gc3RydWN0dXJlZCBvYnNlcnZhdGlvbnMu"
 * performer.extension[performerFunction].valueCodeableConcept.coding.code = #PPRF
 * performer = Reference(urn:uuid:ee223333-4444-5555-6666-777788889999) "Dr Marcel CAMPARINI"
-* resultsInterpreter.extension[performerFunction].valueCodeableConcept.coding.code = #AUT
 * resultsInterpreter = Reference(urn:uuid:ee223333-4444-5555-6666-777788889999) "Dr Marcel CAMPARINI"
 * result = Reference(urn:uuid:dd112222-3333-4444-5555-666677778888)
 
@@ -1333,7 +1335,6 @@ Usage: #inline
 * presentedForm.data = "SW1hZ2luZyByZXN1bHQgc3VtbWFyeSBpcyByZWNvcmRlZCBpbiBvYnNlcnZhdGlvbi4="
 * performer.extension[performerFunction].valueCodeableConcept.coding.code = #PPRF
 * performer = Reference(urn:uuid:33778888-9999-aaaa-bbbb-222233334444) "Dr Jacques BIDEAULT"
-* resultsInterpreter.extension[performerFunction].valueCodeableConcept.coding.code = #AUT
 * resultsInterpreter = Reference(urn:uuid:33778888-9999-aaaa-bbbb-222233334444) "Dr Jacques BIDEAULT"
 * result = Reference(urn:uuid:22667777-8888-9999-aaaa-111122223333)
 
@@ -1435,6 +1436,7 @@ Usage: #inline
 * status = #active
 * category = $LNC#42348-3 "Directives anticipées"
 * patient = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
+* policyRule.text = "Directive anticipée exprimée par le patient"
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
@@ -1452,6 +1454,7 @@ Usage: #inline
 * status = #active
 * category = $LNC#42348-3 "Directives anticipées"
 * patient = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
+* policyRule.text = "Directive anticipée exprimée par le patient"
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
@@ -1469,6 +1472,7 @@ Usage: #inline
 * status = #active
 * category = $LNC#42348-3 "Directives anticipées"
 * patient = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
+* policyRule.text = "Directive anticipée exprimée par le patient"
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
@@ -1486,6 +1490,7 @@ Usage: #inline
 * status = #active
 * category = $LNC#42348-3 "Directives anticipées"
 * patient = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
+* policyRule.text = "Directive anticipée exprimée par le patient"
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
@@ -1503,6 +1508,7 @@ Usage: #inline
 * status = #active
 * category = $LNC#42348-3 "Directives anticipées"
 * patient = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
+* policyRule.text = "Directive anticipée exprimée par le patient"
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
@@ -1520,6 +1526,7 @@ Usage: #inline
 * status = #active
 * category = $LNC#42348-3 "Directives anticipées"
 * patient = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
+* policyRule.text = "Directive anticipée exprimée par le patient"
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
@@ -1537,6 +1544,7 @@ Usage: #inline
 * status = #active
 * category = $LNC#42348-3 "Directives anticipées"
 * patient = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
+* policyRule.text = "Directive anticipée exprimée par le patient"
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
@@ -1554,6 +1562,7 @@ Usage: #inline
 * status = #active
 * category = $LNC#42348-3 "Directives anticipées"
 * patient = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
+* policyRule.text = "Directive anticipée exprimée par le patient"
 * dateTime = "2024-04-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr

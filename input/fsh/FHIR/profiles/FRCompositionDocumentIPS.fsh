@@ -86,7 +86,8 @@ Description: "Profil Composition du document IPS-FR, derive de FRCompositionDocu
     sectionPlanOfCare 0..1 and
     sectionSocialHistory 0..1 and
     sectionVitalSigns 0..1 and
-    sectionUncodedOccupationalRiskFactors 0..1
+    sectionUncodedOccupationalRiskFactors 0..1 and
+    sectionDocumentReference 0..1
 
 // Section Problèmes (Problèmes actifs + antécédents médicaux)
 * section[sectionProblems]
@@ -199,6 +200,12 @@ Description: "Profil Composition du document IPS-FR, derive de FRCompositionDocu
 // Section Facteurs de risque professionnels non codés
 * section[sectionUncodedOccupationalRiskFactors]
   * insert IPSSectionNoEntry(Section Facteurs de risque professionnels non codés, http://loinc.org#10161-8)
+
+// Section Documents ajoutés
+* section[sectionDocumentReference]
+  * insert IPSSection(Section Documents ajoutés, http://loinc.org#55107-7)
+  * insert IPSSectionEntryReglesEnCommun
+  * insert IPSSectionEntrySlice(documentReference, FRDocumentReferenceDocument, 0, *, Entrée Document ajouté)
 
 Invariant: ips-section-not-empty
 Description: "Une section obligatoire doit contenir au moins une entrée ou préciser un motif d'absence (emptyReason)."
