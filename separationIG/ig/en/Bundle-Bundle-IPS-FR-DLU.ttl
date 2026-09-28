@@ -498,7 +498,7 @@
      ] ;
      fhir:Composition.section.text [
        fhir:Narrative.status [ fhir:value "generated" ] ;
-       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Problème</th><th>Sévérité</th><th>Statut du problème</th><th>Statut clinique du patient</th><th>Certitude</th><th>Commentaire</th><th>Document référencé</th></tr></thead><tbody><tr><td>11/01/2024</td><td>interprétation diagnostique</td><td>Thyroïdite auto-immune (CIM-10 : E06.3)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>05/07/2023</td><td>interprétation diagnostique</td><td>Diabète insulino-dépendant (CISP2 : T89)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>21/05/2023</td><td>interprétation diagnostique</td><td>Epilepsie (DRC : 114)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>11/02/2022</td><td>interprétation diagnostique</td><td>Angiœdème bradykinique (OrphaCode : 658)</td><td>léger à modéré</td><td>Actif</td><td>asymptomatique</td><td>Confirmé</td><td>(texte libre)</td><td><a href=\"https://www.orpha.net/pdfs/data/patho/Emg/Int/fr/AngioedemeBradykinique_FR_fr_EMG_ORPHA658.pdf\">Fiche Orphanet Urgences - Angiœdème bradykinique</a></td></tr><tr><td>11/02/2022</td><td>symptôme rapporté par le patient ou le répondant</td><td>Autre problème (texte libre)</td><td>léger</td><td>Récurrent</td><td>fonction corporelle générale : normale</td><td>Non confirmé</td><td>(texte libre)</td><td/></tr></tbody></table></div>"
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Problème</th><th>Sévérité</th><th>Statut du problème</th><th>Statut clinique du patient</th><th>Certitude</th><th>Commentaire</th><th>Document référencé</th></tr></thead><tbody><tr><td>11/01/2024</td><td>interprétation diagnostique</td><td>Thyroïdite auto-immune (CIM-10 : E06.3)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>05/07/2023</td><td>interprétation diagnostique</td><td>Diabète insulino-dépendant (CISP2 : T89)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>21/05/2023</td><td>interprétation diagnostique</td><td>Epilepsie (DRC : 114)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>11/02/2022</td><td>interprétation diagnostique</td><td>Angiœdème bradykinique (OrphaCode : 658)</td><td>gravité modérée</td><td>Actif</td><td>asymptomatique</td><td>Confirmé</td><td>(texte libre)</td><td><a href=\"https://www.orpha.net/pdfs/data/patho/Emg/Int/fr/AngioedemeBradykinique_FR_fr_EMG_ORPHA658.pdf\">Fiche Orphanet Urgences - Angiœdème bradykinique</a></td></tr><tr><td>11/02/2022</td><td>symptôme rapporté par le patient ou le répondant</td><td>Autre problème (texte libre)</td><td>léger</td><td>Récurrent</td><td>fonction corporelle générale : normale</td><td>Non confirmé</td><td>(texte libre)</td><td/></tr></tbody></table></div>"
      ] ;
      fhir:Composition.section.entry [
        fhir:index -1 ;
@@ -1310,7 +1310,7 @@
      fhir:CodeableConcept.coding [
        fhir:index -1 ;
        fhir:Coding.code [ fhir:value "active" ] ;
-       fhir:Coding.display [ fhir:value "Actif" ]
+       fhir:Coding.display [ fhir:value "Active" ]
      ]
   ] ;
   fhir:Condition.verificationStatus [
@@ -1391,7 +1391,7 @@
      fhir:CodeableConcept.coding [
        fhir:index -1 ;
        fhir:Coding.code [ fhir:value "active" ] ;
-       fhir:Coding.display [ fhir:value "Actif" ]
+       fhir:Coding.display [ fhir:value "Active" ]
      ]
   ] ;
   fhir:Condition.verificationStatus [
@@ -1472,7 +1472,7 @@
      fhir:CodeableConcept.coding [
        fhir:index -1 ;
        fhir:Coding.code [ fhir:value "active" ] ;
-       fhir:Coding.display [ fhir:value "Actif" ]
+       fhir:Coding.display [ fhir:value "Active" ]
      ]
   ] ;
   fhir:Condition.verificationStatus [
@@ -1553,7 +1553,7 @@
      fhir:CodeableConcept.coding [
        fhir:index -1 ;
        fhir:Coding.code [ fhir:value "active" ] ;
-       fhir:Coding.display [ fhir:value "Actif" ]
+       fhir:Coding.display [ fhir:value "Active" ]
      ]
   ] ;
   fhir:Condition.verificationStatus [
@@ -1577,10 +1577,10 @@
   fhir:Condition.severity [
      fhir:CodeableConcept.coding [
        fhir:index -1 ;
-       a sct:371923003 ;
+       a sct:6736007 ;
        fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
-       fhir:Coding.code [ fhir:value "371923003" ] ;
-       fhir:Coding.display [ fhir:value "gravité léger à modéré" ]
+       fhir:Coding.code [ fhir:value "6736007" ] ;
+       fhir:Coding.display [ fhir:value "gravité modérée" ]
      ]
   ] ;
   fhir:Condition.code [
@@ -1678,7 +1678,7 @@
      fhir:CodeableConcept.coding [
        fhir:index -1 ;
        fhir:Coding.code [ fhir:value "recurrence" ] ;
-       fhir:Coding.display [ fhir:value "Récurrent" ]
+       fhir:Coding.display [ fhir:value "Recurrence" ]
      ]
   ] ;
   fhir:Condition.verificationStatus [
@@ -1759,7 +1759,7 @@
      fhir:CodeableConcept.coding [
        fhir:index -1 ;
        fhir:Coding.code [ fhir:value "resolved" ] ;
-       fhir:Coding.display [ fhir:value "Résolu" ]
+       fhir:Coding.display [ fhir:value "Resolved" ]
      ]
   ] ;
   fhir:Condition.verificationStatus [
@@ -1843,7 +1843,7 @@
      fhir:CodeableConcept.coding [
        fhir:index -1 ;
        fhir:Coding.code [ fhir:value "resolved" ] ;
-       fhir:Coding.display [ fhir:value "Résolu" ]
+       fhir:Coding.display [ fhir:value "Resolved" ]
      ]
   ] ;
   fhir:Condition.verificationStatus [
@@ -2325,19 +2325,13 @@
      fhir:index -1 ;
      fhir:Reference.reference [ fhir:value "urn:uuid:b6c7d8e9-f0a1-2345-b201-345678901235" ]
   ] ;
-  fhir:AdverseEvent.seriousness [
+  fhir:AdverseEvent.severity [
      fhir:CodeableConcept.coding [
        fhir:index -1 ;
        a sct:255604002 ;
        fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
        fhir:Coding.code [ fhir:value "255604002" ] ;
        fhir:Coding.display [ fhir:value "gravité légère" ]
-     ]
-  ] ;
-  fhir:AdverseEvent.severity [
-     fhir:CodeableConcept.coding [
-       fhir:index -1 ;
-       fhir:Coding.code [ fhir:value "mild" ]
      ]
   ] ;
   fhir:AdverseEvent.outcome [

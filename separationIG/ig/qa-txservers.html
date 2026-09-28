@@ -12,7 +12,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for FRPatientSummary</h1>
- <p>Generated Mon Sep 28 15:11:47 UTC 2026, FHIR version 4.0.1 for ans.fhir.fr.fr-patient-summary#0.1.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary">https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/history.html">history</a>))</p>
+ <p>Generated Mon Sep 28 15:38:45 UTC 2026, FHIR version 4.0.1 for ans.fhir.fr.fr-patient-summary#0.1.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary">https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -148,6 +148,13 @@
   <tr>
     <td>Found authoritative server https://smt.esante.gouv.fr/fhir</td>
     <td>https://smt.esante.gouv.fr/fhir</td>
+    <td>https://smt.esante.gouv.fr/fhir/ValueSet/jdv-gravite-cisis|20260619134042</td>
+    <td>[https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis, http://snomed.info/sct]</td>
+    <td>[[https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis in fr-FR]: authoritative = https://smt.esante.gouv.fr/fhir, candidates=, [http://snomed.info/sct|http://snomed.info/sct/11000315107 in fr-FR]: authoritative = https://smt.esante.gouv.fr/fhir, candidates=]</td>
+  </tr>
+  <tr>
+    <td>Found authoritative server https://smt.esante.gouv.fr/fhir</td>
+    <td>https://smt.esante.gouv.fr/fhir</td>
     <td>https://smt.esante.gouv.fr/fhir/ValueSet/jdv-evolution-cisis|20260619134042</td>
     <td>[https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis, http://snomed.info/sct]</td>
     <td>[[https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis in fr-FR]: authoritative = https://smt.esante.gouv.fr/fhir, candidates=, [http://snomed.info/sct|http://snomed.info/sct/11000315107 in fr-FR]: authoritative = https://smt.esante.gouv.fr/fhir, candidates=]</td>
@@ -193,6 +200,13 @@
     <td>null</td>
     <td>https://smt.esante.gouv.fr/terminologie-emdn</td>
     <td>[https://smt.esante.gouv.fr/terminologie-emdn]: authoritative = https://smt.esante.gouv.fr/fhir, candidates=</td>
+  </tr>
+  <tr>
+    <td>Found authoritative server https://smt.esante.gouv.fr/fhir</td>
+    <td>https://smt.esante.gouv.fr/fhir</td>
+    <td>http://hl7.org/fhir/ValueSet/adverse-event-severity|4.0.1</td>
+    <td>http://snomed.info/sct</td>
+    <td>[http://snomed.info/sct|http://snomed.info/sct/11000315107 in fr-FR]: authoritative = https://smt.esante.gouv.fr/fhir, candidates=</td>
   </tr>
   <tr>
     <td>Candidate server(s) https://tx-nordics.fhir.org/fhir/r4 dropped for http://hl7.org/fhir/sid/icf-nl: no usable copy of the code system found there</td>
@@ -315,7 +329,7 @@
 </table>
 <h2>Server: https://smt.esante.gouv.fr/fhir</h2>
 <a href="https://smt.esante.gouv.fr/fhir"></a>
-<p>Use Count: 2. Code Systems used: </p>
+<p>Use Count: 4. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -334,7 +348,7 @@
   <tr>
     <td>http://snomed.info/sct</td>
     <td>0</td>
-    <td>3</td>
+    <td>5</td>
     <td>
       <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED CT (all versions)</a>
     </td>
@@ -350,7 +364,7 @@
   <tr>
     <td>https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis</td>
     <td>0</td>
-    <td>2</td>
+    <td>3</td>
     <td>
       <a href="https://interop.esante.gouv.fr/terminologies/1.13.0/CodeSystem-terminologie-cisis.html">TerminologieCISIS - Terminologie des concepts non trouvés dans les autres terminologies</a>
     </td>

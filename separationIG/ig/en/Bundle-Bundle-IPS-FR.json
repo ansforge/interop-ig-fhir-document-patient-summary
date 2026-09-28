@@ -157,7 +157,7 @@
         },
         "text" : {
           "status" : "generated",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Problème</th><th>Sévérité</th><th>Statut du problème</th><th>Statut clinique du patient</th><th>Certitude</th><th>Commentaire</th><th>Document référencé</th></tr></thead><tbody><tr><td>11/01/2024</td><td>interprétation diagnostique</td><td>Thyroïdite auto-immune (CIM-10 : E06.3)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>05/07/2023</td><td>interprétation diagnostique</td><td>Diabète insulino-dépendant (CISP2 : T89)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>21/05/2023</td><td>interprétation diagnostique</td><td>Epilepsie (DRC : 114)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>11/02/2022</td><td>interprétation diagnostique</td><td>Angiœdème bradykinique (OrphaCode : 658)</td><td>léger à modéré</td><td>Actif</td><td>asymptomatique</td><td>Confirmé</td><td>(texte libre)</td><td><a href=\"https://www.orpha.net/pdfs/data/patho/Emg/Int/fr/AngioedemeBradykinique_FR_fr_EMG_ORPHA658.pdf\">Fiche Orphanet Urgences - Angiœdème bradykinique</a></td></tr><tr><td>11/02/2022</td><td>symptôme rapporté par le patient ou le répondant</td><td>Autre problème (texte libre)</td><td>léger</td><td>Récurrent</td><td>fonction corporelle générale : normale</td><td>Non confirmé</td><td>(texte libre)</td><td/></tr></tbody></table></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Problème</th><th>Sévérité</th><th>Statut du problème</th><th>Statut clinique du patient</th><th>Certitude</th><th>Commentaire</th><th>Document référencé</th></tr></thead><tbody><tr><td>11/01/2024</td><td>interprétation diagnostique</td><td>Thyroïdite auto-immune (CIM-10 : E06.3)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>05/07/2023</td><td>interprétation diagnostique</td><td>Diabète insulino-dépendant (CISP2 : T89)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>21/05/2023</td><td>interprétation diagnostique</td><td>Epilepsie (DRC : 114)</td><td>modéré</td><td>Actif</td><td>fonction corporelle générale : normale</td><td>Confirmé</td><td>(texte libre)</td><td/></tr><tr><td>11/02/2022</td><td>interprétation diagnostique</td><td>Angiœdème bradykinique (OrphaCode : 658)</td><td>gravité modérée</td><td>Actif</td><td>asymptomatique</td><td>Confirmé</td><td>(texte libre)</td><td><a href=\"https://www.orpha.net/pdfs/data/patho/Emg/Int/fr/AngioedemeBradykinique_FR_fr_EMG_ORPHA658.pdf\">Fiche Orphanet Urgences - Angiœdème bradykinique</a></td></tr><tr><td>11/02/2022</td><td>symptôme rapporté par le patient ou le répondant</td><td>Autre problème (texte libre)</td><td>léger</td><td>Récurrent</td><td>fonction corporelle générale : normale</td><td>Non confirmé</td><td>(texte libre)</td><td/></tr></tbody></table></div>"
         },
         "entry" : [{
           "reference" : "urn:uuid:257427f5-dffa-4a97-9475-4ebb988589af"
@@ -874,7 +874,7 @@
       "clinicalStatus" : {
         "coding" : [{
           "code" : "active",
-          "display" : "Actif"
+          "display" : "Active"
         }]
       },
       "verificationStatus" : {
@@ -942,7 +942,7 @@
       "clinicalStatus" : {
         "coding" : [{
           "code" : "active",
-          "display" : "Actif"
+          "display" : "Active"
         }]
       },
       "verificationStatus" : {
@@ -1010,7 +1010,7 @@
       "clinicalStatus" : {
         "coding" : [{
           "code" : "active",
-          "display" : "Actif"
+          "display" : "Active"
         }]
       },
       "verificationStatus" : {
@@ -1078,7 +1078,7 @@
       "clinicalStatus" : {
         "coding" : [{
           "code" : "active",
-          "display" : "Actif"
+          "display" : "Active"
         }]
       },
       "verificationStatus" : {
@@ -1098,8 +1098,8 @@
       "severity" : {
         "coding" : [{
           "system" : "http://snomed.info/sct",
-          "code" : "371923003",
-          "display" : "gravité léger à modéré"
+          "code" : "6736007",
+          "display" : "gravité modérée"
         }]
       },
       "code" : {
@@ -1184,7 +1184,7 @@
       "clinicalStatus" : {
         "coding" : [{
           "code" : "recurrence",
-          "display" : "Récurrent"
+          "display" : "Recurrence"
         }]
       },
       "verificationStatus" : {
@@ -1252,7 +1252,7 @@
       "clinicalStatus" : {
         "coding" : [{
           "code" : "resolved",
-          "display" : "Résolu"
+          "display" : "Resolved"
         }]
       },
       "verificationStatus" : {
@@ -1320,7 +1320,7 @@
       "clinicalStatus" : {
         "coding" : [{
           "code" : "resolved",
-          "display" : "Résolu"
+          "display" : "Resolved"
         }]
       },
       "verificationStatus" : {
@@ -1763,16 +1763,11 @@
       "resultingCondition" : [{
         "reference" : "urn:uuid:a4e1cafa-05e4-40c7-82dc-641f54281671"
       }],
-      "seriousness" : {
+      "severity" : {
         "coding" : [{
           "system" : "http://snomed.info/sct",
           "code" : "255604002",
           "display" : "gravité légère"
-        }]
-      },
-      "severity" : {
-        "coding" : [{
-          "code" : "mild"
         }]
       },
       "outcome" : {
