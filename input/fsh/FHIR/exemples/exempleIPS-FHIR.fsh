@@ -507,7 +507,7 @@ InstanceOf: FRLocationDocument
 Usage: #inline
 * id = "648170b7-1538-44a7-8820-df04dcc32fad"
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-location-document|0.1.0"
-* type = $JDV_J02-XdsHealthcareFacilityTypeCode-CISIS#SA04 "Etablissement privé non PSPH"
+* type.coding[secteurActivite] = $JDV_J02-XdsHealthcareFacilityTypeCode-CISIS#SA04 "Etablissement privé non PSPH"
 
 Instance: Condition-Exemple-1
 InstanceOf: FRConditionDocument
@@ -1290,7 +1290,7 @@ Usage: #inline
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
-* scope.coding.display = "Advance Directive"
+* scope.coding.display = "Advanced Care Directive"
 * provision.type = #deny
 * provision.code = $LNC#75789-8 "Maintien artificiel en vie"
 
@@ -1308,7 +1308,7 @@ Usage: #inline
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
-* scope.coding.display = "Advance Directive"
+* scope.coding.display = "Advanced Care Directive"
 * provision.type = #deny
 * provision.code = $LNC#75787-2 "Assistance respiratoire"
 
@@ -1326,7 +1326,7 @@ Usage: #inline
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
-* scope.coding.display = "Advance Directive"
+* scope.coding.display = "Advanced Care Directive"
 * provision.type = #deny
 * provision.code = $LNC#77352-3 "Alimentation et hydratation artificielles"
 
@@ -1344,7 +1344,7 @@ Usage: #inline
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
-* scope.coding.display = "Advance Directive"
+* scope.coding.display = "Advanced Care Directive"
 * provision.type = #permit
 * provision.code = $SCT#265764009 "Dialyse rénale"
 
@@ -1362,7 +1362,7 @@ Usage: #inline
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
-* scope.coding.display = "Advance Directive"
+* scope.coding.display = "Advanced Care Directive"
 * provision.type = #deny
 * provision.code = $LNC#75779-9 "Réanimation cardiaque et respiratoire"
 
@@ -1380,7 +1380,7 @@ Usage: #inline
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
-* scope.coding.display = "Advance Directive"
+* scope.coding.display = "Advanced Care Directive"
 * provision.type = #permit
 * provision.code = $SCT#387713003 "Intervention chirurgicale"
 
@@ -1398,7 +1398,7 @@ Usage: #inline
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
-* scope.coding.display = "Advance Directive"
+* scope.coding.display = "Advanced Care Directive"
 * provision.type = #permit
 * provision.code = $terminologie-cisis#MED-298 "Sédation profonde et continue associée à un traitement de la douleur"
 
@@ -1416,7 +1416,7 @@ Usage: #inline
 * dateTime = "2024-04-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
-* scope.coding.display = "Advance Directive"
+* scope.coding.display = "Advanced Care Directive"
 * provision.code = $LNC#42348-3 "Directives anticipées"
 * sourceAttachment.contentType = #application/pdf
 * sourceAttachment.data = "JVBERi0="

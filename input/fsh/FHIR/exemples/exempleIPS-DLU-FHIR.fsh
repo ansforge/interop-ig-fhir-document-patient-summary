@@ -465,6 +465,7 @@ Usage: #inline
 * identifier.system = "urn:oid:1.2.250.1.71.4.2.2"
 * identifier.value = "1750803447"
 * type = $JDV_J02-XdsHealthcareFacilityTypeCode-CISIS#SA17 "Etablissement pour personnes âgées"
+* type.extension[as-ext-organization-types].valueCode = #secteurActiviteRASS
 * name = "EHPAD DE BOULOGNE-BILLANCOURT"
 * address.line = "142 Rue du Belvédère"
 * address.city = "BOULOGNE-BILLANCOURT"
@@ -490,7 +491,7 @@ InstanceOf: FRLocationDocument
 Usage: #inline
 * id = "a7b8c9d0-e1f2-3456-a012-456789012346"
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-location-document|0.1.0"
-* type = $JDV_J02-XdsHealthcareFacilityTypeCode-CISIS#SA17 "Etablissement pour personnes âgées"
+* type.coding[secteurActivite] = $JDV_J02-XdsHealthcareFacilityTypeCode-CISIS#SA17 "Etablissement pour personnes âgées"
 
 //***************Conditions - Problèmes actifs*********************//
 Instance: Condition-DLU-1
@@ -1440,7 +1441,7 @@ Usage: #inline
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
-* scope.coding.display = "Advance Directive"
+* scope.coding.display = "Advanced Care Directive"
 * provision.type = #deny
 * provision.code = $LNC#75789-8 "Maintien artificiel en vie"
 
@@ -1458,7 +1459,7 @@ Usage: #inline
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
-* scope.coding.display = "Advance Directive"
+* scope.coding.display = "Advanced Care Directive"
 * provision.type = #deny
 * provision.code = $LNC#75787-2 "Assistance respiratoire"
 
@@ -1476,7 +1477,7 @@ Usage: #inline
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
-* scope.coding.display = "Advance Directive"
+* scope.coding.display = "Advanced Care Directive"
 * provision.type = #deny
 * provision.code = $LNC#77352-3 "Alimentation et hydratation artificielles"
 
@@ -1494,7 +1495,7 @@ Usage: #inline
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
-* scope.coding.display = "Advance Directive"
+* scope.coding.display = "Advanced Care Directive"
 * provision.type = #permit
 * provision.code = $SCT#265764009 "Dialyse rénale"
 
@@ -1512,7 +1513,7 @@ Usage: #inline
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
-* scope.coding.display = "Advance Directive"
+* scope.coding.display = "Advanced Care Directive"
 * provision.type = #deny
 * provision.code = $LNC#75779-9 "Réanimation cardiaque et respiratoire"
 
@@ -1530,7 +1531,7 @@ Usage: #inline
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
-* scope.coding.display = "Advance Directive"
+* scope.coding.display = "Advanced Care Directive"
 * provision.type = #permit
 * provision.code = $SCT#387713003 "Intervention chirurgicale"
 
@@ -1548,7 +1549,7 @@ Usage: #inline
 * dateTime = "2018-01-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
-* scope.coding.display = "Advance Directive"
+* scope.coding.display = "Advanced Care Directive"
 * provision.type = #permit
 * provision.code = $terminologie-cisis#MED-298 "Sédation profonde et continue associée à un traitement de la douleur"
 
@@ -1566,7 +1567,7 @@ Usage: #inline
 * dateTime = "2024-04-01"
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
 * scope.coding.code = #adr
-* scope.coding.display = "Advance Directive"
+* scope.coding.display = "Advanced Care Directive"
 * provision.code = $LNC#42348-3 "Directives anticipées"
 * sourceAttachment.contentType = #application/pdf
 * sourceAttachment.data = "JVBERi0="
