@@ -1288,9 +1288,6 @@ Usage: #inline
 * patient = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * policyRule.text = "Directive anticipée exprimée par le patient"
 * dateTime = "2018-01-01"
-* scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
-* scope.coding.code = #adr
-* scope.coding.display = "Advanced Care Directive"
 * provision.type = #deny
 * provision.code = $LNC#75789-8 "Maintien artificiel en vie"
 
@@ -1306,9 +1303,6 @@ Usage: #inline
 * patient = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * policyRule.text = "Directive anticipée exprimée par le patient"
 * dateTime = "2018-01-01"
-* scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
-* scope.coding.code = #adr
-* scope.coding.display = "Advanced Care Directive"
 * provision.type = #deny
 * provision.code = $LNC#75787-2 "Assistance respiratoire"
 
@@ -1324,9 +1318,6 @@ Usage: #inline
 * patient = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * policyRule.text = "Directive anticipée exprimée par le patient"
 * dateTime = "2018-01-01"
-* scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
-* scope.coding.code = #adr
-* scope.coding.display = "Advanced Care Directive"
 * provision.type = #deny
 * provision.code = $LNC#77352-3 "Alimentation et hydratation artificielles"
 
@@ -1342,9 +1333,6 @@ Usage: #inline
 * patient = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * policyRule.text = "Directive anticipée exprimée par le patient"
 * dateTime = "2018-01-01"
-* scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
-* scope.coding.code = #adr
-* scope.coding.display = "Advanced Care Directive"
 * provision.type = #permit
 * provision.code = $SCT#265764009 "Dialyse rénale"
 
@@ -1360,9 +1348,6 @@ Usage: #inline
 * patient = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * policyRule.text = "Directive anticipée exprimée par le patient"
 * dateTime = "2018-01-01"
-* scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
-* scope.coding.code = #adr
-* scope.coding.display = "Advanced Care Directive"
 * provision.type = #deny
 * provision.code = $LNC#75779-9 "Réanimation cardiaque et respiratoire"
 
@@ -1378,9 +1363,6 @@ Usage: #inline
 * patient = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * policyRule.text = "Directive anticipée exprimée par le patient"
 * dateTime = "2018-01-01"
-* scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
-* scope.coding.code = #adr
-* scope.coding.display = "Advanced Care Directive"
 * provision.type = #permit
 * provision.code = $SCT#387713003 "Intervention chirurgicale"
 
@@ -1396,9 +1378,6 @@ Usage: #inline
 * patient = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * policyRule.text = "Directive anticipée exprimée par le patient"
 * dateTime = "2018-01-01"
-* scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
-* scope.coding.code = #adr
-* scope.coding.display = "Advanced Care Directive"
 * provision.type = #permit
 * provision.code = $terminologie-cisis#MED-298 "Sédation profonde et continue associée à un traitement de la douleur"
 
@@ -1414,9 +1393,6 @@ Usage: #inline
 * patient = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * policyRule.text = "Directive anticipée exprimée par le patient"
 * dateTime = "2024-04-01"
-* scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope"
-* scope.coding.code = #adr
-* scope.coding.display = "Advanced Care Directive"
 * provision.code = $LNC#42348-3 "Directives anticipées"
 * sourceAttachment.contentType = #application/pdf
 * sourceAttachment.data = "JVBERi0="
