@@ -772,6 +772,10 @@
         "value" : "1750803447"
       }],
       "type" : [{
+        "extension" : [{
+          "url" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-types",
+          "valueCode" : "secteurActiviteRASS"
+        }],
         "coding" : [{
           "system" : "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite",
           "code" : "SA17",

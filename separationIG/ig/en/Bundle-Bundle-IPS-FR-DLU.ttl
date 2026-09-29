@@ -1224,6 +1224,11 @@
   ] ;
   fhir:Organization.type [
      fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-types" ] ;
+       fhir:Extension.valueCode [ fhir:value "secteurActiviteRASS" ]
+     ] ;
      fhir:CodeableConcept.coding [
        fhir:index -1 ;
        fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite" ] ;
