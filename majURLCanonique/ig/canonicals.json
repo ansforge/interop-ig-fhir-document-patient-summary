@@ -1,0 +1,28 @@
+[{
+  "id" : "ans.fhir.fr.fr-patient-summary",
+  "type" : "ImplementationGuide",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/ImplementationGuide/ans.fhir.fr.fr-patient-summary",
+  "version" : "0.1.0",
+  "name" : "FRPatientSummary"
+},
+{
+  "id" : "fr-bundle-document-ips",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-bundle-document-ips",
+  "version" : "0.1.0",
+  "name" : "FRBundleDocumentIPS"
+},
+{
+  "id" : "fr-composition-document-ips",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-composition-document-ips",
+  "version" : "0.1.0",
+  "name" : "FRCompositionDocumentIPS"
+},
+{
+  "id" : "fr-lm-patient-summary-document",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-lm-patient-summary-document",
+  "version" : "0.1.0",
+  "name" : "FRLMPatientSummaryDocument"
+}]
