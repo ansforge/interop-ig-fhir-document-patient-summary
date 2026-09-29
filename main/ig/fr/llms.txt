@@ -1,47 +1,37 @@
-# ans.fhir.fr.fr-patient-summary#0.1.0: FR Patient Summary (FHIR)(fr)
+# ans.fhir.fr.fr-patient-summary#0.1.0: Volet de Synthèse Médicale (International Patient Summary - FHIR)(fr)
 
 ## Pages
 
 * [Accueil](index.md)
-* [Introduction](spec-technique-intro.md)
 * [Téléchargements et usages](annexe-downloads.md)
-* [Sécurité](annexe-securite.md)
-* [Flux de consommation](spec-technique-flux-consommation.md)
-* [Alimentation](spec-fonctionnelle-alimentation.md)
+* [FHIR](fhir.md)
 * [Informations sur la traduction](translationinfo.md)
-* [Vue d'ensemble](spec-fonctionnelle-intro.md)
-* [Vue d'ensemble](spec-technique-vue-ensemble.md)
+* [Mapping ML/CDA/FHIR](mapping.md)
+* [Modèle logique métier](modele-logique-metier.md)
 * [Résumé des artefacts](artifacts.md)
+* [Fonctionnel](fonctionnel.md)
+* [Cas d'usage](cas-usage.md)
 * [Autres Ressources](autres_ressources.md)
-* [Historique des versions](change-log.md)
-* [Flux d'alimentation](spec-technique-flux-alimentation.md)
+* [Exigences spécifiques](exigences-specifiques.md)
+* [Sécurité](securite.md)
+* [Implémentations](implementations.md)
 
 ## Resources
 
-### CodeSystems
+### Logicals
 
-* [Compétences CodeSystem](CodeSystem-competence-code-system.md)
-* [Type de carte](CodeSystem-type-carte-code-system.md)
-
-### ValueSets
-
-* [EyeColor Value Set](ValueSet-EyeColorVS.md)
-* [Melting Pot Value Set](ValueSet-MeltingPotVS.md)
-* [ModifiedAdministrativeGender](ValueSet-ModifiedAdministrativeGender.md)
-* [Type Carte Value Set](ValueSet-TypeCarteVS.md)
+* [Modèle logique métier - FR LM Patient Summary Document](StructureDefinition-fr-lm-patient-summary-document.md)
 
 ### Resource Profiles
 
-* [Patient français](StructureDefinition-fr-patient.md)
-
-### Extensions
-
-* [EyeColor](StructureDefinition-EyeColor.md)
+* [Bundle (IPS)](StructureDefinition-fr-bundle-document-ips.md)
+* [FR Composition Document IPS](StructureDefinition-fr-composition-document-ips.md)
 
 ### ImplementationGuides
 
-* [FR Patient Summary (FHIR)](ImplementationGuide-ans.fhir.fr.fr-patient-summary.md)
+* [Volet de Synthèse Médicale (International Patient Summary - FHIR)](ImplementationGuide-ans.fhir.fr.fr-patient-summary.md)
 
 ### Examples
 
-* [frpatient-exemple (Patient)](Patient-frpatient-exemple.md)
+* [Bundle-IPS-FR-DLU (Bundle)](Bundle-Bundle-IPS-FR-DLU.md)
+* [Bundle-IPS-FR (Bundle)](Bundle-Bundle-IPS-FR.md)

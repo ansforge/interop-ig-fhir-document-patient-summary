@@ -16,9 +16,9 @@
   fhir:ImplementationGuide.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/ImplementationGuide/ans.fhir.fr.fr-patient-summary"] ;
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"] ;
   fhir:ImplementationGuide.name [ fhir:value "FRPatientSummary"] ;
-  fhir:ImplementationGuide.title [ fhir:value "FR Patient Summary (FHIR)"] ;
+  fhir:ImplementationGuide.title [ fhir:value "Volet de Synthèse Médicale (International Patient Summary - FHIR)"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-09-25T07:56:47+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-09-29T09:16:08+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ;
   fhir:ImplementationGuide.contact [
      fhir:index -1 ;
@@ -61,18 +61,85 @@
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "7.4.0" ]
   ], [
      fhir:index -1 ;
-     fhir:Element.id [ fhir:value "hl7ext" ] ;
-     fhir:Element.extension [
-       fhir:index -1 ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment" ] ;
-       fhir:Extension.valueMarkdown [ fhir:value "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" ]
+     fhir:Element.id [ fhir:value "hl7_fhir_fr_core" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core" ;
+       fhir:link <https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core>
      ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.fr.core" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "2.1.0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.id [ fhir:value "hl7_fhir_uv_xver_r5_r4" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4" ;
+       fhir:link <http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.xver-r5.r4" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "0.1.0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.id [ fhir:value "hl7_fhir_uv_extensions_r4" ] ;
      fhir:ImplementationGuide.dependsOn.uri [
        fhir:value "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions" ;
        fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
      ] ;
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.extensions.r4" ] ;
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "5.3.0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.id [ fhir:value "ans_fhir_fr_annuaire" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/annuaire/ImplementationGuide/ans.fhir.fr.annuaire" ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/ImplementationGuide/ans.fhir.fr.annuaire>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "ans.fhir.fr.annuaire" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.1.0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.id [ fhir:value "hl7_fhir_uv_fhir_clinical_document" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/uv/fhir-clinical-document/ImplementationGuide/hl7.fhir.uv.fhir-clinical-document" ;
+       fhir:link <http://hl7.org/fhir/uv/fhir-clinical-document/ImplementationGuide/hl7.fhir.uv.fhir-clinical-document>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.fhir-clinical-document" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.1.0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.id [ fhir:value "ihe_pharm_mpd" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "https://profiles.ihe.net/PHARM/MPD/ImplementationGuide/ihe.pharm.mpd" ;
+       fhir:link <https://profiles.ihe.net/PHARM/MPD/ImplementationGuide/ihe.pharm.mpd>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "ihe.pharm.mpd" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.0.0-comment-2" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.id [ fhir:value "ans_fr_terminologies" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies" ;
+       fhir:link <https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "ans.fr.terminologies" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.14.0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.id [ fhir:value "ans_fhir_fr_document_core" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/document-core/ImplementationGuide/ans.fhir.fr.document-core" ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/document-core/ImplementationGuide/ans.fhir.fr.document-core>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "ans.fhir.fr.document-core" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "current" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.id [ fhir:value "ans_fr_document_core" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "https://interop.esante.gouv.fr/ig/document-core/ImplementationGuide/ans.fr.document-core" ;
+       fhir:link <https://interop.esante.gouv.fr/ig/document-core/ImplementationGuide/ans.fr.document-core>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "ans.fr.document-core" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "current" ]
   ] ;
   fhir:ImplementationGuide.definition [
      fhir:Element.extension [
@@ -975,93 +1042,62 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ] ;
+     fhir:ImplementationGuide.definition.grouping [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "modeles-logiques-metier-ips" ] ;
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Modèles logiques métier d'un document IPS" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ressources-fhir-ips" ] ;
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Profils FHIR IPS" ]
+     ] ;
      fhir:ImplementationGuide.definition.resource [
        fhir:index -1 ;
        fhir:Element.extension [
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/CodeSystem/competence-code-system> ;
-         fhir:Reference.reference [ fhir:value "CodeSystem/competence-code-system" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-bundle-document-ips> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fr-bundle-document-ips" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Compétences CodeSystem" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Compétences des professionnels de santé." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundle (IPS)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Synthèse médicale française, basée sur le modèle International Patient Summary d'HL7." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "ressources-fhir-ips" ]
      ], [
        fhir:index -1 ;
        fhir:Element.extension [
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/EyeColor> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/EyeColor" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/Bundle/Bundle-IPS-FR> ;
+         fhir:Reference.reference [ fhir:value "Bundle/Bundle-IPS-FR" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EyeColor" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Eye color extension" ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/ValueSet/EyeColorVS> ;
-         fhir:Reference.reference [ fhir:value "ValueSet/EyeColorVS" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EyeColor Value Set" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Different eye colors." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "Patient" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/Patient/frpatient-exemple> ;
-         fhir:Reference.reference [ fhir:value "Patient/frpatient-exemple" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "frpatient-exemple" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple d'un patient français" ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundle-IPS-FR" ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-patient|0.1.0" ;
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-patient|0.1.0>
+         fhir:value "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-bundle-document-ips|0.1.0" ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-bundle-document-ips|0.1.0>
        ]
      ], [
        fhir:index -1 ;
        fhir:Element.extension [
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/ValueSet/MeltingPotVS> ;
-         fhir:Reference.reference [ fhir:value "ValueSet/MeltingPotVS" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/Bundle/Bundle-IPS-FR-DLU> ;
+         fhir:Reference.reference [ fhir:value "Bundle/Bundle-IPS-FR-DLU" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Melting Pot Value Set" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Melting Pot Value Set." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/ValueSet/ModifiedAdministrativeGender> ;
-         fhir:Reference.reference [ fhir:value "ValueSet/ModifiedAdministrativeGender" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ModifiedAdministrativeGender" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "AdministrativeGender without unknown code" ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundle-IPS-FR-DLU" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-bundle-document-ips|0.1.0" ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-bundle-document-ips|0.1.0>
+       ]
      ], [
        fhir:index -1 ;
        fhir:Element.extension [
@@ -1070,40 +1106,28 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-patient> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/fr-patient" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-composition-document-ips> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fr-composition-document-ips" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient français" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Description du patient français" ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Composition Document IPS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profil Composition du document IPS-FR, derive de FRCompositionDocument." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "ressources-fhir-ips" ]
      ], [
        fhir:index -1 ;
        fhir:Element.extension [
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/ValueSet/TypeCarteVS> ;
-         fhir:Reference.reference [ fhir:value "ValueSet/TypeCarteVS" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-lm-patient-summary-document> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fr-lm-patient-summary-document" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Type Carte Value Set" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Type Carte Value Set." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/CodeSystem/type-carte-code-system> ;
-         fhir:Reference.reference [ fhir:value "CodeSystem/type-carte-code-system" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Type de carte" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Type de carte professionnelle et personnelle." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Modèle logique métier - FR LM Patient Summary Document" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Éléments d'en-tête et de corps d'une Synthèse Médicale (International Patient Summary) contenant l'ensemble des sections cliniques et administratives." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "modeles-logiques-metier-ips" ]
      ] ;
      fhir:ImplementationGuide.definition.page [
        fhir:Element.extension [
@@ -1129,20 +1153,40 @@
          fhir:Element.extension [
            fhir:index -1 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-           fhir:Extension.valueUrl [ fhir:value "spec-fonctionnelle-intro.html" ]
+           fhir:Extension.valueUrl [ fhir:value "fonctionnel.html" ]
          ] ;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "spec-fonctionnelle-intro.html" ] ;
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Vue d'ensemble" ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "fonctionnel.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Fonctionnel" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ] ;
          fhir:ImplementationGuide.definition.page.page [
            fhir:index -1 ;
            fhir:Element.extension [
              fhir:index -1 ;
              fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "spec-fonctionnelle-alimentation.html" ]
+             fhir:Extension.valueUrl [ fhir:value "cas-usage.html" ]
            ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "spec-fonctionnelle-alimentation.html" ] ;
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Alimentation" ] ;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "cas-usage.html" ] ;
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Cas d'usage" ] ;
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index -1 ;
+           fhir:Element.extension [
+             fhir:index -1 ;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+             fhir:Extension.valueUrl [ fhir:value "modele-logique-metier.html" ]
+           ] ;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "modele-logique-metier.html" ] ;
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Modèle logique métier" ] ;
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index -1 ;
+           fhir:Element.extension [
+             fhir:index -1 ;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+             fhir:Extension.valueUrl [ fhir:value "exigences-specifiques.html" ]
+           ] ;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "exigences-specifiques.html" ] ;
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Exigences spécifiques" ] ;
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
          ]
        ], [
@@ -1150,52 +1194,32 @@
          fhir:Element.extension [
            fhir:index -1 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-           fhir:Extension.valueUrl [ fhir:value "spec-technique-intro.html" ]
+           fhir:Extension.valueUrl [ fhir:value "implementations.html" ]
          ] ;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "spec-technique-intro.html" ] ;
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Introduction" ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "implementations.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Implémentations" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ] ;
          fhir:ImplementationGuide.definition.page.page [
            fhir:index -1 ;
            fhir:Element.extension [
              fhir:index -1 ;
              fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "spec-technique-vue-ensemble.html" ]
+             fhir:Extension.valueUrl [ fhir:value "fhir.html" ]
            ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "spec-technique-vue-ensemble.html" ] ;
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Vue d'ensemble" ] ;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "fhir.html" ] ;
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "FHIR" ] ;
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
          ], [
            fhir:index -1 ;
            fhir:Element.extension [
              fhir:index -1 ;
              fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "spec-technique-flux-alimentation.html" ]
+             fhir:Extension.valueUrl [ fhir:value "mapping.html" ]
            ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "spec-technique-flux-alimentation.html" ] ;
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Flux d'alimentation" ] ;
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ], [
-           fhir:index -1 ;
-           fhir:Element.extension [
-             fhir:index -1 ;
-             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "spec-technique-flux-consommation.html" ]
-           ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "spec-technique-flux-consommation.html" ] ;
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Flux de consommation" ] ;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "mapping.html" ] ;
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Mapping ML/CDA/FHIR" ] ;
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
          ]
-       ], [
-         fhir:index -1 ;
-         fhir:Element.extension [
-           fhir:index -1 ;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-           fhir:Extension.valueUrl [ fhir:value "change-log.html" ]
-         ] ;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "change-log.html" ] ;
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Historique des versions" ] ;
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index -1 ;
          fhir:Element.extension [
@@ -1211,9 +1235,9 @@
            fhir:Element.extension [
              fhir:index -1 ;
              fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "annexe-securite.html" ]
+             fhir:Extension.valueUrl [ fhir:value "securite.html" ]
            ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "annexe-securite.html" ] ;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "securite.html" ] ;
            fhir:ImplementationGuide.definition.page.title [ fhir:value "Sécurité" ] ;
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
          ], [

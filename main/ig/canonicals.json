@@ -1,18 +1,4 @@
 [{
-  "id" : "competence-code-system",
-  "type" : "CodeSystem",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/CodeSystem/competence-code-system",
-  "version" : "0.1.0",
-  "name" : "CompetenceCS"
-},
-{
-  "id" : "type-carte-code-system",
-  "type" : "CodeSystem",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/CodeSystem/type-carte-code-system",
-  "version" : "0.1.0",
-  "name" : "TypeCarteCS"
-},
-{
   "id" : "ans.fhir.fr.fr-patient-summary",
   "type" : "ImplementationGuide",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/ImplementationGuide/ans.fhir.fr.fr-patient-summary",
@@ -20,44 +6,23 @@
   "name" : "FRPatientSummary"
 },
 {
-  "id" : "EyeColor",
+  "id" : "fr-bundle-document-ips",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/EyeColor",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-bundle-document-ips",
   "version" : "0.1.0",
-  "name" : "EyeColor"
+  "name" : "FRBundleDocumentIPS"
 },
 {
-  "id" : "fr-patient",
+  "id" : "fr-composition-document-ips",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-patient",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-composition-document-ips",
   "version" : "0.1.0",
-  "name" : "FrPatient"
+  "name" : "FRCompositionDocumentIPS"
 },
 {
-  "id" : "EyeColorVS",
-  "type" : "ValueSet",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/ValueSet/EyeColorVS",
+  "id" : "fr-lm-patient-summary-document",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-lm-patient-summary-document",
   "version" : "0.1.0",
-  "name" : "EyeColorVS"
-},
-{
-  "id" : "MeltingPotVS",
-  "type" : "ValueSet",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/ValueSet/MeltingPotVS",
-  "version" : "0.1.0",
-  "name" : "MeltingPotVS"
-},
-{
-  "id" : "ModifiedAdministrativeGender",
-  "type" : "ValueSet",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/ValueSet/ModifiedAdministrativeGender",
-  "version" : "0.1.0",
-  "name" : "ModifiedAdministrativeGender"
-},
-{
-  "id" : "TypeCarteVS",
-  "type" : "ValueSet",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/ValueSet/TypeCarteVS",
-  "version" : "0.1.0",
-  "name" : "TypeCarteVS"
+  "name" : "FRLMPatientSummaryDocument"
 }]

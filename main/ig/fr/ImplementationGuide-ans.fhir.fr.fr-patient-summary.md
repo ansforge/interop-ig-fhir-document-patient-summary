@@ -1,4 +1,4 @@
-# Resource FR Patient Summary (FHIR)
+# Resource Volet de Synthèse Médicale (International Patient Summary - FHIR)
 
 
 
@@ -12,9 +12,9 @@
   "url" : "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/ImplementationGuide/ans.fhir.fr.fr-patient-summary",
   "version" : "0.1.0",
   "name" : "FRPatientSummary",
-  "title" : "FR Patient Summary (FHIR)",
+  "title" : "Volet de Synthèse Médicale (International Patient Summary - FHIR)",
   "status" : "draft",
-  "date" : "2026-09-25T07:56:47+00:00",
+  "date" : "2026-09-29T09:16:08+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -45,14 +45,58 @@
     "version" : "7.4.0"
   },
   {
-    "id" : "hl7ext",
-    "extension" : [{
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
-      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
-    }],
+    "id" : "hl7_fhir_fr_core",
+    "uri" : "https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core",
+    "packageId" : "hl7.fhir.fr.core",
+    "version" : "2.1.0"
+  },
+  {
+    "id" : "hl7_fhir_uv_xver_r5_r4",
+    "uri" : "http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4",
+    "packageId" : "hl7.fhir.uv.xver-r5.r4",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "hl7_fhir_uv_extensions_r4",
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
     "version" : "5.3.0"
+  },
+  {
+    "id" : "ans_fhir_fr_annuaire",
+    "uri" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/ImplementationGuide/ans.fhir.fr.annuaire",
+    "packageId" : "ans.fhir.fr.annuaire",
+    "version" : "1.1.0"
+  },
+  {
+    "id" : "hl7_fhir_uv_fhir_clinical_document",
+    "uri" : "http://hl7.org/fhir/uv/fhir-clinical-document/ImplementationGuide/hl7.fhir.uv.fhir-clinical-document",
+    "packageId" : "hl7.fhir.uv.fhir-clinical-document",
+    "version" : "1.1.0"
+  },
+  {
+    "id" : "ihe_pharm_mpd",
+    "uri" : "https://profiles.ihe.net/PHARM/MPD/ImplementationGuide/ihe.pharm.mpd",
+    "packageId" : "ihe.pharm.mpd",
+    "version" : "1.0.0-comment-2"
+  },
+  {
+    "id" : "ans_fr_terminologies",
+    "uri" : "https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies",
+    "packageId" : "ans.fr.terminologies",
+    "version" : "1.14.0"
+  },
+  {
+    "id" : "ans_fhir_fr_document_core",
+    "uri" : "https://interop.esante.gouv.fr/ig/fhir/document-core/ImplementationGuide/ans.fhir.fr.document-core",
+    "packageId" : "ans.fhir.fr.document-core",
+    "version" : "current"
+  },
+  {
+    "id" : "ans_fr_document_core",
+    "uri" : "https://interop.esante.gouv.fr/ig/document-core/ImplementationGuide/ans.fr.document-core",
+    "packageId" : "ans.fr.document-core",
+    "version" : "current"
   }],
   "definition" : {
     "extension" : [{
@@ -879,101 +923,60 @@
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     }],
+    "grouping" : [{
+      "id" : "modeles-logiques-metier-ips",
+      "name" : "Modèles logiques métier d'un document IPS"
+    },
+    {
+      "id" : "ressources-fhir-ips",
+      "name" : "Profils FHIR IPS"
+    }],
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
+        "valueString" : "StructureDefinition:resource"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-competence-code-system.html"
+        "valueUri" : "StructureDefinition-fr-bundle-document-ips.html"
       }],
       "reference" : {
-        "reference" : "CodeSystem/competence-code-system"
+        "reference" : "StructureDefinition/fr-bundle-document-ips"
       },
-      "name" : "Compétences CodeSystem",
-      "description" : "Compétences des professionnels de santé.",
-      "exampleBoolean" : false
+      "name" : "Bundle (IPS)",
+      "description" : "Synthèse médicale française, basée sur le modèle International Patient Summary d'HL7.",
+      "exampleBoolean" : false,
+      "groupingId" : "ressources-fhir-ips"
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
+        "valueString" : "Bundle"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-EyeColor.html"
+        "valueUri" : "Bundle-Bundle-IPS-FR.html"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/EyeColor"
+        "reference" : "Bundle/Bundle-IPS-FR"
       },
-      "name" : "EyeColor",
-      "description" : "Eye color extension",
-      "exampleBoolean" : false
+      "name" : "Bundle-IPS-FR",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-bundle-document-ips|0.1.0"
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "Bundle"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-EyeColorVS.html"
+        "valueUri" : "Bundle-Bundle-IPS-FR-DLU.html"
       }],
       "reference" : {
-        "reference" : "ValueSet/EyeColorVS"
+        "reference" : "Bundle/Bundle-IPS-FR-DLU"
       },
-      "name" : "EyeColor Value Set",
-      "description" : "Different eye colors.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "Patient-frpatient-exemple.html"
-      }],
-      "reference" : {
-        "reference" : "Patient/frpatient-exemple"
-      },
-      "name" : "frpatient-exemple",
-      "description" : "Exemple d'un patient français",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-patient|0.1.0"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-MeltingPotVS.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/MeltingPotVS"
-      },
-      "name" : "Melting Pot Value Set",
-      "description" : "Melting Pot Value Set.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ModifiedAdministrativeGender.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ModifiedAdministrativeGender"
-      },
-      "name" : "ModifiedAdministrativeGender",
-      "description" : "AdministrativeGender without unknown code",
-      "exampleBoolean" : false
+      "name" : "Bundle-IPS-FR-DLU",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-bundle-document-ips|0.1.0"
     },
     {
       "extension" : [{
@@ -982,46 +985,32 @@
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-fr-patient.html"
+        "valueUri" : "StructureDefinition-fr-composition-document-ips.html"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-patient"
+        "reference" : "StructureDefinition/fr-composition-document-ips"
       },
-      "name" : "Patient français",
-      "description" : "Description du patient français",
-      "exampleBoolean" : false
+      "name" : "FR Composition Document IPS",
+      "description" : "Profil Composition du document IPS-FR, derive de FRCompositionDocument.",
+      "exampleBoolean" : false,
+      "groupingId" : "ressources-fhir-ips"
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "StructureDefinition:logical"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-TypeCarteVS.html"
+        "valueUri" : "StructureDefinition-fr-lm-patient-summary-document.html"
       }],
       "reference" : {
-        "reference" : "ValueSet/TypeCarteVS"
+        "reference" : "StructureDefinition/fr-lm-patient-summary-document"
       },
-      "name" : "Type Carte Value Set",
-      "description" : "Type Carte Value Set.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-type-carte-code-system.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/type-carte-code-system"
-      },
-      "name" : "Type de carte",
-      "description" : "Type de carte professionnelle et personnelle.",
-      "exampleBoolean" : false
+      "name" : "Modèle logique métier - FR LM Patient Summary Document",
+      "description" : "Éléments d'en-tête et de corps d'une Synthèse Médicale (International Patient Summary) contenant l'ensemble des sections cliniques et administratives.",
+      "exampleBoolean" : false,
+      "groupingId" : "modeles-logiques-metier-ips"
     }],
     "page" : {
       "extension" : [{
@@ -1043,65 +1032,65 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "spec-fonctionnelle-intro.html"
+          "valueUrl" : "fonctionnel.html"
         }],
-        "nameUrl" : "spec-fonctionnelle-intro.html",
-        "title" : "Vue d'ensemble",
+        "nameUrl" : "fonctionnel.html",
+        "title" : "Fonctionnel",
         "generation" : "markdown",
         "page" : [{
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "spec-fonctionnelle-alimentation.html"
+            "valueUrl" : "cas-usage.html"
           }],
-          "nameUrl" : "spec-fonctionnelle-alimentation.html",
-          "title" : "Alimentation",
+          "nameUrl" : "cas-usage.html",
+          "title" : "Cas d'usage",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "modele-logique-metier.html"
+          }],
+          "nameUrl" : "modele-logique-metier.html",
+          "title" : "Modèle logique métier",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "exigences-specifiques.html"
+          }],
+          "nameUrl" : "exigences-specifiques.html",
+          "title" : "Exigences spécifiques",
           "generation" : "markdown"
         }]
       },
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "spec-technique-intro.html"
+          "valueUrl" : "implementations.html"
         }],
-        "nameUrl" : "spec-technique-intro.html",
-        "title" : "Introduction",
+        "nameUrl" : "implementations.html",
+        "title" : "Implémentations",
         "generation" : "markdown",
         "page" : [{
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "spec-technique-vue-ensemble.html"
+            "valueUrl" : "fhir.html"
           }],
-          "nameUrl" : "spec-technique-vue-ensemble.html",
-          "title" : "Vue d'ensemble",
+          "nameUrl" : "fhir.html",
+          "title" : "FHIR",
           "generation" : "markdown"
         },
         {
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "spec-technique-flux-alimentation.html"
+            "valueUrl" : "mapping.html"
           }],
-          "nameUrl" : "spec-technique-flux-alimentation.html",
-          "title" : "Flux d'alimentation",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "spec-technique-flux-consommation.html"
-          }],
-          "nameUrl" : "spec-technique-flux-consommation.html",
-          "title" : "Flux de consommation",
+          "nameUrl" : "mapping.html",
+          "title" : "Mapping ML/CDA/FHIR",
           "generation" : "markdown"
         }]
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "change-log.html"
-        }],
-        "nameUrl" : "change-log.html",
-        "title" : "Historique des versions",
-        "generation" : "markdown"
       },
       {
         "extension" : [{
@@ -1114,9 +1103,9 @@
         "page" : [{
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "annexe-securite.html"
+            "valueUrl" : "securite.html"
           }],
-          "nameUrl" : "annexe-securite.html",
+          "nameUrl" : "securite.html",
           "title" : "Sécurité",
           "generation" : "markdown"
         },

@@ -10,9 +10,9 @@
   <url value="https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/ImplementationGuide/ans.fhir.fr.fr-patient-summary"/>
   <version value="0.1.0"/>
   <name value="FRPatientSummary"/>
-  <title value="FR Patient Summary (FHIR)"/>
+  <title value="Volet de Synthèse Médicale (International Patient Summary - FHIR)"/>
   <status value="draft"/>
-  <date value="2026-09-25T07:56:47+00:00"/>
+  <date value="2026-09-29T09:16:08+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -40,13 +40,50 @@
     <packageId value="hl7.terminology.r4"/>
     <version value="7.4.0"/>
   </dependsOn>
-  <dependsOn id="hl7ext">
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
-      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
-    </extension>
+  <dependsOn id="hl7_fhir_fr_core">
+    <uri value="https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core"/>
+    <packageId value="hl7.fhir.fr.core"/>
+    <version value="2.1.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_xver_r5_r4">
+    <uri value="http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4"/>
+    <packageId value="hl7.fhir.uv.xver-r5.r4"/>
+    <version value="0.1.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_extensions_r4">
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
     <version value="5.3.0"/>
+  </dependsOn>
+  <dependsOn id="ans_fhir_fr_annuaire">
+    <uri value="https://interop.esante.gouv.fr/ig/fhir/annuaire/ImplementationGuide/ans.fhir.fr.annuaire"/>
+    <packageId value="ans.fhir.fr.annuaire"/>
+    <version value="1.1.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_fhir_clinical_document">
+    <uri value="http://hl7.org/fhir/uv/fhir-clinical-document/ImplementationGuide/hl7.fhir.uv.fhir-clinical-document"/>
+    <packageId value="hl7.fhir.uv.fhir-clinical-document"/>
+    <version value="1.1.0"/>
+  </dependsOn>
+  <dependsOn id="ihe_pharm_mpd">
+    <uri value="https://profiles.ihe.net/PHARM/MPD/ImplementationGuide/ihe.pharm.mpd"/>
+    <packageId value="ihe.pharm.mpd"/>
+    <version value="1.0.0-comment-2"/>
+  </dependsOn>
+  <dependsOn id="ans_fr_terminologies">
+    <uri value="https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies"/>
+    <packageId value="ans.fr.terminologies"/>
+    <version value="1.14.0"/>
+  </dependsOn>
+  <dependsOn id="ans_fhir_fr_document_core">
+    <uri value="https://interop.esante.gouv.fr/ig/fhir/document-core/ImplementationGuide/ans.fhir.fr.document-core"/>
+    <packageId value="ans.fhir.fr.document-core"/>
+    <version value="current"/>
+  </dependsOn>
+  <dependsOn id="ans_fr_document_core">
+    <uri value="https://interop.esante.gouv.fr/ig/document-core/ImplementationGuide/ans.fr.document-core"/>
+    <packageId value="ans.fr.document-core"/>
+    <version value="current"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -649,104 +686,67 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <grouping id="modeles-logiques-metier-ips">
+      <name value="Modèles logiques métier d'un document IPS"/>
+    </grouping>
+    <grouping id="ressources-fhir-ips">
+      <name value="Profils FHIR IPS"/>
+    </grouping>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/competence-code-system"/>
+        <reference value="StructureDefinition/fr-bundle-document-ips"/>
       </reference>
-      <name value="Compétences CodeSystem"/>
-      <description value="Compétences des professionnels de santé."/>
+      <name value="Bundle (IPS)"/>
+      <description value="Synthèse médicale française, basée sur le modèle International Patient Summary d'HL7."/>
       <exampleBoolean value="false"/>
+      <groupingId value="ressources-fhir-ips"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
+        <valueString value="Bundle"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/EyeColor"/>
+        <reference value="Bundle/Bundle-IPS-FR"/>
       </reference>
-      <name value="EyeColor"/>
-      <description value="Eye color extension"/>
-      <exampleBoolean value="false"/>
+      <name value="Bundle-IPS-FR"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-bundle-document-ips|0.1.0"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
+        <valueString value="Bundle"/>
       </extension>
       <reference>
-        <reference value="ValueSet/EyeColorVS"/>
+        <reference value="Bundle/Bundle-IPS-FR-DLU"/>
       </reference>
-      <name value="EyeColor Value Set"/>
-      <description value="Different eye colors."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/frpatient-exemple"/>
-      </reference>
-      <name value="frpatient-exemple"/>
-      <description value="Exemple d'un patient français"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-patient|0.1.0"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/MeltingPotVS"/>
-      </reference>
-      <name value="Melting Pot Value Set"/>
-      <description value="Melting Pot Value Set."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ModifiedAdministrativeGender"/>
-      </reference>
-      <name value="ModifiedAdministrativeGender"/>
-      <description value="AdministrativeGender without unknown code"/>
-      <exampleBoolean value="false"/>
+      <name value="Bundle-IPS-FR-DLU"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-bundle-document-ips|0.1.0"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/fr-patient"/>
+        <reference value="StructureDefinition/fr-composition-document-ips"/>
       </reference>
-      <name value="Patient français"/>
-      <description value="Description du patient français"/>
+      <name value="FR Composition Document IPS"/>
+      <description value="Profil Composition du document IPS-FR, derive de FRCompositionDocument."/>
       <exampleBoolean value="false"/>
+      <groupingId value="ressources-fhir-ips"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
+        <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="ValueSet/TypeCarteVS"/>
+        <reference value="StructureDefinition/fr-lm-patient-summary-document"/>
       </reference>
-      <name value="Type Carte Value Set"/>
-      <description value="Type Carte Value Set."/>
+      <name value="Modèle logique métier - FR LM Patient Summary Document"/>
+      <description value="Éléments d'en-tête et de corps d'une Synthèse Médicale (International Patient Summary) contenant l'ensemble des sections cliniques et administratives."/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/type-carte-code-system"/>
-      </reference>
-      <name value="Type de carte"/>
-      <description value="Type de carte professionnelle et personnelle."/>
-      <exampleBoolean value="false"/>
+      <groupingId value="modeles-logiques-metier-ips"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
@@ -765,59 +765,59 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="spec-fonctionnelle-intro.html"/>
+          <valueUrl value="fonctionnel.html"/>
         </extension>
-        <nameUrl value="spec-fonctionnelle-intro.html"/>
-        <title value="Vue d'ensemble"/>
+        <nameUrl value="fonctionnel.html"/>
+        <title value="Fonctionnel"/>
         <generation value="markdown"/>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="spec-fonctionnelle-alimentation.html"/>
+            <valueUrl value="cas-usage.html"/>
           </extension>
-          <nameUrl value="spec-fonctionnelle-alimentation.html"/>
-          <title value="Alimentation"/>
+          <nameUrl value="cas-usage.html"/>
+          <title value="Cas d'usage"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="modele-logique-metier.html"/>
+          </extension>
+          <nameUrl value="modele-logique-metier.html"/>
+          <title value="Modèle logique métier"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="exigences-specifiques.html"/>
+          </extension>
+          <nameUrl value="exigences-specifiques.html"/>
+          <title value="Exigences spécifiques"/>
           <generation value="markdown"/>
         </page>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="spec-technique-intro.html"/>
+          <valueUrl value="implementations.html"/>
         </extension>
-        <nameUrl value="spec-technique-intro.html"/>
-        <title value="Introduction"/>
+        <nameUrl value="implementations.html"/>
+        <title value="Implémentations"/>
         <generation value="markdown"/>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="spec-technique-vue-ensemble.html"/>
+            <valueUrl value="fhir.html"/>
           </extension>
-          <nameUrl value="spec-technique-vue-ensemble.html"/>
-          <title value="Vue d'ensemble"/>
+          <nameUrl value="fhir.html"/>
+          <title value="FHIR"/>
           <generation value="markdown"/>
         </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="spec-technique-flux-alimentation.html"/>
+            <valueUrl value="mapping.html"/>
           </extension>
-          <nameUrl value="spec-technique-flux-alimentation.html"/>
-          <title value="Flux d'alimentation"/>
+          <nameUrl value="mapping.html"/>
+          <title value="Mapping ML/CDA/FHIR"/>
           <generation value="markdown"/>
         </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="spec-technique-flux-consommation.html"/>
-          </extension>
-          <nameUrl value="spec-technique-flux-consommation.html"/>
-          <title value="Flux de consommation"/>
-          <generation value="markdown"/>
-        </page>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="change-log.html"/>
-        </extension>
-        <nameUrl value="change-log.html"/>
-        <title value="Historique des versions"/>
-        <generation value="markdown"/>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
@@ -828,9 +828,9 @@
         <generation value="markdown"/>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="annexe-securite.html"/>
+            <valueUrl value="securite.html"/>
           </extension>
-          <nameUrl value="annexe-securite.html"/>
+          <nameUrl value="securite.html"/>
           <title value="Sécurité"/>
           <generation value="markdown"/>
         </page>
