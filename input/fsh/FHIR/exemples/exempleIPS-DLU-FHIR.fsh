@@ -387,24 +387,28 @@ Description: "Patient PAT-TROIS DOMINIQUE MARIE-LOUISE - contexte EHPAD DLU"
 
 // Contact 1 : Personne à prévenir en cas d'urgence
 * contact[0].name.text = "Sophie NESSI"
-* contact[0].relationship[RelationType].coding[0].system = $JDV-J11-RelationPatient-CISIS
-* contact[0].relationship[RelationType].coding[0].code = #SIS
-* contact[0].relationship[RelationType].coding[0].display = "Soeur"
-* contact[0].relationship[Role].coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-RoleClass"
-* contact[0].relationship[Role].coding[0].code = #ECON
-* contact[0].relationship[Role].coding[0].display = "Personne à prévenir en cas d'urgence"
+* contact[0].relationship[relationType].coding[0].system = $JDV-J11-RelationPatient-CISIS
+* contact[0].relationship[relationType].coding[0].code = #SIS
+* contact[0].relationship[relationType].coding[0].display = "Soeur"
+* contact[0].relationship[relationType].extension[category].valueCode = #relationType
+* contact[0].relationship[role].coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-RoleClass"
+* contact[0].relationship[role].coding[0].code = #ECON
+* contact[0].relationship[role].coding[0].display = "Personne à prévenir en cas d'urgence"
+* contact[0].relationship[role].extension[category].valueCode = #role
 * contact[0].name[0].family = "NESSI"
 * contact[0].telecom.system = #phone
 * contact[0].telecom.value = "0647150100"
 
 // Contact 2 : Personne de confiance
 * contact[1].name.text = "Sophie NESSI"
-* contact[1].relationship[RelationType].coding[0].system = $JDV-J11-RelationPatient-CISIS
-* contact[1].relationship[RelationType].coding[0].code = #SIS
-* contact[1].relationship[RelationType].coding[0].display = "Soeur"
-* contact[1].relationship[Role].coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-RoleClass"
-* contact[1].relationship[Role].coding[0].code = #NOK
-* contact[1].relationship[Role].coding[0].display = "Personne de confiance"
+* contact[1].relationship[relationType].coding[0].system = $JDV-J11-RelationPatient-CISIS
+* contact[1].relationship[relationType].coding[0].code = #SIS
+* contact[1].relationship[relationType].coding[0].display = "Soeur"
+* contact[1].relationship[relationType].extension[category].valueCode = #relationType
+* contact[1].relationship[role].coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-RoleClass"
+* contact[1].relationship[role].coding[0].code = #NOK
+* contact[1].relationship[role].coding[0].display = "Personne de confiance"
+* contact[1].relationship[role].extension[category].valueCode = #role
 * contact[1].name[0].family = "NESSI"
 * contact[1].telecom.system = #phone
 * contact[1].telecom.value = "0647150100"
@@ -413,9 +417,10 @@ Description: "Patient PAT-TROIS DOMINIQUE MARIE-LOUISE - contexte EHPAD DLU"
 * contact[2].name.family = "NESSI"
 * contact[2].name.given = "Jeanne"
 * contact[2].name.prefix = #MME
-* contact[2].relationship[Role].coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-RoleClass"
-* contact[2].relationship[Role].coding[0].code = #GUARD
-* contact[2].relationship[Role].coding[0].display = "Responsable légal"
+* contact[2].relationship[role].coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-RoleClass"
+* contact[2].relationship[role].coding[0].code = #GUARD
+* contact[2].relationship[role].coding[0].display = "Responsable légal"
+* contact[2].relationship[role].extension[category].valueCode = #role
 * contact[2].address.use = #home
 * contact[2].address.type = #physical
 * contact[2].address.line = "28 Avenue de Breteuil"
@@ -1247,10 +1252,11 @@ InstanceOf: FRDiagnosticReportDocument
 Usage: #inline
 * id = "cc001111-2222-3333-4444-555566667777"
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-diagnostic-report-document|0.1.0"
+* extension[composition].valueReference = Reference(urn:uuid:a1b2c3d4-e5f6-7890-abcd-ef1234567890)
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:D5C3639B-2A68-4C87-8019-CBD941B7B429"
 * status = #final
-* category = $LNC#26436-6 "Biologie polyvalente"
+* category[typeResultat] = $LNC#26436-6 "Biologie polyvalente"
 * code = $LNC#11502-2 "CR d'examens biologiques"
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * effectiveDateTime = "2024-03-29"
@@ -1325,10 +1331,11 @@ InstanceOf: FRDiagnosticReportDocument
 Usage: #inline
 * id = "11556666-7777-8888-9999-000011112222"
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-diagnostic-report-document|0.1.0"
+* extension[composition].valueReference = Reference(urn:uuid:a1b2c3d4-e5f6-7890-abcd-ef1234567890)
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:D5C3639B-2A68-4C87-8019-CBD941B7B430"
 * status = #final
-* category = $LNC#18748-4 "Imagerie"
+* category[typeResultat] = $LNC#18748-4 "Imagerie"
 * code = $LNC#11502-2 "CR d'examens biologiques"
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * effectiveDateTime = "2024-03-29"
