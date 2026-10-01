@@ -11,7 +11,7 @@
   "name" : "FRBundleDocumentIPS",
   "title" : "Bundle (IPS)",
   "status" : "draft",
-  "date" : "2026-09-30T20:36:50+00:00",
+  "date" : "2026-10-01T12:23:21+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -289,7 +289,7 @@
     {
       "id" : "Bundle.identifier",
       "path" : "Bundle.identifier",
-      "short" : "Persistent identifier for the bundle",
+      "short" : "Identifiant unique du document",
       "definition" : "A persistent identifier for the bundle that won't change as a bundle is copied from server to server.",
       "comment" : "Persistent identity generally only matters for batches of type Document, Message, and Collection. It would not normally be populated for search and history results and servers ignore Bundle.identifier when processing batches and transactions. For Documents  the .identifier SHALL be populated such that the .identifier is globally unique.",
       "min" : 1,

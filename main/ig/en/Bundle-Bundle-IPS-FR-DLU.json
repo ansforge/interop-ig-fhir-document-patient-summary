@@ -141,6 +141,10 @@
             "reference" : "urn:uuid:c3d4e5f6-a7b8-9012-cdef-012345678902",
             "display" : "DR Charles BOILEAU"
           }
+        },
+        {
+          "url" : "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-is-principal-event-extension",
+          "valueBoolean" : true
         }],
         "period" : {
           "start" : "2024-04-02T11:17:00+01:00"
@@ -521,16 +525,6 @@
         "status" : "generated"
       },
       "extension" : [{
-        "extension" : [{
-          "url" : "identityStatus",
-          "valueCoding" : {
-            "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445",
-            "code" : "VALI"
-          }
-        }],
-        "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability"
-      },
-      {
         "url" : "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
         "valueAddress" : {
           "extension" : [{
@@ -542,6 +536,16 @@
           }],
           "city" : "DOMPREMY"
         }
+      },
+      {
+        "extension" : [{
+          "url" : "identityStatus",
+          "valueCoding" : {
+            "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445",
+            "code" : "VALI"
+          }
+        }],
+        "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability"
       }],
       "identifier" : [{
         "use" : "official",
@@ -598,6 +602,10 @@
       }],
       "contact" : [{
         "relationship" : [{
+          "extension" : [{
+            "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category",
+            "valueCode" : "relationType"
+          }],
           "coding" : [{
             "system" : "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode",
             "code" : "SIS",
@@ -605,6 +613,10 @@
           }]
         },
         {
+          "extension" : [{
+            "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category",
+            "valueCode" : "role"
+          }],
           "coding" : [{
             "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
             "code" : "ECON",
@@ -622,6 +634,10 @@
       },
       {
         "relationship" : [{
+          "extension" : [{
+            "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category",
+            "valueCode" : "relationType"
+          }],
           "coding" : [{
             "system" : "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode",
             "code" : "SIS",
@@ -629,6 +645,10 @@
           }]
         },
         {
+          "extension" : [{
+            "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category",
+            "valueCode" : "role"
+          }],
           "coding" : [{
             "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
             "code" : "NOK",
@@ -646,6 +666,10 @@
       },
       {
         "relationship" : [{
+          "extension" : [{
+            "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category",
+            "valueCode" : "role"
+          }],
           "coding" : [{
             "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
             "code" : "GUARD",
@@ -3218,6 +3242,12 @@
       "text" : {
         "status" : "generated"
       },
+      "extension" : [{
+        "url" : "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-composition-extension",
+        "valueReference" : {
+          "reference" : "urn:uuid:a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+        }
+      }],
       "identifier" : [{
         "system" : "urn:ietf:rfc:3986",
         "value" : "urn:uuid:D5C3639B-2A68-4C87-8019-CBD941B7B429"
@@ -3422,6 +3452,12 @@
       "text" : {
         "status" : "generated"
       },
+      "extension" : [{
+        "url" : "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-composition-extension",
+        "valueReference" : {
+          "reference" : "urn:uuid:a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+        }
+      }],
       "identifier" : [{
         "system" : "urn:ietf:rfc:3986",
         "value" : "urn:uuid:D5C3639B-2A68-4C87-8019-CBD941B7B430"
@@ -3708,7 +3744,7 @@
         "coding" : [{
           "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
           "code" : "adr",
-          "display" : "Advance Directive"
+          "display" : "Advanced Care Directive"
         }]
       },
       "category" : [{
@@ -3758,7 +3794,7 @@
         "coding" : [{
           "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
           "code" : "adr",
-          "display" : "Advance Directive"
+          "display" : "Advanced Care Directive"
         }]
       },
       "category" : [{
@@ -3808,7 +3844,7 @@
         "coding" : [{
           "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
           "code" : "adr",
-          "display" : "Advance Directive"
+          "display" : "Advanced Care Directive"
         }]
       },
       "category" : [{
@@ -3858,7 +3894,7 @@
         "coding" : [{
           "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
           "code" : "adr",
-          "display" : "Advance Directive"
+          "display" : "Advanced Care Directive"
         }]
       },
       "category" : [{
@@ -3908,7 +3944,7 @@
         "coding" : [{
           "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
           "code" : "adr",
-          "display" : "Advance Directive"
+          "display" : "Advanced Care Directive"
         }]
       },
       "category" : [{
@@ -3958,7 +3994,7 @@
         "coding" : [{
           "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
           "code" : "adr",
-          "display" : "Advance Directive"
+          "display" : "Advanced Care Directive"
         }]
       },
       "category" : [{
@@ -4008,7 +4044,7 @@
         "coding" : [{
           "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
           "code" : "adr",
-          "display" : "Advance Directive"
+          "display" : "Advanced Care Directive"
         }]
       },
       "category" : [{
@@ -4058,7 +4094,7 @@
         "coding" : [{
           "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
           "code" : "adr",
-          "display" : "Advance Directive"
+          "display" : "Advanced Care Directive"
         }]
       },
       "category" : [{

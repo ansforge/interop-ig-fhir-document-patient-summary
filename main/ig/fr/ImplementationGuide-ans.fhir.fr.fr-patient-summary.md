@@ -14,7 +14,7 @@
   "name" : "FRPatientSummary",
   "title" : "Volet de Synthèse Médicale (International Patient Summary - FHIR)",
   "status" : "draft",
-  "date" : "2026-09-30T20:36:50+00:00",
+  "date" : "2026-10-01T12:23:21+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -48,7 +48,7 @@
     "id" : "hl7_fhir_fr_core",
     "uri" : "https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core",
     "packageId" : "hl7.fhir.fr.core",
-    "version" : "2.1.0"
+    "version" : "2.2.0"
   },
   {
     "id" : "hl7_fhir_uv_xver_r5_r4",
@@ -60,6 +60,12 @@
     "id" : "hl7_fhir_uv_extensions_r4",
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
+    "version" : "5.2.0"
+  },
+  {
+    "id" : "hl7_fhir_uv_extensions",
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions",
     "version" : "5.3.0"
   },
   {

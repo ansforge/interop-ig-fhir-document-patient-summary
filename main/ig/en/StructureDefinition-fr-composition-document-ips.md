@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-composition-do
   "name" : "FRCompositionDocumentIPS",
   "title" : "FR Composition Document IPS",
   "status" : "draft",
-  "date" : "2026-09-30T20:36:50+00:00",
+  "date" : "2026-10-01T12:23:21+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -141,11 +141,6 @@ Other representations of profile: [CSV](../StructureDefinition-fr-composition-do
       "definition" : "Rôles attendus, identifiés par le couple (extension[type], extension[function]) : Médecin traitant (INF/PCP, 0..1), Contact EHPAD (PRF/CORRE, 0..1), Établissement de préférence (INF/ES-PREF, 0..1), Établissement de référence (INF/ES-REF, 0..*), Autre professionnel de santé (PRF/353, 0..*), Autre correspondant (CON/CORRE, 0..*)."
     },
     {
-      "id" : "Composition.identifier",
-      "path" : "Composition.identifier",
-      "short" : "Identifiant du lot de versions du même document."
-    },
-    {
       "id" : "Composition.type",
       "path" : "Composition.type",
       "short" : "Type de document (\"Synthèse Médicale\")",
@@ -162,11 +157,6 @@ Other representations of profile: [CSV](../StructureDefinition-fr-composition-do
       "short" : "Cible recordée par le document Synthèse Médicale"
     },
     {
-      "id" : "Composition.encounter",
-      "path" : "Composition.encounter",
-      "short" : "Association du document à une prise en charge."
-    },
-    {
       "id" : "Composition.date",
       "path" : "Composition.date",
       "short" : "Date et heure de création du document Synthèse Médicale"
@@ -175,11 +165,6 @@ Other representations of profile: [CSV](../StructureDefinition-fr-composition-do
       "id" : "Composition.title",
       "path" : "Composition.title",
       "short" : "SYNTHESE MEDICALE"
-    },
-    {
-      "id" : "Composition.event",
-      "path" : "Composition.event",
-      "short" : "Evènement documenté et notamment le cadre d'exercice."
     },
     {
       "id" : "Composition.section",

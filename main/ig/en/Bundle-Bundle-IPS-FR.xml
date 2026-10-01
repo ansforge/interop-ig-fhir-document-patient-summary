@@ -132,6 +132,9 @@
               <display value="DR Stéphane MEDIONI"/>
             </valueReference>
           </extension>
+          <extension url="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-is-principal-event-extension">
+            <valueBoolean value="true"/>
+          </extension>
           <period>
             <start value="2024-04-21T08:00:00+01:00"/>
           </period>
@@ -513,14 +516,6 @@
         <text>
           <status value="generated"/>
         </text>
-        <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability">
-          <extension url="identityStatus">
-            <valueCoding>
-              <system value="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445"/>
-              <code value="VALI"/>
-            </valueCoding>
-          </extension>
-        </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
           <valueAddress>
             <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code">
@@ -531,6 +526,14 @@
             </extension>
             <city value="Ambléon"/>
           </valueAddress>
+        </extension>
+        <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability">
+          <extension url="identityStatus">
+            <valueCoding>
+              <system value="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445"/>
+              <code value="VALI"/>
+            </valueCoding>
+          </extension>
         </extension>
         <identifier>
           <use value="official"/>
@@ -587,6 +590,9 @@
         </address>
         <contact>
           <relationship>
+            <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category">
+              <valueCode value="relationType"/>
+            </extension>
             <coding>
               <system value="https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"/>
               <code value="SIS"/>
@@ -594,6 +600,9 @@
             </coding>
           </relationship>
           <relationship>
+            <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category">
+              <valueCode value="role"/>
+            </extension>
             <coding>
               <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
               <code value="ECON"/>
@@ -610,6 +619,9 @@
         </contact>
         <contact>
           <relationship>
+            <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category">
+              <valueCode value="relationType"/>
+            </extension>
             <coding>
               <system value="https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"/>
               <code value="SIS"/>
@@ -617,6 +629,9 @@
             </coding>
           </relationship>
           <relationship>
+            <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category">
+              <valueCode value="role"/>
+            </extension>
             <coding>
               <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
               <code value="NOK"/>
@@ -633,6 +648,9 @@
         </contact>
         <contact>
           <relationship>
+            <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category">
+              <valueCode value="role"/>
+            </extension>
             <coding>
               <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
               <code value="GUARD"/>
@@ -3319,7 +3337,7 @@
           <coding>
             <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
             <code value="adr"/>
-            <display value="Advance Directive"/>
+            <display value="Advanced Care Directive"/>
           </coding>
         </scope>
         <category>
@@ -3370,7 +3388,7 @@
           <coding>
             <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
             <code value="adr"/>
-            <display value="Advance Directive"/>
+            <display value="Advanced Care Directive"/>
           </coding>
         </scope>
         <category>
@@ -3421,7 +3439,7 @@
           <coding>
             <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
             <code value="adr"/>
-            <display value="Advance Directive"/>
+            <display value="Advanced Care Directive"/>
           </coding>
         </scope>
         <category>
@@ -3472,7 +3490,7 @@
           <coding>
             <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
             <code value="adr"/>
-            <display value="Advance Directive"/>
+            <display value="Advanced Care Directive"/>
           </coding>
         </scope>
         <category>
@@ -3523,7 +3541,7 @@
           <coding>
             <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
             <code value="adr"/>
-            <display value="Advance Directive"/>
+            <display value="Advanced Care Directive"/>
           </coding>
         </scope>
         <category>
@@ -3574,7 +3592,7 @@
           <coding>
             <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
             <code value="adr"/>
-            <display value="Advance Directive"/>
+            <display value="Advanced Care Directive"/>
           </coding>
         </scope>
         <category>
@@ -3625,7 +3643,7 @@
           <coding>
             <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
             <code value="adr"/>
-            <display value="Advance Directive"/>
+            <display value="Advanced Care Directive"/>
           </coding>
         </scope>
         <category>
@@ -3676,7 +3694,7 @@
           <coding>
             <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
             <code value="adr"/>
-            <display value="Advance Directive"/>
+            <display value="Advanced Care Directive"/>
           </coding>
         </scope>
         <category>
@@ -3721,6 +3739,11 @@
         <text>
           <status value="generated"/>
         </text>
+        <extension url="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-composition-extension">
+          <valueReference>
+            <reference value="urn:uuid:09275181-4d85-43b8-89b0-6dd68182bc52"/>
+          </valueReference>
+        </extension>
         <identifier>
           <system value="urn:ietf:rfc:3986"/>
           <value value="urn:uuid:D5C3639B-2A68-4C87-8019-CBD941B7B429"/>
@@ -3924,6 +3947,11 @@
         <text>
           <status value="generated"/>
         </text>
+        <extension url="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-composition-extension">
+          <valueReference>
+            <reference value="urn:uuid:09275181-4d85-43b8-89b0-6dd68182bc52"/>
+          </valueReference>
+        </extension>
         <identifier>
           <system value="urn:ietf:rfc:3986"/>
           <value value="urn:uuid:D5C3639B-2A68-4C87-8019-CBD941B7B430"/>

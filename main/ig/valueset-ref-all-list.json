@@ -286,8 +286,8 @@
     "url" : "https://interop.esante.gouv.fr/ig/fhir/document-core/ValueSet/fr-doc-vs-participation-type",
     "version" : "0.1.0",
     "status" : "draft",
-    "name" : "FRValueSetParticipationType",
-    "title" : "FR ValueSet Participation Type",
+    "name" : "FrValueSetParticipationTypeInformationRecipient",
+    "title" : "FR ValueSet Participation Type Information Recipient",
     "description" : "Type de participation : destinataire",
     "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ParticipationType"],
     "uses" : {
@@ -295,15 +295,13 @@
     "StructureDefinition-fr-composition-document-ips.html" : "FR Composition Document IPS"
   },
   {
-    "url" : "https://mos.esante.gouv.fr/NOS/JDV_J144-ParticipationType-CISIS/FHIR/JDV-J144-ParticipationType-CISIS",
-    "version" : "20210326120000",
-    "status" : "active",
-    "name" : "JDV_J144_ParticipationType_CISIS",
-    "title" : null,
-    "description" : "Type de participation CI-SIS",
-    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_A13-HL7ParticipationType/FHIR/TRE-A13-HL7ParticipationType"],
-    "oids" : ["1.2.250.1.213.1.1.5.591"],
-    "sources" : ["1.2.250.1.213.1.1.5.591"],
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/document-core/ValueSet/fr-doc-vs-participation-type-participant",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "FrValueSetParticipationTypeParticipant",
+    "title" : "FR ValueSet Participation Type Participant",
+    "description" : "Type de participation : participant",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ParticipationType"],
     "uses" : {
     },
     "StructureDefinition-fr-composition-document-ips.html" : "FR Composition Document IPS"
@@ -326,7 +324,7 @@
   },
   {
     "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-section-document-cisis",
-    "version" : "20260619134042",
+    "version" : "20260916095455",
     "status" : "active",
     "name" : "JdvSectionDocumentCisis",
     "title" : "JDV Section Document CISIS",

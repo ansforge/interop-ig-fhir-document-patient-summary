@@ -9,7 +9,7 @@
     "oids" : ["1.2.840.10008.2.16.4"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-section-document-cisis.html" : "JDV Section Document CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.14.0/ValueSet-jdv-section-document-cisis.html" : "JDV Section Document CISIS"
   },
   {
     "url" : "http://hl7.org/fhir/bundle-type",
@@ -128,9 +128,9 @@
     "oids" : ["2.16.840.1.113883.6.1"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-section-document-cisis.html" : "JDV Section Document CISIS",
     "http://hl7.org/fhir/R4/valueset-doc-typecodes.html" : "FHIR Document Type Codes",
-    "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set"
+    "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
+    "https://interop.esante.gouv.fr/terminologies/1.14.0/ValueSet-jdv-section-document-cisis.html" : "JDV Section Document CISIS"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
@@ -226,19 +226,8 @@
     "oids" : ["2.16.840.1.113883.5.90"],
     "uses" : {
     },
-    "https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/ValueSet-fr-doc-vs-participation-type.html" : "FR ValueSet Participation Type"
-  },
-  {
-    "url" : "https://mos.esante.gouv.fr/NOS/TRE_A13-HL7ParticipationType/FHIR/TRE-A13-HL7ParticipationType",
-    "version" : "20231215120000",
-    "status" : "active",
-    "name" : "TRE_A13_HL7ParticipationType",
-    "title" : null,
-    "description" : "HL7 Type de participation",
-    "oids" : ["2.16.840.1.113883.5.90"],
-    "uses" : {
-    },
-    "https://interop.esante.gouv.fr/terminologies/1.14.0/ValueSet-JDV-J144-ParticipationType-CISIS.html" : "JDV_J144_ParticipationType_CISIS"
+    "https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/ValueSet-fr-doc-vs-participation-type.html" : "FR ValueSet Participation Type Information Recipient",
+    "https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/ValueSet-fr-doc-vs-participation-type-participant.html" : "FR ValueSet Participation Type Participant"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R258-RelationPriseCharge/FHIR/TRE-R258-RelationPriseCharge",
@@ -286,7 +275,7 @@
     "oids" : ["1.2.250.1.213.1.1.4.322"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-section-document-cisis.html" : "JDV Section Document CISIS"
+    "https://interop.esante.gouv.fr/terminologies/1.14.0/ValueSet-jdv-section-document-cisis.html" : "JDV Section Document CISIS"
   },
   {
     "url" : "urn:ietf:bcp:47",
