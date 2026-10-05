@@ -61,10 +61,10 @@ Usage: #example
 * entry[=].resource = Medication-Exemple-1
 * entry[+].fullUrl = "urn:uuid:a4e1cafa-05e4-40c7-82dc-641f54281671"
 * entry[=].resource = Condition-Exemple-9
-* entry[+].fullUrl = "urn:uuid:1ff316e0-edde-4bb9-a5fe-822d486d8230"
-* entry[=].resource = MedicationAdministration-Exemple-2
 * entry[+].fullUrl = "urn:uuid:fb88edae-4d3f-4b00-ae17-71c8f03adc71"
 * entry[=].resource = Medication-Exemple-2
+* entry[+].fullUrl = "urn:uuid:14344fe6-b6c8-4c7a-82d8-e2e8130633de"
+* entry[=].resource = MedicationStatement-Exemple-1
 * entry[+].fullUrl = "urn:uuid:034d19b3-3c4e-488a-a7c0-9181dfc721e3"
 * entry[=].resource = DeviceUseStatement-Exemple-1
 * entry[+].fullUrl = "urn:uuid:7bb3e1f4-15bd-4c06-a587-3445c0f5a530"
@@ -116,9 +116,9 @@ Usage: #example
 * entry[+].fullUrl = "urn:uuid:091bf5bc-2ed8-4328-a5e6-7d78aeeeb20b"
 * entry[=].resource = Observation-Exemple-11-sur-la-grossesse
 * entry[+].fullUrl = "urn:uuid:73af1b58-f567-4c03-a1a6-d65d3b3fd079"
-* entry[=].resource = MedicationAdministration-Exemple-3
+* entry[=].resource = MedicationRequest-Exemple-1
 * entry[+].fullUrl = "urn:uuid:83e3e384-84ca-46dd-aa8c-c847a70b1fb5"
-* entry[=].resource = MedicationAdministration-Exemple-4
+* entry[=].resource = MedicationRequest-Exemple-2
 * entry[+].fullUrl = "urn:uuid:2f861880-31d2-4969-a2ce-b78f750f430e"
 * entry[=].resource = Medication-Exemple-3
 * entry[+].fullUrl = "urn:uuid:6349c4d2-bdba-41b1-b5d6-1ce8c359205d"
@@ -169,12 +169,11 @@ Usage: #example
 Instance: Composition-IPS-FR
 InstanceOf: FRCompositionDocumentIPS
 Usage: #inline
-* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-composition-document-ips|0.1.0"
+* meta.profile[canonicalIPS] = Canonical(fr-composition-document-ips)
 * meta.lastUpdated = "2025-09-09T13:28:17.000+00:00"
 * id = "09275181-4d85-43b8-89b0-6dd68182bc52"
 * language = #fr-FR
-* extension[R5-Composition-version].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Composition.version"
-* extension[R5-Composition-version].valueString = "2"
+* extension[version].valueString = "2"
 
 // Informant
 * extension[informant].extension[type].valueCodeableConcept.coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
@@ -186,12 +185,14 @@ Usage: #inline
 * extension[participant].extension[type].valueCodeableConcept.coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
 * extension[participant].extension[type].valueCodeableConcept.coding[0].code = #INF
 * extension[participant].extension[type].valueCodeableConcept.coding[0].display = "Informateur"
+* extension[participant].extension[function].valueCodeableConcept = $TRE-R259-HL7ParticipationFunction#PCP "Médecin traitant"
 * extension[participant].extension[time].valuePeriod.start = "2024-04-02T07:35:00+01:00"
 * extension[participant].extension[party].valueReference = Reference(urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9) "DR Stéphane MEDIONI"
 
 * identifier.value = "1.2.250.1.213.1.1.1.51.2024.1"
 * status = #final
 * type = $LNC#60591-5 "Synthèse médicale"
+* category[classCode] = $TRE-A03-ClasseDocument#11 "Synthèse"
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * encounter = Reference(urn:uuid:51807e91-cb17-4ca1-bc58-1efa85cf9d72)
 * date = "2024-09-09T14:00:00+01:00"
@@ -199,9 +200,8 @@ Usage: #inline
 * author = Reference(urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9) "DR Stéphane MEDIONI"
 * title = "SYNTHESE MEDICALE"
 * confidentiality = #N
-* attester[legal_attester].mode = #legal
-* attester[legal_attester].time = "2024-01-04T15:00:00+01:00"
-* attester[legal_attester].party = Reference(urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9) "DR Stéphane MEDIONI"
+* attester[legalAuthenticator].time = "2024-01-04T15:00:00+01:00"
+* attester[legalAuthenticator].party = Reference(urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9) "DR Stéphane MEDIONI"
 * custodian = Reference(urn:uuid:579f1274-8265-4bb1-91ba-d093a11be4f5) "Centre de soins le Belvédère"
 // 	Document de référence
 * relatesTo[replaced_document].code = #replaces
@@ -242,7 +242,7 @@ Usage: #inline
 * section[sectionMedications].code = $LNC#10160-0 "Traitements"
 * section[sectionMedications].text.status = #generated
 * section[sectionMedications].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><em>Traitements au long cours :</em></p><table border=\"0\"><thead><tr><th>Date de début</th><th>Date de fin</th><th>Médicament</th><th>Fréquence</th><th>Dose prescrite</th><th>Rythme</th><th>Voie d'administration</th><th>Motif</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/01/2024</td><td>–</td><td>LEVOTHYROX 75 microgrammes, comprimé sécable</td><td>1 fois/j</td><td>1 cp</td><td>–</td><td>Voie orale</td><td>Thyroïdite auto-immune</td><td>Le patient a pris le médicament après le petit-déjeuner</td></tr></tbody></table></div>"
-* section[sectionMedications].entry = Reference(urn:uuid:1ff316e0-edde-4bb9-a5fe-822d486d8230)
+* section[sectionMedications].entry = Reference(urn:uuid:14344fe6-b6c8-4c7a-82d8-e2e8130633de)
 * section[sectionMedicalDevice].title = "Dispositifs médicaux"
 * section[sectionMedicalDevice].code = $LNC#46264-8 "Dispositifs médicaux"
 * section[sectionMedicalDevice].text.status = #generated
@@ -306,8 +306,8 @@ Usage: #inline
 * section[sectionPlanOfCare].code = $LNC#18776-5 "Plan de soins"
 * section[sectionPlanOfCare].text.status = #generated
 * section[sectionPlanOfCare].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><em>Traitements médicamenteux :</em></p><table border=\"0\"><thead><tr><th>Médicament</th><th>Commentaire</th></tr></thead><tbody><tr><td>ROSUVASTATINE EG 5 mg, comprimé pelliculé</td><td>(texte libre)</td></tr><tr><td>Autre traitement : (texte libre)</td><td>(texte libre)</td></tr></tbody></table><br/><p><em>Demandes d'examens ou de suivis :</em></p><table border=\"0\"><thead><tr><th>Date envisagée</th><th>Demande</th><th>Commentaire</th></tr></thead><tbody><tr><td>01/12/2024</td><td>Cholestérol LDL</td><td>(Texte libre)</td></tr><tr><td>01/12/2024</td><td>Autre examen (texte libre)</td><td>(Texte libre)</td></tr></tbody></table><br/><p><em>Actes :</em></p><table border=\"0\"><thead><tr><th>Date envisagée</th><th>Priorité</th><th>Acte</th><th>Commentaire</th></tr></thead><tbody><tr><td>01/12/2024</td><td>Bénéfique pour le patient mais pas essentiel pour sa survie</td><td>Pose d'une prothèse auditive implantable dans l'oreille moyenne</td><td>(Texte libre)</td></tr><tr><td>01/12/2024</td><td>Aussi vite que possible</td><td>Autre acte (texte libre)</td><td>(Texte libre)</td></tr></tbody></table><br/><p><em>Rencontres :</em></p><table border=\"0\"><thead><tr><th>Date envisagée</th><th>Type de rencontre</th><th>Personne</th><th>Lieu</th><th>Commentaire</th></tr></thead><tbody><tr><td>01/12/2024</td><td>Ambulatoire</td><td>PR Jacques PETITJEAN (Médecin - Oncologie, opt Onco-hématologie (SM))</td><td>Hôpital Lariboisière (Service hématologie)</td><td>(Texte libre)</td></tr></tbody></table><br/><p><em>Vaccins recommandés :</em></p><table border=\"0\"><thead><tr><th>Période de vaccination souhaitable</th><th>Vaccin</th><th>Commentaire</th></tr></thead><tbody><tr><td>entre le 01/12/2024 et le 31/12/2024</td><td>Vaccin antituberculeux</td><td>(Texte libre)</td></tr><tr><td>entre le 01/12/2024 et le 31/12/2024</td><td>Autre vaccin (texte libre)</td><td>(Texte libre)</td></tr></tbody></table></div>"
-* section[sectionPlanOfCare].entry[0] = Reference(urn:uuid:73af1b58-f567-4c03-a1a6-d65d3b3fd079)
-* section[sectionPlanOfCare].entry[+] = Reference(urn:uuid:83e3e384-84ca-46dd-aa8c-c847a70b1fb5)
+* section[sectionPlanOfCare].entry[medicationRequest][0] = Reference(urn:uuid:73af1b58-f567-4c03-a1a6-d65d3b3fd079)
+* section[sectionPlanOfCare].entry[medicationRequest][+] = Reference(urn:uuid:83e3e384-84ca-46dd-aa8c-c847a70b1fb5)
 * section[sectionAdvanceDirective].title = "Directives anticipées"
 * section[sectionAdvanceDirective].code = $LNC#42348-3 "Directives anticipées"
 * section[sectionAdvanceDirective].text.status = #generated
@@ -440,7 +440,7 @@ Description: "Patient"
 * contact[2].address.line = "28 Avenue de Breteuil"
 * contact[2].address.city = "Paris"
 * contact[2].address.postalCode = "75007"
-* generalPractitioner = Reference(urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9) "DR Stéphane MEDIONI"
+* generalPractitioner = Reference(urn:uuid:b5941194-08be-4893-a629-652f97587b39) "DR Stéphane MEDIONI"
 
 Instance: practitioner-role-exemple-1
 InstanceOf: FRPractitionerRoleDocument
@@ -464,7 +464,7 @@ Usage: #inline
 * identifier[rpps].type.coding[0].display = "Numéro du professionnel de santé"
 * name[0].family = "MEDIONI"
 * name[0].given[0] = "Stéphane" 
-* name[0].suffix[0] = "Dr"
+* name[0].suffix[0] = "DR"
 * name[0].prefix[0] = "M"
 * telecom[0].system = #phone
 * telecom[0].value = "0147150000"
@@ -499,7 +499,7 @@ Usage: #inline
 * id = "51807e91-cb17-4ca1-bc58-1efa85cf9d72"
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-encounter-document|0.1.0"
 * identifier.type = $v2-0203#VN "Visit Number"
-* identifier.system = "urn:uuid:1.2.250.1.71.4.2.1"
+* identifier.system = "urn:oid:1.2.250.1.71.4.2.1"
 * identifier.value = "801234534765"
 * status = #finished
 * class = $v3-ActCode#AMB "ambulatoire (hors établissement)"
@@ -741,14 +741,14 @@ Usage: #inline
 * type = #allergy
 * category = #medication
 * criticality = #low
-* code = $SCT#416098002 "allergie médicamenteuse"
+* code = $terminologie-cim11-mms#XM5DJ7 "Paracétamol"
 * patient = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * onsetPeriod.start = "2021-12-04"
-* reaction[0].substance = $terminologie-cim11-mms#XM5DJ7 "Paracétamol"
+* reaction[0].substance = $terminologie-sms#100000090270 "Paracetamol"
 * reaction[=].manifestation = $terminologie-cim11-mms#4A80.0 "Bronchospasme d'origine médicamenteuse"
 * reaction[=].onset = "2021-12-04"
 * reaction[=].severity = #moderate
-* reaction[+].substance = $terminologie-cim11-mms#XM5DJ7 "Paracétamol"
+* reaction[+].substance = $terminologie-sms#100000090270 "Paracetamol"
 * reaction[=].manifestation = $terminologie-cim11-mms#4A82 "Troubles allergiques ou d'hypersensibilité de la peau ou des muqueuses"
 * reaction[=].onset = "2021-12-04"
 * reaction[=].severity = #mild
@@ -766,10 +766,10 @@ Usage: #inline
 * type = #allergy
 * category = #medication
 * criticality = #low
-* code = $SCT#416098002 "allergie médicamenteuse"
+* code = $terminologie-cim11-mms#XM4HZ6 "feuille de millepertuis"
 * patient = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * onsetPeriod.start = "2021-12-04"
-* reaction[0].substance = $SCT#372500003 "feuille de millepertuis"
+* reaction[0].substance = $terminologie-sms#100000092722 "Hypericum perforatum (millepertuis)"
 * reaction[=].manifestation = $terminologie-cim11-mms#4A82 "Troubles allergiques ou d'hypersensibilité de la peau ou des muqueuses"
 * reaction[=].onset = "2021-12-04"
 * reaction[=].severity = #mild
@@ -808,7 +808,8 @@ Usage: #inline
 * medicationReference = Reference(urn:uuid:f995f9bb-4043-45db-8b12-50dc7e9acc5a)
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * effectivePeriod.start = "2021-12-04"
-* dosage.route = #20053000 "Voie orale"
+* dosage.route = $terminologie-standardterms#20053000 "Voie orale"
+* dosage.dose = 1 '{sachet}' "sachet"
 
 Instance: Medication-Exemple-1
 InstanceOf: FRMedicationDocument
@@ -818,7 +819,7 @@ Usage: #inline
 * extension[productName].valueString = "AMOXICILLINE EG 1G BUV SACH 6"
 * extension[classification].valueCodeableConcept = $terminologie-atc#J01CA04 "amoxicilline"
 * extension[classification].valueCodeableConcept.text = "amoxicilline"
-* code = $terminologie-atc#3400935186607 "AMOXICILLINE EG 1G BUV SACH 6"
+* code = $terminologie-bdpm#3400935186607 "AMOXICILLINE EG 1G BUV SACH 6"
 * ingredient.itemCodeableConcept = $terminologie-sms#100000092629 "AMOXICILLINE TRIHYDRATÉE"
 * ingredient.itemCodeableConcept.text = "AMOXICILLINE TRIHYDRATÉE"
 * ingredient.strength.numerator.value = 1.148
@@ -838,27 +839,6 @@ Usage: #inline
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * onsetDateTime = "2018-05-21"
 
-Instance: MedicationAdministration-Exemple-2
-InstanceOf: FRMedicationAdministrationDocument
-Usage: #inline
-* id = "1ff316e0-edde-4bb9-a5fe-822d486d8230"
-* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"
-* extension[occurenceR5].valueTiming.repeat.frequency = 1
-* extension[occurenceR5].valueTiming.repeat.periodUnit = #d
-* identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:1ff316e0-edde-4bb9-a5fe-822d486d8230"
-* status = #completed
-* category = $v3-ActCode#DRUG "Médicament"
-* medicationReference = Reference(urn:uuid:fb88edae-4d3f-4b00-ae17-71c8f03adc71)
-* subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
-* effectivePeriod.start = "2024-01-11"
-* reasonReference = Reference(urn:uuid:257427f5-dffa-4a97-9475-4ebb988589af)
-* note.text = "Le patient a pris le médicament après le petit-déjeuner"
-* dosage.route = #20053000 "Voie orale"
-* dosage.dose = 1 '{tbl}' "tablet"
-* dosage.rateQuantity.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
-* dosage.rateQuantity.extension.valueCode = #not-applicable
-
 Instance: Medication-Exemple-2
 InstanceOf: FRMedicationDocument
 Usage: #inline
@@ -873,6 +853,26 @@ Usage: #inline
 * ingredient.strength.numerator.value = 75
 * ingredient.strength.numerator.unit = "mg"
 * ingredient.strength.denominator.value = 1
+
+Instance: MedicationStatement-Exemple-1
+InstanceOf: FRMedicationStatementDocument
+Usage: #inline
+* id = "14344fe6-b6c8-4c7a-82d8-e2e8130633de"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-statement-document|0.1.0"
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:14344fe6-b6c8-4c7a-82d8-e2e8130633de"
+* category = $v3-ActCode#DRUG "Médicament"
+* status = #completed
+* effectivePeriod.start = "2024-01-11"
+* dosage.timing.repeat.frequency = 1
+* dosage.timing.repeat.period = 1
+* dosage.timing.repeat.periodUnit = #d
+* dosage.route = $terminologie-standardterms#20053000 "Voie orale"
+* dosage.doseAndRate.doseQuantity = 1 '{tbl}' "tablet"
+* medicationReference = Reference(urn:uuid:fb88edae-4d3f-4b00-ae17-71c8f03adc71)
+* subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
+* reasonReference = Reference(urn:uuid:257427f5-dffa-4a97-9475-4ebb988589af)
+* note.text = "Le patient a pris le médicament après le petit-déjeuner"
 
 Instance: DeviceUseStatement-Exemple-1
 InstanceOf: FRDeviceUseStatementDocument
@@ -1069,15 +1069,14 @@ Usage: #inline
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:7f0d585b-9a48-4605-baab-30e93603a563"
 * status = #completed
-* vaccineCode = $SCT#764708002 "Vaccine product containing diphtheria, tetanus and inactivated poliovirus antigens"
-* vaccineCode = $terminologie-atc#J07CA01 "Diphtérie-poliomyélite-tétanos"
+* vaccineCode.coding[cis] = $terminologie-bdpm#60917345 "REVAXIS, suspension injectable en seringue préremplie. Vaccin diphtérique, tétanique et poliomyélitique (inactivé), (adsorbé) à teneur réduite en antigènes"
+* vaccineCode.coding[translation] = $terminologie-atc#J07CA01 "Diphtérie-poliomyélite-tétanos"
 * patient = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * occurrenceDateTime = "2009-09-28"
 * lotNumber = "4456672"
 * site = $SCT#16217701000119102 "Deltoïde gauche"
 * route = $terminologie-standardterms#20035000 "Voie intramusculaire"
 * performer.actor = Reference(urn:uuid:f3062170-ef7b-45a7-802f-47e461a7d05d)
-* vaccineCode = $SCT#764708002 "Vaccine product containing diphtheria, tetanus and inactivated poliovirus antigens"
 * note.text = "texte libre"
 * reasonReference = Reference(urn:uuid:80c62f71-7c99-458d-884d-725bc410a14d)
 * protocolApplied.series = "INITIMMUNIZ"
@@ -1093,17 +1092,14 @@ Usage: #inline
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:3a7417c1-d483-4f56-833d-43bf8e438874"
 * status = #completed
-* vaccineCode = $terminologie-atc#J07CA01 "Diphtérie-poliomyélite-tétanos"
+* vaccineCode.coding[cis] = $terminologie-bdpm#60917345 "REVAXIS, suspension injectable en seringue préremplie. Vaccin diphtérique, tétanique et poliomyélitique (inactivé), adsorbé, à teneur réduite en antigènes"
+* vaccineCode.coding[translation] = $terminologie-atc#J07CA01 "Diphtérie-poliomyélite-tétanos"
 * patient = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * occurrenceDateTime = "2009-08-25"
 * lotNumber = "4456668"
 * site = $SCT#16217701000119102 "Deltoïde gauche"
 * route = $terminologie-standardterms#20035000 "Voie intramusculaire"
-
 * performer.actor = Reference(urn:uuid:f3062170-ef7b-45a7-802f-47e461a7d05d)
-
-* vaccineCode = $SCT#764708002 "Vaccine product containing diphtheria, tetanus and inactivated poliovirus antigens"
-
 * note.text = "texte libre"
 * reasonReference = Reference(urn:uuid:80c62f71-7c99-458d-884d-725bc410a14d)
 * protocolApplied.series = "INITIMMUNIZ"
@@ -1215,30 +1211,41 @@ Usage: #inline
 * effectiveDateTime.extension.valueCode = #not-applicable
 * valueInteger = 1
 
-Instance: MedicationAdministration-Exemple-3
-InstanceOf: FRMedicationAdministrationDocument
+Instance: MedicationRequest-Exemple-1
+InstanceOf: FRMedicationRequestDocument
 Usage: #inline
 * id = "73af1b58-f567-4c03-a1a6-d65d3b3fd079"
-* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-request-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:AADC9C14-F1CA-4177-B2C8-A5178D5B3CA0"
 * status = #completed
+* intent = #order
 * medicationReference = Reference(urn:uuid:2f861880-31d2-4969-a2ce-b78f750f430e)
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
-* effectivePeriod.start = "2021-12-04"
+* authoredOn = "2021-12-04"
+* dosageInstruction.timing.repeat.boundsPeriod.start = "2021-12-04"
+* dosageInstruction.timing.repeat.frequency = 1
+* dosageInstruction.timing.repeat.period = 1
+* dosageInstruction.timing.repeat.periodUnit = #d
+* dosageInstruction.route = $terminologie-standardterms#20053000 "Voie orale"
+* dosageInstruction.doseAndRate.doseRange.low = 1 '{tbl}' "tablet"
+* dosageInstruction.doseAndRate.doseRange.high = 1 '{tbl}' "tablet"
+* substitution.allowedCodeableConcept = $v3-substanceAdminSubstitution#G "Substitution autorisée par un produit générique"
 * note.text = "texte libre"
 
-Instance: MedicationAdministration-Exemple-4
-InstanceOf: FRMedicationAdministrationDocument
+Instance: MedicationRequest-Exemple-2
+InstanceOf: FRMedicationRequestDocument
 Usage: #inline
 * id = "83e3e384-84ca-46dd-aa8c-c847a70b1fb5"
-* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-request-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:AADC9C14-F1CA-4177-B2C8-A5178D5B3CA0"
 * status = #completed
+* intent = #order
 * medicationReference = Reference(urn:uuid:6349c4d2-bdba-41b1-b5d6-1ce8c359205d)
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
-* effectivePeriod.start = "2021-12-04"
+* authoredOn = "2021-12-04"
+* substitution.allowedCodeableConcept = $v3-substanceAdminSubstitution#G "Substitution autorisée par un produit générique"
 * note.text = "texte libre"
 
 Instance: Medication-Exemple-3
@@ -1247,7 +1254,7 @@ Usage: #inline
 * id = "2f861880-31d2-4969-a2ce-b78f750f430e"
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document|0.1.0"
 * extension[productName].valueString = "ROSUVASTATINE EG 5 mg, comprimé pelliculé"
-* code = $terminologie-atc#69473265 "ROSUVASTATINE EG 5 mg, comprimé pelliculé"
+* code = $terminologie-bdpm#69473265 "ROSUVASTATINE EG 5 mg, comprimé pelliculé"
 * ingredient.itemCodeableConcept = $terminologie-sms#100000090079 "ROSUVASTATINE"
 * ingredient.itemCodeableConcept.text = "ROSUVASTATINE"
 * ingredient.strength.numerator.value = 5
@@ -1261,9 +1268,11 @@ Usage: #inline
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document|0.1.0"
 * extension[productName].valueString.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 * extension[productName].valueString.extension.valueCode = #unknown
-* code = $terminologie-cisis#GEN-092.03.01 "Autre(s) traitement(s)"
-* ingredient.itemCodeableConcept.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
-* ingredient.itemCodeableConcept.extension.valueCode = #unknown
+* code.coding.code.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* code.coding.code.extension.valueCode = #unknown
+* code.text = "Autre(s) traitement(s)"
+* ingredient.itemCodeableConcept.coding.code.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* ingredient.itemCodeableConcept.coding.code.extension.valueCode = #unknown
 
 Instance: ServiceRequest-Exemple-1
 InstanceOf: FRServiceRequestDocument
