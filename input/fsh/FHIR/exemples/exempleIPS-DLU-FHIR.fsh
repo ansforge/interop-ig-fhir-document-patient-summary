@@ -61,14 +61,14 @@ Usage: #example
 * entry[=].resource = Medication-DLU-1
 * entry[+].fullUrl = "urn:uuid:b6c7d8e9-f0a1-2345-b201-345678901235"
 * entry[=].resource = Condition-DLU-9
-* entry[+].fullUrl = "urn:uuid:c7d8e9f0-a1b2-3456-c212-456789012346"
-* entry[=].resource = MedicationAdministration-DLU-2
 * entry[+].fullUrl = "urn:uuid:d8e9f0a1-b2c3-4567-d223-567890123457"
 * entry[=].resource = Medication-DLU-2
-* entry[+].fullUrl = "urn:uuid:e9f0a1b2-c3d4-5678-e234-678901234568"
-* entry[=].resource = MedicationAdministration-DLU-3
+* entry[+].fullUrl = "urn:uuid:13b993a8-7bca-4899-826c-006017d4ea14"
+* entry[=].resource = MedicationStatement-DLU-1
 * entry[+].fullUrl = "urn:uuid:f0a1b2c3-d4e5-6789-f245-789012345679"
 * entry[=].resource = Medication-DLU-3
+* entry[+].fullUrl = "urn:uuid:4dda7e49-168d-405d-b928-4232107582cf"
+* entry[=].resource = MedicationStatement-DLU-2
 * entry[+].fullUrl = "urn:uuid:a1b2c3d4-e5f6-7891-a256-890123456780"
 * entry[=].resource = DeviceUseStatement-DLU-1
 * entry[+].fullUrl = "urn:uuid:b2c3d4e5-f6a7-8902-b267-901234567891"
@@ -112,9 +112,9 @@ Usage: #example
 * entry[+].fullUrl = "urn:uuid:c1d2e3f4-a5b6-7891-c456-890123456780"
 * entry[=].resource = Condition-DLU-10
 * entry[+].fullUrl = "urn:uuid:d2e3f4a5-b6c7-8902-d467-901234567891"
-* entry[=].resource = MedicationAdministration-DLU-4
+* entry[=].resource = MedicationRequest-DLU-1
 * entry[+].fullUrl = "urn:uuid:e3f4a5b6-c7d8-9013-e478-012345678902"
-* entry[=].resource = MedicationAdministration-DLU-5
+* entry[=].resource = MedicationRequest-DLU-2
 * entry[+].fullUrl = "urn:uuid:f4a5b6c7-d8e9-0124-f489-123456789013"
 * entry[=].resource = Medication-DLU-4
 * entry[+].fullUrl = "urn:uuid:a5b6c7d8-e9f0-1235-a490-234567890124"
@@ -238,8 +238,8 @@ Usage: #inline
 * section[sectionMedications].code = $LNC#10160-0 "Traitements"
 * section[sectionMedications].text.status = #generated
 * section[sectionMedications].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><em>Traitements au long cours :</em></p><table border=\"0\"><thead><tr><th>Date de début</th><th>Date de fin</th><th>Médicament</th><th>Fréquence</th><th>Dose prescrite</th><th>Rythme</th><th>Voie d'administration</th><th>Motif</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/01/2024</td><td>–</td><td>LEVOTHYROX 75 microgrammes, comprimé sécable</td><td>1 fois/j</td><td>1 cp</td><td>–</td><td>Voie orale</td><td>Thyroïdite auto-immune</td><td>(texte libre)</td></tr></tbody></table><p><em>Traitements aigus :</em></p><table border=\"0\"><thead><tr><th>Date de début</th><th>Date de fin</th><th>Médicament</th><th>Fréquence</th><th>Dose prescrite</th><th>Rythme</th><th>Voie d'administration</th><th>Motif</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/02/2022</td><td>–</td><td>COUMADINE 5 mg, comprimé sécable</td><td>4 fois/j</td><td>1 cp</td><td>toutes les 6h</td><td>Voie orale</td><td>Accident Ischémique Cérébral Transitoire</td><td>(texte libre)</td></tr><tr><td>01/12/2021</td><td>06/12/2021</td><td>PARACETAMOL MYLAN/VIATRIS 500 mg, comprimé</td><td>doses progressives</td><td>–</td><td>–</td><td>Voie orale</td><td>–</td><td>(texte libre)</td></tr></tbody></table></div>"
-* section[sectionMedications].entry[0] = Reference(urn:uuid:c7d8e9f0-a1b2-3456-c212-456789012346)
-* section[sectionMedications].entry[+] = Reference(urn:uuid:e9f0a1b2-c3d4-5678-e234-678901234568)
+* section[sectionMedications].entry[0] = Reference(urn:uuid:13b993a8-7bca-4899-826c-006017d4ea14)
+* section[sectionMedications].entry[+] = Reference(urn:uuid:4dda7e49-168d-405d-b928-4232107582cf)
 * section[sectionMedicalDevice].title = "Dispositifs médicaux"
 * section[sectionMedicalDevice].code = $LNC#46264-8 "Dispositifs médicaux"
 * section[sectionMedicalDevice].text.status = #generated
@@ -296,8 +296,8 @@ Usage: #inline
 * section[sectionPlanOfCare].code = $LNC#18776-5 "Plan de soins"
 * section[sectionPlanOfCare].text.status = #generated
 * section[sectionPlanOfCare].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><em>Traitements médicamenteux :</em></p><table border=\"0\"><thead><tr><th>Médicament</th><th>Commentaire</th></tr></thead><tbody><tr><td>ROSUVASTATINE EG 5 mg, comprimé pelliculé</td><td>(texte libre)</td></tr><tr><td>Autre traitement : (texte libre)</td><td>(texte libre)</td></tr></tbody></table><br/><p><em>Demandes d'examens ou de suivis :</em></p><table border=\"0\"><thead><tr><th>Date envisagée</th><th>Demande</th><th>Commentaire</th></tr></thead><tbody><tr><td>01/12/2024</td><td>Cholestérol LDL</td><td>(Texte libre)</td></tr><tr><td>01/12/2024</td><td>Autre examen (texte libre)</td><td>(Texte libre)</td></tr></tbody></table><br/><p><em>Actes :</em></p><table border=\"0\"><thead><tr><th>Date envisagée</th><th>Priorité</th><th>Acte</th><th>Commentaire</th></tr></thead><tbody><tr><td>01/12/2024</td><td>Aussi vite que possible</td><td>Soins palliatifs</td><td>(Texte libre)</td></tr><tr><td>01/12/2024</td><td>Bénéfique pour le patient mais pas essentiel pour sa survie</td><td>Pose d'une prothèse auditive implantable dans l'oreille moyenne</td><td>(Texte libre)</td></tr><tr><td>01/12/2024</td><td>Aussi vite que possible</td><td>Autre acte (texte libre)</td><td>(Texte libre)</td></tr></tbody></table><br/><p><em>Rencontres :</em></p><table border=\"0\"><thead><tr><th>Date envisagée</th><th>Type de rencontre</th><th>Personne</th><th>Lieu</th><th>Commentaire</th></tr></thead><tbody><tr><td>01/12/2024</td><td>Ambulatoire</td><td>PR Jacques PETITJEAN (Médecin - Oncologie, opt Onco-hématologie (SM))</td><td>Hôpital Lariboisière (Service hématologie)</td><td>(Texte libre)</td></tr></tbody></table><br/><p><em>Vaccins recommandés :</em></p><table border=\"0\"><thead><tr><th>Période de vaccination souhaitable</th><th>Vaccin</th><th>Commentaire</th></tr></thead><tbody><tr><td>entre le 01/12/2024 et le 31/12/2024</td><td>Vaccin antituberculeux</td><td>(Texte libre)</td></tr><tr><td>entre le 01/12/2024 et le 31/12/2024</td><td>Autre vaccin (texte libre)</td><td>(Texte libre)</td></tr></tbody></table></div>"
-* section[sectionPlanOfCare].entry[0] = Reference(urn:uuid:d2e3f4a5-b6c7-8902-d467-901234567891)
-* section[sectionPlanOfCare].entry[+] = Reference(urn:uuid:e3f4a5b6-c7d8-9013-e478-012345678902)
+* section[sectionPlanOfCare].entry[medicationRequest][0] = Reference(urn:uuid:d2e3f4a5-b6c7-8902-d467-901234567891)
+* section[sectionPlanOfCare].entry[medicationRequest][+] = Reference(urn:uuid:e3f4a5b6-c7d8-9013-e478-012345678902)
 * section[sectionResults].title = "Résultats"
 * section[sectionResults].code = $LNC#30954-2 "Résultats d’examens"
 * section[sectionResults].text.status = #generated
@@ -822,25 +822,24 @@ Usage: #inline
 * onsetDateTime = "2021-12-04"
 
 //***************Traitements (section Traitements)*********************//
-Instance: MedicationAdministration-DLU-2
-InstanceOf: FRMedicationAdministrationDocument
+Instance: MedicationStatement-DLU-1
+InstanceOf: FRMedicationStatementDocument
 Usage: #inline
-* id = "c7d8e9f0-a1b2-3456-c212-456789012346"
-* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"
-* extension[occurenceR5].valueTiming.repeat.frequency = 1
-* extension[occurenceR5].valueTiming.repeat.periodUnit = #d
+* id = "13b993a8-7bca-4899-826c-006017d4ea14"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-statement-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:c7d8e9f0-a1b2-3456-c212-456789012346"
-* status = #completed
+* identifier.value = "urn:uuid:13b993a8-7bca-4899-826c-006017d4ea14"
 * category = $v3-ActCode#DRUG "Médicament"
+* status = #completed
+* effectivePeriod.start = "2024-01-11"
+* dosage.timing.repeat.frequency = 1
+* dosage.timing.repeat.period = 1
+* dosage.timing.repeat.periodUnit = #d
+* dosage.route = $terminologie-standardterms#20053000 "Voie orale"
+* dosage.doseAndRate.doseQuantity = 1 '{tbl}' "tablet"
 * medicationReference = Reference(urn:uuid:d8e9f0a1-b2c3-4567-d223-567890123457)
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
-* effectivePeriod.start = "2024-01-11"
 * reasonReference = Reference(urn:uuid:b8c9d0e1-f2a3-4567-b023-567890123457)
-* dosage.route = $terminologie-standardterms#20053000 "Voie orale"
-* dosage.dose = 1 '{tbl}' "tablet"
-* dosage.rateQuantity.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
-* dosage.rateQuantity.extension.valueCode = #not-applicable
 
 Instance: Medication-DLU-2
 InstanceOf: FRMedicationDocument
@@ -857,24 +856,24 @@ Usage: #inline
 * ingredient.strength.numerator.unit = "mg"
 * ingredient.strength.denominator.value = 1
 
-Instance: MedicationAdministration-DLU-3
-InstanceOf: FRMedicationAdministrationDocument
+Instance: MedicationStatement-DLU-2
+InstanceOf: FRMedicationStatementDocument
 Usage: #inline
-* id = "e9f0a1b2-c3d4-5678-e234-678901234568"
-* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"
-* extension[occurenceR5].valueTiming.repeat.frequency = 4
-* extension[occurenceR5].valueTiming.repeat.period = 6
-* extension[occurenceR5].valueTiming.repeat.periodUnit = #h
+* id = "4dda7e49-168d-405d-b928-4232107582cf"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-statement-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:e9f0a1b2-c3d4-5678-e234-678901234568"
-* status = #completed
+* identifier.value = "urn:uuid:4dda7e49-168d-405d-b928-4232107582cf"
 * category = $v3-ActCode#DRUG "Médicament"
+* status = #completed
+* effectivePeriod.start = "2022-02-11"
+* dosage.timing.repeat.frequency = 4
+* dosage.timing.repeat.period = 6
+* dosage.timing.repeat.periodUnit = #h
+* dosage.route = $terminologie-standardterms#20053000 "Voie orale"
+* dosage.doseAndRate.doseQuantity = 1 '{tbl}' "tablet"
 * medicationReference = Reference(urn:uuid:f0a1b2c3-d4e5-6789-f245-789012345679)
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
-* effectivePeriod.start = "2022-02-11"
 * reasonReference = Reference(urn:uuid:a3b4c5d6-e7f8-9012-a078-012345678902)
-* dosage.route = $terminologie-standardterms#20053000 "Voie orale"
-* dosage.dose = 1 '{tbl}' "tablet"
 
 Instance: Medication-DLU-3
 InstanceOf: FRMedicationDocument
@@ -1182,30 +1181,41 @@ Usage: #inline
 * onsetDateTime = "2009-09-28"
 
 //***************Plan de soins - MedicationAdministrations*********************//
-Instance: MedicationAdministration-DLU-4
-InstanceOf: FRMedicationAdministrationDocument
+Instance: MedicationRequest-DLU-1
+InstanceOf: FRMedicationRequestDocument
 Usage: #inline
 * id = "d2e3f4a5-b6c7-8902-d467-901234567891"
-* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-request-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:AADC9C14-F1CA-4177-B2C8-A5178D5B3CB1"
 * status = #completed
+* intent = #order
 * medicationReference = Reference(urn:uuid:f4a5b6c7-d8e9-0124-f489-123456789013)
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
-* effectivePeriod.start = "2024-12-01"
+* authoredOn = "2024-12-01"
+* dosageInstruction.timing.repeat.boundsPeriod.start = "2024-12-01"
+* dosageInstruction.timing.repeat.frequency = 1
+* dosageInstruction.timing.repeat.period = 1
+* dosageInstruction.timing.repeat.periodUnit = #d
+* dosageInstruction.route = $terminologie-standardterms#20053000 "Voie orale"
+* dosageInstruction.doseAndRate.doseRange.low = 1 '{tbl}' "tablet"
+* dosageInstruction.doseAndRate.doseRange.high = 1 '{tbl}' "tablet"
+* substitution.allowedCodeableConcept = $v3-substanceAdminSubstitution#G "Substitution autorisée par un produit générique"
 * note.text = "texte libre"
 
-Instance: MedicationAdministration-DLU-5
-InstanceOf: FRMedicationAdministrationDocument
+Instance: MedicationRequest-DLU-2
+InstanceOf: FRMedicationRequestDocument
 Usage: #inline
 * id = "e3f4a5b6-c7d8-9013-e478-012345678902"
-* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-request-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:AADC9C14-F1CA-4177-B2C8-A5178D5B3CB2"
 * status = #completed
+* intent = #order
 * medicationReference = Reference(urn:uuid:a5b6c7d8-e9f0-1235-a490-234567890124)
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
-* effectivePeriod.start = "2024-12-01"
+* authoredOn = "2024-12-01"
+* substitution.allowedCodeableConcept = $v3-substanceAdminSubstitution#G "Substitution autorisée par un produit générique"
 * note.text = "texte libre"
 
 Instance: Medication-DLU-4

@@ -7,6 +7,7 @@ Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-cli
 Alias: $allergyintolerance-clinical = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
 Alias: $allergyintolerance-verification = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
 Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
+Alias: $v3-substanceAdminSubstitution = http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution
 
 // Observation Categories
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category

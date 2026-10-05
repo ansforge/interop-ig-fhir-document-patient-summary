@@ -61,10 +61,10 @@ Usage: #example
 * entry[=].resource = Medication-Exemple-1
 * entry[+].fullUrl = "urn:uuid:a4e1cafa-05e4-40c7-82dc-641f54281671"
 * entry[=].resource = Condition-Exemple-9
-* entry[+].fullUrl = "urn:uuid:1ff316e0-edde-4bb9-a5fe-822d486d8230"
-* entry[=].resource = MedicationAdministration-Exemple-2
 * entry[+].fullUrl = "urn:uuid:fb88edae-4d3f-4b00-ae17-71c8f03adc71"
 * entry[=].resource = Medication-Exemple-2
+* entry[+].fullUrl = "urn:uuid:14344fe6-b6c8-4c7a-82d8-e2e8130633de"
+* entry[=].resource = MedicationStatement-Exemple-1
 * entry[+].fullUrl = "urn:uuid:034d19b3-3c4e-488a-a7c0-9181dfc721e3"
 * entry[=].resource = DeviceUseStatement-Exemple-1
 * entry[+].fullUrl = "urn:uuid:7bb3e1f4-15bd-4c06-a587-3445c0f5a530"
@@ -116,9 +116,9 @@ Usage: #example
 * entry[+].fullUrl = "urn:uuid:091bf5bc-2ed8-4328-a5e6-7d78aeeeb20b"
 * entry[=].resource = Observation-Exemple-11-sur-la-grossesse
 * entry[+].fullUrl = "urn:uuid:73af1b58-f567-4c03-a1a6-d65d3b3fd079"
-* entry[=].resource = MedicationAdministration-Exemple-3
+* entry[=].resource = MedicationRequest-Exemple-1
 * entry[+].fullUrl = "urn:uuid:83e3e384-84ca-46dd-aa8c-c847a70b1fb5"
-* entry[=].resource = MedicationAdministration-Exemple-4
+* entry[=].resource = MedicationRequest-Exemple-2
 * entry[+].fullUrl = "urn:uuid:2f861880-31d2-4969-a2ce-b78f750f430e"
 * entry[=].resource = Medication-Exemple-3
 * entry[+].fullUrl = "urn:uuid:6349c4d2-bdba-41b1-b5d6-1ce8c359205d"
@@ -242,7 +242,7 @@ Usage: #inline
 * section[sectionMedications].code = $LNC#10160-0 "Traitements"
 * section[sectionMedications].text.status = #generated
 * section[sectionMedications].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><em>Traitements au long cours :</em></p><table border=\"0\"><thead><tr><th>Date de début</th><th>Date de fin</th><th>Médicament</th><th>Fréquence</th><th>Dose prescrite</th><th>Rythme</th><th>Voie d'administration</th><th>Motif</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/01/2024</td><td>–</td><td>LEVOTHYROX 75 microgrammes, comprimé sécable</td><td>1 fois/j</td><td>1 cp</td><td>–</td><td>Voie orale</td><td>Thyroïdite auto-immune</td><td>Le patient a pris le médicament après le petit-déjeuner</td></tr></tbody></table></div>"
-* section[sectionMedications].entry = Reference(urn:uuid:1ff316e0-edde-4bb9-a5fe-822d486d8230)
+* section[sectionMedications].entry = Reference(urn:uuid:14344fe6-b6c8-4c7a-82d8-e2e8130633de)
 * section[sectionMedicalDevice].title = "Dispositifs médicaux"
 * section[sectionMedicalDevice].code = $LNC#46264-8 "Dispositifs médicaux"
 * section[sectionMedicalDevice].text.status = #generated
@@ -306,8 +306,8 @@ Usage: #inline
 * section[sectionPlanOfCare].code = $LNC#18776-5 "Plan de soins"
 * section[sectionPlanOfCare].text.status = #generated
 * section[sectionPlanOfCare].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><em>Traitements médicamenteux :</em></p><table border=\"0\"><thead><tr><th>Médicament</th><th>Commentaire</th></tr></thead><tbody><tr><td>ROSUVASTATINE EG 5 mg, comprimé pelliculé</td><td>(texte libre)</td></tr><tr><td>Autre traitement : (texte libre)</td><td>(texte libre)</td></tr></tbody></table><br/><p><em>Demandes d'examens ou de suivis :</em></p><table border=\"0\"><thead><tr><th>Date envisagée</th><th>Demande</th><th>Commentaire</th></tr></thead><tbody><tr><td>01/12/2024</td><td>Cholestérol LDL</td><td>(Texte libre)</td></tr><tr><td>01/12/2024</td><td>Autre examen (texte libre)</td><td>(Texte libre)</td></tr></tbody></table><br/><p><em>Actes :</em></p><table border=\"0\"><thead><tr><th>Date envisagée</th><th>Priorité</th><th>Acte</th><th>Commentaire</th></tr></thead><tbody><tr><td>01/12/2024</td><td>Bénéfique pour le patient mais pas essentiel pour sa survie</td><td>Pose d'une prothèse auditive implantable dans l'oreille moyenne</td><td>(Texte libre)</td></tr><tr><td>01/12/2024</td><td>Aussi vite que possible</td><td>Autre acte (texte libre)</td><td>(Texte libre)</td></tr></tbody></table><br/><p><em>Rencontres :</em></p><table border=\"0\"><thead><tr><th>Date envisagée</th><th>Type de rencontre</th><th>Personne</th><th>Lieu</th><th>Commentaire</th></tr></thead><tbody><tr><td>01/12/2024</td><td>Ambulatoire</td><td>PR Jacques PETITJEAN (Médecin - Oncologie, opt Onco-hématologie (SM))</td><td>Hôpital Lariboisière (Service hématologie)</td><td>(Texte libre)</td></tr></tbody></table><br/><p><em>Vaccins recommandés :</em></p><table border=\"0\"><thead><tr><th>Période de vaccination souhaitable</th><th>Vaccin</th><th>Commentaire</th></tr></thead><tbody><tr><td>entre le 01/12/2024 et le 31/12/2024</td><td>Vaccin antituberculeux</td><td>(Texte libre)</td></tr><tr><td>entre le 01/12/2024 et le 31/12/2024</td><td>Autre vaccin (texte libre)</td><td>(Texte libre)</td></tr></tbody></table></div>"
-* section[sectionPlanOfCare].entry[0] = Reference(urn:uuid:73af1b58-f567-4c03-a1a6-d65d3b3fd079)
-* section[sectionPlanOfCare].entry[+] = Reference(urn:uuid:83e3e384-84ca-46dd-aa8c-c847a70b1fb5)
+* section[sectionPlanOfCare].entry[medicationRequest][0] = Reference(urn:uuid:73af1b58-f567-4c03-a1a6-d65d3b3fd079)
+* section[sectionPlanOfCare].entry[medicationRequest][+] = Reference(urn:uuid:83e3e384-84ca-46dd-aa8c-c847a70b1fb5)
 * section[sectionAdvanceDirective].title = "Directives anticipées"
 * section[sectionAdvanceDirective].code = $LNC#42348-3 "Directives anticipées"
 * section[sectionAdvanceDirective].text.status = #generated
@@ -839,27 +839,6 @@ Usage: #inline
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * onsetDateTime = "2018-05-21"
 
-Instance: MedicationAdministration-Exemple-2
-InstanceOf: FRMedicationAdministrationDocument
-Usage: #inline
-* id = "1ff316e0-edde-4bb9-a5fe-822d486d8230"
-* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"
-* extension[occurenceR5].valueTiming.repeat.frequency = 1
-* extension[occurenceR5].valueTiming.repeat.periodUnit = #d
-* identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:1ff316e0-edde-4bb9-a5fe-822d486d8230"
-* status = #completed
-* category = $v3-ActCode#DRUG "Médicament"
-* medicationReference = Reference(urn:uuid:fb88edae-4d3f-4b00-ae17-71c8f03adc71)
-* subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
-* effectivePeriod.start = "2024-01-11"
-* reasonReference = Reference(urn:uuid:257427f5-dffa-4a97-9475-4ebb988589af)
-* note.text = "Le patient a pris le médicament après le petit-déjeuner"
-* dosage.route = $terminologie-standardterms#20053000 "Voie orale"
-* dosage.dose = 1 '{tbl}' "tablet"
-* dosage.rateQuantity.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
-* dosage.rateQuantity.extension.valueCode = #not-applicable
-
 Instance: Medication-Exemple-2
 InstanceOf: FRMedicationDocument
 Usage: #inline
@@ -874,6 +853,26 @@ Usage: #inline
 * ingredient.strength.numerator.value = 75
 * ingredient.strength.numerator.unit = "mg"
 * ingredient.strength.denominator.value = 1
+
+Instance: MedicationStatement-Exemple-1
+InstanceOf: FRMedicationStatementDocument
+Usage: #inline
+* id = "14344fe6-b6c8-4c7a-82d8-e2e8130633de"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-statement-document|0.1.0"
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:14344fe6-b6c8-4c7a-82d8-e2e8130633de"
+* category = $v3-ActCode#DRUG "Médicament"
+* status = #completed
+* effectivePeriod.start = "2024-01-11"
+* dosage.timing.repeat.frequency = 1
+* dosage.timing.repeat.period = 1
+* dosage.timing.repeat.periodUnit = #d
+* dosage.route = $terminologie-standardterms#20053000 "Voie orale"
+* dosage.doseAndRate.doseQuantity = 1 '{tbl}' "tablet"
+* medicationReference = Reference(urn:uuid:fb88edae-4d3f-4b00-ae17-71c8f03adc71)
+* subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
+* reasonReference = Reference(urn:uuid:257427f5-dffa-4a97-9475-4ebb988589af)
+* note.text = "Le patient a pris le médicament après le petit-déjeuner"
 
 Instance: DeviceUseStatement-Exemple-1
 InstanceOf: FRDeviceUseStatementDocument
@@ -1212,30 +1211,41 @@ Usage: #inline
 * effectiveDateTime.extension.valueCode = #not-applicable
 * valueInteger = 1
 
-Instance: MedicationAdministration-Exemple-3
-InstanceOf: FRMedicationAdministrationDocument
+Instance: MedicationRequest-Exemple-1
+InstanceOf: FRMedicationRequestDocument
 Usage: #inline
 * id = "73af1b58-f567-4c03-a1a6-d65d3b3fd079"
-* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-request-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:AADC9C14-F1CA-4177-B2C8-A5178D5B3CA0"
 * status = #completed
+* intent = #order
 * medicationReference = Reference(urn:uuid:2f861880-31d2-4969-a2ce-b78f750f430e)
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
-* effectivePeriod.start = "2021-12-04"
+* authoredOn = "2021-12-04"
+* dosageInstruction.timing.repeat.boundsPeriod.start = "2021-12-04"
+* dosageInstruction.timing.repeat.frequency = 1
+* dosageInstruction.timing.repeat.period = 1
+* dosageInstruction.timing.repeat.periodUnit = #d
+* dosageInstruction.route = $terminologie-standardterms#20053000 "Voie orale"
+* dosageInstruction.doseAndRate.doseRange.low = 1 '{tbl}' "tablet"
+* dosageInstruction.doseAndRate.doseRange.high = 1 '{tbl}' "tablet"
+* substitution.allowedCodeableConcept = $v3-substanceAdminSubstitution#G "Substitution autorisée par un produit générique"
 * note.text = "texte libre"
 
-Instance: MedicationAdministration-Exemple-4
-InstanceOf: FRMedicationAdministrationDocument
+Instance: MedicationRequest-Exemple-2
+InstanceOf: FRMedicationRequestDocument
 Usage: #inline
 * id = "83e3e384-84ca-46dd-aa8c-c847a70b1fb5"
-* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"
+* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-request-document|0.1.0"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:AADC9C14-F1CA-4177-B2C8-A5178D5B3CA0"
 * status = #completed
+* intent = #order
 * medicationReference = Reference(urn:uuid:6349c4d2-bdba-41b1-b5d6-1ce8c359205d)
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
-* effectivePeriod.start = "2021-12-04"
+* authoredOn = "2021-12-04"
+* substitution.allowedCodeableConcept = $v3-substanceAdminSubstitution#G "Substitution autorisée par un produit générique"
 * note.text = "texte libre"
 
 Instance: Medication-Exemple-3
