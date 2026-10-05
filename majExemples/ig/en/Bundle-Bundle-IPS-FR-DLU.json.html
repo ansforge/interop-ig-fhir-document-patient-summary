@@ -585,10 +585,10 @@
             },
             "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
               {
-                "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:c7d8e9f0-a1b2-3456-c212-456789012346"
+                "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:13b993a8-7bca-4899-826c-006017d4ea14"
               },
               {
-                "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:e9f0a1b2-c3d4-5678-e234-678901234568"
+                "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:4dda7e49-168d-405d-b928-4232107582cf"
               }
             ]
           },
@@ -2831,88 +2831,6 @@
       }
     },
     {
-      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "urn:uuid:c7d8e9f0-a1b2-3456-c212-456789012346",
-      "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration">resource</a>" : {
-        "<a href="http://hl7.org/fhir/R4/medicationadministration.html">resourceType</a>" : "MedicationAdministration",
-        "<a href="http://hl7.org/fhir/R4/resource.html#MedicationAdministration.id">id</a>" : "c7d8e9f0-a1b2-3456-c212-456789012346",
-        "<a href="http://hl7.org/fhir/R4/resource.html#MedicationAdministration.meta">meta</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-            <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-medication-administration-document.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"
-          ]
-        },
-        "<a href="http://hl7.org/fhir/R4/resource.html#MedicationAdministration.language">language</a>" : "en",
-        "<a href="http://hl7.org/fhir/R4/domainresource.html#MedicationAdministration.text">text</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions"
-        },
-        "<a href="http://hl7.org/fhir/R4/domainresource.html#MedicationAdministration.extension">extension</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence",
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueTiming</a>" : {
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat">repeat</a>" : {
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.frequency">frequency</a>" : 1,
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.periodUnit">periodUnit</a>" : "d"
-              }
-            }
-          }
-        ],
-        "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.identifier">identifier</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:ietf:rfc:3986",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "urn:uuid:c7d8e9f0-a1b2-3456-c212-456789012346"
-          }
-        ],
-        "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.status">status</a>" : "completed",
-        "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.category">category</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "DRUG",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Médicament"
-            }
-          ]
-        },
-        "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.medication_x_">medicationReference</a>" : {
-          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:d8e9f0a1-b2c3-4567-d223-567890123457"
-        },
-        "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.subject">subject</a>" : {
-          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891"
-        },
-        "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.effective_x_">effectivePeriod</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2024-01-11"
-        },
-        "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.reasonReference">reasonReference</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:b8c9d0e1-f2a3-4567-b023-567890123457"
-          }
-        ],
-        "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.dosage">dosage</a>" : {
-          "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.dosage.route">route</a>" : {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
-              {
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://smt.esante.gouv.fr/terminologie-standardterms",
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "20053000",
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Voie orale"
-              }
-            ]
-          },
-          "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.dosage.dose">dose</a>" : {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 1,
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "tablet",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a>" : "{tbl}"
-          },
-          "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.dosage.rate_x_">rateQuantity</a>" : {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Quantity.extension">extension</a>" : [
-              {
-                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
-                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCode</a>" : "not-applicable"
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
       "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "urn:uuid:d8e9f0a1-b2c3-4567-d223-567890123457",
       "<a href="http://hl7.org/fhir/R4/medication.html#Medication">resource</a>" : {
         "<a href="http://hl7.org/fhir/R4/medication.html">resourceType</a>" : "Medication",
@@ -2980,39 +2898,27 @@
       }
     },
     {
-      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "urn:uuid:e9f0a1b2-c3d4-5678-e234-678901234568",
-      "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration">resource</a>" : {
-        "<a href="http://hl7.org/fhir/R4/medicationadministration.html">resourceType</a>" : "MedicationAdministration",
-        "<a href="http://hl7.org/fhir/R4/resource.html#MedicationAdministration.id">id</a>" : "e9f0a1b2-c3d4-5678-e234-678901234568",
-        "<a href="http://hl7.org/fhir/R4/resource.html#MedicationAdministration.meta">meta</a>" : {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "urn:uuid:13b993a8-7bca-4899-826c-006017d4ea14",
+      "<a href="http://hl7.org/fhir/R4/medicationstatement.html#MedicationStatement">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/medicationstatement.html">resourceType</a>" : "MedicationStatement",
+        "<a href="http://hl7.org/fhir/R4/resource.html#MedicationStatement.id">id</a>" : "13b993a8-7bca-4899-826c-006017d4ea14",
+        "<a href="http://hl7.org/fhir/R4/resource.html#MedicationStatement.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-            <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-medication-administration-document.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"
+            <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-medication-statement-document.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-statement-document|0.1.0"
           ]
         },
-        "<a href="http://hl7.org/fhir/R4/resource.html#MedicationAdministration.language">language</a>" : "en",
-        "<a href="http://hl7.org/fhir/R4/domainresource.html#MedicationAdministration.text">text</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions"
+        "<a href="http://hl7.org/fhir/R4/resource.html#MedicationStatement.language">language</a>" : "en",
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#MedicationStatement.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated"
         },
-        "<a href="http://hl7.org/fhir/R4/domainresource.html#MedicationAdministration.extension">extension</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence",
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueTiming</a>" : {
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat">repeat</a>" : {
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.frequency">frequency</a>" : 4,
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.period">period</a>" : 6,
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.periodUnit">periodUnit</a>" : "h"
-              }
-            }
-          }
-        ],
-        "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.identifier">identifier</a>" : [
+        "<a href="http://hl7.org/fhir/R4/medicationstatement.html#MedicationStatement.identifier">identifier</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:ietf:rfc:3986",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "urn:uuid:e9f0a1b2-c3d4-5678-e234-678901234568"
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "urn:uuid:13b993a8-7bca-4899-826c-006017d4ea14"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.status">status</a>" : "completed",
-        "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.category">category</a>" : {
+        "<a href="http://hl7.org/fhir/R4/medicationstatement.html#MedicationStatement.status">status</a>" : "completed",
+        "<a href="http://hl7.org/fhir/R4/medicationstatement.html#MedicationStatement.category">category</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
             {
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -3021,37 +2927,50 @@
             }
           ]
         },
-        "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.medication_x_">medicationReference</a>" : {
-          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:f0a1b2c3-d4e5-6789-f245-789012345679"
+        "<a href="http://hl7.org/fhir/R4/medicationstatement.html#MedicationStatement.medication_x_">medicationReference</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:d8e9f0a1-b2c3-4567-d223-567890123457"
         },
-        "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.subject">subject</a>" : {
+        "<a href="http://hl7.org/fhir/R4/medicationstatement.html#MedicationStatement.subject">subject</a>" : {
           "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891"
         },
-        "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.effective_x_">effectivePeriod</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2022-02-11"
+        "<a href="http://hl7.org/fhir/R4/medicationstatement.html#MedicationStatement.effective_x_">effectivePeriod</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2024-01-11"
         },
-        "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.reasonReference">reasonReference</a>" : [
+        "<a href="http://hl7.org/fhir/R4/medicationstatement.html#MedicationStatement.reasonReference">reasonReference</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:a3b4c5d6-e7f8-9012-a078-012345678902"
+            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:b8c9d0e1-f2a3-4567-b023-567890123457"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.dosage">dosage</a>" : {
-          "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.dosage.route">route</a>" : {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        "<a href="http://hl7.org/fhir/R4/medicationstatement.html#MedicationStatement.dosage">dosage</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Dosage#Dosage.timing">timing</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat">repeat</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.frequency">frequency</a>" : 1,
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.period">period</a>" : 1,
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.periodUnit">periodUnit</a>" : "d"
+              }
+            },
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Dosage#Dosage.route">route</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://smt.esante.gouv.fr/terminologie-standardterms",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "20053000",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Voie orale"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Dosage#Dosage.doseAndRate">doseAndRate</a>" : [
               {
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://smt.esante.gouv.fr/terminologie-standardterms",
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "20053000",
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Voie orale"
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Dosage#Dosage.doseAndRate.dose_x_">doseQuantity</a>" : {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 1,
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "tablet",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a>" : "{tbl}"
+                }
               }
             ]
-          },
-          "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.dosage.dose">dose</a>" : {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 1,
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "tablet",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a>" : "{tbl}"
           }
-        }
+        ]
       }
     },
     {
@@ -3117,6 +3036,82 @@
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 1
               }
             }
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "urn:uuid:4dda7e49-168d-405d-b928-4232107582cf",
+      "<a href="http://hl7.org/fhir/R4/medicationstatement.html#MedicationStatement">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/medicationstatement.html">resourceType</a>" : "MedicationStatement",
+        "<a href="http://hl7.org/fhir/R4/resource.html#MedicationStatement.id">id</a>" : "4dda7e49-168d-405d-b928-4232107582cf",
+        "<a href="http://hl7.org/fhir/R4/resource.html#MedicationStatement.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-medication-statement-document.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-statement-document|0.1.0"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/resource.html#MedicationStatement.language">language</a>" : "en",
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#MedicationStatement.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated"
+        },
+        "<a href="http://hl7.org/fhir/R4/medicationstatement.html#MedicationStatement.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:ietf:rfc:3986",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "urn:uuid:4dda7e49-168d-405d-b928-4232107582cf"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/medicationstatement.html#MedicationStatement.status">status</a>" : "completed",
+        "<a href="http://hl7.org/fhir/R4/medicationstatement.html#MedicationStatement.category">category</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "DRUG",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Médicament"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/medicationstatement.html#MedicationStatement.medication_x_">medicationReference</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:f0a1b2c3-d4e5-6789-f245-789012345679"
+        },
+        "<a href="http://hl7.org/fhir/R4/medicationstatement.html#MedicationStatement.subject">subject</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891"
+        },
+        "<a href="http://hl7.org/fhir/R4/medicationstatement.html#MedicationStatement.effective_x_">effectivePeriod</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2022-02-11"
+        },
+        "<a href="http://hl7.org/fhir/R4/medicationstatement.html#MedicationStatement.reasonReference">reasonReference</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:a3b4c5d6-e7f8-9012-a078-012345678902"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/medicationstatement.html#MedicationStatement.dosage">dosage</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Dosage#Dosage.timing">timing</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat">repeat</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.frequency">frequency</a>" : 4,
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.period">period</a>" : 6,
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.periodUnit">periodUnit</a>" : "h"
+              }
+            },
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Dosage#Dosage.route">route</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://smt.esante.gouv.fr/terminologie-standardterms",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "20053000",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Voie orale"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Dosage#Dosage.doseAndRate">doseAndRate</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Dosage#Dosage.doseAndRate.dose_x_">doseQuantity</a>" : {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 1,
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "tablet",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a>" : "{tbl}"
+                }
+              }
+            ]
           }
         ]
       }
@@ -4226,76 +4221,137 @@
     },
     {
       "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "urn:uuid:d2e3f4a5-b6c7-8902-d467-901234567891",
-      "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration">resource</a>" : {
-        "<a href="http://hl7.org/fhir/R4/medicationadministration.html">resourceType</a>" : "MedicationAdministration",
-        "<a href="http://hl7.org/fhir/R4/resource.html#MedicationAdministration.id">id</a>" : "d2e3f4a5-b6c7-8902-d467-901234567891",
-        "<a href="http://hl7.org/fhir/R4/resource.html#MedicationAdministration.meta">meta</a>" : {
+      "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html">resourceType</a>" : "MedicationRequest",
+        "<a href="http://hl7.org/fhir/R4/resource.html#MedicationRequest.id">id</a>" : "d2e3f4a5-b6c7-8902-d467-901234567891",
+        "<a href="http://hl7.org/fhir/R4/resource.html#MedicationRequest.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-            <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-medication-administration-document.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"
+            <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-medication-request-document.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-request-document|0.1.0"
           ]
         },
-        "<a href="http://hl7.org/fhir/R4/resource.html#MedicationAdministration.language">language</a>" : "en",
-        "<a href="http://hl7.org/fhir/R4/domainresource.html#MedicationAdministration.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/resource.html#MedicationRequest.language">language</a>" : "en",
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#MedicationRequest.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated"
         },
-        "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.identifier">identifier</a>" : [
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.identifier">identifier</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:ietf:rfc:3986",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "urn:uuid:AADC9C14-F1CA-4177-B2C8-A5178D5B3CB1"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.status">status</a>" : "completed",
-        "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.medication_x_">medicationReference</a>" : {
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.status">status</a>" : "completed",
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.intent">intent</a>" : "order",
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.medication_x_">medicationReference</a>" : {
           "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:f4a5b6c7-d8e9-0124-f489-123456789013"
         },
-        "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.subject">subject</a>" : {
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.subject">subject</a>" : {
           "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891"
         },
-        "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.effective_x_">effectivePeriod</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2024-12-01"
-        },
-        "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.note">note</a>" : [
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.authoredOn">authoredOn</a>" : "2024-12-01",
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.note">note</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.text">text</a>" : "texte libre"
           }
-        ]
+        ],
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.dosageInstruction">dosageInstruction</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Dosage#Dosage.timing">timing</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat">repeat</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.bounds_x_">boundsPeriod</a>" : {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2024-12-01"
+                },
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.frequency">frequency</a>" : 1,
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.period">period</a>" : 1,
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.repeat.periodUnit">periodUnit</a>" : "d"
+              }
+            },
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Dosage#Dosage.route">route</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://smt.esante.gouv.fr/terminologie-standardterms",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "20053000",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Voie orale"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Dosage#Dosage.doseAndRate">doseAndRate</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Dosage#Dosage.doseAndRate.dose_x_">doseRange</a>" : {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Range#Range.low">low</a>" : {
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 1,
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "tablet",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a>" : "{tbl}"
+                  },
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Range#Range.high">high</a>" : {
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 1,
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "tablet",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a>" : "{tbl}"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.substitution">substitution</a>" : {
+          "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.substitution.allowed_x_">allowedCodeableConcept</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "G",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Substitution autorisée par un produit générique"
+              }
+            ]
+          }
+        }
       }
     },
     {
       "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "urn:uuid:e3f4a5b6-c7d8-9013-e478-012345678902",
-      "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration">resource</a>" : {
-        "<a href="http://hl7.org/fhir/R4/medicationadministration.html">resourceType</a>" : "MedicationAdministration",
-        "<a href="http://hl7.org/fhir/R4/resource.html#MedicationAdministration.id">id</a>" : "e3f4a5b6-c7d8-9013-e478-012345678902",
-        "<a href="http://hl7.org/fhir/R4/resource.html#MedicationAdministration.meta">meta</a>" : {
+      "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html">resourceType</a>" : "MedicationRequest",
+        "<a href="http://hl7.org/fhir/R4/resource.html#MedicationRequest.id">id</a>" : "e3f4a5b6-c7d8-9013-e478-012345678902",
+        "<a href="http://hl7.org/fhir/R4/resource.html#MedicationRequest.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-            <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-medication-administration-document.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"
+            <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-medication-request-document.html" style="color: Maroon">&#x1F517;</a> "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-request-document|0.1.0"
           ]
         },
-        "<a href="http://hl7.org/fhir/R4/resource.html#MedicationAdministration.language">language</a>" : "en",
-        "<a href="http://hl7.org/fhir/R4/domainresource.html#MedicationAdministration.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/resource.html#MedicationRequest.language">language</a>" : "en",
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#MedicationRequest.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated"
         },
-        "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.identifier">identifier</a>" : [
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.identifier">identifier</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:ietf:rfc:3986",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "urn:uuid:AADC9C14-F1CA-4177-B2C8-A5178D5B3CB2"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.status">status</a>" : "completed",
-        "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.medication_x_">medicationReference</a>" : {
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.status">status</a>" : "completed",
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.intent">intent</a>" : "order",
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.medication_x_">medicationReference</a>" : {
           "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:a5b6c7d8-e9f0-1235-a490-234567890124"
         },
-        "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.subject">subject</a>" : {
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.subject">subject</a>" : {
           "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891"
         },
-        "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.effective_x_">effectivePeriod</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2024-12-01"
-        },
-        "<a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.note">note</a>" : [
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.authoredOn">authoredOn</a>" : "2024-12-01",
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.note">note</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.text">text</a>" : "texte libre"
           }
-        ]
+        ],
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.substitution">substitution</a>" : {
+          "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.substitution.allowed_x_">allowedCodeableConcept</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "G",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Substitution autorisée par un produit générique"
+              }
+            ]
+          }
+        }
       }
     },
     {
@@ -5689,7 +5745,7 @@
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Package ans.fhir.fr.fr-patient-summary#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-10-05 12:31:00 +0000">
+  <span title="2026-10-05 16:04:00 +0000">
     2026-10-05
   </span>
 

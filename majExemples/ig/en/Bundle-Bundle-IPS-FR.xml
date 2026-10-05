@@ -218,7 +218,7 @@
             <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><em>Traitements au long cours :</em></p><table border="0"><thead><tr><th>Date de début</th><th>Date de fin</th><th>Médicament</th><th>Fréquence</th><th>Dose prescrite</th><th>Rythme</th><th>Voie d'administration</th><th>Motif</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/01/2024</td><td>–</td><td>LEVOTHYROX 75 microgrammes, comprimé sécable</td><td>1 fois/j</td><td>1 cp</td><td>–</td><td>Voie orale</td><td>Thyroïdite auto-immune</td><td>Le patient a pris le médicament après le petit-déjeuner</td></tr></tbody></table></div>
           </text>
           <entry>
-            <reference value="urn:uuid:1ff316e0-edde-4bb9-a5fe-822d486d8230"/>
+            <reference value="urn:uuid:14344fe6-b6c8-4c7a-82d8-e2e8130633de"/>
           </entry>
         </section>
         <section>
@@ -2005,76 +2005,6 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:1ff316e0-edde-4bb9-a5fe-822d486d8230"/>
-    <resource>
-      <MedicationAdministration>
-        <id value="1ff316e0-edde-4bb9-a5fe-822d486d8230"/>
-        <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"/>
-        </meta>
-        <language value="en"/>
-        <text>
-          <status value="extensions"/>
-        </text>
-        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence">
-          <valueTiming>
-            <repeat>
-              <frequency value="1"/>
-              <periodUnit value="d"/>
-            </repeat>
-          </valueTiming>
-        </extension>
-        <identifier>
-          <system value="urn:ietf:rfc:3986"/>
-          <value value="urn:uuid:1ff316e0-edde-4bb9-a5fe-822d486d8230"/>
-        </identifier>
-        <status value="completed"/>
-        <category>
-          <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
-            <code value="DRUG"/>
-            <display value="Médicament"/>
-          </coding>
-        </category>
-        <medicationReference>
-          <reference value="urn:uuid:fb88edae-4d3f-4b00-ae17-71c8f03adc71"/>
-        </medicationReference>
-        <subject>
-          <reference value="urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"/>
-        </subject>
-        <effectivePeriod>
-          <start value="2024-01-11"/>
-        </effectivePeriod>
-        <reasonReference>
-          <reference value="urn:uuid:257427f5-dffa-4a97-9475-4ebb988589af"/>
-        </reasonReference>
-        <note>
-          <text value="Le patient a pris le médicament après le petit-déjeuner"/>
-        </note>
-        <dosage>
-          <route>
-            <coding>
-              <system value="https://smt.esante.gouv.fr/terminologie-standardterms"/>
-              <code value="20053000"/>
-              <display value="Voie orale"/>
-            </coding>
-          </route>
-          <dose>
-            <value value="1"/>
-            <unit value="tablet"/>
-            <system value="http://unitsofmeasure.org"/>
-            <code value="{tbl}"/>
-          </dose>
-          <rateQuantity>
-            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-              <valueCode value="not-applicable"/>
-            </extension>
-          </rateQuantity>
-        </dosage>
-      </MedicationAdministration>
-    </resource>
-  </entry>
-  <entry>
     <fullUrl value="urn:uuid:fb88edae-4d3f-4b00-ae17-71c8f03adc71"/>
     <resource>
       <Medication>
@@ -2126,6 +2056,72 @@
           </strength>
         </ingredient>
       </Medication>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:14344fe6-b6c8-4c7a-82d8-e2e8130633de"/>
+    <resource>
+      <MedicationStatement>
+        <id value="14344fe6-b6c8-4c7a-82d8-e2e8130633de"/>
+        <meta>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-statement-document|0.1.0"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+        </text>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:uuid:14344fe6-b6c8-4c7a-82d8-e2e8130633de"/>
+        </identifier>
+        <status value="completed"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <code value="DRUG"/>
+            <display value="Médicament"/>
+          </coding>
+        </category>
+        <medicationReference>
+          <reference value="urn:uuid:fb88edae-4d3f-4b00-ae17-71c8f03adc71"/>
+        </medicationReference>
+        <subject>
+          <reference value="urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"/>
+        </subject>
+        <effectivePeriod>
+          <start value="2024-01-11"/>
+        </effectivePeriod>
+        <reasonReference>
+          <reference value="urn:uuid:257427f5-dffa-4a97-9475-4ebb988589af"/>
+        </reasonReference>
+        <note>
+          <text value="Le patient a pris le médicament après le petit-déjeuner"/>
+        </note>
+        <dosage>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <route>
+            <coding>
+              <system value="https://smt.esante.gouv.fr/terminologie-standardterms"/>
+              <code value="20053000"/>
+              <display value="Voie orale"/>
+            </coding>
+          </route>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="1"/>
+              <unit value="tablet"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="{tbl}"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </MedicationStatement>
     </resource>
   </entry>
   <entry>
@@ -3171,10 +3167,10 @@
   <entry>
     <fullUrl value="urn:uuid:73af1b58-f567-4c03-a1a6-d65d3b3fd079"/>
     <resource>
-      <MedicationAdministration>
+      <MedicationRequest>
         <id value="73af1b58-f567-4c03-a1a6-d65d3b3fd079"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-request-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -3185,28 +3181,71 @@
           <value value="urn:uuid:AADC9C14-F1CA-4177-B2C8-A5178D5B3CA0"/>
         </identifier>
         <status value="completed"/>
+        <intent value="order"/>
         <medicationReference>
           <reference value="urn:uuid:2f861880-31d2-4969-a2ce-b78f750f430e"/>
         </medicationReference>
         <subject>
           <reference value="urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"/>
         </subject>
-        <effectivePeriod>
-          <start value="2021-12-04"/>
-        </effectivePeriod>
+        <authoredOn value="2021-12-04"/>
         <note>
           <text value="texte libre"/>
         </note>
-      </MedicationAdministration>
+        <dosageInstruction>
+          <timing>
+            <repeat>
+              <boundsPeriod>
+                <start value="2021-12-04"/>
+              </boundsPeriod>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <route>
+            <coding>
+              <system value="https://smt.esante.gouv.fr/terminologie-standardterms"/>
+              <code value="20053000"/>
+              <display value="Voie orale"/>
+            </coding>
+          </route>
+          <doseAndRate>
+            <doseRange>
+              <low>
+                <value value="1"/>
+                <unit value="tablet"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{tbl}"/>
+              </low>
+              <high>
+                <value value="1"/>
+                <unit value="tablet"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{tbl}"/>
+              </high>
+            </doseRange>
+          </doseAndRate>
+        </dosageInstruction>
+        <substitution>
+          <allowedCodeableConcept>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"/>
+              <code value="G"/>
+              <display value="Substitution autorisée par un produit générique"/>
+            </coding>
+          </allowedCodeableConcept>
+        </substitution>
+      </MedicationRequest>
     </resource>
   </entry>
   <entry>
     <fullUrl value="urn:uuid:83e3e384-84ca-46dd-aa8c-c847a70b1fb5"/>
     <resource>
-      <MedicationAdministration>
+      <MedicationRequest>
         <id value="83e3e384-84ca-46dd-aa8c-c847a70b1fb5"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-request-document|0.1.0"/>
         </meta>
         <language value="en"/>
         <text>
@@ -3217,19 +3256,27 @@
           <value value="urn:uuid:AADC9C14-F1CA-4177-B2C8-A5178D5B3CA0"/>
         </identifier>
         <status value="completed"/>
+        <intent value="order"/>
         <medicationReference>
           <reference value="urn:uuid:6349c4d2-bdba-41b1-b5d6-1ce8c359205d"/>
         </medicationReference>
         <subject>
           <reference value="urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"/>
         </subject>
-        <effectivePeriod>
-          <start value="2021-12-04"/>
-        </effectivePeriod>
+        <authoredOn value="2021-12-04"/>
         <note>
           <text value="texte libre"/>
         </note>
-      </MedicationAdministration>
+        <substitution>
+          <allowedCodeableConcept>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"/>
+              <code value="G"/>
+              <display value="Substitution autorisée par un produit générique"/>
+            </coding>
+          </allowedCodeableConcept>
+        </substitution>
+      </MedicationRequest>
     </resource>
   </entry>
   <entry>

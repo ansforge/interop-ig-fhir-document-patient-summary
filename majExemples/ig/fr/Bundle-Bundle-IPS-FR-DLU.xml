@@ -215,10 +215,10 @@
             <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><em>Traitements au long cours :</em></p><table border="0"><thead><tr><th>Date de début</th><th>Date de fin</th><th>Médicament</th><th>Fréquence</th><th>Dose prescrite</th><th>Rythme</th><th>Voie d'administration</th><th>Motif</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/01/2024</td><td>–</td><td>LEVOTHYROX 75 microgrammes, comprimé sécable</td><td>1 fois/j</td><td>1 cp</td><td>–</td><td>Voie orale</td><td>Thyroïdite auto-immune</td><td>(texte libre)</td></tr></tbody></table><p><em>Traitements aigus :</em></p><table border="0"><thead><tr><th>Date de début</th><th>Date de fin</th><th>Médicament</th><th>Fréquence</th><th>Dose prescrite</th><th>Rythme</th><th>Voie d'administration</th><th>Motif</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/02/2022</td><td>–</td><td>COUMADINE 5 mg, comprimé sécable</td><td>4 fois/j</td><td>1 cp</td><td>toutes les 6h</td><td>Voie orale</td><td>Accident Ischémique Cérébral Transitoire</td><td>(texte libre)</td></tr><tr><td>01/12/2021</td><td>06/12/2021</td><td>PARACETAMOL MYLAN/VIATRIS 500 mg, comprimé</td><td>doses progressives</td><td>–</td><td>–</td><td>Voie orale</td><td>–</td><td>(texte libre)</td></tr></tbody></table></div>
           </text>
           <entry>
-            <reference value="urn:uuid:c7d8e9f0-a1b2-3456-c212-456789012346"/>
+            <reference value="urn:uuid:13b993a8-7bca-4899-826c-006017d4ea14"/>
           </entry>
           <entry>
-            <reference value="urn:uuid:e9f0a1b2-c3d4-5678-e234-678901234568"/>
+            <reference value="urn:uuid:4dda7e49-168d-405d-b928-4232107582cf"/>
           </entry>
         </section>
         <section>
@@ -874,7 +874,7 @@
         </meta>
         <language value="fr"/>
         <text>
-          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Condition_b8c9d0e1-f2a3-4567-b023-567890123457"> </a><p class="res-header-id"><b>Narratif généré : Condition b8c9d0e1-f2a3-4567-b023-567890123457</b></p><a name="b8c9d0e1-f2a3-4567-b023-567890123457"> </a><a name="hcb8c9d0e1-f2a3-4567-b023-567890123457"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-condition-document.html">Condition - FR Condition Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Condition_b8c9d0e1-f2a3-4567-b023-567890123457"> </a><p class="res-header-id"><b>Narratif généré : Condition b8c9d0e1-f2a3-4567-b023-567890123457</b></p><a name="b8c9d0e1-f2a3-4567-b023-567890123457"> </a><a name="hcb8c9d0e1-f2a3-4567-b023-567890123457"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-condition-document.html">Condition - FR Condition Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
 This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 
@@ -951,7 +951,7 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
         </meta>
         <language value="fr"/>
         <text>
-          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Condition_c9d0e1f2-a3b4-5678-c034-678901234568"> </a><p class="res-header-id"><b>Narratif généré : Condition c9d0e1f2-a3b4-5678-c034-678901234568</b></p><a name="c9d0e1f2-a3b4-5678-c034-678901234568"> </a><a name="hcc9d0e1f2-a3b4-5678-c034-678901234568"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-condition-document.html">Condition - FR Condition Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Condition_c9d0e1f2-a3b4-5678-c034-678901234568"> </a><p class="res-header-id"><b>Narratif généré : Condition c9d0e1f2-a3b4-5678-c034-678901234568</b></p><a name="c9d0e1f2-a3b4-5678-c034-678901234568"> </a><a name="hcc9d0e1f2-a3b4-5678-c034-678901234568"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-condition-document.html">Condition - FR Condition Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
 This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 
@@ -1028,7 +1028,7 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
         </meta>
         <language value="fr"/>
         <text>
-          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Condition_d0e1f2a3-b4c5-6789-d045-789012345679"> </a><p class="res-header-id"><b>Narratif généré : Condition d0e1f2a3-b4c5-6789-d045-789012345679</b></p><a name="d0e1f2a3-b4c5-6789-d045-789012345679"> </a><a name="hcd0e1f2a3-b4c5-6789-d045-789012345679"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-condition-document.html">Condition - FR Condition Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Condition_d0e1f2a3-b4c5-6789-d045-789012345679"> </a><p class="res-header-id"><b>Narratif généré : Condition d0e1f2a3-b4c5-6789-d045-789012345679</b></p><a name="d0e1f2a3-b4c5-6789-d045-789012345679"> </a><a name="hcd0e1f2a3-b4c5-6789-d045-789012345679"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-condition-document.html">Condition - FR Condition Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
 This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 
@@ -1105,7 +1105,7 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
         </meta>
         <language value="fr"/>
         <text>
-          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Condition_e1f2a3b4-c5d6-7890-e056-890123456780"> </a><p class="res-header-id"><b>Narratif généré : Condition e1f2a3b4-c5d6-7890-e056-890123456780</b></p><a name="e1f2a3b4-c5d6-7890-e056-890123456780"> </a><a name="hce1f2a3b4-c5d6-7890-e056-890123456780"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-condition-document.html">Condition - FR Condition Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Condition_e1f2a3b4-c5d6-7890-e056-890123456780"> </a><p class="res-header-id"><b>Narratif généré : Condition e1f2a3b4-c5d6-7890-e056-890123456780</b></p><a name="e1f2a3b4-c5d6-7890-e056-890123456780"> </a><a name="hce1f2a3b4-c5d6-7890-e056-890123456780"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-condition-document.html">Condition - FR Condition Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
 This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 
@@ -1219,7 +1219,7 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
         </meta>
         <language value="fr"/>
         <text>
-          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Condition_f2a3b4c5-d6e7-8901-f067-901234567891"> </a><p class="res-header-id"><b>Narratif généré : Condition f2a3b4c5-d6e7-8901-f067-901234567891</b></p><a name="f2a3b4c5-d6e7-8901-f067-901234567891"> </a><a name="hcf2a3b4c5-d6e7-8901-f067-901234567891"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-condition-document.html">Condition - FR Condition Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Condition_f2a3b4c5-d6e7-8901-f067-901234567891"> </a><p class="res-header-id"><b>Narratif généré : Condition f2a3b4c5-d6e7-8901-f067-901234567891</b></p><a name="f2a3b4c5-d6e7-8901-f067-901234567891"> </a><a name="hcf2a3b4c5-d6e7-8901-f067-901234567891"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-condition-document.html">Condition - FR Condition Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
 This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 
@@ -1296,7 +1296,7 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
         </meta>
         <language value="fr"/>
         <text>
-          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Condition_a3b4c5d6-e7f8-9012-a078-012345678902"> </a><p class="res-header-id"><b>Narratif généré : Condition a3b4c5d6-e7f8-9012-a078-012345678902</b></p><a name="a3b4c5d6-e7f8-9012-a078-012345678902"> </a><a name="hca3b4c5d6-e7f8-9012-a078-012345678902"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-condition-document.html">Condition - FR Condition Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Condition_a3b4c5d6-e7f8-9012-a078-012345678902"> </a><p class="res-header-id"><b>Narratif généré : Condition a3b4c5d6-e7f8-9012-a078-012345678902</b></p><a name="a3b4c5d6-e7f8-9012-a078-012345678902"> </a><a name="hca3b4c5d6-e7f8-9012-a078-012345678902"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-condition-document.html">Condition - FR Condition Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
 This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 
@@ -1376,7 +1376,7 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
         </meta>
         <language value="fr"/>
         <text>
-          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Condition_b4c5d6e7-f8a9-0123-b089-123456789013"> </a><p class="res-header-id"><b>Narratif généré : Condition b4c5d6e7-f8a9-0123-b089-123456789013</b></p><a name="b4c5d6e7-f8a9-0123-b089-123456789013"> </a><a name="hcb4c5d6e7-f8a9-0123-b089-123456789013"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-condition-document.html">Condition - FR Condition Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Condition_b4c5d6e7-f8a9-0123-b089-123456789013"> </a><p class="res-header-id"><b>Narratif généré : Condition b4c5d6e7-f8a9-0123-b089-123456789013</b></p><a name="b4c5d6e7-f8a9-0123-b089-123456789013"> </a><a name="hcb4c5d6e7-f8a9-0123-b089-123456789013"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-condition-document.html">Condition - FR Condition Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
 This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 
@@ -1456,7 +1456,7 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
         </meta>
         <language value="fr"/>
         <text>
-          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Procedure_c5d6e7f8-a9b0-1234-c090-234567890124"> </a><p class="res-header-id"><b>Narratif généré : Procédure c5d6e7f8-a9b0-1234-c090-234567890124</b></p><a name="c5d6e7f8-a9b0-1234-c090-234567890124"> </a><a name="hcc5d6e7f8-a9b0-1234-c090-234567890124"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-procedure-document.html">Procedure - FR Procedure Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Procedure_c5d6e7f8-a9b0-1234-c090-234567890124"> </a><p class="res-header-id"><b>Narratif généré : Procédure c5d6e7f8-a9b0-1234-c090-234567890124</b></p><a name="c5d6e7f8-a9b0-1234-c090-234567890124"> </a><a name="hcc5d6e7f8-a9b0-1234-c090-234567890124"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-procedure-document.html">Procedure - FR Procedure Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
 This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 
@@ -1582,7 +1582,7 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
         </meta>
         <language value="fr"/>
         <text>
-          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Condition_a9b0c1d2-e3f4-5678-a134-678901234568"> </a><p class="res-header-id"><b>Narratif généré : Condition a9b0c1d2-e3f4-5678-a134-678901234568</b></p><a name="a9b0c1d2-e3f4-5678-a134-678901234568"> </a><a name="hca9b0c1d2-e3f4-5678-a134-678901234568"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-condition-document.html">Condition - FR Condition Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Condition_a9b0c1d2-e3f4-5678-a134-678901234568"> </a><p class="res-header-id"><b>Narratif généré : Condition a9b0c1d2-e3f4-5678-a134-678901234568</b></p><a name="a9b0c1d2-e3f4-5678-a134-678901234568"> </a><a name="hca9b0c1d2-e3f4-5678-a134-678901234568"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-condition-document.html">Condition - FR Condition Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
 This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 
@@ -1632,7 +1632,7 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
         </meta>
         <language value="fr"/>
         <text>
-          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Procedure_b0c1d2e3-f4a5-6789-b145-789012345679"> </a><p class="res-header-id"><b>Narratif généré : Procédure b0c1d2e3-f4a5-6789-b145-789012345679</b></p><a name="b0c1d2e3-f4a5-6789-b145-789012345679"> </a><a name="hcb0c1d2e3-f4a5-6789-b145-789012345679"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-procedure-document.html">Procedure - FR Procedure Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Procedure_b0c1d2e3-f4a5-6789-b145-789012345679"> </a><p class="res-header-id"><b>Narratif généré : Procédure b0c1d2e3-f4a5-6789-b145-789012345679</b></p><a name="b0c1d2e3-f4a5-6789-b145-789012345679"> </a><a name="hcb0c1d2e3-f4a5-6789-b145-789012345679"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-procedure-document.html">Procedure - FR Procedure Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
 This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 
@@ -1693,7 +1693,7 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
         </meta>
         <language value="fr"/>
         <text>
-          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Procedure_c1d2e3f4-a5b6-7890-c156-890123456780"> </a><p class="res-header-id"><b>Narratif généré : Procédure c1d2e3f4-a5b6-7890-c156-890123456780</b></p><a name="c1d2e3f4-a5b6-7890-c156-890123456780"> </a><a name="hcc1d2e3f4-a5b6-7890-c156-890123456780"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-procedure-document.html">Procedure - FR Procedure Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Procedure_c1d2e3f4-a5b6-7890-c156-890123456780"> </a><p class="res-header-id"><b>Narratif généré : Procédure c1d2e3f4-a5b6-7890-c156-890123456780</b></p><a name="c1d2e3f4-a5b6-7890-c156-890123456780"> </a><a name="hcc1d2e3f4-a5b6-7890-c156-890123456780"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-procedure-document.html">Procedure - FR Procedure Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
 This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 
@@ -1734,7 +1734,7 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
         </meta>
         <language value="fr"/>
         <text>
-          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="AllergyIntolerance_d2e3f4a5-b6c7-8901-d167-901234567891"> </a><p class="res-header-id"><b>Narratif généré : IntoléranceAllergique d2e3f4a5-b6c7-8901-d167-901234567891</b></p><a name="d2e3f4a5-b6c7-8901-d167-901234567891"> </a><a name="hcd2e3f4a5-b6c7-8901-d167-901234567891"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-allergy-intolerance-document.html">AllergyIntolerance - FR Allergy and intolerance Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="AllergyIntolerance_d2e3f4a5-b6c7-8901-d167-901234567891"> </a><p class="res-header-id"><b>Narratif généré : IntoléranceAllergique d2e3f4a5-b6c7-8901-d167-901234567891</b></p><a name="d2e3f4a5-b6c7-8901-d167-901234567891"> </a><a name="hcd2e3f4a5-b6c7-8901-d167-901234567891"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-allergy-intolerance-document.html">AllergyIntolerance - FR Allergy and intolerance Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
 This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 
@@ -1827,7 +1827,7 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
         </meta>
         <language value="fr"/>
         <text>
-          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="AdverseEvent_e3f4a5b6-c7d8-9012-e178-012345678902"> </a><p class="res-header-id"><b>Narratif généré : AdverseEvent e3f4a5b6-c7d8-9012-e178-012345678902</b></p><a name="e3f4a5b6-c7d8-9012-e178-012345678902"> </a><a name="hce3f4a5b6-c7d8-9012-e178-012345678902"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-adverse-event-document.html">AdverseEvent - FR adverse event Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="AdverseEvent_e3f4a5b6-c7d8-9012-e178-012345678902"> </a><p class="res-header-id"><b>Narratif généré : AdverseEvent e3f4a5b6-c7d8-9012-e178-012345678902</b></p><a name="e3f4a5b6-c7d8-9012-e178-012345678902"> </a><a name="hce3f4a5b6-c7d8-9012-e178-012345678902"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-adverse-event-document.html">AdverseEvent - FR adverse event Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
 This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 
@@ -1896,7 +1896,7 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
         </meta>
         <language value="fr"/>
         <text>
-          <status value="extensions"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="MedicationAdministration_f4a5b6c7-d8e9-0123-f189-123456789013"> </a><p class="res-header-id"><b>Narratif généré : AdministrationMédicaments f4a5b6c7-d8e9-0123-f189-123456789013</b></p><a name="f4a5b6c7-d8e9-0123-f189-123456789013"> </a><a name="hcf4a5b6c7-d8e9-0123-f189-123456789013"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-medication-administration-document.html">MedicationAdministration - FR Medication Administration Document</a> version : 0.1.0</p></div><p><b>R5: Specific date/time or interval of time during which the administration took place (or did not take place) additional types</b>: Une fois par 12 hours</p><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+          <status value="extensions"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="MedicationAdministration_f4a5b6c7-d8e9-0123-f189-123456789013"> </a><p class="res-header-id"><b>Narratif généré : AdministrationMédicaments f4a5b6c7-d8e9-0123-f189-123456789013</b></p><a name="f4a5b6c7-d8e9-0123-f189-123456789013"> </a><a name="hcf4a5b6c7-d8e9-0123-f189-123456789013"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-medication-administration-document.html">MedicationAdministration - FR Medication Administration Document</a> version : 0.1.0</p></div><p><b>R5: Specific date/time or interval of time during which the administration took place (or did not take place) additional types</b>: Une fois par 12 hours</p><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
 This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 
@@ -2016,7 +2016,7 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
         </meta>
         <language value="fr"/>
         <text>
-          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Condition_b6c7d8e9-f0a1-2345-b201-345678901235"> </a><p class="res-header-id"><b>Narratif généré : Condition b6c7d8e9-f0a1-2345-b201-345678901235</b></p><a name="b6c7d8e9-f0a1-2345-b201-345678901235"> </a><a name="hcb6c7d8e9-f0a1-2345-b201-345678901235"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-condition-document.html">Condition - FR Condition Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Condition_b6c7d8e9-f0a1-2345-b201-345678901235"> </a><p class="res-header-id"><b>Narratif généré : Condition b6c7d8e9-f0a1-2345-b201-345678901235</b></p><a name="b6c7d8e9-f0a1-2345-b201-345678901235"> </a><a name="hcb6c7d8e9-f0a1-2345-b201-345678901235"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-condition-document.html">Condition - FR Condition Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
 This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 
@@ -2054,79 +2054,6 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
         </subject>
         <onsetDateTime value="2021-12-04"/>
       </Condition>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="urn:uuid:c7d8e9f0-a1b2-3456-c212-456789012346"/>
-    <resource>
-      <MedicationAdministration>
-        <id value="c7d8e9f0-a1b2-3456-c212-456789012346"/>
-        <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"/>
-        </meta>
-        <language value="fr"/>
-        <text>
-          <status value="extensions"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="MedicationAdministration_c7d8e9f0-a1b2-3456-c212-456789012346"> </a><p class="res-header-id"><b>Narratif généré : AdministrationMédicaments c7d8e9f0-a1b2-3456-c212-456789012346</b></p><a name="c7d8e9f0-a1b2-3456-c212-456789012346"> </a><a name="hcc7d8e9f0-a1b2-3456-c212-456789012346"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-medication-administration-document.html">MedicationAdministration - FR Medication Administration Document</a> version : 0.1.0</p></div><p><b>R5: Specific date/time or interval of time during which the administration took place (or did not take place) additional types</b>: Une fois</p><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
-
-This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
-
-Note that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.
-
-This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</a>/urn:uuid:c7d8e9f0-a1b2-3456-c212-456789012346</p><p><b>status</b>: Completed</p><p><b>category</b>: <span title="Codes :{http://terminology.hl7.org/CodeSystem/v3-ActCode DRUG}">Médicament</span></p><p><b>medication</b>: <a href="Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-d8e9f0a1-b2c3-4567-d223-567890123457">Medication LEVOTHYROX 75 microgrammes, comprimé sécable plaquette(s) PVC aluminium de 30 comprimé(s)</a></p><p><b>subject</b>: <a href="Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-b2c3d4e5-f6a7-8901-bcde-f01234567891">DOMINIQUE MARIE-LOUISE PAT-TROIS  Female, Date de Naissance :1979-03-28 ( NIR définitif (use: official, ))</a></p><p><b>effective</b>: 2024-01-11 --&gt; (en cours)</p><p><b>reasonReference</b>: <a href="Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-b8c9d0e1-f2a3-4567-b023-567890123457">Condition Thyroïdite auto-immune</a></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Route</b></td><td><b>Dose</b></td><td><b>Rate[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes :{https://smt.esante.gouv.fr/terminologie-standardterms 20053000}">Voie orale</span></td><td>1 tablet<span style="background: LightGoldenRodYellow"> (Détails : code UCUM{tbl} = '{tbl}')</span></td><td/></tr></table></div>
-        </text>
-        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence">
-          <valueTiming>
-            <repeat>
-              <frequency value="1"/>
-              <periodUnit value="d"/>
-            </repeat>
-          </valueTiming>
-        </extension>
-        <identifier>
-          <system value="urn:ietf:rfc:3986"/>
-          <value value="urn:uuid:c7d8e9f0-a1b2-3456-c212-456789012346"/>
-        </identifier>
-        <status value="completed"/>
-        <category>
-          <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
-            <code value="DRUG"/>
-            <display value="Médicament"/>
-          </coding>
-        </category>
-        <medicationReference>
-          <reference value="urn:uuid:d8e9f0a1-b2c3-4567-d223-567890123457"/>
-        </medicationReference>
-        <subject>
-          <reference value="urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891"/>
-        </subject>
-        <effectivePeriod>
-          <start value="2024-01-11"/>
-        </effectivePeriod>
-        <reasonReference>
-          <reference value="urn:uuid:b8c9d0e1-f2a3-4567-b023-567890123457"/>
-        </reasonReference>
-        <dosage>
-          <route>
-            <coding>
-              <system value="https://smt.esante.gouv.fr/terminologie-standardterms"/>
-              <code value="20053000"/>
-              <display value="Voie orale"/>
-            </coding>
-          </route>
-          <dose>
-            <value value="1"/>
-            <unit value="tablet"/>
-            <system value="http://unitsofmeasure.org"/>
-            <code value="{tbl}"/>
-          </dose>
-          <rateQuantity>
-            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-              <valueCode value="not-applicable"/>
-            </extension>
-          </rateQuantity>
-        </dosage>
-      </MedicationAdministration>
     </resource>
   </entry>
   <entry>
@@ -2184,35 +2111,26 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:e9f0a1b2-c3d4-5678-e234-678901234568"/>
+    <fullUrl value="urn:uuid:13b993a8-7bca-4899-826c-006017d4ea14"/>
     <resource>
-      <MedicationAdministration>
-        <id value="e9f0a1b2-c3d4-5678-e234-678901234568"/>
+      <MedicationStatement>
+        <id value="13b993a8-7bca-4899-826c-006017d4ea14"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-statement-document|0.1.0"/>
         </meta>
         <language value="fr"/>
         <text>
-          <status value="extensions"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="MedicationAdministration_e9f0a1b2-c3d4-5678-e234-678901234568"> </a><p class="res-header-id"><b>Narratif généré : AdministrationMédicaments e9f0a1b2-c3d4-5678-e234-678901234568</b></p><a name="e9f0a1b2-c3d4-5678-e234-678901234568"> </a><a name="hce9f0a1b2-c3d4-5678-e234-678901234568"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-medication-administration-document.html">MedicationAdministration - FR Medication Administration Document</a> version : 0.1.0</p></div><p><b>R5: Specific date/time or interval of time during which the administration took place (or did not take place) additional types</b>: 4 par 6 hours</p><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="MedicationStatement_13b993a8-7bca-4899-826c-006017d4ea14"> </a><p class="res-header-id"><b>Narratif généré : ÉtatMédication 13b993a8-7bca-4899-826c-006017d4ea14</b></p><a name="13b993a8-7bca-4899-826c-006017d4ea14"> </a><a name="hc13b993a8-7bca-4899-826c-006017d4ea14"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-medication-statement-document.html">MedicationStatement - FR Medication Statement Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
 This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 
 Note that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.
 
-This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</a>/urn:uuid:e9f0a1b2-c3d4-5678-e234-678901234568</p><p><b>status</b>: Completed</p><p><b>category</b>: <span title="Codes :{http://terminology.hl7.org/CodeSystem/v3-ActCode DRUG}">Médicament</span></p><p><b>medication</b>: <a href="Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-f0a1b2c3-d4e5-6789-f245-789012345679">Medication COUMADINE 5 mg, comprimé sécable</a></p><p><b>subject</b>: <a href="Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-b2c3d4e5-f6a7-8901-bcde-f01234567891">DOMINIQUE MARIE-LOUISE PAT-TROIS  Female, Date de Naissance :1979-03-28 ( NIR définitif (use: official, ))</a></p><p><b>effective</b>: 2022-02-11 --&gt; (en cours)</p><p><b>reasonReference</b>: <a href="Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-a3b4c5d6-e7f8-9012-a078-012345678902">Condition Accident ischémique cérébral transitoire, sans précision</a></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes :{https://smt.esante.gouv.fr/terminologie-standardterms 20053000}">Voie orale</span></td><td>1 tablet<span style="background: LightGoldenRodYellow"> (Détails : code UCUM{tbl} = '{tbl}')</span></td></tr></table></div>
+This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</a>/urn:uuid:13b993a8-7bca-4899-826c-006017d4ea14</p><p><b>status</b>: Completed</p><p><b>category</b>: <span title="Codes :{http://terminology.hl7.org/CodeSystem/v3-ActCode DRUG}">Médicament</span></p><p><b>medication</b>: <a href="Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-d8e9f0a1-b2c3-4567-d223-567890123457">Medication LEVOTHYROX 75 microgrammes, comprimé sécable plaquette(s) PVC aluminium de 30 comprimé(s)</a></p><p><b>subject</b>: <a href="Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-b2c3d4e5-f6a7-8901-bcde-f01234567891">DOMINIQUE MARIE-LOUISE PAT-TROIS  Female, Date de Naissance :1979-03-28 ( NIR définitif (use: official, ))</a></p><p><b>effective</b>: 2024-01-11 --&gt; (en cours)</p><p><b>reasonReference</b>: <a href="Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-b8c9d0e1-f2a3-4567-b023-567890123457">Condition Thyroïdite auto-immune</a></p><blockquote><p><b>dosage</b></p><p><b>timing</b>: Une fois par 1 day</p><p><b>route</b>: <span title="Codes :{https://smt.esante.gouv.fr/terminologie-standardterms 20053000}">Voie orale</span></p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>1 tablet<span style="background: LightGoldenRodYellow"> (Détails : code UCUM{tbl} = '{tbl}')</span></td></tr></table></blockquote></div>
         </text>
-        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence">
-          <valueTiming>
-            <repeat>
-              <frequency value="4"/>
-              <period value="6"/>
-              <periodUnit value="h"/>
-            </repeat>
-          </valueTiming>
-        </extension>
         <identifier>
           <system value="urn:ietf:rfc:3986"/>
-          <value value="urn:uuid:e9f0a1b2-c3d4-5678-e234-678901234568"/>
+          <value value="urn:uuid:13b993a8-7bca-4899-826c-006017d4ea14"/>
         </identifier>
         <status value="completed"/>
         <category>
@@ -2223,18 +2141,25 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
           </coding>
         </category>
         <medicationReference>
-          <reference value="urn:uuid:f0a1b2c3-d4e5-6789-f245-789012345679"/>
+          <reference value="urn:uuid:d8e9f0a1-b2c3-4567-d223-567890123457"/>
         </medicationReference>
         <subject>
           <reference value="urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891"/>
         </subject>
         <effectivePeriod>
-          <start value="2022-02-11"/>
+          <start value="2024-01-11"/>
         </effectivePeriod>
         <reasonReference>
-          <reference value="urn:uuid:a3b4c5d6-e7f8-9012-a078-012345678902"/>
+          <reference value="urn:uuid:b8c9d0e1-f2a3-4567-b023-567890123457"/>
         </reasonReference>
         <dosage>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
           <route>
             <coding>
               <system value="https://smt.esante.gouv.fr/terminologie-standardterms"/>
@@ -2242,14 +2167,16 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
               <display value="Voie orale"/>
             </coding>
           </route>
-          <dose>
-            <value value="1"/>
-            <unit value="tablet"/>
-            <system value="http://unitsofmeasure.org"/>
-            <code value="{tbl}"/>
-          </dose>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="1"/>
+              <unit value="tablet"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="{tbl}"/>
+            </doseQuantity>
+          </doseAndRate>
         </dosage>
-      </MedicationAdministration>
+      </MedicationStatement>
     </resource>
   </entry>
   <entry>
@@ -2304,6 +2231,75 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
           </strength>
         </ingredient>
       </Medication>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:4dda7e49-168d-405d-b928-4232107582cf"/>
+    <resource>
+      <MedicationStatement>
+        <id value="4dda7e49-168d-405d-b928-4232107582cf"/>
+        <meta>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-statement-document|0.1.0"/>
+        </meta>
+        <language value="fr"/>
+        <text>
+          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="MedicationStatement_4dda7e49-168d-405d-b928-4232107582cf"> </a><p class="res-header-id"><b>Narratif généré : ÉtatMédication 4dda7e49-168d-405d-b928-4232107582cf</b></p><a name="4dda7e49-168d-405d-b928-4232107582cf"> </a><a name="hc4dda7e49-168d-405d-b928-4232107582cf"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-medication-statement-document.html">MedicationStatement - FR Medication Statement Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+
+This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
+
+Note that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.
+
+This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</a>/urn:uuid:4dda7e49-168d-405d-b928-4232107582cf</p><p><b>status</b>: Completed</p><p><b>category</b>: <span title="Codes :{http://terminology.hl7.org/CodeSystem/v3-ActCode DRUG}">Médicament</span></p><p><b>medication</b>: <a href="Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-f0a1b2c3-d4e5-6789-f245-789012345679">Medication COUMADINE 5 mg, comprimé sécable</a></p><p><b>subject</b>: <a href="Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-b2c3d4e5-f6a7-8901-bcde-f01234567891">DOMINIQUE MARIE-LOUISE PAT-TROIS  Female, Date de Naissance :1979-03-28 ( NIR définitif (use: official, ))</a></p><p><b>effective</b>: 2022-02-11 --&gt; (en cours)</p><p><b>reasonReference</b>: <a href="Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-a3b4c5d6-e7f8-9012-a078-012345678902">Condition Accident ischémique cérébral transitoire, sans précision</a></p><blockquote><p><b>dosage</b></p><p><b>timing</b>: 4 par 6 hours</p><p><b>route</b>: <span title="Codes :{https://smt.esante.gouv.fr/terminologie-standardterms 20053000}">Voie orale</span></p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>1 tablet<span style="background: LightGoldenRodYellow"> (Détails : code UCUM{tbl} = '{tbl}')</span></td></tr></table></blockquote></div>
+        </text>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:uuid:4dda7e49-168d-405d-b928-4232107582cf"/>
+        </identifier>
+        <status value="completed"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <code value="DRUG"/>
+            <display value="Médicament"/>
+          </coding>
+        </category>
+        <medicationReference>
+          <reference value="urn:uuid:f0a1b2c3-d4e5-6789-f245-789012345679"/>
+        </medicationReference>
+        <subject>
+          <reference value="urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891"/>
+        </subject>
+        <effectivePeriod>
+          <start value="2022-02-11"/>
+        </effectivePeriod>
+        <reasonReference>
+          <reference value="urn:uuid:a3b4c5d6-e7f8-9012-a078-012345678902"/>
+        </reasonReference>
+        <dosage>
+          <timing>
+            <repeat>
+              <frequency value="4"/>
+              <period value="6"/>
+              <periodUnit value="h"/>
+            </repeat>
+          </timing>
+          <route>
+            <coding>
+              <system value="https://smt.esante.gouv.fr/terminologie-standardterms"/>
+              <code value="20053000"/>
+              <display value="Voie orale"/>
+            </coding>
+          </route>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="1"/>
+              <unit value="tablet"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="{tbl}"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosage>
+      </MedicationStatement>
     </resource>
   </entry>
   <entry>
@@ -2424,7 +2420,7 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
         </meta>
         <language value="fr"/>
         <text>
-          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Observation_e5f6a7b8-c9d0-1235-e290-234567890124"> </a><p class="res-header-id"><b>Narratif généré : Observation e5f6a7b8-c9d0-1235-e290-234567890124</b></p><a name="e5f6a7b8-c9d0-1235-e290-234567890124"> </a><a name="hce5f6a7b8-c9d0-1235-e290-234567890124"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-observation-assessment-document.html">Observation - FR Observation Assessment Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Observation_e5f6a7b8-c9d0-1235-e290-234567890124"> </a><p class="res-header-id"><b>Narratif généré : Observation e5f6a7b8-c9d0-1235-e290-234567890124</b></p><a name="e5f6a7b8-c9d0-1235-e290-234567890124"> </a><a name="hce5f6a7b8-c9d0-1235-e290-234567890124"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-observation-assessment-document.html">Observation - FR Observation Assessment Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
 This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 
@@ -2581,7 +2577,7 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
         </meta>
         <language value="fr"/>
         <text>
-          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Observation_c9d0e1f2-a3b4-5679-c334-678901234568"> </a><p class="res-header-id"><b>Narratif généré : Observation c9d0e1f2-a3b4-5679-c334-678901234568</b></p><a name="c9d0e1f2-a3b4-5679-c334-678901234568"> </a><a name="hcc9d0e1f2-a3b4-5679-c334-678901234568"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-observation-vital-signs-document.html">Observation - FR Observation Vital Signs Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Observation_c9d0e1f2-a3b4-5679-c334-678901234568"> </a><p class="res-header-id"><b>Narratif généré : Observation c9d0e1f2-a3b4-5679-c334-678901234568</b></p><a name="c9d0e1f2-a3b4-5679-c334-678901234568"> </a><a name="hcc9d0e1f2-a3b4-5679-c334-678901234568"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-observation-vital-signs-document.html">Observation - FR Observation Vital Signs Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
 This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 
@@ -2634,7 +2630,7 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
         </meta>
         <language value="fr"/>
         <text>
-          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Observation_d0e1f2a3-b4c5-6780-d345-789012345679"> </a><p class="res-header-id"><b>Narratif généré : Observation d0e1f2a3-b4c5-6780-d345-789012345679</b></p><a name="d0e1f2a3-b4c5-6780-d345-789012345679"> </a><a name="hcd0e1f2a3-b4c5-6780-d345-789012345679"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-observation-vital-signs-document.html">Observation - FR Observation Vital Signs Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Observation_d0e1f2a3-b4c5-6780-d345-789012345679"> </a><p class="res-header-id"><b>Narratif généré : Observation d0e1f2a3-b4c5-6780-d345-789012345679</b></p><a name="d0e1f2a3-b4c5-6780-d345-789012345679"> </a><a name="hcd0e1f2a3-b4c5-6780-d345-789012345679"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-observation-vital-signs-document.html">Observation - FR Observation Vital Signs Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
 This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 
@@ -2932,7 +2928,7 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
         </meta>
         <language value="fr"/>
         <text>
-          <status value="extensions"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Immunization_d6e7f8a9-b0c1-2346-d401-345678901235"> </a><p class="res-header-id"><b>Narratif généré : Immunisation d6e7f8a9-b0c1-2346-d401-345678901235</b></p><a name="d6e7f8a9-b0c1-2346-d401-345678901235"> </a><a name="hcd6e7f8a9-b0c1-2346-d401-345678901235"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-immunization-document.html">Immunization - FR Immunization Document</a> version : 0.1.0</p></div><blockquote><p><b>FR Actor Extension</b></p><ul><li>type: AUT</li><li>actor: <a href="Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-f8a9b0c1-d2e3-4568-f423-567890123457">PractitionerRole</a></li></ul></blockquote><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+          <status value="extensions"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Immunization_d6e7f8a9-b0c1-2346-d401-345678901235"> </a><p class="res-header-id"><b>Narratif généré : Immunisation d6e7f8a9-b0c1-2346-d401-345678901235</b></p><a name="d6e7f8a9-b0c1-2346-d401-345678901235"> </a><a name="hcd6e7f8a9-b0c1-2346-d401-345678901235"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-immunization-document.html">Immunization - FR Immunization Document</a> version : 0.1.0</p></div><blockquote><p><b>FR Actor Extension</b></p><ul><li>type: AUT</li><li>actor: <a href="Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-f8a9b0c1-d2e3-4568-f423-567890123457">PractitionerRole</a></li></ul></blockquote><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
 This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 
@@ -3015,7 +3011,7 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
         </meta>
         <language value="fr"/>
         <text>
-          <status value="extensions"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Immunization_e7f8a9b0-c1d2-3457-e412-456789012346"> </a><p class="res-header-id"><b>Narratif généré : Immunisation e7f8a9b0-c1d2-3457-e412-456789012346</b></p><a name="e7f8a9b0-c1d2-3457-e412-456789012346"> </a><a name="hce7f8a9b0-c1d2-3457-e412-456789012346"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-immunization-document.html">Immunization - FR Immunization Document</a> version : 0.1.0</p></div><blockquote><p><b>FR Actor Extension</b></p><ul><li>type: AUT</li><li>actor: <a href="Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-f8a9b0c1-d2e3-4568-f423-567890123457">PractitionerRole</a></li></ul></blockquote><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+          <status value="extensions"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Immunization_e7f8a9b0-c1d2-3457-e412-456789012346"> </a><p class="res-header-id"><b>Narratif généré : Immunisation e7f8a9b0-c1d2-3457-e412-456789012346</b></p><a name="e7f8a9b0-c1d2-3457-e412-456789012346"> </a><a name="hce7f8a9b0-c1d2-3457-e412-456789012346"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-immunization-document.html">Immunization - FR Immunization Document</a> version : 0.1.0</p></div><blockquote><p><b>FR Actor Extension</b></p><ul><li>type: AUT</li><li>actor: <a href="Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-f8a9b0c1-d2e3-4568-f423-567890123457">PractitionerRole</a></li></ul></blockquote><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
 This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 
@@ -3190,7 +3186,7 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
         </meta>
         <language value="fr"/>
         <text>
-          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Condition_c1d2e3f4-a5b6-7891-c456-890123456780"> </a><p class="res-header-id"><b>Narratif généré : Condition c1d2e3f4-a5b6-7891-c456-890123456780</b></p><a name="c1d2e3f4-a5b6-7891-c456-890123456780"> </a><a name="hcc1d2e3f4-a5b6-7891-c456-890123456780"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-condition-document.html">Condition - FR Condition Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Condition_c1d2e3f4-a5b6-7891-c456-890123456780"> </a><p class="res-header-id"><b>Narratif généré : Condition c1d2e3f4-a5b6-7891-c456-890123456780</b></p><a name="c1d2e3f4-a5b6-7891-c456-890123456780"> </a><a name="hcc1d2e3f4-a5b6-7891-c456-890123456780"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-condition-document.html">Condition - FR Condition Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
 This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 
@@ -3233,79 +3229,130 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
   <entry>
     <fullUrl value="urn:uuid:d2e3f4a5-b6c7-8902-d467-901234567891"/>
     <resource>
-      <MedicationAdministration>
+      <MedicationRequest>
         <id value="d2e3f4a5-b6c7-8902-d467-901234567891"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-request-document|0.1.0"/>
         </meta>
         <language value="fr"/>
         <text>
-          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="MedicationAdministration_d2e3f4a5-b6c7-8902-d467-901234567891"> </a><p class="res-header-id"><b>Narratif généré : AdministrationMédicaments d2e3f4a5-b6c7-8902-d467-901234567891</b></p><a name="d2e3f4a5-b6c7-8902-d467-901234567891"> </a><a name="hcd2e3f4a5-b6c7-8902-d467-901234567891"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-medication-administration-document.html">MedicationAdministration - FR Medication Administration Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="MedicationRequest_d2e3f4a5-b6c7-8902-d467-901234567891"> </a><p class="res-header-id"><b>Narratif généré : PrescriptionMédicamenteuseTODO d2e3f4a5-b6c7-8902-d467-901234567891</b></p><a name="d2e3f4a5-b6c7-8902-d467-901234567891"> </a><a name="hcd2e3f4a5-b6c7-8902-d467-901234567891"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-medication-request-document.html">MedicationRequest - FR Medication Request Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
 This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 
 Note that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.
 
-This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</a>/urn:uuid:AADC9C14-F1CA-4177-B2C8-A5178D5B3CB1</p><p><b>status</b>: Completed</p><p><b>medication</b>: <a href="Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-f4a5b6c7-d8e9-0124-f489-123456789013">Medication ROSUVASTATINE EG 5 mg, comprimé pelliculé</a></p><p><b>subject</b>: <a href="Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-b2c3d4e5-f6a7-8901-bcde-f01234567891">DOMINIQUE MARIE-LOUISE PAT-TROIS  Female, Date de Naissance :1979-03-28 ( NIR définitif (use: official, ))</a></p><p><b>effective</b>: 2024-12-01 --&gt; (en cours)</p><p><b>note</b>: </p><blockquote><div><p>texte libre</p>
-</div></blockquote></div>
+This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</a>/urn:uuid:AADC9C14-F1CA-4177-B2C8-A5178D5B3CB1</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>medication</b>: <a href="Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-f4a5b6c7-d8e9-0124-f489-123456789013">Medication ROSUVASTATINE EG 5 mg, comprimé pelliculé</a></p><p><b>subject</b>: <a href="Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-b2c3d4e5-f6a7-8901-bcde-f01234567891">DOMINIQUE MARIE-LOUISE PAT-TROIS  Female, Date de Naissance :1979-03-28 ( NIR définitif (use: official, ))</a></p><p><b>authoredOn</b>: 2024-12-01</p><p><b>note</b>: </p><blockquote><div><p>texte libre</p>
+</div></blockquote><blockquote><p><b>dosageInstruction</b></p><p><b>timing</b>: Une fois par 1 day</p><p><b>route</b>: <span title="Codes :{https://smt.esante.gouv.fr/terminologie-standardterms 20053000}">Voie orale</span></p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>1-1 tablet</td></tr></table></blockquote><h3>Substitutions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Allowed[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes :{http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution G}">Substitution autorisée par un produit générique</span></td></tr></table></div>
         </text>
         <identifier>
           <system value="urn:ietf:rfc:3986"/>
           <value value="urn:uuid:AADC9C14-F1CA-4177-B2C8-A5178D5B3CB1"/>
         </identifier>
         <status value="completed"/>
+        <intent value="order"/>
         <medicationReference>
           <reference value="urn:uuid:f4a5b6c7-d8e9-0124-f489-123456789013"/>
         </medicationReference>
         <subject>
           <reference value="urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891"/>
         </subject>
-        <effectivePeriod>
-          <start value="2024-12-01"/>
-        </effectivePeriod>
+        <authoredOn value="2024-12-01"/>
         <note>
           <text value="texte libre"/>
         </note>
-      </MedicationAdministration>
+        <dosageInstruction>
+          <timing>
+            <repeat>
+              <boundsPeriod>
+                <start value="2024-12-01"/>
+              </boundsPeriod>
+              <frequency value="1"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <route>
+            <coding>
+              <system value="https://smt.esante.gouv.fr/terminologie-standardterms"/>
+              <code value="20053000"/>
+              <display value="Voie orale"/>
+            </coding>
+          </route>
+          <doseAndRate>
+            <doseRange>
+              <low>
+                <value value="1"/>
+                <unit value="tablet"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{tbl}"/>
+              </low>
+              <high>
+                <value value="1"/>
+                <unit value="tablet"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="{tbl}"/>
+              </high>
+            </doseRange>
+          </doseAndRate>
+        </dosageInstruction>
+        <substitution>
+          <allowedCodeableConcept>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"/>
+              <code value="G"/>
+              <display value="Substitution autorisée par un produit générique"/>
+            </coding>
+          </allowedCodeableConcept>
+        </substitution>
+      </MedicationRequest>
     </resource>
   </entry>
   <entry>
     <fullUrl value="urn:uuid:e3f4a5b6-c7d8-9013-e478-012345678902"/>
     <resource>
-      <MedicationAdministration>
+      <MedicationRequest>
         <id value="e3f4a5b6-c7d8-9013-e478-012345678902"/>
         <meta>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-request-document|0.1.0"/>
         </meta>
         <language value="fr"/>
         <text>
-          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="MedicationAdministration_e3f4a5b6-c7d8-9013-e478-012345678902"> </a><p class="res-header-id"><b>Narratif généré : AdministrationMédicaments e3f4a5b6-c7d8-9013-e478-012345678902</b></p><a name="e3f4a5b6-c7d8-9013-e478-012345678902"> </a><a name="hce3f4a5b6-c7d8-9013-e478-012345678902"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-medication-administration-document.html">MedicationAdministration - FR Medication Administration Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="MedicationRequest_e3f4a5b6-c7d8-9013-e478-012345678902"> </a><p class="res-header-id"><b>Narratif généré : PrescriptionMédicamenteuseTODO e3f4a5b6-c7d8-9013-e478-012345678902</b></p><a name="e3f4a5b6-c7d8-9013-e478-012345678902"> </a><a name="hce3f4a5b6-c7d8-9013-e478-012345678902"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-medication-request-document.html">MedicationRequest - FR Medication Request Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
 This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 
 Note that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.
 
-This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</a>/urn:uuid:AADC9C14-F1CA-4177-B2C8-A5178D5B3CB2</p><p><b>status</b>: Completed</p><p><b>medication</b>: <a href="Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-a5b6c7d8-e9f0-1235-a490-234567890124">Medication null</a></p><p><b>subject</b>: <a href="Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-b2c3d4e5-f6a7-8901-bcde-f01234567891">DOMINIQUE MARIE-LOUISE PAT-TROIS  Female, Date de Naissance :1979-03-28 ( NIR définitif (use: official, ))</a></p><p><b>effective</b>: 2024-12-01 --&gt; (en cours)</p><p><b>note</b>: </p><blockquote><div><p>texte libre</p>
-</div></blockquote></div>
+This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</a>/urn:uuid:AADC9C14-F1CA-4177-B2C8-A5178D5B3CB2</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>medication</b>: <a href="Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-a5b6c7d8-e9f0-1235-a490-234567890124">Medication null</a></p><p><b>subject</b>: <a href="Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-b2c3d4e5-f6a7-8901-bcde-f01234567891">DOMINIQUE MARIE-LOUISE PAT-TROIS  Female, Date de Naissance :1979-03-28 ( NIR définitif (use: official, ))</a></p><p><b>authoredOn</b>: 2024-12-01</p><p><b>note</b>: </p><blockquote><div><p>texte libre</p>
+</div></blockquote><h3>Substitutions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Allowed[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes :{http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution G}">Substitution autorisée par un produit générique</span></td></tr></table></div>
         </text>
         <identifier>
           <system value="urn:ietf:rfc:3986"/>
           <value value="urn:uuid:AADC9C14-F1CA-4177-B2C8-A5178D5B3CB2"/>
         </identifier>
         <status value="completed"/>
+        <intent value="order"/>
         <medicationReference>
           <reference value="urn:uuid:a5b6c7d8-e9f0-1235-a490-234567890124"/>
         </medicationReference>
         <subject>
           <reference value="urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891"/>
         </subject>
-        <effectivePeriod>
-          <start value="2024-12-01"/>
-        </effectivePeriod>
+        <authoredOn value="2024-12-01"/>
         <note>
           <text value="texte libre"/>
         </note>
-      </MedicationAdministration>
+        <substitution>
+          <allowedCodeableConcept>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"/>
+              <code value="G"/>
+              <display value="Substitution autorisée par un produit générique"/>
+            </coding>
+          </allowedCodeableConcept>
+        </substitution>
+      </MedicationRequest>
     </resource>
   </entry>
   <entry>
@@ -3448,7 +3495,7 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
         </meta>
         <language value="fr"/>
         <text>
-          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="DiagnosticReport_cc001111-2222-3333-4444-555566667777"> </a><p class="res-header-id"><b>Narratif généré : RapportDiagnostique cc001111-2222-3333-4444-555566667777</b></p><a name="cc001111-2222-3333-4444-555566667777"> </a><a name="hccc001111-2222-3333-4444-555566667777"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-diagnostic-report-document.html">DiagnosticReport - FR Diagnostic Report Document</a> version : 0.1.0</p></div><h2><span title="Codes :{http://loinc.org 11502-2}">CR d'examens biologiques</span> (<span title="Codes :{http://loinc.org 26436-6}">Biologie polyvalente</span>) </h2><table class="grid"><tr><td>Sujet</td><td>DOMINIQUE MARIE-LOUISE PAT-TROIS  Female, Date de Naissance :1979-03-28 ( NIR définitif (use: official, ))</td></tr><tr><td>When For</td><td>2024-03-29</td></tr><tr><td>Exécutant</td><td> <a href="Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-ee223333-4444-5555-6666-777788889999">Dr Marcel CAMPARINI</a></td></tr><tr><td>Identifiant</td><td> <a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="DiagnosticReport_cc001111-2222-3333-4444-555566667777"> </a><p class="res-header-id"><b>Narratif généré : RapportDiagnostique cc001111-2222-3333-4444-555566667777</b></p><a name="cc001111-2222-3333-4444-555566667777"> </a><a name="hccc001111-2222-3333-4444-555566667777"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-diagnostic-report-document.html">DiagnosticReport - FR Diagnostic Report Document</a> version : 0.1.0</p></div><h2><span title="Codes :{http://loinc.org 11502-2}">CR d'examens biologiques</span> (<span title="Codes :{http://loinc.org 26436-6}">Biologie polyvalente</span>) </h2><table class="grid"><tr><td>Sujet</td><td>DOMINIQUE MARIE-LOUISE PAT-TROIS  Female, Date de Naissance :1979-03-28 ( NIR définitif (use: official, ))</td></tr><tr><td>When For</td><td>2024-03-29</td></tr><tr><td>Exécutant</td><td> <a href="Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-ee223333-4444-5555-6666-777788889999">Dr Marcel CAMPARINI</a></td></tr><tr><td>Identifiant</td><td> <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
 This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 
@@ -3524,7 +3571,7 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
         </meta>
         <language value="fr"/>
         <text>
-          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Observation_dd112222-3333-4444-5555-666677778888"> </a><p class="res-header-id"><b>Narratif généré : Observation dd112222-3333-4444-5555-666677778888</b></p><a name="dd112222-3333-4444-5555-666677778888"> </a><a name="hcdd112222-3333-4444-5555-666677778888"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-observation-result-document.html">Observation - FR Observation Result Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Observation_dd112222-3333-4444-5555-666677778888"> </a><p class="res-header-id"><b>Narratif généré : Observation dd112222-3333-4444-5555-666677778888</b></p><a name="dd112222-3333-4444-5555-666677778888"> </a><a name="hcdd112222-3333-4444-5555-666677778888"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-observation-result-document.html">Observation - FR Observation Result Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
 This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 
@@ -3670,7 +3717,7 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
         </meta>
         <language value="fr"/>
         <text>
-          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="DiagnosticReport_11556666-7777-8888-9999-000011112222"> </a><p class="res-header-id"><b>Narratif généré : RapportDiagnostique 11556666-7777-8888-9999-000011112222</b></p><a name="11556666-7777-8888-9999-000011112222"> </a><a name="hc11556666-7777-8888-9999-000011112222"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-diagnostic-report-document.html">DiagnosticReport - FR Diagnostic Report Document</a> version : 0.1.0</p></div><h2><span title="Codes :{http://loinc.org 11502-2}">CR d'examens biologiques</span> (<span title="Codes :{http://loinc.org 18748-4}">Imagerie</span>) </h2><table class="grid"><tr><td>Sujet</td><td>DOMINIQUE MARIE-LOUISE PAT-TROIS  Female, Date de Naissance :1979-03-28 ( NIR définitif (use: official, ))</td></tr><tr><td>When For</td><td>2024-03-29</td></tr><tr><td>Exécutant</td><td> <a href="Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-33778888-9999-aaaa-bbbb-222233334444">Dr Jacques BIDEAULT</a></td></tr><tr><td>Identifiant</td><td> <a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="DiagnosticReport_11556666-7777-8888-9999-000011112222"> </a><p class="res-header-id"><b>Narratif généré : RapportDiagnostique 11556666-7777-8888-9999-000011112222</b></p><a name="11556666-7777-8888-9999-000011112222"> </a><a name="hc11556666-7777-8888-9999-000011112222"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-diagnostic-report-document.html">DiagnosticReport - FR Diagnostic Report Document</a> version : 0.1.0</p></div><h2><span title="Codes :{http://loinc.org 11502-2}">CR d'examens biologiques</span> (<span title="Codes :{http://loinc.org 18748-4}">Imagerie</span>) </h2><table class="grid"><tr><td>Sujet</td><td>DOMINIQUE MARIE-LOUISE PAT-TROIS  Female, Date de Naissance :1979-03-28 ( NIR définitif (use: official, ))</td></tr><tr><td>When For</td><td>2024-03-29</td></tr><tr><td>Exécutant</td><td> <a href="Bundle-Bundle-IPS-FR-DLU.html#urn-uuid-33778888-9999-aaaa-bbbb-222233334444">Dr Jacques BIDEAULT</a></td></tr><tr><td>Identifiant</td><td> <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
 This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 
@@ -3746,7 +3793,7 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
         </meta>
         <language value="fr"/>
         <text>
-          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Observation_22667777-8888-9999-aaaa-111122223333"> </a><p class="res-header-id"><b>Narratif généré : Observation 22667777-8888-9999-aaaa-111122223333</b></p><a name="22667777-8888-9999-aaaa-111122223333"> </a><a name="hc22667777-8888-9999-aaaa-111122223333"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-observation-result-document.html">Observation - FR Observation Result Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="Observation_22667777-8888-9999-aaaa-111122223333"> </a><p class="res-header-id"><b>Narratif généré : Observation 22667777-8888-9999-aaaa-111122223333</b></p><a name="22667777-8888-9999-aaaa-111122223333"> </a><a name="hc22667777-8888-9999-aaaa-111122223333"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-observation-result-document.html">Observation - FR Observation Result Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
 This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 
@@ -3899,7 +3946,7 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
         </meta>
         <language value="fr"/>
         <text>
-          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="DocumentReference_66aa1111-cccc-dddd-eeee-555566667777"> </a><p class="res-header-id"><b>Narratif généré : RéférenceDocument 66aa1111-cccc-dddd-eeee-555566667777</b></p><a name="66aa1111-cccc-dddd-eeee-555566667777"> </a><a name="hc66aa1111-cccc-dddd-eeee-555566667777"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-document-reference-document.html">DocumentReference - FR Document reference Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="DocumentReference_66aa1111-cccc-dddd-eeee-555566667777"> </a><p class="res-header-id"><b>Narratif généré : RéférenceDocument 66aa1111-cccc-dddd-eeee-555566667777</b></p><a name="66aa1111-cccc-dddd-eeee-555566667777"> </a><a name="hc66aa1111-cccc-dddd-eeee-555566667777"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-document-reference-document.html">DocumentReference - FR Document reference Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
 This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 
@@ -3939,7 +3986,7 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
         </meta>
         <language value="fr"/>
         <text>
-          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="DocumentReference_77bb2222-dddd-eeee-ffff-666677778888"> </a><p class="res-header-id"><b>Narratif généré : RéférenceDocument 77bb2222-dddd-eeee-ffff-666677778888</b></p><a name="77bb2222-dddd-eeee-ffff-666677778888"> </a><a name="hc77bb2222-dddd-eeee-ffff-666677778888"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-document-reference-document.html">DocumentReference - FR Document reference Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+          <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><a name="DocumentReference_77bb2222-dddd-eeee-ffff-666677778888"> </a><p class="res-header-id"><b>Narratif généré : RéférenceDocument 77bb2222-dddd-eeee-ffff-666677778888</b></p><a name="77bb2222-dddd-eeee-ffff-666677778888"> </a><a name="hc77bb2222-dddd-eeee-ffff-666677778888"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/StructureDefinition-fr-document-reference-document.html">DocumentReference - FR Document reference Document</a> version : 0.1.0</p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/7.1.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
 This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 

@@ -233,7 +233,7 @@
           "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><em>Traitements au long cours :</em></p><table border=\"0\"><thead><tr><th>Date de début</th><th>Date de fin</th><th>Médicament</th><th>Fréquence</th><th>Dose prescrite</th><th>Rythme</th><th>Voie d'administration</th><th>Motif</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/01/2024</td><td>–</td><td>LEVOTHYROX 75 microgrammes, comprimé sécable</td><td>1 fois/j</td><td>1 cp</td><td>–</td><td>Voie orale</td><td>Thyroïdite auto-immune</td><td>Le patient a pris le médicament après le petit-déjeuner</td></tr></tbody></table></div>"
         },
         "entry" : [{
-          "reference" : "urn:uuid:1ff316e0-edde-4bb9-a5fe-822d486d8230"
+          "reference" : "urn:uuid:14344fe6-b6c8-4c7a-82d8-e2e8130633de"
         }]
       },
       {
@@ -2028,77 +2028,6 @@
     }
   },
   {
-    "fullUrl" : "urn:uuid:1ff316e0-edde-4bb9-a5fe-822d486d8230",
-    "resource" : {
-      "resourceType" : "MedicationAdministration",
-      "id" : "1ff316e0-edde-4bb9-a5fe-822d486d8230",
-      "meta" : {
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"]
-      },
-      "language" : "en",
-      "text" : {
-        "status" : "extensions"
-      },
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence",
-        "valueTiming" : {
-          "repeat" : {
-            "frequency" : 1,
-            "periodUnit" : "d"
-          }
-        }
-      }],
-      "identifier" : [{
-        "system" : "urn:ietf:rfc:3986",
-        "value" : "urn:uuid:1ff316e0-edde-4bb9-a5fe-822d486d8230"
-      }],
-      "status" : "completed",
-      "category" : {
-        "coding" : [{
-          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-          "code" : "DRUG",
-          "display" : "Médicament"
-        }]
-      },
-      "medicationReference" : {
-        "reference" : "urn:uuid:fb88edae-4d3f-4b00-ae17-71c8f03adc71"
-      },
-      "subject" : {
-        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
-      },
-      "effectivePeriod" : {
-        "start" : "2024-01-11"
-      },
-      "reasonReference" : [{
-        "reference" : "urn:uuid:257427f5-dffa-4a97-9475-4ebb988589af"
-      }],
-      "note" : [{
-        "text" : "Le patient a pris le médicament après le petit-déjeuner"
-      }],
-      "dosage" : {
-        "route" : {
-          "coding" : [{
-            "system" : "https://smt.esante.gouv.fr/terminologie-standardterms",
-            "code" : "20053000",
-            "display" : "Voie orale"
-          }]
-        },
-        "dose" : {
-          "value" : 1,
-          "unit" : "tablet",
-          "system" : "http://unitsofmeasure.org",
-          "code" : "{tbl}"
-        },
-        "rateQuantity" : {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
-            "valueCode" : "not-applicable"
-          }]
-        }
-      }
-    }
-  },
-  {
     "fullUrl" : "urn:uuid:fb88edae-4d3f-4b00-ae17-71c8f03adc71",
     "resource" : {
       "resourceType" : "Medication",
@@ -2150,6 +2079,71 @@
             "value" : 1
           }
         }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:14344fe6-b6c8-4c7a-82d8-e2e8130633de",
+    "resource" : {
+      "resourceType" : "MedicationStatement",
+      "id" : "14344fe6-b6c8-4c7a-82d8-e2e8130633de",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-statement-document|0.1.0"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:14344fe6-b6c8-4c7a-82d8-e2e8130633de"
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code" : "DRUG",
+          "display" : "Médicament"
+        }]
+      },
+      "medicationReference" : {
+        "reference" : "urn:uuid:fb88edae-4d3f-4b00-ae17-71c8f03adc71"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
+      },
+      "effectivePeriod" : {
+        "start" : "2024-01-11"
+      },
+      "reasonReference" : [{
+        "reference" : "urn:uuid:257427f5-dffa-4a97-9475-4ebb988589af"
+      }],
+      "note" : [{
+        "text" : "Le patient a pris le médicament après le petit-déjeuner"
+      }],
+      "dosage" : [{
+        "timing" : {
+          "repeat" : {
+            "frequency" : 1,
+            "period" : 1,
+            "periodUnit" : "d"
+          }
+        },
+        "route" : {
+          "coding" : [{
+            "system" : "https://smt.esante.gouv.fr/terminologie-standardterms",
+            "code" : "20053000",
+            "display" : "Voie orale"
+          }]
+        },
+        "doseAndRate" : [{
+          "doseQuantity" : {
+            "value" : 1,
+            "unit" : "tablet",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "{tbl}"
+          }
+        }]
       }]
     }
   },
@@ -3190,10 +3184,10 @@
   {
     "fullUrl" : "urn:uuid:73af1b58-f567-4c03-a1a6-d65d3b3fd079",
     "resource" : {
-      "resourceType" : "MedicationAdministration",
+      "resourceType" : "MedicationRequest",
       "id" : "73af1b58-f567-4c03-a1a6-d65d3b3fd079",
       "meta" : {
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-request-document|0.1.0"]
       },
       "language" : "en",
       "text" : {
@@ -3204,27 +3198,70 @@
         "value" : "urn:uuid:AADC9C14-F1CA-4177-B2C8-A5178D5B3CA0"
       }],
       "status" : "completed",
+      "intent" : "order",
       "medicationReference" : {
         "reference" : "urn:uuid:2f861880-31d2-4969-a2ce-b78f750f430e"
       },
       "subject" : {
         "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
       },
-      "effectivePeriod" : {
-        "start" : "2021-12-04"
-      },
+      "authoredOn" : "2021-12-04",
       "note" : [{
         "text" : "texte libre"
-      }]
+      }],
+      "dosageInstruction" : [{
+        "timing" : {
+          "repeat" : {
+            "boundsPeriod" : {
+              "start" : "2021-12-04"
+            },
+            "frequency" : 1,
+            "period" : 1,
+            "periodUnit" : "d"
+          }
+        },
+        "route" : {
+          "coding" : [{
+            "system" : "https://smt.esante.gouv.fr/terminologie-standardterms",
+            "code" : "20053000",
+            "display" : "Voie orale"
+          }]
+        },
+        "doseAndRate" : [{
+          "doseRange" : {
+            "low" : {
+              "value" : 1,
+              "unit" : "tablet",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "{tbl}"
+            },
+            "high" : {
+              "value" : 1,
+              "unit" : "tablet",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "{tbl}"
+            }
+          }
+        }]
+      }],
+      "substitution" : {
+        "allowedCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution",
+            "code" : "G",
+            "display" : "Substitution autorisée par un produit générique"
+          }]
+        }
+      }
     }
   },
   {
     "fullUrl" : "urn:uuid:83e3e384-84ca-46dd-aa8c-c847a70b1fb5",
     "resource" : {
-      "resourceType" : "MedicationAdministration",
+      "resourceType" : "MedicationRequest",
       "id" : "83e3e384-84ca-46dd-aa8c-c847a70b1fb5",
       "meta" : {
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-request-document|0.1.0"]
       },
       "language" : "en",
       "text" : {
@@ -3235,18 +3272,26 @@
         "value" : "urn:uuid:AADC9C14-F1CA-4177-B2C8-A5178D5B3CA0"
       }],
       "status" : "completed",
+      "intent" : "order",
       "medicationReference" : {
         "reference" : "urn:uuid:6349c4d2-bdba-41b1-b5d6-1ce8c359205d"
       },
       "subject" : {
         "reference" : "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"
       },
-      "effectivePeriod" : {
-        "start" : "2021-12-04"
-      },
+      "authoredOn" : "2021-12-04",
       "note" : [{
         "text" : "texte libre"
-      }]
+      }],
+      "substitution" : {
+        "allowedCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution",
+            "code" : "G",
+            "display" : "Substitution autorisée par un produit générique"
+          }]
+        }
+      }
     }
   },
   {

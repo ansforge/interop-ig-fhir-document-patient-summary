@@ -135,12 +135,12 @@
      fhir:Bundle.entry.resource <urn:uuid:a4e1cafa-05e4-40c7-82dc-641f54281671>
   ], [
      fhir:index -1 ;
-     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:1ff316e0-edde-4bb9-a5fe-822d486d8230" ] ;
-     fhir:Bundle.entry.resource <urn:uuid:1ff316e0-edde-4bb9-a5fe-822d486d8230>
-  ], [
-     fhir:index -1 ;
      fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:fb88edae-4d3f-4b00-ae17-71c8f03adc71" ] ;
      fhir:Bundle.entry.resource <urn:uuid:fb88edae-4d3f-4b00-ae17-71c8f03adc71>
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:14344fe6-b6c8-4c7a-82d8-e2e8130633de" ] ;
+     fhir:Bundle.entry.resource <urn:uuid:14344fe6-b6c8-4c7a-82d8-e2e8130633de>
   ], [
      fhir:index -1 ;
      fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:034d19b3-3c4e-488a-a7c0-9181dfc721e3" ] ;
@@ -601,7 +601,7 @@
      ] ;
      fhir:Composition.section.entry [
        fhir:index -1 ;
-       fhir:Reference.reference [ fhir:value "urn:uuid:1ff316e0-edde-4bb9-a5fe-822d486d8230" ]
+       fhir:Reference.reference [ fhir:value "urn:uuid:14344fe6-b6c8-4c7a-82d8-e2e8130633de" ]
      ]
   ], [
      fhir:index -1 ;
@@ -2699,84 +2699,6 @@
   ] ;
   fhir:Condition.onsetDateTime [ fhir:value "2018-05-21"^^xsd:date] .
 
-<urn:uuid:1ff316e0-edde-4bb9-a5fe-822d486d8230> a fhir:MedicationAdministration ;
-  fhir:Resource.id [ fhir:value "1ff316e0-edde-4bb9-a5fe-822d486d8230"] ;
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0" ;
-       fhir:index -1 ;
-       fhir:link <https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0>
-     ]
-  ] ;
-  fhir:Resource.language [ fhir:value "en"] ;
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "extensions" ]
-  ] ;
-  fhir:DomainResource.extension [
-     fhir:index -1 ;
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence" ] ;
-     fhir:Extension.valueTiming [
-       fhir:Timing.repeat [
-         fhir:Timing.repeat.frequency [ fhir:value "1"^^xsd:positiveInteger ] ;
-         fhir:Timing.repeat.periodUnit [ fhir:value "d" ]
-       ]
-     ]
-  ] ;
-  fhir:MedicationAdministration.identifier [
-     fhir:index -1 ;
-     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
-     fhir:Identifier.value [ fhir:value "urn:uuid:1ff316e0-edde-4bb9-a5fe-822d486d8230" ]
-  ] ;
-  fhir:MedicationAdministration.status [ fhir:value "completed"] ;
-  fhir:MedicationAdministration.category [
-     fhir:CodeableConcept.coding [
-       fhir:index -1 ;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ] ;
-       fhir:Coding.code [ fhir:value "DRUG" ] ;
-       fhir:Coding.display [ fhir:value "Médicament" ]
-     ]
-  ] ;
-  fhir:MedicationAdministration.medicationReference [
-     fhir:Reference.reference [ fhir:value "urn:uuid:fb88edae-4d3f-4b00-ae17-71c8f03adc71" ]
-  ] ;
-  fhir:MedicationAdministration.subject [
-     fhir:Reference.reference [ fhir:value "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac" ]
-  ] ;
-  fhir:MedicationAdministration.effectivePeriod [
-     fhir:Period.start [ fhir:value "2024-01-11"^^xsd:date ]
-  ] ;
-  fhir:MedicationAdministration.reasonReference [
-     fhir:index -1 ;
-     fhir:Reference.reference [ fhir:value "urn:uuid:257427f5-dffa-4a97-9475-4ebb988589af" ]
-  ] ;
-  fhir:MedicationAdministration.note [
-     fhir:index -1 ;
-     fhir:Annotation.text [ fhir:value "Le patient a pris le médicament après le petit-déjeuner" ]
-  ] ;
-  fhir:MedicationAdministration.dosage [
-     fhir:MedicationAdministration.dosage.route [
-       fhir:CodeableConcept.coding [
-         fhir:index -1 ;
-         fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/terminologie-standardterms" ] ;
-         fhir:Coding.code [ fhir:value "20053000" ] ;
-         fhir:Coding.display [ fhir:value "Voie orale" ]
-       ]
-     ] ;
-     fhir:MedicationAdministration.dosage.dose [
-       fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ] ;
-       fhir:Quantity.unit [ fhir:value "tablet" ] ;
-       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
-       fhir:Quantity.code [ fhir:value "{tbl}" ]
-     ] ;
-     fhir:MedicationAdministration.dosage.rateQuantity [
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/data-absent-reason" ] ;
-         fhir:Extension.valueCode [ fhir:value "not-applicable" ]
-       ]
-     ]
-  ] .
-
 <urn:uuid:fb88edae-4d3f-4b00-ae17-71c8f03adc71> a fhir:Medication ;
   fhir:Resource.id [ fhir:value "fb88edae-4d3f-4b00-ae17-71c8f03adc71"] ;
   fhir:Resource.meta [
@@ -2833,6 +2755,78 @@
        ] ;
        fhir:Ratio.denominator [
          fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ]
+       ]
+     ]
+  ] .
+
+<urn:uuid:14344fe6-b6c8-4c7a-82d8-e2e8130633de> a fhir:MedicationStatement ;
+  fhir:Resource.id [ fhir:value "14344fe6-b6c8-4c7a-82d8-e2e8130633de"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-statement-document|0.1.0" ;
+       fhir:index -1 ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-statement-document|0.1.0>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ]
+  ] ;
+  fhir:MedicationStatement.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:uuid:14344fe6-b6c8-4c7a-82d8-e2e8130633de" ]
+  ] ;
+  fhir:MedicationStatement.status [ fhir:value "completed"] ;
+  fhir:MedicationStatement.category [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ] ;
+       fhir:Coding.code [ fhir:value "DRUG" ] ;
+       fhir:Coding.display [ fhir:value "Médicament" ]
+     ]
+  ] ;
+  fhir:MedicationStatement.medicationReference [
+     fhir:Reference.reference [ fhir:value "urn:uuid:fb88edae-4d3f-4b00-ae17-71c8f03adc71" ]
+  ] ;
+  fhir:MedicationStatement.subject [
+     fhir:Reference.reference [ fhir:value "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac" ]
+  ] ;
+  fhir:MedicationStatement.effectivePeriod [
+     fhir:Period.start [ fhir:value "2024-01-11"^^xsd:date ]
+  ] ;
+  fhir:MedicationStatement.reasonReference [
+     fhir:index -1 ;
+     fhir:Reference.reference [ fhir:value "urn:uuid:257427f5-dffa-4a97-9475-4ebb988589af" ]
+  ] ;
+  fhir:MedicationStatement.note [
+     fhir:index -1 ;
+     fhir:Annotation.text [ fhir:value "Le patient a pris le médicament après le petit-déjeuner" ]
+  ] ;
+  fhir:MedicationStatement.dosage [
+     fhir:index -1 ;
+     fhir:Dosage.timing [
+       fhir:Timing.repeat [
+         fhir:Timing.repeat.frequency [ fhir:value "1"^^xsd:positiveInteger ] ;
+         fhir:Timing.repeat.period [ fhir:value "1"^^xsd:decimal ] ;
+         fhir:Timing.repeat.periodUnit [ fhir:value "d" ]
+       ]
+     ] ;
+     fhir:Dosage.route [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/terminologie-standardterms" ] ;
+         fhir:Coding.code [ fhir:value "20053000" ] ;
+         fhir:Coding.display [ fhir:value "Voie orale" ]
+       ]
+     ] ;
+     fhir:Dosage.doseAndRate [
+       fhir:index -1 ;
+       fhir:Dosage.doseAndRate.doseQuantity [
+         fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ] ;
+         fhir:Quantity.unit [ fhir:value "tablet" ] ;
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+         fhir:Quantity.code [ fhir:value "{tbl}" ]
        ]
      ]
   ] .
@@ -4003,70 +3997,126 @@
   ] ;
   fhir:Observation.valueInteger [ fhir:value "1"^^xsd:integer] .
 
-<urn:uuid:73af1b58-f567-4c03-a1a6-d65d3b3fd079> a fhir:MedicationAdministration ;
+<urn:uuid:73af1b58-f567-4c03-a1a6-d65d3b3fd079> a fhir:MedicationRequest ;
   fhir:Resource.id [ fhir:value "73af1b58-f567-4c03-a1a6-d65d3b3fd079"] ;
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0" ;
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-request-document|0.1.0" ;
        fhir:index -1 ;
-       fhir:link <https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-request-document|0.1.0>
      ]
   ] ;
   fhir:Resource.language [ fhir:value "en"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ]
   ] ;
-  fhir:MedicationAdministration.identifier [
+  fhir:MedicationRequest.identifier [
      fhir:index -1 ;
      fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
      fhir:Identifier.value [ fhir:value "urn:uuid:AADC9C14-F1CA-4177-B2C8-A5178D5B3CA0" ]
   ] ;
-  fhir:MedicationAdministration.status [ fhir:value "completed"] ;
-  fhir:MedicationAdministration.medicationReference [
+  fhir:MedicationRequest.status [ fhir:value "completed"] ;
+  fhir:MedicationRequest.intent [ fhir:value "order"] ;
+  fhir:MedicationRequest.medicationReference [
      fhir:Reference.reference [ fhir:value "urn:uuid:2f861880-31d2-4969-a2ce-b78f750f430e" ]
   ] ;
-  fhir:MedicationAdministration.subject [
+  fhir:MedicationRequest.subject [
      fhir:Reference.reference [ fhir:value "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac" ]
   ] ;
-  fhir:MedicationAdministration.effectivePeriod [
-     fhir:Period.start [ fhir:value "2021-12-04"^^xsd:date ]
-  ] ;
-  fhir:MedicationAdministration.note [
+  fhir:MedicationRequest.authoredOn [ fhir:value "2021-12-04"^^xsd:date] ;
+  fhir:MedicationRequest.note [
      fhir:index -1 ;
      fhir:Annotation.text [ fhir:value "texte libre" ]
+  ] ;
+  fhir:MedicationRequest.dosageInstruction [
+     fhir:index -1 ;
+     fhir:Dosage.timing [
+       fhir:Timing.repeat [
+         fhir:Timing.repeat.boundsPeriod [
+           fhir:Period.start [ fhir:value "2021-12-04"^^xsd:date ]
+         ] ;
+         fhir:Timing.repeat.frequency [ fhir:value "1"^^xsd:positiveInteger ] ;
+         fhir:Timing.repeat.period [ fhir:value "1"^^xsd:decimal ] ;
+         fhir:Timing.repeat.periodUnit [ fhir:value "d" ]
+       ]
+     ] ;
+     fhir:Dosage.route [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/terminologie-standardterms" ] ;
+         fhir:Coding.code [ fhir:value "20053000" ] ;
+         fhir:Coding.display [ fhir:value "Voie orale" ]
+       ]
+     ] ;
+     fhir:Dosage.doseAndRate [
+       fhir:index -1 ;
+       fhir:Dosage.doseAndRate.doseRange [
+         fhir:Range.low [
+           fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ] ;
+           fhir:Quantity.unit [ fhir:value "tablet" ] ;
+           fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+           fhir:Quantity.code [ fhir:value "{tbl}" ]
+         ] ;
+         fhir:Range.high [
+           fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ] ;
+           fhir:Quantity.unit [ fhir:value "tablet" ] ;
+           fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+           fhir:Quantity.code [ fhir:value "{tbl}" ]
+         ]
+       ]
+     ]
+  ] ;
+  fhir:MedicationRequest.substitution [
+     fhir:MedicationRequest.substitution.allowedCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution" ] ;
+         fhir:Coding.code [ fhir:value "G" ] ;
+         fhir:Coding.display [ fhir:value "Substitution autorisée par un produit générique" ]
+       ]
+     ]
   ] .
 
-<urn:uuid:83e3e384-84ca-46dd-aa8c-c847a70b1fb5> a fhir:MedicationAdministration ;
+<urn:uuid:83e3e384-84ca-46dd-aa8c-c847a70b1fb5> a fhir:MedicationRequest ;
   fhir:Resource.id [ fhir:value "83e3e384-84ca-46dd-aa8c-c847a70b1fb5"] ;
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0" ;
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-request-document|0.1.0" ;
        fhir:index -1 ;
-       fhir:link <https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-administration-document|0.1.0>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-request-document|0.1.0>
      ]
   ] ;
   fhir:Resource.language [ fhir:value "en"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ]
   ] ;
-  fhir:MedicationAdministration.identifier [
+  fhir:MedicationRequest.identifier [
      fhir:index -1 ;
      fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
      fhir:Identifier.value [ fhir:value "urn:uuid:AADC9C14-F1CA-4177-B2C8-A5178D5B3CA0" ]
   ] ;
-  fhir:MedicationAdministration.status [ fhir:value "completed"] ;
-  fhir:MedicationAdministration.medicationReference [
+  fhir:MedicationRequest.status [ fhir:value "completed"] ;
+  fhir:MedicationRequest.intent [ fhir:value "order"] ;
+  fhir:MedicationRequest.medicationReference [
      fhir:Reference.reference [ fhir:value "urn:uuid:6349c4d2-bdba-41b1-b5d6-1ce8c359205d" ]
   ] ;
-  fhir:MedicationAdministration.subject [
+  fhir:MedicationRequest.subject [
      fhir:Reference.reference [ fhir:value "urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac" ]
   ] ;
-  fhir:MedicationAdministration.effectivePeriod [
-     fhir:Period.start [ fhir:value "2021-12-04"^^xsd:date ]
-  ] ;
-  fhir:MedicationAdministration.note [
+  fhir:MedicationRequest.authoredOn [ fhir:value "2021-12-04"^^xsd:date] ;
+  fhir:MedicationRequest.note [
      fhir:index -1 ;
      fhir:Annotation.text [ fhir:value "texte libre" ]
+  ] ;
+  fhir:MedicationRequest.substitution [
+     fhir:MedicationRequest.substitution.allowedCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution" ] ;
+         fhir:Coding.code [ fhir:value "G" ] ;
+         fhir:Coding.display [ fhir:value "Substitution autorisée par un produit générique" ]
+       ]
+     ]
   ] .
 
 <urn:uuid:2f861880-31d2-4969-a2ce-b78f750f430e> a fhir:Medication ;

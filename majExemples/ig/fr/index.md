@@ -124,6 +124,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 * [ParticipationType](http://terminology.hl7.org/7.4.0/CodeSystem-v3-ParticipationType.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md), [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md) and [FRCompositionDocumentIPS](StructureDefinition-fr-composition-document-ips.md)
 * [RoleClass](http://terminology.hl7.org/7.4.0/CodeSystem-v3-RoleClass.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
 * [RoleCode](http://terminology.hl7.org/7.4.0/CodeSystem-v3-RoleCode.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
+* [Substance Admin Substitution](http://terminology.hl7.org/7.4.0/CodeSystem-v3-substanceAdminSubstitution.html): [Bundle/Bundle-IPS-FR](Bundle-Bundle-IPS-FR.md) and [Bundle/Bundle-IPS-FR-DLU](Bundle-Bundle-IPS-FR-DLU.md)
 
 
 Les terminologies publiées sur le [Serveur Multi-terminologies (SMT)](https://smt.esante.gouv.fr/) de l'ANS précisent la licence d'utilisation associée.

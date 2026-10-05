@@ -38,7 +38,6 @@
       "Bundle.entry.resource.code",
       "Bundle.entry.resource.code.coding.code",
       "Bundle.entry.resource.date",
-      "Bundle.entry.resource.dosage.rateQuantity",
       "Bundle.entry.resource.effectiveDateTime",
       "Bundle.entry.resource.identifier",
       "Bundle.entry.resource.ingredient.itemCodeableConcept.coding.code",
