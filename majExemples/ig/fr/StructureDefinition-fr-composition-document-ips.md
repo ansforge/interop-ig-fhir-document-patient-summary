@@ -2,9 +2,6 @@
 
 ## Profil de ressource: FR Composition Document IPS 
 
- 
-Profil Composition du document IPS-FR, derive de FRCompositionDocument. 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil: [Bundle (IPS)](StructureDefinition-fr-bundle-document-ips.md)
@@ -39,7 +36,7 @@ Cette structure est dérivée de [FRCompositionDocument](https://build.fhir.org/
 
 ** Résumé **
 
-Obligatoire : 11 éléments(4 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 12 éléments(4 éléments obligatoire(s) imbriqué(s))
  Must-Support : 16 éléments
  Interdit : 2 éléments
 
@@ -98,7 +95,7 @@ Cette structure est dérivée de [FRCompositionDocument](https://build.fhir.org/
 
 ** Résumé **
 
-Obligatoire : 11 éléments(4 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 12 éléments(4 éléments obligatoire(s) imbriqué(s))
  Must-Support : 16 éléments
  Interdit : 2 éléments
 
@@ -145,12 +142,16 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-composition-
 {
   "resourceType" : "StructureDefinition",
   "id" : "fr-composition-document-ips",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
+    "valueCanonical" : "http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/clinical-document-composition|1.1.0"
+  }],
   "url" : "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-composition-document-ips",
   "version" : "0.1.0",
   "name" : "FRCompositionDocumentIPS",
   "title" : "FR Composition Document IPS",
   "status" : "draft",
-  "date" : "2026-10-01T11:51:37+00:00",
+  "date" : "2026-10-05T12:31:15+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -233,17 +234,31 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-composition-
       {
         "key" : "fr-composition-ips-participant-autre-ps",
         "severity" : "error",
-        "human" : "Au plus un participant de rôle Autre professionnel de santé (extension[type]=INF, extension[function]=AUTRE-PS).",
-        "expression" : "extension('participant').where(extension('type').value.coding.code = 'INF' and extension('function').value.coding.code = 'AUTRE-PS').count() <= 1",
+        "human" : "Au plus un participant de rôle Autre professionnel de santé (extension[type]=PRF, extension[function]=353).",
+        "expression" : "extension('participant').where(extension('type').value.coding.code = 'PRF' and extension('function').value.coding.code = '353').count() <= 1",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-composition-document-ips|0.1.0"
       },
       {
         "key" : "fr-composition-ips-participant-autre-correspondant",
         "severity" : "error",
-        "human" : "Au plus un participant de rôle Autre correspondant (extension[type]=INF, extension[function]=AUTRE-CORR).",
-        "expression" : "extension('participant').where(extension('type').value.coding.code = 'INF' and extension('function').value.coding.code = 'AUTRE-CORR').count() <= 1",
+        "human" : "Au plus un participant de rôle Autre correspondant (extension[type]=CON, extension[function]=CORRE).",
+        "expression" : "extension('participant').where(extension('type').value.coding.code = 'CON' and extension('function').value.coding.code = 'CORRE').count() <= 1",
         "source" : "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-composition-document-ips|0.1.0"
       }]
+    },
+    {
+      "id" : "Composition.meta.profile",
+      "path" : "Composition.meta.profile",
+      "min" : 4
+    },
+    {
+      "id" : "Composition.meta.profile:canonicalIPS",
+      "path" : "Composition.meta.profile",
+      "sliceName" : "canonicalIPS",
+      "short" : "Conformité au profil Composition IPS",
+      "min" : 1,
+      "max" : "1",
+      "patternCanonical" : "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-composition-document-ips|0.1.0"
     },
     {
       "id" : "Composition.extension:informant",

@@ -348,9 +348,21 @@
   fhir:Resource.meta [
      fhir:Meta.lastUpdated [ fhir:value "2025-09-09T13:28:17.000+00:00"^^xsd:dateTime ] ;
      fhir:Meta.profile [
-       fhir:value "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-composition-document-ips|0.1.0" ;
+       fhir:value "http://hl7.eu/fhir/base/StructureDefinition/composition-eu-core|2.0.0" ;
        fhir:index -1 ;
-       fhir:link <https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-composition-document-ips|0.1.0>
+       fhir:link <http://hl7.eu/fhir/base/StructureDefinition/composition-eu-core|2.0.0>
+     ], [
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-composition-document|0.1.0" ;
+       fhir:index -1 ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-composition-document|0.1.0>
+     ], [
+       fhir:value "http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/clinical-document-composition|1.1.0" ;
+       fhir:index -1 ;
+       fhir:link <http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/clinical-document-composition|1.1.0>
+     ], [
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-composition-document-ips" ;
+       fhir:index -1 ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-composition-document-ips>
      ]
   ] ;
   fhir:Resource.language [ fhir:value "en"] ;
@@ -408,6 +420,17 @@
          fhir:Reference.reference [ fhir:value "urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9" ] ;
          fhir:Reference.display [ fhir:value "DR Stéphane MEDIONI" ]
        ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "function" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index -1 ;
+           fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction" ] ;
+           fhir:Coding.code [ fhir:value "PCP" ] ;
+           fhir:Coding.display [ fhir:value "Médecin traitant" ]
+         ]
+       ]
      ] ;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/ParticipantExtension" ]
   ], [
@@ -428,6 +451,15 @@
        fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
        fhir:Coding.code [ fhir:value "60591-5" ] ;
        fhir:Coding.display [ fhir:value "Synthèse médicale" ]
+     ]
+  ] ;
+  fhir:Composition.category [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_A03-ClasseDocument/FHIR/TRE-A03-ClasseDocument" ] ;
+       fhir:Coding.code [ fhir:value "11" ] ;
+       fhir:Coding.display [ fhir:value "Synthèse" ]
      ]
   ] ;
   fhir:Composition.subject [
@@ -1154,7 +1186,7 @@
   ] ;
   fhir:Patient.generalPractitioner [
      fhir:index -1 ;
-     fhir:Reference.reference [ fhir:value "urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9" ] ;
+     fhir:Reference.reference [ fhir:value "urn:uuid:b5941194-08be-4893-a629-652f97587b39" ] ;
      fhir:Reference.display [ fhir:value "DR Stéphane MEDIONI" ]
   ] .
 
@@ -1233,7 +1265,7 @@
        fhir:index -1
      ] ;
      fhir:HumanName.suffix [
-       fhir:value "Dr" ;
+       fhir:value "DR" ;
        fhir:index -1
      ]
   ] ;
@@ -1329,7 +1361,7 @@
          fhir:Coding.display [ fhir:value "Visit Number" ]
        ]
      ] ;
-     fhir:Identifier.system [ fhir:value "urn:uuid:1.2.250.1.71.4.2.1" ] ;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.250.1.71.4.2.1" ] ;
      fhir:Identifier.value [ fhir:value "801234534765" ]
   ] ;
   fhir:Encounter.status [ fhir:value "finished"] ;
@@ -2282,10 +2314,9 @@
   fhir:AllergyIntolerance.code [
      fhir:CodeableConcept.coding [
        fhir:index -1 ;
-       a sct:416098002 ;
-       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
-       fhir:Coding.code [ fhir:value "416098002" ] ;
-       fhir:Coding.display [ fhir:value "allergie médicamenteuse" ]
+       fhir:Coding.system [ fhir:value "http://id.who.int/icd/release/11/mms" ] ;
+       fhir:Coding.code [ fhir:value "XM5DJ7" ] ;
+       fhir:Coding.display [ fhir:value "Paracétamol" ]
      ]
   ] ;
   fhir:AllergyIntolerance.patient [
@@ -2299,9 +2330,9 @@
      fhir:AllergyIntolerance.reaction.substance [
        fhir:CodeableConcept.coding [
          fhir:index -1 ;
-         fhir:Coding.system [ fhir:value "http://id.who.int/icd/release/11/mms" ] ;
-         fhir:Coding.code [ fhir:value "XM5DJ7" ] ;
-         fhir:Coding.display [ fhir:value "Paracétamol" ]
+         fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/terminologie-sms" ] ;
+         fhir:Coding.code [ fhir:value "100000090270" ] ;
+         fhir:Coding.display [ fhir:value "Paracetamol" ]
        ]
      ] ;
      fhir:AllergyIntolerance.reaction.manifestation [
@@ -2320,9 +2351,9 @@
      fhir:AllergyIntolerance.reaction.substance [
        fhir:CodeableConcept.coding [
          fhir:index -1 ;
-         fhir:Coding.system [ fhir:value "http://id.who.int/icd/release/11/mms" ] ;
-         fhir:Coding.code [ fhir:value "XM5DJ7" ] ;
-         fhir:Coding.display [ fhir:value "Paracétamol" ]
+         fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/terminologie-sms" ] ;
+         fhir:Coding.code [ fhir:value "100000090270" ] ;
+         fhir:Coding.display [ fhir:value "Paracetamol" ]
        ]
      ] ;
      fhir:AllergyIntolerance.reaction.manifestation [
@@ -2383,10 +2414,9 @@
   fhir:AllergyIntolerance.code [
      fhir:CodeableConcept.coding [
        fhir:index -1 ;
-       a sct:416098002 ;
-       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
-       fhir:Coding.code [ fhir:value "416098002" ] ;
-       fhir:Coding.display [ fhir:value "allergie médicamenteuse" ]
+       fhir:Coding.system [ fhir:value "http://id.who.int/icd/release/11/mms" ] ;
+       fhir:Coding.code [ fhir:value "XM4HZ6" ] ;
+       fhir:Coding.display [ fhir:value "feuille de millepertuis" ]
      ]
   ] ;
   fhir:AllergyIntolerance.patient [
@@ -2400,10 +2430,9 @@
      fhir:AllergyIntolerance.reaction.substance [
        fhir:CodeableConcept.coding [
          fhir:index -1 ;
-         a sct:372500003 ;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
-         fhir:Coding.code [ fhir:value "372500003" ] ;
-         fhir:Coding.display [ fhir:value "feuille de millepertuis" ]
+         fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/terminologie-sms" ] ;
+         fhir:Coding.code [ fhir:value "100000092722" ] ;
+         fhir:Coding.display [ fhir:value "Hypericum perforatum (millepertuis)" ]
        ]
      ] ;
      fhir:AllergyIntolerance.reaction.manifestation [
@@ -2548,9 +2577,16 @@
      fhir:MedicationAdministration.dosage.route [
        fhir:CodeableConcept.coding [
          fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/terminologie-standardterms" ] ;
          fhir:Coding.code [ fhir:value "20053000" ] ;
          fhir:Coding.display [ fhir:value "Voie orale" ]
        ]
+     ] ;
+     fhir:MedicationAdministration.dosage.dose [
+       fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "sachet" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "{sachet}" ]
      ]
   ] .
 
@@ -2587,7 +2623,7 @@
   fhir:Medication.code [
      fhir:CodeableConcept.coding [
        fhir:index -1 ;
-       fhir:Coding.system [ fhir:value "http://www.whocc.no/atc" ] ;
+       fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/terminologie-bdpm" ] ;
        fhir:Coding.code [ fhir:value "3400935186607" ] ;
        fhir:Coding.display [ fhir:value "AMOXICILLINE EG 1G BUV SACH 6" ]
      ]
@@ -2721,6 +2757,7 @@
      fhir:MedicationAdministration.dosage.route [
        fhir:CodeableConcept.coding [
          fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/terminologie-standardterms" ] ;
          fhir:Coding.code [ fhir:value "20053000" ] ;
          fhir:Coding.display [ fhir:value "Voie orale" ]
        ]
@@ -3502,10 +3539,14 @@
   fhir:Immunization.vaccineCode [
      fhir:CodeableConcept.coding [
        fhir:index -1 ;
-       a sct:764708002 ;
-       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
-       fhir:Coding.code [ fhir:value "764708002" ] ;
-       fhir:Coding.display [ fhir:value "Vaccine product containing diphtheria, tetanus and inactivated poliovirus antigens" ]
+       fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/terminologie-bdpm" ] ;
+       fhir:Coding.code [ fhir:value "60917345" ] ;
+       fhir:Coding.display [ fhir:value "REVAXIS, suspension injectable en seringue préremplie. Vaccin diphtérique, tétanique et poliomyélitique (inactivé), (adsorbé) à teneur réduite en antigènes" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://www.whocc.no/atc" ] ;
+       fhir:Coding.code [ fhir:value "J07CA01" ] ;
+       fhir:Coding.display [ fhir:value "Diphtérie-poliomyélite-tétanos" ]
      ]
   ] ;
   fhir:Immunization.patient [
@@ -3587,10 +3628,14 @@
   fhir:Immunization.vaccineCode [
      fhir:CodeableConcept.coding [
        fhir:index -1 ;
-       a sct:764708002 ;
-       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
-       fhir:Coding.code [ fhir:value "764708002" ] ;
-       fhir:Coding.display [ fhir:value "Vaccine product containing diphtheria, tetanus and inactivated poliovirus antigens" ]
+       fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/terminologie-bdpm" ] ;
+       fhir:Coding.code [ fhir:value "60917345" ] ;
+       fhir:Coding.display [ fhir:value "REVAXIS, suspension injectable en seringue préremplie. Vaccin diphtérique, tétanique et poliomyélitique (inactivé), adsorbé, à teneur réduite en antigènes" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://www.whocc.no/atc" ] ;
+       fhir:Coding.code [ fhir:value "J07CA01" ] ;
+       fhir:Coding.display [ fhir:value "Diphtérie-poliomyélite-tétanos" ]
      ]
   ] ;
   fhir:Immunization.patient [
@@ -4045,7 +4090,7 @@
   fhir:Medication.code [
      fhir:CodeableConcept.coding [
        fhir:index -1 ;
-       fhir:Coding.system [ fhir:value "http://www.whocc.no/atc" ] ;
+       fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/terminologie-bdpm" ] ;
        fhir:Coding.code [ fhir:value "69473265" ] ;
        fhir:Coding.display [ fhir:value "ROSUVASTATINE EG 5 mg, comprimé pelliculé" ]
      ]
@@ -4099,18 +4144,28 @@
   fhir:Medication.code [
      fhir:CodeableConcept.coding [
        fhir:index -1 ;
-       fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis" ] ;
-       fhir:Coding.code [ fhir:value "GEN-092.03.01" ] ;
-       fhir:Coding.display [ fhir:value "Autre(s) traitement(s)" ]
-     ]
+       fhir:Coding.code [
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/data-absent-reason" ] ;
+           fhir:Extension.valueCode [ fhir:value "unknown" ]
+         ]
+       ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Autre(s) traitement(s)" ]
   ] ;
   fhir:Medication.ingredient [
      fhir:index -1 ;
      fhir:Medication.ingredient.itemCodeableConcept [
-       fhir:Element.extension [
+       fhir:CodeableConcept.coding [
          fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/data-absent-reason" ] ;
-         fhir:Extension.valueCode [ fhir:value "unknown" ]
+         fhir:Coding.code [
+           fhir:Element.extension [
+             fhir:index -1 ;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/data-absent-reason" ] ;
+             fhir:Extension.valueCode [ fhir:value "unknown" ]
+           ]
+         ]
        ]
      ]
   ] .

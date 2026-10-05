@@ -20,7 +20,10 @@
         <id value="a1b2c3d4-e5f6-7890-abcd-ef1234567890"/>
         <meta>
           <lastUpdated value="2024-04-02T11:17:00+01:00"/>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-composition-document-ips|0.1.0"/>
+          <profile value="http://hl7.eu/fhir/base/StructureDefinition/composition-eu-core|2.0.0"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-composition-document|0.1.0"/>
+          <profile value="http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/clinical-document-composition|1.1.0"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-composition-document-ips"/>
         </meta>
         <language value="en"/>
         <text>
@@ -66,6 +69,15 @@
               <display value="DR Charles BOILEAU"/>
             </valueReference>
           </extension>
+          <extension url="function">
+            <valueCodeableConcept>
+              <coding>
+                <system value="https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction"/>
+                <code value="PCP"/>
+                <display value="Médecin traitant"/>
+              </coding>
+            </valueCodeableConcept>
+          </extension>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/event-basedOn">
           <valueReference>
@@ -83,6 +95,13 @@
             <display value="Synthèse médicale"/>
           </coding>
         </type>
+        <category>
+          <coding>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_A03-ClasseDocument/FHIR/TRE-A03-ClasseDocument"/>
+            <code value="11"/>
+            <display value="Synthèse"/>
+          </coding>
+        </category>
         <subject>
           <reference value="urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891"/>
         </subject>
@@ -234,7 +253,7 @@
             </coding>
           </code>
           <text>
-            <status value="generated"/><div><table border="0"><thead><tr><th>Date début</th><th>Date fin</th><th>Type de DM</th><th>ID du DM</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/08/2019</td><td/><td>STIMULATEUR CARDIAQUE IMPLANTABLE TRIPLE CHAMBRE</td><td>inconnu</td><td>Stimulateur cardiaque contrôlé et fonctionnel</td></tr><tr><td>11/08/2013</td><td/><td>Autre DM : (texte libre)</td><td>inconnu</td><td>(texte libre)</td></tr></tbody></table></div>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0"><thead><tr><th>Date début</th><th>Date fin</th><th>Type de DM</th><th>ID du DM</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/08/2019</td><td/><td>STIMULATEUR CARDIAQUE IMPLANTABLE TRIPLE CHAMBRE</td><td>inconnu</td><td>Stimulateur cardiaque contrôlé et fonctionnel</td></tr><tr><td>11/08/2013</td><td/><td>Autre DM : (texte libre)</td><td>inconnu</td><td>(texte libre)</td></tr></tbody></table></div>
           </text>
           <entry>
             <reference value="urn:uuid:a1b2c3d4-e5f6-7891-a256-890123456780"/>
@@ -269,7 +288,7 @@
             </coding>
           </code>
           <text>
-            <status value="generated"/><div><p>(texte libre)</p></div>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>(texte libre)</p></div>
           </text>
         </section>
         <section>
@@ -282,7 +301,7 @@
             </coding>
           </code>
           <text>
-            <status value="generated"/><div><table border="0"><thead><tr><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>Peut alerter (capable de communiquer)</td><td>oui</td><td>(texte libre)</td></tr><tr><td>Orienté (bien orienté)</td><td>oui</td><td>(texte libre)</td></tr><tr><td>Malvoyance</td><td>oui</td><td>(texte libre)</td></tr><tr><td>Chutes</td><td>oui</td><td>(texte libre)</td></tr><tr><td>Risques d'escarre</td><td>oui</td><td>(texte libre)</td></tr></tbody></table></div>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0"><thead><tr><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>Peut alerter (capable de communiquer)</td><td>oui</td><td>(texte libre)</td></tr><tr><td>Orienté (bien orienté)</td><td>oui</td><td>(texte libre)</td></tr><tr><td>Malvoyance</td><td>oui</td><td>(texte libre)</td></tr><tr><td>Chutes</td><td>oui</td><td>(texte libre)</td></tr><tr><td>Risques d'escarre</td><td>oui</td><td>(texte libre)</td></tr></tbody></table></div>
           </text>
           <entry>
             <reference value="urn:uuid:e5f6a7b8-c9d0-1235-e290-234567890124"/>
@@ -307,7 +326,7 @@
             </coding>
           </code>
           <text>
-            <status value="generated"/><div><table border="0"><thead><tr><th>Signe vital</th><th>Valeur</th><th>Date de la mesure</th><th>Commentaire</th></tr></thead><tbody><tr><td>Poids</td><td>58 kg</td><td>02/04/2024</td><td>(texte libre)</td></tr><tr><td>Taille</td><td>1,60 m</td><td>02/04/2024</td><td>(texte libre)</td></tr></tbody></table></div>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0"><thead><tr><th>Signe vital</th><th>Valeur</th><th>Date de la mesure</th><th>Commentaire</th></tr></thead><tbody><tr><td>Poids</td><td>58 kg</td><td>02/04/2024</td><td>(texte libre)</td></tr><tr><td>Taille</td><td>1,60 m</td><td>02/04/2024</td><td>(texte libre)</td></tr></tbody></table></div>
           </text>
           <entry>
             <reference value="urn:uuid:c9d0e1f2-a3b4-5679-c334-678901234568"/>
@@ -326,7 +345,7 @@
             </coding>
           </code>
           <text>
-            <status value="generated"/><div><table border="0"><thead><tr><th>Date</th><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>non renseignée</td><td>Statut tabagique</td><td>Fumeur quotidien</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation tabagique</td><td>25 PA</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation d'alcool</td><td>5 verres / jour</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation de drogue</td><td>Cannabis</td><td>(Texte libre)</td></tr></tbody></table></div>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0"><thead><tr><th>Date</th><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>non renseignée</td><td>Statut tabagique</td><td>Fumeur quotidien</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation tabagique</td><td>25 PA</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation d'alcool</td><td>5 verres / jour</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation de drogue</td><td>Cannabis</td><td>(Texte libre)</td></tr></tbody></table></div>
           </text>
           <entry>
             <reference value="urn:uuid:e1f2a3b4-c5d6-7891-e356-890123456780"/>
@@ -351,7 +370,7 @@
             </coding>
           </code>
           <text>
-            <status value="generated"/><div><p>(texte libre)</p></div>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>(texte libre)</p></div>
           </text>
         </section>
         <section>
@@ -383,7 +402,7 @@
             </coding>
           </code>
           <text>
-            <status value="generated"/><div><table border="0"><thead><tr><th>Lien de parenté</th><th>Antécédent</th><th>Commentaire</th></tr></thead><tbody><tr><td>Mère</td><td>Anémie à hématies falciformes sans crises (CIM-10 : D57.1)</td><td>(texte libre)</td></tr></tbody></table></div>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0"><thead><tr><th>Lien de parenté</th><th>Antécédent</th><th>Commentaire</th></tr></thead><tbody><tr><td>Mère</td><td>Anémie à hématies falciformes sans crises (CIM-10 : D57.1)</td><td>(texte libre)</td></tr></tbody></table></div>
           </text>
           <entry>
             <reference value="urn:uuid:c5d6e7f8-a9b0-1235-c390-234567890124"/>
@@ -657,7 +676,7 @@
           </address>
         </contact>
         <generalPractitioner>
-          <reference value="urn:uuid:c3d4e5f6-a7b8-9012-cdef-012345678902"/>
+          <reference value="urn:uuid:d4e5f6a7-b8c9-0123-def0-123456789013"/>
           <display value="DR Charles BOILEAU"/>
         </generalPractitioner>
       </Patient>
@@ -725,7 +744,7 @@
           <family value="BOILEAU"/>
           <given value="Charles"/>
           <prefix value="M"/>
-          <suffix value="Dr"/>
+          <suffix value="DR"/>
         </name>
         <address>
           <text value="142 Rue du Belvédère 92100 BOULOGNE-BILLANCOURT"/>
@@ -800,7 +819,7 @@
               <display value="Visit Number"/>
             </coding>
           </type>
-          <system value="urn:uuid:1.2.250.1.71.4.2.1"/>
+          <system value="urn:oid:1.2.250.1.71.4.2.1"/>
           <value value="801234567897"/>
         </identifier>
         <status value="finished"/>
@@ -1661,9 +1680,9 @@
         <criticality value="low"/>
         <code>
           <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="416098002"/>
-            <display value="allergie médicamenteuse"/>
+            <system value="http://id.who.int/icd/release/11/mms"/>
+            <code value="XM5DJ7"/>
+            <display value="Paracétamol"/>
           </coding>
         </code>
         <patient>
@@ -1675,9 +1694,9 @@
         <reaction>
           <substance>
             <coding>
-              <system value="http://id.who.int/icd/release/11/mms"/>
-              <code value="XM5DJ7"/>
-              <display value="Paracétamol"/>
+              <system value="https://smt.esante.gouv.fr/terminologie-sms"/>
+              <code value="100000090270"/>
+              <display value="Paracetamol"/>
             </coding>
           </substance>
           <manifestation>
@@ -1693,9 +1712,9 @@
         <reaction>
           <substance>
             <coding>
-              <system value="http://id.who.int/icd/release/11/mms"/>
-              <code value="XM5DJ7"/>
-              <display value="Paracétamol"/>
+              <system value="https://smt.esante.gouv.fr/terminologie-sms"/>
+              <code value="100000090270"/>
+              <display value="Paracetamol"/>
             </coding>
           </substance>
           <manifestation>
@@ -1822,10 +1841,17 @@
         <dosage>
           <route>
             <coding>
+              <system value="https://smt.esante.gouv.fr/terminologie-standardterms"/>
               <code value="20053000"/>
               <display value="Voie orale"/>
             </coding>
           </route>
+          <dose>
+            <value value="1"/>
+            <unit value="sachet"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="{sachet}"/>
+          </dose>
         </dosage>
       </MedicationAdministration>
     </resource>
@@ -1857,7 +1883,7 @@
         </extension>
         <code>
           <coding>
-            <system value="http://www.whocc.no/atc"/>
+            <system value="https://smt.esante.gouv.fr/terminologie-bdpm"/>
             <code value="3400935186607"/>
             <display value="AMOXICILLINE EG 1G BUV SACH 6"/>
           </coding>
@@ -1975,6 +2001,7 @@
         <dosage>
           <route>
             <coding>
+              <system value="https://smt.esante.gouv.fr/terminologie-standardterms"/>
               <code value="20053000"/>
               <display value="Voie orale"/>
             </coding>
@@ -2096,6 +2123,7 @@
         <dosage>
           <route>
             <coding>
+              <system value="https://smt.esante.gouv.fr/terminologie-standardterms"/>
               <code value="20053000"/>
               <display value="Voie orale"/>
             </coding>
@@ -2779,6 +2807,11 @@
         <status value="completed"/>
         <vaccineCode>
           <coding>
+            <system value="https://smt.esante.gouv.fr/terminologie-bdpm"/>
+            <code value="60917345"/>
+            <display value="REVAXIS, suspension injectable en seringue préremplie. Vaccin diphtérique, tétanique et poliomyélitique (inactivé), (adsorbé) à teneur réduite en antigènes"/>
+          </coding>
+          <coding>
             <system value="http://www.whocc.no/atc"/>
             <code value="J07CA01"/>
             <display value="Diphtérie-poliomyélite-tétanos"/>
@@ -2850,9 +2883,14 @@
         <status value="completed"/>
         <vaccineCode>
           <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="764708002"/>
-            <display value="Vaccine product containing diphtheria, tetanus and inactivated poliovirus antigens"/>
+            <system value="https://smt.esante.gouv.fr/terminologie-bdpm"/>
+            <code value="60917345"/>
+            <display value="REVAXIS, suspension injectable en seringue préremplie. Vaccin diphtérique, tétanique et poliomyélitique (inactivé), adsorbé, à teneur réduite en antigènes"/>
+          </coding>
+          <coding>
+            <system value="http://www.whocc.no/atc"/>
+            <code value="J07CA01"/>
+            <display value="Diphtérie-poliomyélite-tétanos"/>
           </coding>
         </vaccineCode>
         <patient>
@@ -3109,7 +3147,7 @@
         </extension>
         <code>
           <coding>
-            <system value="http://www.whocc.no/atc"/>
+            <system value="https://smt.esante.gouv.fr/terminologie-bdpm"/>
             <code value="69473265"/>
             <display value="ROSUVASTATINE EG 5 mg, comprimé pelliculé"/>
           </coding>
@@ -3157,16 +3195,23 @@
         </extension>
         <code>
           <coding>
-            <system value="https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"/>
-            <code value="GEN-092.03.01"/>
-            <display value="Autre(s) traitement(s)"/>
+            <code>
+              <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+                <valueCode value="unknown"/>
+              </extension>
+            </code>
           </coding>
+          <text value="Autre(s) traitement(s)"/>
         </code>
         <ingredient>
           <itemCodeableConcept>
-            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-              <valueCode value="unknown"/>
-            </extension>
+            <coding>
+              <code>
+                <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+                  <valueCode value="unknown"/>
+                </extension>
+              </code>
+            </coding>
           </itemCodeableConcept>
         </ingredient>
       </Medication>

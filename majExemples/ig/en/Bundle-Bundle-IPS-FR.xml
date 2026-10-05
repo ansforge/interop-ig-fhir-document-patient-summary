@@ -20,7 +20,10 @@
         <id value="09275181-4d85-43b8-89b0-6dd68182bc52"/>
         <meta>
           <lastUpdated value="2025-09-09T13:28:17.000+00:00"/>
-          <profile value="https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-composition-document-ips|0.1.0"/>
+          <profile value="http://hl7.eu/fhir/base/StructureDefinition/composition-eu-core|2.0.0"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-composition-document|0.1.0"/>
+          <profile value="http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/clinical-document-composition|1.1.0"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-composition-document-ips"/>
         </meta>
         <language value="en"/>
         <text>
@@ -66,6 +69,15 @@
               <display value="DR Stéphane MEDIONI"/>
             </valueReference>
           </extension>
+          <extension url="function">
+            <valueCodeableConcept>
+              <coding>
+                <system value="https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction"/>
+                <code value="PCP"/>
+                <display value="Médecin traitant"/>
+              </coding>
+            </valueCodeableConcept>
+          </extension>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/event-basedOn">
           <valueReference>
@@ -83,6 +95,13 @@
             <display value="Synthèse médicale"/>
           </coding>
         </type>
+        <category>
+          <coding>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_A03-ClasseDocument/FHIR/TRE-A03-ClasseDocument"/>
+            <code value="11"/>
+            <display value="Synthèse"/>
+          </coding>
+        </category>
         <subject>
           <reference value="urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac"/>
         </subject>
@@ -671,7 +690,7 @@
           </address>
         </contact>
         <generalPractitioner>
-          <reference value="urn:uuid:a11d31c5-77ff-4642-91f7-66c4d10d18c9"/>
+          <reference value="urn:uuid:b5941194-08be-4893-a629-652f97587b39"/>
           <display value="DR Stéphane MEDIONI"/>
         </generalPractitioner>
       </Patient>
@@ -739,7 +758,7 @@
           <family value="MEDIONI"/>
           <given value="Stéphane"/>
           <prefix value="M"/>
-          <suffix value="Dr"/>
+          <suffix value="DR"/>
         </name>
         <telecom>
           <system value="phone"/>
@@ -822,7 +841,7 @@
               <display value="Visit Number"/>
             </coding>
           </type>
-          <system value="urn:uuid:1.2.250.1.71.4.2.1"/>
+          <system value="urn:oid:1.2.250.1.71.4.2.1"/>
           <value value="801234534765"/>
         </identifier>
         <status value="finished"/>
@@ -1643,9 +1662,9 @@
         <criticality value="low"/>
         <code>
           <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="416098002"/>
-            <display value="allergie médicamenteuse"/>
+            <system value="http://id.who.int/icd/release/11/mms"/>
+            <code value="XM5DJ7"/>
+            <display value="Paracétamol"/>
           </coding>
         </code>
         <patient>
@@ -1657,9 +1676,9 @@
         <reaction>
           <substance>
             <coding>
-              <system value="http://id.who.int/icd/release/11/mms"/>
-              <code value="XM5DJ7"/>
-              <display value="Paracétamol"/>
+              <system value="https://smt.esante.gouv.fr/terminologie-sms"/>
+              <code value="100000090270"/>
+              <display value="Paracetamol"/>
             </coding>
           </substance>
           <manifestation>
@@ -1675,9 +1694,9 @@
         <reaction>
           <substance>
             <coding>
-              <system value="http://id.who.int/icd/release/11/mms"/>
-              <code value="XM5DJ7"/>
-              <display value="Paracétamol"/>
+              <system value="https://smt.esante.gouv.fr/terminologie-sms"/>
+              <code value="100000090270"/>
+              <display value="Paracetamol"/>
             </coding>
           </substance>
           <manifestation>
@@ -1729,9 +1748,9 @@
         <criticality value="low"/>
         <code>
           <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="416098002"/>
-            <display value="allergie médicamenteuse"/>
+            <system value="http://id.who.int/icd/release/11/mms"/>
+            <code value="XM4HZ6"/>
+            <display value="feuille de millepertuis"/>
           </coding>
         </code>
         <patient>
@@ -1743,9 +1762,9 @@
         <reaction>
           <substance>
             <coding>
-              <system value="http://snomed.info/sct"/>
-              <code value="372500003"/>
-              <display value="feuille de millepertuis"/>
+              <system value="https://smt.esante.gouv.fr/terminologie-sms"/>
+              <code value="100000092722"/>
+              <display value="Hypericum perforatum (millepertuis)"/>
             </coding>
           </substance>
           <manifestation>
@@ -1872,10 +1891,17 @@
         <dosage>
           <route>
             <coding>
+              <system value="https://smt.esante.gouv.fr/terminologie-standardterms"/>
               <code value="20053000"/>
               <display value="Voie orale"/>
             </coding>
           </route>
+          <dose>
+            <value value="1"/>
+            <unit value="sachet"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="{sachet}"/>
+          </dose>
         </dosage>
       </MedicationAdministration>
     </resource>
@@ -1907,7 +1933,7 @@
         </extension>
         <code>
           <coding>
-            <system value="http://www.whocc.no/atc"/>
+            <system value="https://smt.esante.gouv.fr/terminologie-bdpm"/>
             <code value="3400935186607"/>
             <display value="AMOXICILLINE EG 1G BUV SACH 6"/>
           </coding>
@@ -2028,6 +2054,7 @@
         <dosage>
           <route>
             <coding>
+              <system value="https://smt.esante.gouv.fr/terminologie-standardterms"/>
               <code value="20053000"/>
               <display value="Voie orale"/>
             </coding>
@@ -2732,9 +2759,14 @@
         <status value="completed"/>
         <vaccineCode>
           <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="764708002"/>
-            <display value="Vaccine product containing diphtheria, tetanus and inactivated poliovirus antigens"/>
+            <system value="https://smt.esante.gouv.fr/terminologie-bdpm"/>
+            <code value="60917345"/>
+            <display value="REVAXIS, suspension injectable en seringue préremplie. Vaccin diphtérique, tétanique et poliomyélitique (inactivé), (adsorbé) à teneur réduite en antigènes"/>
+          </coding>
+          <coding>
+            <system value="http://www.whocc.no/atc"/>
+            <code value="J07CA01"/>
+            <display value="Diphtérie-poliomyélite-tétanos"/>
           </coding>
         </vaccineCode>
         <patient>
@@ -2803,9 +2835,14 @@
         <status value="completed"/>
         <vaccineCode>
           <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="764708002"/>
-            <display value="Vaccine product containing diphtheria, tetanus and inactivated poliovirus antigens"/>
+            <system value="https://smt.esante.gouv.fr/terminologie-bdpm"/>
+            <code value="60917345"/>
+            <display value="REVAXIS, suspension injectable en seringue préremplie. Vaccin diphtérique, tétanique et poliomyélitique (inactivé), adsorbé, à teneur réduite en antigènes"/>
+          </coding>
+          <coding>
+            <system value="http://www.whocc.no/atc"/>
+            <code value="J07CA01"/>
+            <display value="Diphtérie-poliomyélite-tétanos"/>
           </coding>
         </vaccineCode>
         <patient>
@@ -3212,7 +3249,7 @@
         </extension>
         <code>
           <coding>
-            <system value="http://www.whocc.no/atc"/>
+            <system value="https://smt.esante.gouv.fr/terminologie-bdpm"/>
             <code value="69473265"/>
             <display value="ROSUVASTATINE EG 5 mg, comprimé pelliculé"/>
           </coding>
@@ -3260,16 +3297,23 @@
         </extension>
         <code>
           <coding>
-            <system value="https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"/>
-            <code value="GEN-092.03.01"/>
-            <display value="Autre(s) traitement(s)"/>
+            <code>
+              <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+                <valueCode value="unknown"/>
+              </extension>
+            </code>
           </coding>
+          <text value="Autre(s) traitement(s)"/>
         </code>
         <ingredient>
           <itemCodeableConcept>
-            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-              <valueCode value="unknown"/>
-            </extension>
+            <coding>
+              <code>
+                <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+                  <valueCode value="unknown"/>
+                </extension>
+              </code>
+            </coding>
           </itemCodeableConcept>
         </ingredient>
       </Medication>

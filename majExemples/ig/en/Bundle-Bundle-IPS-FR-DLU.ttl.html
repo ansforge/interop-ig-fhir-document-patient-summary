@@ -645,9 +645,21 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Composition.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">fhir:Meta.lastUpdated</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:value</a> &quot;2024-04-02T11:17:00+01:00&quot;^^xsd:dateTime ] ;
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-composition-document-ips|0.1.0&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://hl7.eu/fhir/base/StructureDefinition/composition-eu-core|2.0.0&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-composition-document-ips|0.1.0&gt;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.eu/fhir/base/StructureDefinition/composition-eu-core|2.0.0&gt;
+     ], [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-composition-document|0.1.0&quot; ;
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-composition-document|0.1.0&gt;
+     ], [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/clinical-document-composition|1.1.0&quot; ;
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/clinical-document-composition|1.1.0&gt;
+     ], [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-composition-document-ips&quot; ;
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-composition-document-ips&gt;
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/resource.html#Composition.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
@@ -705,6 +717,17 @@
          <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;urn:uuid:c3d4e5f6-a7b8-9012-cdef-012345678902&quot; ] ;
          <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;DR Charles BOILEAU&quot; ]
        ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+       <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;function&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueCodeableConcept</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction&quot; ] ;
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;PCP&quot; ] ;
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Médecin traitant&quot; ]
+         ]
+       ]
      ] ;
      <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/ParticipantExtension&quot; ]
   ], [
@@ -725,6 +748,15 @@
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://loinc.org&quot; ] ;
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;60591-5&quot; ] ;
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Synthèse médicale&quot; ]
+     ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/composition.html#Composition.category">fhir:Composition.category</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://mos.esante.gouv.fr/NOS/TRE_A03-ClasseDocument/FHIR/TRE-A03-ClasseDocument&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;11&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Synthèse&quot; ]
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/composition.html#Composition.subject">fhir:Composition.subject</a> [
@@ -908,7 +940,7 @@
      ] ;
      <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">fhir:Composition.section.text</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ] ;
-       fhir:Narrative.div &quot;&lt;div&gt;&lt;table border=\&quot;0\&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Date début&lt;/th&gt;&lt;th&gt;Date fin&lt;/th&gt;&lt;th&gt;Type de DM&lt;/th&gt;&lt;th&gt;ID du DM&lt;/th&gt;&lt;th&gt;Commentaire&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;11/08/2019&lt;/td&gt;&lt;td/&gt;&lt;td&gt;STIMULATEUR CARDIAQUE IMPLANTABLE TRIPLE CHAMBRE&lt;/td&gt;&lt;td&gt;inconnu&lt;/td&gt;&lt;td&gt;Stimulateur cardiaque contrôlé et fonctionnel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;11/08/2013&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Autre DM : (texte libre)&lt;/td&gt;&lt;td&gt;inconnu&lt;/td&gt;&lt;td&gt;(texte libre)&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+       fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table border=\&quot;0\&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Date début&lt;/th&gt;&lt;th&gt;Date fin&lt;/th&gt;&lt;th&gt;Type de DM&lt;/th&gt;&lt;th&gt;ID du DM&lt;/th&gt;&lt;th&gt;Commentaire&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;11/08/2019&lt;/td&gt;&lt;td/&gt;&lt;td&gt;STIMULATEUR CARDIAQUE IMPLANTABLE TRIPLE CHAMBRE&lt;/td&gt;&lt;td&gt;inconnu&lt;/td&gt;&lt;td&gt;Stimulateur cardiaque contrôlé et fonctionnel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;11/08/2013&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Autre DM : (texte libre)&lt;/td&gt;&lt;td&gt;inconnu&lt;/td&gt;&lt;td&gt;(texte libre)&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&quot;
      ] ;
      <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:Composition.section.entry</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
@@ -951,7 +983,7 @@
      ] ;
      <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">fhir:Composition.section.text</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ] ;
-       fhir:Narrative.div &quot;&lt;div&gt;&lt;p&gt;(texte libre)&lt;/p&gt;&lt;/div&gt;&quot;
+       fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;(texte libre)&lt;/p&gt;&lt;/div&gt;&quot;
      ]
   ], [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
@@ -967,7 +999,7 @@
      ] ;
      <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">fhir:Composition.section.text</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ] ;
-       fhir:Narrative.div &quot;&lt;div&gt;&lt;table border=\&quot;0\&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Type&lt;/th&gt;&lt;th&gt;Observation&lt;/th&gt;&lt;th&gt;Commentaire&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Peut alerter (capable de communiquer)&lt;/td&gt;&lt;td&gt;oui&lt;/td&gt;&lt;td&gt;(texte libre)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Orienté (bien orienté)&lt;/td&gt;&lt;td&gt;oui&lt;/td&gt;&lt;td&gt;(texte libre)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Malvoyance&lt;/td&gt;&lt;td&gt;oui&lt;/td&gt;&lt;td&gt;(texte libre)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chutes&lt;/td&gt;&lt;td&gt;oui&lt;/td&gt;&lt;td&gt;(texte libre)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Risques d'escarre&lt;/td&gt;&lt;td&gt;oui&lt;/td&gt;&lt;td&gt;(texte libre)&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+       fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table border=\&quot;0\&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Type&lt;/th&gt;&lt;th&gt;Observation&lt;/th&gt;&lt;th&gt;Commentaire&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Peut alerter (capable de communiquer)&lt;/td&gt;&lt;td&gt;oui&lt;/td&gt;&lt;td&gt;(texte libre)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Orienté (bien orienté)&lt;/td&gt;&lt;td&gt;oui&lt;/td&gt;&lt;td&gt;(texte libre)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Malvoyance&lt;/td&gt;&lt;td&gt;oui&lt;/td&gt;&lt;td&gt;(texte libre)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chutes&lt;/td&gt;&lt;td&gt;oui&lt;/td&gt;&lt;td&gt;(texte libre)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Risques d'escarre&lt;/td&gt;&lt;td&gt;oui&lt;/td&gt;&lt;td&gt;(texte libre)&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&quot;
      ] ;
      <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:Composition.section.entry</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
@@ -996,7 +1028,7 @@
      ] ;
      <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">fhir:Composition.section.text</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ] ;
-       fhir:Narrative.div &quot;&lt;div&gt;&lt;table border=\&quot;0\&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Signe vital&lt;/th&gt;&lt;th&gt;Valeur&lt;/th&gt;&lt;th&gt;Date de la mesure&lt;/th&gt;&lt;th&gt;Commentaire&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Poids&lt;/td&gt;&lt;td&gt;58 kg&lt;/td&gt;&lt;td&gt;02/04/2024&lt;/td&gt;&lt;td&gt;(texte libre)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Taille&lt;/td&gt;&lt;td&gt;1,60 m&lt;/td&gt;&lt;td&gt;02/04/2024&lt;/td&gt;&lt;td&gt;(texte libre)&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+       fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table border=\&quot;0\&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Signe vital&lt;/th&gt;&lt;th&gt;Valeur&lt;/th&gt;&lt;th&gt;Date de la mesure&lt;/th&gt;&lt;th&gt;Commentaire&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Poids&lt;/td&gt;&lt;td&gt;58 kg&lt;/td&gt;&lt;td&gt;02/04/2024&lt;/td&gt;&lt;td&gt;(texte libre)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Taille&lt;/td&gt;&lt;td&gt;1,60 m&lt;/td&gt;&lt;td&gt;02/04/2024&lt;/td&gt;&lt;td&gt;(texte libre)&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&quot;
      ] ;
      <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:Composition.section.entry</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
@@ -1019,7 +1051,7 @@
      ] ;
      <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">fhir:Composition.section.text</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ] ;
-       fhir:Narrative.div &quot;&lt;div&gt;&lt;table border=\&quot;0\&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Date&lt;/th&gt;&lt;th&gt;Type&lt;/th&gt;&lt;th&gt;Observation&lt;/th&gt;&lt;th&gt;Commentaire&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;non renseignée&lt;/td&gt;&lt;td&gt;Statut tabagique&lt;/td&gt;&lt;td&gt;Fumeur quotidien&lt;/td&gt;&lt;td&gt;(Texte libre)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;non renseignée&lt;/td&gt;&lt;td&gt;Consommation tabagique&lt;/td&gt;&lt;td&gt;25 PA&lt;/td&gt;&lt;td&gt;(Texte libre)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;non renseignée&lt;/td&gt;&lt;td&gt;Consommation d'alcool&lt;/td&gt;&lt;td&gt;5 verres / jour&lt;/td&gt;&lt;td&gt;(Texte libre)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;non renseignée&lt;/td&gt;&lt;td&gt;Consommation de drogue&lt;/td&gt;&lt;td&gt;Cannabis&lt;/td&gt;&lt;td&gt;(Texte libre)&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+       fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table border=\&quot;0\&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Date&lt;/th&gt;&lt;th&gt;Type&lt;/th&gt;&lt;th&gt;Observation&lt;/th&gt;&lt;th&gt;Commentaire&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;non renseignée&lt;/td&gt;&lt;td&gt;Statut tabagique&lt;/td&gt;&lt;td&gt;Fumeur quotidien&lt;/td&gt;&lt;td&gt;(Texte libre)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;non renseignée&lt;/td&gt;&lt;td&gt;Consommation tabagique&lt;/td&gt;&lt;td&gt;25 PA&lt;/td&gt;&lt;td&gt;(Texte libre)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;non renseignée&lt;/td&gt;&lt;td&gt;Consommation d'alcool&lt;/td&gt;&lt;td&gt;5 verres / jour&lt;/td&gt;&lt;td&gt;(Texte libre)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;non renseignée&lt;/td&gt;&lt;td&gt;Consommation de drogue&lt;/td&gt;&lt;td&gt;Cannabis&lt;/td&gt;&lt;td&gt;(Texte libre)&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&quot;
      ] ;
      <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:Composition.section.entry</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
@@ -1048,7 +1080,7 @@
      ] ;
      <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">fhir:Composition.section.text</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ] ;
-       fhir:Narrative.div &quot;&lt;div&gt;&lt;p&gt;(texte libre)&lt;/p&gt;&lt;/div&gt;&quot;
+       fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;(texte libre)&lt;/p&gt;&lt;/div&gt;&quot;
      ]
   ], [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
@@ -1087,7 +1119,7 @@
      ] ;
      <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">fhir:Composition.section.text</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ] ;
-       fhir:Narrative.div &quot;&lt;div&gt;&lt;table border=\&quot;0\&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Lien de parenté&lt;/th&gt;&lt;th&gt;Antécédent&lt;/th&gt;&lt;th&gt;Commentaire&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Mère&lt;/td&gt;&lt;td&gt;Anémie à hématies falciformes sans crises (CIM-10 : D57.1)&lt;/td&gt;&lt;td&gt;(texte libre)&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+       fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table border=\&quot;0\&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Lien de parenté&lt;/th&gt;&lt;th&gt;Antécédent&lt;/th&gt;&lt;th&gt;Commentaire&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Mère&lt;/td&gt;&lt;td&gt;Anémie à hématies falciformes sans crises (CIM-10 : D57.1)&lt;/td&gt;&lt;td&gt;(texte libre)&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&quot;
      ] ;
      <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:Composition.section.entry</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
@@ -1436,7 +1468,7 @@
   ] ;
   <a href="http://hl7.org/fhir/R4/patient.html#Patient.generalPractitioner">fhir:Patient.generalPractitioner</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;urn:uuid:c3d4e5f6-a7b8-9012-cdef-012345678902&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;urn:uuid:d4e5f6a7-b8c9-0123-def0-123456789013&quot; ] ;
      <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;DR Charles BOILEAU&quot; ]
   ] .
 
@@ -1515,7 +1547,7 @@
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1
      ] ;
      <a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.suffix">fhir:HumanName.suffix</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Dr&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;DR&quot; ;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1
      ]
   ] ;
@@ -1604,7 +1636,7 @@
          <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Visit Number&quot; ]
        ]
      ] ;
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;urn:uuid:1.2.250.1.71.4.2.1&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;urn:oid:1.2.250.1.71.4.2.1&quot; ] ;
      <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;801234567897&quot; ]
   ] ;
   <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.status">fhir:Encounter.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;finished&quot;] ;
@@ -2600,10 +2632,9 @@
   <a href="http://hl7.org/fhir/R4/allergyintolerance.html#AllergyIntolerance.code">fhir:AllergyIntolerance.code</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       a sct:416098002 ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;416098002&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;allergie médicamenteuse&quot; ]
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://id.who.int/icd/release/11/mms&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;XM5DJ7&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Paracétamol&quot; ]
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/allergyintolerance.html#AllergyIntolerance.patient">fhir:AllergyIntolerance.patient</a> [
@@ -2617,9 +2648,9 @@
      <a href="http://hl7.org/fhir/R4/allergyintolerance.html#AllergyIntolerance.reaction.substance">fhir:AllergyIntolerance.reaction.substance</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://id.who.int/icd/release/11/mms&quot; ] ;
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;XM5DJ7&quot; ] ;
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Paracétamol&quot; ]
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://smt.esante.gouv.fr/terminologie-sms&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;100000090270&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Paracetamol&quot; ]
        ]
      ] ;
      <a href="http://hl7.org/fhir/R4/allergyintolerance.html#AllergyIntolerance.reaction.manifestation">fhir:AllergyIntolerance.reaction.manifestation</a> [
@@ -2638,9 +2669,9 @@
      <a href="http://hl7.org/fhir/R4/allergyintolerance.html#AllergyIntolerance.reaction.substance">fhir:AllergyIntolerance.reaction.substance</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://id.who.int/icd/release/11/mms&quot; ] ;
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;XM5DJ7&quot; ] ;
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Paracétamol&quot; ]
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://smt.esante.gouv.fr/terminologie-sms&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;100000090270&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Paracetamol&quot; ]
        ]
      ] ;
      <a href="http://hl7.org/fhir/R4/allergyintolerance.html#AllergyIntolerance.reaction.manifestation">fhir:AllergyIntolerance.reaction.manifestation</a> [
@@ -2785,9 +2816,16 @@
      <a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.dosage.route">fhir:MedicationAdministration.dosage.route</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://smt.esante.gouv.fr/terminologie-standardterms&quot; ] ;
          <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;20053000&quot; ] ;
          <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Voie orale&quot; ]
        ]
+     ] ;
+     <a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.dosage.dose">fhir:MedicationAdministration.dosage.dose</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">fhir:Quantity.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:value</a> &quot;1&quot;^^xsd:decimal ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">fhir:Quantity.unit</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;sachet&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">fhir:Quantity.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://unitsofmeasure.org&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">fhir:Quantity.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;{sachet}&quot; ]
      ]
   ] .
 
@@ -2824,7 +2862,7 @@
   <a href="http://hl7.org/fhir/R4/medication.html#Medication.code">fhir:Medication.code</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://www.whocc.no/atc&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://smt.esante.gouv.fr/terminologie-bdpm&quot; ] ;
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3400935186607&quot; ] ;
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;AMOXICILLINE EG 1G BUV SACH 6&quot; ]
      ]
@@ -2954,6 +2992,7 @@
      <a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.dosage.route">fhir:MedicationAdministration.dosage.route</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://smt.esante.gouv.fr/terminologie-standardterms&quot; ] ;
          <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;20053000&quot; ] ;
          <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Voie orale&quot; ]
        ]
@@ -3088,6 +3127,7 @@
      <a href="http://hl7.org/fhir/R4/medicationadministration.html#MedicationAdministration.dosage.route">fhir:MedicationAdministration.dosage.route</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://smt.esante.gouv.fr/terminologie-standardterms&quot; ] ;
          <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;20053000&quot; ] ;
          <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Voie orale&quot; ]
        ]
@@ -3843,6 +3883,11 @@
   <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.vaccineCode">fhir:Immunization.vaccineCode</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://smt.esante.gouv.fr/terminologie-bdpm&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;60917345&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;REVAXIS, suspension injectable en seringue préremplie. Vaccin diphtérique, tétanique et poliomyélitique (inactivé), (adsorbé) à teneur réduite en antigènes&quot; ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://www.whocc.no/atc&quot; ] ;
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;J07CA01&quot; ] ;
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Diphtérie-poliomyélite-tétanos&quot; ]
@@ -3927,10 +3972,14 @@
   <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.vaccineCode">fhir:Immunization.vaccineCode</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       a sct:764708002 ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;764708002&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Vaccine product containing diphtheria, tetanus and inactivated poliovirus antigens&quot; ]
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://smt.esante.gouv.fr/terminologie-bdpm&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;60917345&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;REVAXIS, suspension injectable en seringue préremplie. Vaccin diphtérique, tétanique et poliomyélitique (inactivé), adsorbé, à teneur réduite en antigènes&quot; ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://www.whocc.no/atc&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;J07CA01&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Diphtérie-poliomyélite-tétanos&quot; ]
      ]
   ] ;
   <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.patient">fhir:Immunization.patient</a> [
@@ -4217,7 +4266,7 @@
   <a href="http://hl7.org/fhir/R4/medication.html#Medication.code">fhir:Medication.code</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://www.whocc.no/atc&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://smt.esante.gouv.fr/terminologie-bdpm&quot; ] ;
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;69473265&quot; ] ;
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;ROSUVASTATINE EG 5 mg, comprimé pelliculé&quot; ]
      ]
@@ -4271,18 +4320,28 @@
   <a href="http://hl7.org/fhir/R4/medication.html#Medication.code">fhir:Medication.code</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;GEN-092.03.01&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Autre(s) traitement(s)&quot; ]
-     ]
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Element#code.extension">fhir:Element.extension</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+           <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/data-absent-reason&quot; ] ;
+           <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueCode</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;unknown&quot; ]
+         ]
+       ]
+     ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Autre(s) traitement(s)&quot; ]
   ] ;
   <a href="http://hl7.org/fhir/R4/medication.html#Medication.ingredient">fhir:Medication.ingredient</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
      <a href="http://hl7.org/fhir/R4/medication.html#Medication.ingredient.item_x_">fhir:Medication.ingredient.itemCodeableConcept</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Element#CodeableConcept.extension">fhir:Element.extension</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/data-absent-reason&quot; ] ;
-         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueCode</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;unknown&quot; ]
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Element#code.extension">fhir:Element.extension</a> [
+             <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+             <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/data-absent-reason&quot; ] ;
+             <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueCode</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;unknown&quot; ]
+           ]
+         ]
        ]
      ]
   ] .
@@ -5444,8 +5503,8 @@
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Package ans.fhir.fr.fr-patient-summary#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-10-01 11:51:00 +0000">
-    2026-10-01
+  <span title="2026-10-05 12:31:00 +0000">
+    2026-10-05
   </span>
 
           <br/>

@@ -128,9 +128,9 @@
     "oids" : ["2.16.840.1.113883.6.1"],
     "uses" : {
     },
+    "https://interop.esante.gouv.fr/terminologies/1.14.0/ValueSet-jdv-section-document-cisis.html" : "JDV Section Document CISIS",
     "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
-    "http://hl7.org/fhir/R4/valueset-doc-typecodes.html" : "FHIR Document Type Codes",
-    "https://interop.esante.gouv.fr/terminologies/1.14.0/ValueSet-jdv-section-document-cisis.html" : "JDV Section Document CISIS"
+    "http://hl7.org/fhir/R4/valueset-doc-typecodes.html" : "FHIR Document Type Codes"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
@@ -226,8 +226,31 @@
     "oids" : ["2.16.840.1.113883.5.90"],
     "uses" : {
     },
-    "https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/ValueSet-fr-doc-vs-participation-type-participant.html" : "FR ValueSet Participation Type Participant",
-    "https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/ValueSet-fr-doc-vs-participation-type.html" : "FR ValueSet Participation Type Information Recipient"
+    "https://build.fhir.org/ig/ansforge/interop-IG-fhir-document-core/ValueSet-fr-doc-vs-participation-type-participant.html" : "FR ValueSet Participation Type Participant"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_A03-ClasseDocument/FHIR/TRE-A03-ClasseDocument",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_A03_ClasseDocument",
+    "title" : null,
+    "description" : "Classe de document",
+    "oids" : ["1.2.250.1.213.1.1.4.1"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/terminologies/1.14.0/ValueSet-JDV-J06-XdsClassCode-CISIS.html" : "JDV_J06_XdsClassCode_CISIS"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_A10-NomenclatureURN/FHIR/TRE-A10-NomenclatureURN",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_A10_NomenclatureURN",
+    "title" : null,
+    "description" : "Nomenclature identifiée par URN",
+    "oids" : ["URN"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/terminologies/1.14.0/ValueSet-JDV-J06-XdsClassCode-CISIS.html" : "JDV_J06_XdsClassCode_CISIS"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R258-RelationPriseCharge/FHIR/TRE-R258-RelationPriseCharge",

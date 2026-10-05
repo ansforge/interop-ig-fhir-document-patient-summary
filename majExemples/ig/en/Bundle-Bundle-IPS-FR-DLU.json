@@ -19,7 +19,10 @@
       "id" : "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
       "meta" : {
         "lastUpdated" : "2024-04-02T11:17:00+01:00",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-composition-document-ips|0.1.0"]
+        "profile" : ["http://hl7.eu/fhir/base/StructureDefinition/composition-eu-core|2.0.0",
+        "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-composition-document|0.1.0",
+        "http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/clinical-document-composition|1.1.0",
+        "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-composition-document-ips"]
       },
       "language" : "en",
       "text" : {
@@ -71,6 +74,16 @@
             "reference" : "urn:uuid:c3d4e5f6-a7b8-9012-cdef-012345678902",
             "display" : "DR Charles BOILEAU"
           }
+        },
+        {
+          "url" : "function",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction",
+              "code" : "PCP",
+              "display" : "Médecin traitant"
+            }]
+          }
         }],
         "url" : "http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/ParticipantExtension"
       },
@@ -91,6 +104,13 @@
           "display" : "Synthèse médicale"
         }]
       },
+      "category" : [{
+        "coding" : [{
+          "system" : "https://mos.esante.gouv.fr/NOS/TRE_A03-ClasseDocument/FHIR/TRE-A03-ClasseDocument",
+          "code" : "11",
+          "display" : "Synthèse"
+        }]
+      }],
       "subject" : {
         "reference" : "urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891"
       },
@@ -250,7 +270,7 @@
         },
         "text" : {
           "status" : "generated",
-          "div" : "<div><table border=\"0\"><thead><tr><th>Date début</th><th>Date fin</th><th>Type de DM</th><th>ID du DM</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/08/2019</td><td/><td>STIMULATEUR CARDIAQUE IMPLANTABLE TRIPLE CHAMBRE</td><td>inconnu</td><td>Stimulateur cardiaque contrôlé et fonctionnel</td></tr><tr><td>11/08/2013</td><td/><td>Autre DM : (texte libre)</td><td>inconnu</td><td>(texte libre)</td></tr></tbody></table></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date début</th><th>Date fin</th><th>Type de DM</th><th>ID du DM</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/08/2019</td><td/><td>STIMULATEUR CARDIAQUE IMPLANTABLE TRIPLE CHAMBRE</td><td>inconnu</td><td>Stimulateur cardiaque contrôlé et fonctionnel</td></tr><tr><td>11/08/2013</td><td/><td>Autre DM : (texte libre)</td><td>inconnu</td><td>(texte libre)</td></tr></tbody></table></div>"
         },
         "entry" : [{
           "reference" : "urn:uuid:a1b2c3d4-e5f6-7891-a256-890123456780"
@@ -287,7 +307,7 @@
         },
         "text" : {
           "status" : "generated",
-          "div" : "<div><p>(texte libre)</p></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>(texte libre)</p></div>"
         }
       },
       {
@@ -301,7 +321,7 @@
         },
         "text" : {
           "status" : "generated",
-          "div" : "<div><table border=\"0\"><thead><tr><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>Peut alerter (capable de communiquer)</td><td>oui</td><td>(texte libre)</td></tr><tr><td>Orienté (bien orienté)</td><td>oui</td><td>(texte libre)</td></tr><tr><td>Malvoyance</td><td>oui</td><td>(texte libre)</td></tr><tr><td>Chutes</td><td>oui</td><td>(texte libre)</td></tr><tr><td>Risques d'escarre</td><td>oui</td><td>(texte libre)</td></tr></tbody></table></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>Peut alerter (capable de communiquer)</td><td>oui</td><td>(texte libre)</td></tr><tr><td>Orienté (bien orienté)</td><td>oui</td><td>(texte libre)</td></tr><tr><td>Malvoyance</td><td>oui</td><td>(texte libre)</td></tr><tr><td>Chutes</td><td>oui</td><td>(texte libre)</td></tr><tr><td>Risques d'escarre</td><td>oui</td><td>(texte libre)</td></tr></tbody></table></div>"
         },
         "entry" : [{
           "reference" : "urn:uuid:e5f6a7b8-c9d0-1235-e290-234567890124"
@@ -327,7 +347,7 @@
         },
         "text" : {
           "status" : "generated",
-          "div" : "<div><table border=\"0\"><thead><tr><th>Signe vital</th><th>Valeur</th><th>Date de la mesure</th><th>Commentaire</th></tr></thead><tbody><tr><td>Poids</td><td>58 kg</td><td>02/04/2024</td><td>(texte libre)</td></tr><tr><td>Taille</td><td>1,60 m</td><td>02/04/2024</td><td>(texte libre)</td></tr></tbody></table></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Signe vital</th><th>Valeur</th><th>Date de la mesure</th><th>Commentaire</th></tr></thead><tbody><tr><td>Poids</td><td>58 kg</td><td>02/04/2024</td><td>(texte libre)</td></tr><tr><td>Taille</td><td>1,60 m</td><td>02/04/2024</td><td>(texte libre)</td></tr></tbody></table></div>"
         },
         "entry" : [{
           "reference" : "urn:uuid:c9d0e1f2-a3b4-5679-c334-678901234568"
@@ -347,7 +367,7 @@
         },
         "text" : {
           "status" : "generated",
-          "div" : "<div><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>non renseignée</td><td>Statut tabagique</td><td>Fumeur quotidien</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation tabagique</td><td>25 PA</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation d'alcool</td><td>5 verres / jour</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation de drogue</td><td>Cannabis</td><td>(Texte libre)</td></tr></tbody></table></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>non renseignée</td><td>Statut tabagique</td><td>Fumeur quotidien</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation tabagique</td><td>25 PA</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation d'alcool</td><td>5 verres / jour</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation de drogue</td><td>Cannabis</td><td>(Texte libre)</td></tr></tbody></table></div>"
         },
         "entry" : [{
           "reference" : "urn:uuid:e1f2a3b4-c5d6-7891-e356-890123456780"
@@ -373,7 +393,7 @@
         },
         "text" : {
           "status" : "generated",
-          "div" : "<div><p>(texte libre)</p></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>(texte libre)</p></div>"
         }
       },
       {
@@ -407,7 +427,7 @@
         },
         "text" : {
           "status" : "generated",
-          "div" : "<div><table border=\"0\"><thead><tr><th>Lien de parenté</th><th>Antécédent</th><th>Commentaire</th></tr></thead><tbody><tr><td>Mère</td><td>Anémie à hématies falciformes sans crises (CIM-10 : D57.1)</td><td>(texte libre)</td></tr></tbody></table></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Lien de parenté</th><th>Antécédent</th><th>Commentaire</th></tr></thead><tbody><tr><td>Mère</td><td>Anémie à hématies falciformes sans crises (CIM-10 : D57.1)</td><td>(texte libre)</td></tr></tbody></table></div>"
         },
         "entry" : [{
           "reference" : "urn:uuid:c5d6e7f8-a9b0-1235-c390-234567890124"
@@ -694,7 +714,7 @@
         }
       }],
       "generalPractitioner" : [{
-        "reference" : "urn:uuid:c3d4e5f6-a7b8-9012-cdef-012345678902",
+        "reference" : "urn:uuid:d4e5f6a7-b8c9-0123-def0-123456789013",
         "display" : "DR Charles BOILEAU"
       }]
     }
@@ -760,7 +780,7 @@
         "family" : "BOILEAU",
         "given" : ["Charles"],
         "prefix" : ["M"],
-        "suffix" : ["Dr"]
+        "suffix" : ["DR"]
       }],
       "address" : [{
         "text" : "142 Rue du Belvédère 92100 BOULOGNE-BILLANCOURT"
@@ -834,7 +854,7 @@
             "display" : "Visit Number"
           }]
         },
-        "system" : "urn:uuid:1.2.250.1.71.4.2.1",
+        "system" : "urn:oid:1.2.250.1.71.4.2.1",
         "value" : "801234567897"
       }],
       "status" : "finished",
@@ -1685,9 +1705,9 @@
       "criticality" : "low",
       "code" : {
         "coding" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "416098002",
-          "display" : "allergie médicamenteuse"
+          "system" : "http://id.who.int/icd/release/11/mms",
+          "code" : "XM5DJ7",
+          "display" : "Paracétamol"
         }]
       },
       "patient" : {
@@ -1699,9 +1719,9 @@
       "reaction" : [{
         "substance" : {
           "coding" : [{
-            "system" : "http://id.who.int/icd/release/11/mms",
-            "code" : "XM5DJ7",
-            "display" : "Paracétamol"
+            "system" : "https://smt.esante.gouv.fr/terminologie-sms",
+            "code" : "100000090270",
+            "display" : "Paracetamol"
           }]
         },
         "manifestation" : [{
@@ -1717,9 +1737,9 @@
       {
         "substance" : {
           "coding" : [{
-            "system" : "http://id.who.int/icd/release/11/mms",
-            "code" : "XM5DJ7",
-            "display" : "Paracétamol"
+            "system" : "https://smt.esante.gouv.fr/terminologie-sms",
+            "code" : "100000090270",
+            "display" : "Paracetamol"
           }]
         },
         "manifestation" : [{
@@ -1845,9 +1865,16 @@
       "dosage" : {
         "route" : {
           "coding" : [{
+            "system" : "https://smt.esante.gouv.fr/terminologie-standardterms",
             "code" : "20053000",
             "display" : "Voie orale"
           }]
+        },
+        "dose" : {
+          "value" : 1,
+          "unit" : "sachet",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "{sachet}"
         }
       }
     }
@@ -1881,7 +1908,7 @@
       }],
       "code" : {
         "coding" : [{
-          "system" : "http://www.whocc.no/atc",
+          "system" : "https://smt.esante.gouv.fr/terminologie-bdpm",
           "code" : "3400935186607",
           "display" : "AMOXICILLINE EG 1G BUV SACH 6"
         }]
@@ -1998,6 +2025,7 @@
       "dosage" : {
         "route" : {
           "coding" : [{
+            "system" : "https://smt.esante.gouv.fr/terminologie-standardterms",
             "code" : "20053000",
             "display" : "Voie orale"
           }]
@@ -2121,6 +2149,7 @@
       "dosage" : {
         "route" : {
           "coding" : [{
+            "system" : "https://smt.esante.gouv.fr/terminologie-standardterms",
             "code" : "20053000",
             "display" : "Voie orale"
           }]
@@ -2800,6 +2829,11 @@
       "status" : "completed",
       "vaccineCode" : {
         "coding" : [{
+          "system" : "https://smt.esante.gouv.fr/terminologie-bdpm",
+          "code" : "60917345",
+          "display" : "REVAXIS, suspension injectable en seringue préremplie. Vaccin diphtérique, tétanique et poliomyélitique (inactivé), (adsorbé) à teneur réduite en antigènes"
+        },
+        {
           "system" : "http://www.whocc.no/atc",
           "code" : "J07CA01",
           "display" : "Diphtérie-poliomyélite-tétanos"
@@ -2873,9 +2907,14 @@
       "status" : "completed",
       "vaccineCode" : {
         "coding" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "764708002",
-          "display" : "Vaccine product containing diphtheria, tetanus and inactivated poliovirus antigens"
+          "system" : "https://smt.esante.gouv.fr/terminologie-bdpm",
+          "code" : "60917345",
+          "display" : "REVAXIS, suspension injectable en seringue préremplie. Vaccin diphtérique, tétanique et poliomyélitique (inactivé), adsorbé, à teneur réduite en antigènes"
+        },
+        {
+          "system" : "http://www.whocc.no/atc",
+          "code" : "J07CA01",
+          "display" : "Diphtérie-poliomyélite-tétanos"
         }]
       },
       "patient" : {
@@ -3126,7 +3165,7 @@
       }],
       "code" : {
         "coding" : [{
-          "system" : "http://www.whocc.no/atc",
+          "system" : "https://smt.esante.gouv.fr/terminologie-bdpm",
           "code" : "69473265",
           "display" : "ROSUVASTATINE EG 5 mg, comprimé pelliculé"
         }]
@@ -3175,16 +3214,24 @@
       }],
       "code" : {
         "coding" : [{
-          "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
-          "code" : "GEN-092.03.01",
-          "display" : "Autre(s) traitement(s)"
-        }]
+          "_code" : {
+            "extension" : [{
+              "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+              "valueCode" : "unknown"
+            }]
+          }
+        }],
+        "text" : "Autre(s) traitement(s)"
       },
       "ingredient" : [{
         "itemCodeableConcept" : {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
-            "valueCode" : "unknown"
+          "coding" : [{
+            "_code" : {
+              "extension" : [{
+                "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                "valueCode" : "unknown"
+              }]
+            }
           }]
         }
       }]

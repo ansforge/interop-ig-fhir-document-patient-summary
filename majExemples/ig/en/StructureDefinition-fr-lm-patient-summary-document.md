@@ -2,9 +2,6 @@
 
 ## Logical Model: Modèle logique métier - FR LM Patient Summary Document 
 
- 
-Éléments d'en-tête et de corps d'une Synthèse Médicale (International Patient Summary) contenant l'ensemble des sections cliniques et administratives. 
-
 **Usages:**
 
 * This Logical Model is not used by any profiles in this Specification
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-lm-patient-sum
   "name" : "FRLMPatientSummaryDocument",
   "title" : "Modèle logique métier - FR LM Patient Summary Document",
   "status" : "draft",
-  "date" : "2026-10-01T11:51:37+00:00",
+  "date" : "2026-10-05T12:31:15+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
