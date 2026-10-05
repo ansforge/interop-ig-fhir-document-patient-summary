@@ -29,6 +29,7 @@ Alias: $terminologie-drc = https://www.sfmg.fr
 Alias: $terminologie-orpha = https://www.orphadata.com/orphanet-nomenclature-for-coding
 Alias: $fr-core-cs-v2-0203 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203
 Alias: $TRE-A01-CadreExercice = https://mos.esante.gouv.fr/NOS/TRE_A01-CadreExercice/FHIR/TRE-A01-CadreExercice
+Alias: $TRE-A03-ClasseDocument = https://mos.esante.gouv.fr/NOS/TRE_A03-ClasseDocument/FHIR/TRE-A03-ClasseDocument
 Alias: $fr-core-cs-v2-0445 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445
 Alias: $TRE-R13-Commune = https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM
 Alias: $TRE-R38-SpecialiteOrdinale = https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale

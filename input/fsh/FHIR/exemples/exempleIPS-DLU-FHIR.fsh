@@ -165,12 +165,11 @@ Usage: #example
 Instance: Composition-IPS-FR-DLU
 InstanceOf: FRCompositionDocumentIPS
 Usage: #inline
-* meta.profile = "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/StructureDefinition/fr-composition-document-ips|0.1.0"
+* meta.profile[canonicalIPS] = Canonical(fr-composition-document-ips)
 * meta.lastUpdated = "2024-04-02T11:17:00+01:00"
 * id = "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
 * language = #fr-FR
-* extension[R5-Composition-version].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Composition.version"
-* extension[R5-Composition-version].valueString = "2"
+* extension[version].valueString = "2"
 
 // Informant
 * extension[informant].extension[type].valueCodeableConcept.coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
@@ -182,12 +181,14 @@ Usage: #inline
 * extension[participant].extension[type].valueCodeableConcept.coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
 * extension[participant].extension[type].valueCodeableConcept.coding[0].code = #INF
 * extension[participant].extension[type].valueCodeableConcept.coding[0].display = "Informateur"
+* extension[participant].extension[function].valueCodeableConcept = $TRE-R259-HL7ParticipationFunction#PCP "Médecin traitant"
 * extension[participant].extension[time].valuePeriod.start = "2024-04-02T11:17:00+01:00"
 * extension[participant].extension[party].valueReference = Reference(urn:uuid:c3d4e5f6-a7b8-9012-cdef-012345678902) "DR Charles BOILEAU"
 
 * identifier.value = "1.2.250.1.213.1.1.1.51.2024.2"
 * status = #final
 * type = $LNC#60591-5 "Synthèse médicale"
+* category[classCode] = $TRE-A03-ClasseDocument#11 "Synthèse"
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * encounter = Reference(urn:uuid:f6a7b8c9-d0e1-2345-f012-345678901235)
 * date = "2024-04-02T11:17:00+01:00"
@@ -195,9 +196,8 @@ Usage: #inline
 * author = Reference(urn:uuid:c3d4e5f6-a7b8-9012-cdef-012345678902) "DR Charles BOILEAU"
 * title = "SYNTHESE MEDICALE"
 * confidentiality = #N
-* attester[legal_attester].mode = #legal
-* attester[legal_attester].time = "2024-04-02T11:17:00+01:00"
-* attester[legal_attester].party = Reference(urn:uuid:c3d4e5f6-a7b8-9012-cdef-012345678902) "DR Charles BOILEAU"
+* attester[legalAuthenticator].time = "2024-04-02T11:17:00+01:00"
+* attester[legalAuthenticator].party = Reference(urn:uuid:c3d4e5f6-a7b8-9012-cdef-012345678902) "DR Charles BOILEAU"
 * custodian = Reference(urn:uuid:e5f6a7b8-c9d0-1234-ef01-234567890124) "EHPAD DE BOULOGNE-BILLANCOURT"
 // Document de référence (remplace version 1)
 * relatesTo[replaced_document].code = #replaces
@@ -243,17 +243,17 @@ Usage: #inline
 * section[sectionMedicalDevice].title = "Dispositifs médicaux"
 * section[sectionMedicalDevice].code = $LNC#46264-8 "Dispositifs médicaux"
 * section[sectionMedicalDevice].text.status = #generated
-* section[sectionMedicalDevice].text.div = "<div><table border=\"0\"><thead><tr><th>Date début</th><th>Date fin</th><th>Type de DM</th><th>ID du DM</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/08/2019</td><td/><td>STIMULATEUR CARDIAQUE IMPLANTABLE TRIPLE CHAMBRE</td><td>inconnu</td><td>Stimulateur cardiaque contrôlé et fonctionnel</td></tr><tr><td>11/08/2013</td><td/><td>Autre DM : (texte libre)</td><td>inconnu</td><td>(texte libre)</td></tr></tbody></table></div>"
+* section[sectionMedicalDevice].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date début</th><th>Date fin</th><th>Type de DM</th><th>ID du DM</th><th>Commentaire</th></tr></thead><tbody><tr><td>11/08/2019</td><td/><td>STIMULATEUR CARDIAQUE IMPLANTABLE TRIPLE CHAMBRE</td><td>inconnu</td><td>Stimulateur cardiaque contrôlé et fonctionnel</td></tr><tr><td>11/08/2013</td><td/><td>Autre DM : (texte libre)</td><td>inconnu</td><td>(texte libre)</td></tr></tbody></table></div>"
 * section[sectionMedicalDevice].entry[0] = Reference(urn:uuid:a1b2c3d4-e5f6-7891-a256-890123456780)
 * section[sectionMedicalDevice].entry[+] = Reference(urn:uuid:c3d4e5f6-a7b8-9013-c278-012345678902)
 * section[sectionUncodedPointsOfVigilance].title = "Points de vigilance"
 * section[sectionUncodedPointsOfVigilance].code = $LNC#44944-7 "Autres alertes"
 * section[sectionUncodedPointsOfVigilance].text.status = #generated
-* section[sectionUncodedPointsOfVigilance].text.div = "<div><p>(texte libre)</p></div>"
+* section[sectionUncodedPointsOfVigilance].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>(texte libre)</p></div>"
 * section[sectionFunctionalStatus].title = "Statut fonctionnel"
 * section[sectionFunctionalStatus].code = $LNC#47420-5 "Évaluation du statut fonctionnel"
 * section[sectionFunctionalStatus].text.status = #generated
-* section[sectionFunctionalStatus].text.div = "<div><table border=\"0\"><thead><tr><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>Peut alerter (capable de communiquer)</td><td>oui</td><td>(texte libre)</td></tr><tr><td>Orienté (bien orienté)</td><td>oui</td><td>(texte libre)</td></tr><tr><td>Malvoyance</td><td>oui</td><td>(texte libre)</td></tr><tr><td>Chutes</td><td>oui</td><td>(texte libre)</td></tr><tr><td>Risques d'escarre</td><td>oui</td><td>(texte libre)</td></tr></tbody></table></div>"
+* section[sectionFunctionalStatus].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>Peut alerter (capable de communiquer)</td><td>oui</td><td>(texte libre)</td></tr><tr><td>Orienté (bien orienté)</td><td>oui</td><td>(texte libre)</td></tr><tr><td>Malvoyance</td><td>oui</td><td>(texte libre)</td></tr><tr><td>Chutes</td><td>oui</td><td>(texte libre)</td></tr><tr><td>Risques d'escarre</td><td>oui</td><td>(texte libre)</td></tr></tbody></table></div>"
 * section[sectionFunctionalStatus].entry[0] = Reference(urn:uuid:e5f6a7b8-c9d0-1235-e290-234567890124)
 * section[sectionFunctionalStatus].entry[+] = Reference(urn:uuid:f6a7b8c9-d0e1-2346-f301-345678901235)
 * section[sectionFunctionalStatus].entry[+] = Reference(urn:uuid:a7b8c9d0-e1f2-3457-a312-456789012346)
@@ -261,13 +261,13 @@ Usage: #inline
 * section[sectionVitalSigns].title = "Constantes"
 * section[sectionVitalSigns].code = $LNC#8716-3 "Signes vitaux"
 * section[sectionVitalSigns].text.status = #generated
-* section[sectionVitalSigns].text.div = "<div><table border=\"0\"><thead><tr><th>Signe vital</th><th>Valeur</th><th>Date de la mesure</th><th>Commentaire</th></tr></thead><tbody><tr><td>Poids</td><td>58 kg</td><td>02/04/2024</td><td>(texte libre)</td></tr><tr><td>Taille</td><td>1,60 m</td><td>02/04/2024</td><td>(texte libre)</td></tr></tbody></table></div>"
+* section[sectionVitalSigns].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Signe vital</th><th>Valeur</th><th>Date de la mesure</th><th>Commentaire</th></tr></thead><tbody><tr><td>Poids</td><td>58 kg</td><td>02/04/2024</td><td>(texte libre)</td></tr><tr><td>Taille</td><td>1,60 m</td><td>02/04/2024</td><td>(texte libre)</td></tr></tbody></table></div>"
 * section[sectionVitalSigns].entry[0] = Reference(urn:uuid:c9d0e1f2-a3b4-5679-c334-678901234568)
 * section[sectionVitalSigns].entry[+] = Reference(urn:uuid:d0e1f2a3-b4c5-6780-d345-789012345679)
 * section[sectionSocialHistory].title = "Mode de vie"
 * section[sectionSocialHistory].code = $LNC#29762-2 "Habitus, Mode de vie"
 * section[sectionSocialHistory].text.status = #generated
-* section[sectionSocialHistory].text.div = "<div><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>non renseignée</td><td>Statut tabagique</td><td>Fumeur quotidien</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation tabagique</td><td>25 PA</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation d'alcool</td><td>5 verres / jour</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation de drogue</td><td>Cannabis</td><td>(Texte libre)</td></tr></tbody></table></div>"
+* section[sectionSocialHistory].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Date</th><th>Type</th><th>Observation</th><th>Commentaire</th></tr></thead><tbody><tr><td>non renseignée</td><td>Statut tabagique</td><td>Fumeur quotidien</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation tabagique</td><td>25 PA</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation d'alcool</td><td>5 verres / jour</td><td>(Texte libre)</td></tr><tr><td>non renseignée</td><td>Consommation de drogue</td><td>Cannabis</td><td>(Texte libre)</td></tr></tbody></table></div>"
 * section[sectionSocialHistory].entry[0] = Reference(urn:uuid:e1f2a3b4-c5d6-7891-e356-890123456780)
 * section[sectionSocialHistory].entry[+] = Reference(urn:uuid:f2a3b4c5-d6e7-8902-f367-901234567891)
 * section[sectionSocialHistory].entry[+] = Reference(urn:uuid:a3b4c5d6-e7f8-9013-a378-012345678902)
@@ -275,7 +275,7 @@ Usage: #inline
 * section[sectionUncodedOccupationalRiskFactors].title = "Facteurs de risques professionnels"
 * section[sectionUncodedOccupationalRiskFactors].code = $LNC#10161-8 "Facteurs de risques professionnels"
 * section[sectionUncodedOccupationalRiskFactors].text.status = #generated
-* section[sectionUncodedOccupationalRiskFactors].text.div = "<div><p>(texte libre)</p></div>"
+* section[sectionUncodedOccupationalRiskFactors].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>(texte libre)</p></div>"
 * section[sectionDocumentReference].title = "Documents ajoutés"
 * section[sectionDocumentReference].code = $LNC#55107-7 "Documents ajoutés"
 * section[sectionDocumentReference].text.status = #generated
@@ -285,7 +285,7 @@ Usage: #inline
 * section[sectionFamilyHistory].title = "Historique des pathologies familiales"
 * section[sectionFamilyHistory].code = $LNC#10157-6 "Historique des pathologies familiales"
 * section[sectionFamilyHistory].text.status = #generated
-* section[sectionFamilyHistory].text.div = "<div><table border=\"0\"><thead><tr><th>Lien de parenté</th><th>Antécédent</th><th>Commentaire</th></tr></thead><tbody><tr><td>Mère</td><td>Anémie à hématies falciformes sans crises (CIM-10 : D57.1)</td><td>(texte libre)</td></tr></tbody></table></div>"
+* section[sectionFamilyHistory].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\"><thead><tr><th>Lien de parenté</th><th>Antécédent</th><th>Commentaire</th></tr></thead><tbody><tr><td>Mère</td><td>Anémie à hématies falciformes sans crises (CIM-10 : D57.1)</td><td>(texte libre)</td></tr></tbody></table></div>"
 * section[sectionFamilyHistory].entry = Reference(urn:uuid:c5d6e7f8-a9b0-1235-c390-234567890124)
 * section[sectionImmunizations].title = "Vaccinations"
 * section[sectionImmunizations].text.status = #generated
@@ -429,7 +429,7 @@ Description: "Patient PAT-TROIS DOMINIQUE MARIE-LOUISE - contexte EHPAD DLU"
 * contact[2].telecom.system = #phone
 * contact[2].telecom.value = "0147150000"
 
-* generalPractitioner = Reference(urn:uuid:c3d4e5f6-a7b8-9012-cdef-012345678902) "DR Charles BOILEAU"
+* generalPractitioner = Reference(urn:uuid:d4e5f6a7-b8c9-0123-def0-123456789013) "DR Charles BOILEAU"
 
 //***************Practitioner Role 1 : Dr BOILEAU (auteur/EHPAD)*********************//
 Instance: practitioner-role-DLU-1
@@ -454,7 +454,7 @@ Usage: #inline
 * identifier[rpps].type.coding[0].display = "Numéro du professionnel de santé"
 * name[0].family = "BOILEAU"
 * name[0].given[0] = "Charles"
-* name[0].suffix[0] = "Dr"
+* name[0].suffix[0] = "DR"
 * name[0].prefix[0] = "M"
 * address.text = "142 Rue du Belvédère 92100 BOULOGNE-BILLANCOURT"
 * qualification[savoirFaire].code.coding[savoirFaire].code = #SM26
@@ -483,7 +483,7 @@ Usage: #inline
 * id = "f6a7b8c9-d0e1-2345-f012-345678901235"
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-encounter-document|0.1.0"
 * identifier.type = $v2-0203#VN "Visit Number"
-* identifier.system = "urn:uuid:1.2.250.1.71.4.2.1"
+* identifier.system = "urn:oid:1.2.250.1.71.4.2.1"
 * identifier.value = "801234567897"
 * status = #finished
 * class = $v3-ActCode#IMP "hospitalisé"
@@ -743,14 +743,14 @@ Usage: #inline
 * type = #allergy
 * category = #medication
 * criticality = #low
-* code = $SCT#416098002 "allergie médicamenteuse"
+* code = $terminologie-cim11-mms#XM5DJ7 "Paracétamol"
 * patient = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * onsetPeriod.start = "2021-12-04"
-* reaction[0].substance = $terminologie-cim11-mms#XM5DJ7 "Paracétamol"
+* reaction[0].substance = $terminologie-sms#100000090270 "Paracetamol"
 * reaction[=].manifestation = $terminologie-cim11-mms#4A80.0 "Bronchospasme d'origine médicamenteuse"
 * reaction[=].onset = "2021-12-04"
 * reaction[=].severity = #moderate
-* reaction[+].substance = $terminologie-cim11-mms#XM5DJ7 "Paracétamol"
+* reaction[+].substance = $terminologie-sms#100000090270 "Paracetamol"
 * reaction[=].manifestation = $terminologie-cim11-mms#4A82 "Troubles allergiques ou d'hypersensibilité de la peau ou des muqueuses"
 * reaction[=].onset = "2021-12-04"
 * reaction[=].severity = #mild
@@ -790,7 +790,8 @@ Usage: #inline
 * medicationReference = Reference(urn:uuid:a5b6c7d8-e9f0-1234-a190-234567890124)
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * effectivePeriod.start = "2021-12-04"
-* dosage.route = #20053000 "Voie orale"
+* dosage.route = $terminologie-standardterms#20053000 "Voie orale"
+* dosage.dose = 1 '{sachet}' "sachet"
 
 Instance: Medication-DLU-1
 InstanceOf: FRMedicationDocument
@@ -800,7 +801,7 @@ Usage: #inline
 * extension[productName].valueString = "AMOXICILLINE EG 1G BUV SACH 6"
 * extension[classification].valueCodeableConcept = $terminologie-atc#J01CA04 "amoxicilline"
 * extension[classification].valueCodeableConcept.text = "amoxicilline"
-* code = $terminologie-atc#3400935186607 "AMOXICILLINE EG 1G BUV SACH 6"
+* code = $terminologie-bdpm#3400935186607 "AMOXICILLINE EG 1G BUV SACH 6"
 * ingredient.itemCodeableConcept = $terminologie-sms#100000092629 "AMOXICILLINE TRIHYDRATÉE"
 * ingredient.itemCodeableConcept.text = "AMOXICILLINE TRIHYDRATÉE"
 * ingredient.strength.numerator.value = 1.148
@@ -836,7 +837,7 @@ Usage: #inline
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * effectivePeriod.start = "2024-01-11"
 * reasonReference = Reference(urn:uuid:b8c9d0e1-f2a3-4567-b023-567890123457)
-* dosage.route = #20053000 "Voie orale"
+* dosage.route = $terminologie-standardterms#20053000 "Voie orale"
 * dosage.dose = 1 '{tbl}' "tablet"
 * dosage.rateQuantity.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 * dosage.rateQuantity.extension.valueCode = #not-applicable
@@ -872,7 +873,7 @@ Usage: #inline
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * effectivePeriod.start = "2022-02-11"
 * reasonReference = Reference(urn:uuid:a3b4c5d6-e7f8-9012-a078-012345678902)
-* dosage.route = #20053000 "Voie orale"
+* dosage.route = $terminologie-standardterms#20053000 "Voie orale"
 * dosage.dose = 1 '{tbl}' "tablet"
 
 Instance: Medication-DLU-3
@@ -1092,8 +1093,8 @@ Usage: #inline
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:d6e7f8a9-b0c1-2346-d401-345678901235"
 * status = #completed
-* vaccineCode = $SCT#764708002 "Vaccine product containing diphtheria, tetanus and inactivated poliovirus antigens"
-* vaccineCode = $terminologie-atc#J07CA01 "Diphtérie-poliomyélite-tétanos"
+* vaccineCode.coding[cis] = $terminologie-bdpm#60917345 "REVAXIS, suspension injectable en seringue préremplie. Vaccin diphtérique, tétanique et poliomyélitique (inactivé), (adsorbé) à teneur réduite en antigènes"
+* vaccineCode.coding[translation] = $terminologie-atc#J07CA01 "Diphtérie-poliomyélite-tétanos"
 * patient = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * occurrenceDateTime = "2009-09-28"
 * lotNumber = "4456672"
@@ -1115,14 +1116,14 @@ Usage: #inline
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:e7f8a9b0-c1d2-3457-e412-456789012346"
 * status = #completed
-* vaccineCode = $terminologie-atc#J07CA01 "Diphtérie-poliomyélite-tétanos"
+* vaccineCode.coding[cis] = $terminologie-bdpm#60917345 "REVAXIS, suspension injectable en seringue préremplie. Vaccin diphtérique, tétanique et poliomyélitique (inactivé), adsorbé, à teneur réduite en antigènes"
+* vaccineCode.coding[translation] = $terminologie-atc#J07CA01 "Diphtérie-poliomyélite-tétanos"
 * patient = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * occurrenceDateTime = "2009-08-25"
 * lotNumber = "4456668"
 * site = $SCT#16217701000119102 "Deltoïde gauche"
 * route = $terminologie-standardterms#20035000 "Voie intramusculaire"
 * performer.actor = Reference(urn:uuid:f8a9b0c1-d2e3-4568-f423-567890123457)
-* vaccineCode = $SCT#764708002 "Vaccine product containing diphtheria, tetanus and inactivated poliovirus antigens"
 * note.text = "texte libre"
 * reasonReference = Reference(urn:uuid:c1d2e3f4-a5b6-7891-c456-890123456780)
 * protocolApplied.series = "INITIMMUNIZ"
@@ -1213,7 +1214,7 @@ Usage: #inline
 * id = "f4a5b6c7-d8e9-0124-f489-123456789013"
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document|0.1.0"
 * extension[productName].valueString = "ROSUVASTATINE EG 5 mg, comprimé pelliculé"
-* code = $terminologie-atc#69473265 "ROSUVASTATINE EG 5 mg, comprimé pelliculé"
+* code = $terminologie-bdpm#69473265 "ROSUVASTATINE EG 5 mg, comprimé pelliculé"
 * ingredient.itemCodeableConcept = $terminologie-sms#100000090079 "ROSUVASTATINE"
 * ingredient.itemCodeableConcept.text = "ROSUVASTATINE"
 * ingredient.strength.numerator.value = 5
@@ -1227,9 +1228,11 @@ Usage: #inline
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-medication-document|0.1.0"
 * extension[productName].valueString.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 * extension[productName].valueString.extension.valueCode = #unknown
-* code = $terminologie-cisis#GEN-092.03.01 "Autre(s) traitement(s)"
-* ingredient.itemCodeableConcept.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
-* ingredient.itemCodeableConcept.extension.valueCode = #unknown
+* code.coding.code.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* code.coding.code.extension.valueCode = #unknown
+* code.text = "Autre(s) traitement(s)"
+* ingredient.itemCodeableConcept.coding.code.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* ingredient.itemCodeableConcept.coding.code.extension.valueCode = #unknown
 
 //***************ServiceRequest (Plan de soins - demandes examens)*********************//
 Instance: ServiceRequest-DLU-1
