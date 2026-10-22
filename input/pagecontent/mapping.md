@@ -117,7 +117,7 @@ Les tableaux ci-dessous reprennent, pour chaque élément de l'entête, chaque s
 
 ## Mappings des sections du document IPS
 
-<p>Le tableau ci-dessous liste, pour chacune des 17 sections utilisées par l'IPS-FR, le modèle logique métier de la section, le profil CDA de la section correspondante, et la ressource FHIR principale qui porte le contenu de cette section. Côté FHIR, les sections ne sont pas des artefacts publiés séparément : elles sont matérialisées par des slices de <code>Composition.section</code> au sein du profil <a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-composition-document.html"><code>FRCompositionDocument</code></a> ; la colonne FHIR renvoie donc vers le profil de la ressource d'entrée principale de la section (par exemple <code>Condition</code> pour la section Problèmes).</p>
+<p>Le tableau ci-dessous liste, pour chacune des 19 sections utilisées par l'IPS-FR, le modèle logique métier de la section, le profil CDA de la section correspondante, et la ressource FHIR principale qui porte le contenu de cette section. Côté FHIR, les sections ne sont pas des artefacts publiés séparément : elles sont matérialisées par des slices de <code>Composition.section</code> au sein du profil <a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-composition-document.html"><code>FRCompositionDocument</code></a> ; la colonne FHIR renvoie donc vers le profil de la ressource d'entrée principale de la section (par exemple <code>Condition</code> pour la section Problèmes).</p>
 
 <table class="table table-striped table-bordered">
 <thead>
@@ -227,6 +227,18 @@ Les tableaux ci-dessous reprennent, pour chaque élément de l'entête, chaque s
 <code>Composition.section:sectionPlanOfCare.entry:traitement</code> (<code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-medication-request-document.html">FRMedicationRequestDocument</a></code>)<br>
 <code>Composition.section:sectionPlanOfCare.entry:vaccinRecommande</code> (<code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-immunization-recommendation-document.html">FRImmunizationRecommendationDocument</a></code>)</td>
 <td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRSectionCarePlansLMCDAFHIR.html">Mapping Care Plans</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMHazardousWorkingConditions.html">FRLMHazardousWorkingConditions</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-facteurs-de-risque-professionnels-non-code.html">FRCDASectionFacteursDeRisqueProfessionnelsNonCode</a></code></td>
+<td><code>Composition.section:sectionUncodedOccupationalRiskFactors</code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRSectionHazardousWorkingConditionsLMCDAFHIR.html">Mapping Hazardous Working Conditions</a></td>
+</tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMSectionPregnancyHistory.html">FRLMSectionPregnancyHistory</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-historique-des-grossesses.html">FRCDASectionHistoriqueDesGrossesses</a></code></td>
+<td><code>Composition.section:sectionPregnancyHistory.<a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-observation-pregnancy-history-document.html">FRObservationPregnancyHistoryDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRSectionPregnancyHistoryLMCDAFHIR.html">Mapping Pregnancy History</a></td>
 </tr>
 </tbody>
 </table>
@@ -372,5 +384,19 @@ Les tableaux ci-dessous reprennent, pour chaque élément de l'entête, chaque s
 <td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-care-plan-document.html">FRCarePlanDocument</a></code></td>
 <td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRCarePlanLMCDAFHIR.html">Mapping Care Plan</a></td>
 </tr>
+<tr>
+<td><code><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/StructureDefinition-FRLMPregnancyHistory.html">FRLMPregnancyHistory</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-cda-document-core/main/ig/fr/StructureDefinition-fr-cda-historique-de-la-grossesse.html">FRCDAHistoriqueDeLaGrossesse</a></code></td>
+<td><code><a href="https://ansforge.github.io/interop-IG-fhir-document-core/main/ig/fr/StructureDefinition-fr-observation-pregnancy-history-document.html">FRObservationPregnancyHistoryDocument</a></code></td>
+<td><a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRPregnancyHistoryLMCDAFHIR.html">Mapping Pregnancy History</a></td>
+</tr>
 </tbody>
 </table>
+
+## Spécificités du DLU
+
+<p>La synthèse médicale du DLU utilise les mêmes sections que l'IPS-FR. Ses spécificités ne disposent pas de ConceptMap propre dans l'IG « interop-IG-metier-document-core » :</p>
+<ul>
+<li><b>Statut fonctionnel</b> : les groupes d'évaluations DLU (<code>FRCDAGroupeEvaluationEtatPsychiqueDLU</code>, <code>FRCDAGroupeEvaluationHandicapsDLU</code>, <code>FRCDAGroupeEvaluationDeplacementsDLU</code>, <code>FRCDAGroupeEvaluationAutresRisquesDLU</code>, <code>FRCDAGroupeEvaluationScoreDLU</code>) spécialisent <code>FRCDAGroupeDeQuestionnairesDEvaluation</code>, et leurs évaluations spécialisent <code>FRCDAEvaluation</code>. Ils sont couverts par le mapping parent <a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRSectionFunctionalStatusLMCDAFHIR.html">Functional Status</a> (<code>entry.assessment</code>) et <a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRObservationAssessmentLMCDAFHIR.html">Observation Assessment</a>. Le code propre à chaque groupe (LOINC 54511-1, 52621-0, 32452-5, GEN-092.01.24, GEN-092.04.24) et les jeux de valeurs associés ne sont pas mappés.</li>
+<li><b>Traitements</b> : le traitement au long cours (templateId 42.3) et le traitement aigu (42.4) sont portés par <code>FRCDATraitement</code>, mappé par <a href="https://ansforge.github.io/interop-IG-metier-document-core/main/ig/fr/ConceptMap-FRMedicationStatementLMCDAFHIR.html">Medication Statement</a>.</li>
+</ul>
