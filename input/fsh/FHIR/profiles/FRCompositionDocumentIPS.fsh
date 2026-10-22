@@ -4,6 +4,9 @@ Id: fr-composition-document-ips
 Title: "FR Composition Document IPS"
 Description: "Profil Composition du document IPS-FR, derive de FRCompositionDocument."
 
+* meta.profile contains canonicalIPS 1..1
+* meta.profile[canonicalIPS] ^short = "Conformité au profil Composition IPS"
+* meta.profile[canonicalIPS] = Canonical(fr-composition-document-ips)
 
 * extension[informant] ^short = "Informateur ayant fourni des informations utiles"
 
@@ -232,12 +235,12 @@ Description: "Au plus un participant de rôle Établissement de référence (ext
 Expression: "extension('participant').where(extension('type').value.coding.code = 'INF' and extension('function').value.coding.code = 'ES-REF').count() <= 1"
 Severity: #error
 Invariant: fr-composition-ips-participant-autre-ps
-Description: "Au plus un participant de rôle Autre professionnel de santé (extension[type]=INF, extension[function]=AUTRE-PS)."
-Expression: "extension('participant').where(extension('type').value.coding.code = 'INF' and extension('function').value.coding.code = 'AUTRE-PS').count() <= 1"
+Description: "Au plus un participant de rôle Autre professionnel de santé (extension[type]=PRF, extension[function]=353)."
+Expression: "extension('participant').where(extension('type').value.coding.code = 'PRF' and extension('function').value.coding.code = '353').count() <= 1"
 Severity: #error
 
 Invariant: fr-composition-ips-participant-autre-correspondant
-Description: "Au plus un participant de rôle Autre correspondant (extension[type]=INF, extension[function]=AUTRE-CORR)."
-Expression: "extension('participant').where(extension('type').value.coding.code = 'INF' and extension('function').value.coding.code = 'AUTRE-CORR').count() <= 1"
+Description: "Au plus un participant de rôle Autre correspondant (extension[type]=CON, extension[function]=CORRE)."
+Expression: "extension('participant').where(extension('type').value.coding.code = 'CON' and extension('function').value.coding.code = 'CORRE').count() <= 1"
 Severity: #error
 
