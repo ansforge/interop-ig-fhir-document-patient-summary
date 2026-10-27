@@ -528,7 +528,7 @@ Usage: #inline
 * code = $terminologie-cim-10#E06.3 "Thyroïdite auto-immune"
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * onsetDateTime = "2024-01-11"
-* stage.summary = $SCT#81323004 "fonction corporelle générale : normale"
+* stage[statutClinique].summary = $SCT#81323004 "fonction corporelle générale : normale"
 * note.text = "texte libre"
 
 Instance: Condition-Exemple-2
@@ -545,7 +545,7 @@ Usage: #inline
 * code = $terminologie-cisp#T89 "Diabète insulino-dépendant"
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * onsetDateTime = "2023-07-05"
-* stage.summary = $SCT#81323004 "fonction corporelle générale : normale"
+* stage[statutClinique].summary = $SCT#81323004 "fonction corporelle générale : normale"
 * note.text = "texte libre"
 
 Instance: Condition-Exemple-3
@@ -562,7 +562,7 @@ Usage: #inline
 * code = $terminologie-drc#114 "Epilepsie"
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * onsetDateTime = "2023-05-21"
-* stage.summary = $SCT#81323004 "fonction corporelle générale : normale"
+* stage[statutClinique].summary = $SCT#81323004 "fonction corporelle générale : normale"
 * note.text = "texte libre"
 
 Instance: Condition-Exemple-4
@@ -579,7 +579,7 @@ Usage: #inline
 * code = $terminologie-orpha#658 "Angiœdème bradykinique"
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * onsetDateTime = "2022-02-11"
-* stage.summary = $SCT#162467007 "asymptomatique"
+* stage[statutClinique].summary = $SCT#162467007 "asymptomatique"
 * note.text = "texte libre"
 * evidence.detail = Reference(urn:uuid:c7d8e9f0-1a2b-3c4d-5e6f-7a8b9c0d1e2f)
 
@@ -610,7 +610,7 @@ Usage: #inline
 * code = $terminologie-cim-10#R69 "Causes inconnues et non précisées de morbidité"
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * onsetDateTime = "2022-02-11"
-* stage.summary = $SCT#81323004 "fonction corporelle générale : normale"
+* stage[statutClinique].summary = $SCT#81323004 "fonction corporelle générale : normale"
 * note.text = "texte libre"
 
 Instance: Condition-Exemple-6
@@ -627,7 +627,7 @@ Usage: #inline
 * code = $terminologie-cim-10#G45.9 "Accident ischémique cérébral transitoire, sans précision"
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * onsetDateTime = "2018-05-21"
-* stage.summary = $SCT#81323004 "fonction corporelle générale : normale"
+* stage[statutClinique].summary = $SCT#81323004 "fonction corporelle générale : normale"
 * note.text = "texte libre"
 
 Instance: Condition-Exemple-7
@@ -644,7 +644,7 @@ Usage: #inline
 * code = $terminologie-cim-10#N10 "Pyélonéphrite aiguë"
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * onsetDateTime = "2018-05-21"
-* stage.summary = $SCT#81323004 "fonction corporelle générale : normale"
+* stage[statutClinique].summary = $SCT#81323004 "fonction corporelle générale : normale"
 * note.text = "texte libre"
 
 Instance: Procedure-Exemple-1
