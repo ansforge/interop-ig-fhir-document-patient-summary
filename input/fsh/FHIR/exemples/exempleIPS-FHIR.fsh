@@ -1081,6 +1081,7 @@ Usage: #inline
 * reasonReference = Reference(urn:uuid:80c62f71-7c99-458d-884d-725bc410a14d)
 * protocolApplied.series = "INITIMMUNIZ"
 * protocolApplied.doseNumberPositiveInt = 2
+* protocolApplied.seriesDosesPositiveInt = 2
 
 Instance: Immunizations-Exemple-2
 InstanceOf: FRImmunizationDocument
@@ -1104,6 +1105,7 @@ Usage: #inline
 * reasonReference = Reference(urn:uuid:80c62f71-7c99-458d-884d-725bc410a14d)
 * protocolApplied.series = "INITIMMUNIZ"
 * protocolApplied.doseNumberPositiveInt = 1
+* protocolApplied.seriesDosesPositiveInt = 2
 
 Instance: practitioner-role-exemple-3
 InstanceOf: FRPractitionerRoleDocument
