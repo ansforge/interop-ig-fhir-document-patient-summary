@@ -1104,6 +1104,7 @@ Usage: #inline
 * reasonReference = Reference(urn:uuid:c1d2e3f4-a5b6-7891-c456-890123456780)
 * protocolApplied.series = "INITIMMUNIZ"
 * protocolApplied.doseNumberPositiveInt = 2
+* protocolApplied.seriesDosesPositiveInt = 2
 
 Instance: Immunizations-DLU-2
 InstanceOf: FRImmunizationDocument
@@ -1127,6 +1128,7 @@ Usage: #inline
 * reasonReference = Reference(urn:uuid:c1d2e3f4-a5b6-7891-c456-890123456780)
 * protocolApplied.series = "INITIMMUNIZ"
 * protocolApplied.doseNumberPositiveInt = 1
+* protocolApplied.seriesDosesPositiveInt = 2
 
 //***************Practitioner Role 3 : Dr MULLER (vaccinateur)*********************//
 Instance: practitioner-role-DLU-3
