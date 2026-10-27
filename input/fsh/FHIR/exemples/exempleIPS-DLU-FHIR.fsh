@@ -513,7 +513,7 @@ Usage: #inline
 * code = $terminologie-cim-10#E06.3 "Thyroïdite auto-immune"
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * onsetDateTime = "2024-01-11"
-* stage.summary = $SCT#81323004 "fonction corporelle générale : normale"
+* stage[statutCliniqueDuPatient].summary = $SCT#81323004 "fonction corporelle générale : normale"
 * note.text = "texte libre"
 
 Instance: Condition-DLU-2
@@ -530,7 +530,7 @@ Usage: #inline
 * code = $terminologie-cisp#T89 "Diabète insulino-dépendant"
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * onsetDateTime = "2023-07-05"
-* stage.summary = $SCT#81323004 "fonction corporelle générale : normale"
+* stage[statutCliniqueDuPatient].summary = $SCT#81323004 "fonction corporelle générale : normale"
 * note.text = "texte libre"
 
 Instance: Condition-DLU-3
@@ -547,7 +547,7 @@ Usage: #inline
 * code = $terminologie-drc#114 "Epilepsie"
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * onsetDateTime = "2023-05-21"
-* stage.summary = $SCT#81323004 "fonction corporelle générale : normale"
+* stage[statutCliniqueDuPatient].summary = $SCT#81323004 "fonction corporelle générale : normale"
 * note.text = "texte libre"
 
 Instance: Condition-DLU-4
@@ -564,7 +564,7 @@ Usage: #inline
 * code = $terminologie-orpha#658 "Angiœdème bradykinique"
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * onsetDateTime = "2022-02-11"
-* stage.summary = $SCT#162467007 "asymptomatique"
+* stage[statutCliniqueDuPatient].summary = $SCT#162467007 "asymptomatique"
 * note.text = "texte libre"
 * evidence.detail = Reference(urn:uuid:11223344-5566-7788-99aa-bbccddeeff00)
 
@@ -595,7 +595,7 @@ Usage: #inline
 * code = $terminologie-cim-10#R69 "Causes inconnues et non précisées de morbidité"
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * onsetDateTime = "2022-02-11"
-* stage.summary = $SCT#81323004 "fonction corporelle générale : normale"
+* stage[statutCliniqueDuPatient].summary = $SCT#81323004 "fonction corporelle générale : normale"
 * note.text = "texte libre"
 
 //***************Conditions - Antécédents médicaux*********************//
@@ -614,7 +614,7 @@ Usage: #inline
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * onsetPeriod.start = "2018-04-22"
 * onsetPeriod.end = "2018-04-30"
-* stage.summary = $SCT#81323004 "fonction corporelle générale : normale"
+* stage[statutCliniqueDuPatient].summary = $SCT#81323004 "fonction corporelle générale : normale"
 * note.text = "texte libre"
 
 Instance: Condition-DLU-7
@@ -632,7 +632,7 @@ Usage: #inline
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * onsetPeriod.start = "2018-01-14"
 * onsetPeriod.end = "2018-01-25"
-* stage.summary = $SCT#81323004 "fonction corporelle générale : normale"
+* stage[statutCliniqueDuPatient].summary = $SCT#81323004 "fonction corporelle générale : normale"
 * note.text = "texte libre"
 
 //***************Procedures*********************//
