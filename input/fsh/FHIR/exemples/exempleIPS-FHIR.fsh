@@ -661,6 +661,7 @@ Usage: #inline
 * recorder.extension.extension[0].url = "actor"
 * recorder.extension.extension[=].valueReference = Reference(urn:uuid:5b0fcb3b-91fb-4870-bd97-8faa2794ea01)
 * recorder.extension.extension[+].url = "type"
+* recorder.extension.extension[=].valueCode = #PRF
 * recorder.extension.url = "https://interop.esante.gouv.fr/ig/fhir/document-core/StructureDefinition/fr-actor-extension"
 * reasonReference = Reference(urn:uuid:be247a4c-f8fe-4224-b51c-8c35d7124a2d)
 * bodySite = $SCT#41801008 "artère coronaire"
@@ -1433,6 +1434,8 @@ Usage: #inline
 * performer.extension[performerFunction].valueCodeableConcept.coding.code = #PPRF
 * performer = Reference(urn:uuid:cc223333-4444-5555-6666-777788889999) "Dr Marcel CAMPARINI"
 * resultsInterpreter = Reference(urn:uuid:cc223333-4444-5555-6666-777788889999) "Dr Marcel CAMPARINI"
+* resultsInterpreter.extension[author].extension[type].valueCode = #AUT
+* resultsInterpreter.extension[author].extension[actor].valueReference = Reference(urn:uuid:cc223333-4444-5555-6666-777788889999) "Dr Marcel CAMPARINI"
 * result = Reference(urn:uuid:bb112222-3333-4444-5555-666677778888)
 
 Instance: ObservationResult-IPS-1
@@ -1512,6 +1515,8 @@ Usage: #inline
 * performer.extension[performerFunction].valueCodeableConcept.coding.code = #PPRF
 * performer = Reference(urn:uuid:22778888-9999-aaaa-bbbb-222233334444) "Dr Jacques BIDEAULT"
 * resultsInterpreter = Reference(urn:uuid:22778888-9999-aaaa-bbbb-222233334444) "Dr Jacques BIDEAULT"
+* resultsInterpreter.extension[author].extension[type].valueCode = #AUT
+* resultsInterpreter.extension[author].extension[actor].valueReference = Reference(urn:uuid:22778888-9999-aaaa-bbbb-222233334444) "Dr Jacques BIDEAULT"
 * result = Reference(urn:uuid:11667777-8888-9999-aaaa-111122223333)
 
 Instance: ObservationResult-IPS-2
