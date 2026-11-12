@@ -381,6 +381,8 @@ Description: "Patient PAT-TROIS DOMINIQUE MARIE-LOUISE - contexte EHPAD DLU"
 
 // Extension: Fiabilité de l'identité
 * extension[identityReliability].url = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability"
+* extension[identityReliability].extension[lastUpdated].url = "lastUpdated"
+* extension[identityReliability].extension[lastUpdated].valueDateTime = "2024-04-02T11:17:00+01:00"
 * extension[identityReliability].extension[identityStatus].url = "identityStatus"
 * extension[identityReliability].extension[identityStatus].valueCoding.system = "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445"
 * extension[identityReliability].extension[identityStatus].valueCoding.code = #VALI
@@ -470,7 +472,6 @@ Usage: #inline
 * identifier.system = "urn:oid:1.2.250.1.71.4.2.2"
 * identifier.value = "1750803447"
 * type = $JDV_J02-XdsHealthcareFacilityTypeCode-CISIS#SA17 "Etablissement pour personnes âgées"
-* type.extension[as-ext-organization-types].valueCode = #secteurActiviteRASS
 * name = "EHPAD DE BOULOGNE-BILLANCOURT"
 * address.line = "142 Rue du Belvédère"
 * address.city = "BOULOGNE-BILLANCOURT"
@@ -513,7 +514,7 @@ Usage: #inline
 * code = $terminologie-cim-10#E06.3 "Thyroïdite auto-immune"
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * onsetDateTime = "2024-01-11"
-* stage[statutClinique].summary = $SCT#81323004 "fonction corporelle générale : normale"
+* stage[clinicalStatus].summary = $SCT#81323004 "fonction corporelle générale : normale"
 * note.text = "texte libre"
 
 Instance: Condition-DLU-2
@@ -530,7 +531,7 @@ Usage: #inline
 * code = $terminologie-cisp#T89 "Diabète insulino-dépendant"
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * onsetDateTime = "2023-07-05"
-* stage[statutClinique].summary = $SCT#81323004 "fonction corporelle générale : normale"
+* stage[clinicalStatus].summary = $SCT#81323004 "fonction corporelle générale : normale"
 * note.text = "texte libre"
 
 Instance: Condition-DLU-3
@@ -547,7 +548,7 @@ Usage: #inline
 * code = $terminologie-drc#114 "Epilepsie"
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * onsetDateTime = "2023-05-21"
-* stage[statutClinique].summary = $SCT#81323004 "fonction corporelle générale : normale"
+* stage[clinicalStatus].summary = $SCT#81323004 "fonction corporelle générale : normale"
 * note.text = "texte libre"
 
 Instance: Condition-DLU-4
@@ -564,7 +565,7 @@ Usage: #inline
 * code = $terminologie-orpha#658 "Angiœdème bradykinique"
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * onsetDateTime = "2022-02-11"
-* stage[statutClinique].summary = $SCT#162467007 "asymptomatique"
+* stage[clinicalStatus].summary = $SCT#162467007 "asymptomatique"
 * note.text = "texte libre"
 * evidence.detail = Reference(urn:uuid:11223344-5566-7788-99aa-bbccddeeff00)
 
@@ -595,7 +596,7 @@ Usage: #inline
 * code = $terminologie-cim-10#R69 "Causes inconnues et non précisées de morbidité"
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * onsetDateTime = "2022-02-11"
-* stage[statutClinique].summary = $SCT#81323004 "fonction corporelle générale : normale"
+* stage[clinicalStatus].summary = $SCT#81323004 "fonction corporelle générale : normale"
 * note.text = "texte libre"
 
 //***************Conditions - Antécédents médicaux*********************//
@@ -614,7 +615,7 @@ Usage: #inline
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * onsetPeriod.start = "2018-04-22"
 * onsetPeriod.end = "2018-04-30"
-* stage[statutClinique].summary = $SCT#81323004 "fonction corporelle générale : normale"
+* stage[clinicalStatus].summary = $SCT#81323004 "fonction corporelle générale : normale"
 * note.text = "texte libre"
 
 Instance: Condition-DLU-7
@@ -632,7 +633,7 @@ Usage: #inline
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * onsetPeriod.start = "2018-01-14"
 * onsetPeriod.end = "2018-01-25"
-* stage[statutClinique].summary = $SCT#81323004 "fonction corporelle générale : normale"
+* stage[clinicalStatus].summary = $SCT#81323004 "fonction corporelle générale : normale"
 * note.text = "texte libre"
 
 //***************Procedures*********************//
@@ -766,13 +767,14 @@ Usage: #inline
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:e3f4a5b6-c7d8-9012-e178-012345678902"
 * actuality = #actual
-* category = $SCT#79899007 "interaction médicamenteuse"
+* category = http://terminology.hl7.org/CodeSystem/adverse-event-category#medication-mishap
+* extension[code].valueCodeableConcept = $SCT#79899007 "interaction médicamenteuse"
 * subject = Reference(urn:uuid:b2c3d4e5-f6a7-8901-bcde-f01234567891)
 * date = "2021-12-04"
 * detected = "2021-12-04"
 * resultingCondition = Reference(urn:uuid:b6c7d8e9-f0a1-2345-b201-345678901235)
 * severity = $SCT#255604002 "gravité légère"
-* outcome = $SCT#1352007006 "Guérison sans séquelle"
+* extension[outcome].valueCodeableConcept = $SCT#1352007006 "Guérison sans séquelle"
 * suspectEntity.instance = Reference(urn:uuid:f4a5b6c7-d8e9-0123-f189-123456789013)
 * suspectEntity.causality.assessment = $SCT#2931005 "probable"
 
@@ -1220,6 +1222,7 @@ Usage: #inline
 * authoredOn = "2024-12-01"
 * substitution.allowedCodeableConcept = $v3-substanceAdminSubstitution#G "Substitution autorisée par un produit générique"
 * note.text = "texte libre"
+* dosageInstruction.text = "Posologie à préciser"
 
 Instance: Medication-DLU-4
 InstanceOf: FRMedicationDocument
@@ -1574,3 +1577,4 @@ Usage: #inline
 * provision.code = $LNC#42348-3 "Directives anticipées"
 * sourceAttachment.contentType = #application/pdf
 * sourceAttachment.data = "JVBERi0="
+
