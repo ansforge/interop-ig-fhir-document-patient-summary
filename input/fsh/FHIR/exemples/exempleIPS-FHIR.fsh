@@ -395,6 +395,8 @@ Description: "Patient"
 
 // Extension: Fiabilité de l'identité
 * extension[identityReliability].url = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability"
+* extension[identityReliability].extension[lastUpdated].url = "lastUpdated"
+* extension[identityReliability].extension[lastUpdated].valueDateTime = "2024-04-02T11:17:00+01:00"
 * extension[identityReliability].extension[identityStatus].url = "identityStatus"
 * extension[identityReliability].extension[identityStatus].valueCoding.system = "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445"
 * extension[identityReliability].extension[identityStatus].valueCoding.code = #VALI
@@ -479,7 +481,6 @@ Usage: #inline
 * qualification[savoirFaire].code.coding[savoirFaire].display = "Qualifié en Médecine générale (SM)"
 * qualification[savoirFaire].issuer = Reference(urn:uuid:579f1274-8265-4bb1-91ba-d093a11be4f5)
 
-
 Instance: organizationExemple
 InstanceOf: FROrganizationDocument
 Usage: #inline
@@ -528,7 +529,7 @@ Usage: #inline
 * code = $terminologie-cim-10#E06.3 "Thyroïdite auto-immune"
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * onsetDateTime = "2024-01-11"
-* stage[statutClinique].summary = $SCT#81323004 "fonction corporelle générale : normale"
+* stage[clinicalStatus].summary = $SCT#81323004 "fonction corporelle générale : normale"
 * note.text = "texte libre"
 
 Instance: Condition-Exemple-2
@@ -545,7 +546,7 @@ Usage: #inline
 * code = $terminologie-cisp#T89 "Diabète insulino-dépendant"
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * onsetDateTime = "2023-07-05"
-* stage[statutClinique].summary = $SCT#81323004 "fonction corporelle générale : normale"
+* stage[clinicalStatus].summary = $SCT#81323004 "fonction corporelle générale : normale"
 * note.text = "texte libre"
 
 Instance: Condition-Exemple-3
@@ -562,7 +563,7 @@ Usage: #inline
 * code = $terminologie-drc#114 "Epilepsie"
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * onsetDateTime = "2023-05-21"
-* stage[statutClinique].summary = $SCT#81323004 "fonction corporelle générale : normale"
+* stage[clinicalStatus].summary = $SCT#81323004 "fonction corporelle générale : normale"
 * note.text = "texte libre"
 
 Instance: Condition-Exemple-4
@@ -579,7 +580,7 @@ Usage: #inline
 * code = $terminologie-orpha#658 "Angiœdème bradykinique"
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * onsetDateTime = "2022-02-11"
-* stage[statutClinique].summary = $SCT#162467007 "asymptomatique"
+* stage[clinicalStatus].summary = $SCT#162467007 "asymptomatique"
 * note.text = "texte libre"
 * evidence.detail = Reference(urn:uuid:c7d8e9f0-1a2b-3c4d-5e6f-7a8b9c0d1e2f)
 
@@ -610,7 +611,7 @@ Usage: #inline
 * code = $terminologie-cim-10#R69 "Causes inconnues et non précisées de morbidité"
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * onsetDateTime = "2022-02-11"
-* stage[statutClinique].summary = $SCT#81323004 "fonction corporelle générale : normale"
+* stage[clinicalStatus].summary = $SCT#81323004 "fonction corporelle générale : normale"
 * note.text = "texte libre"
 
 Instance: Condition-Exemple-6
@@ -627,7 +628,7 @@ Usage: #inline
 * code = $terminologie-cim-10#G45.9 "Accident ischémique cérébral transitoire, sans précision"
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * onsetDateTime = "2018-05-21"
-* stage[statutClinique].summary = $SCT#81323004 "fonction corporelle générale : normale"
+* stage[clinicalStatus].summary = $SCT#81323004 "fonction corporelle générale : normale"
 * note.text = "texte libre"
 
 Instance: Condition-Exemple-7
@@ -644,7 +645,7 @@ Usage: #inline
 * code = $terminologie-cim-10#N10 "Pyélonéphrite aiguë"
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * onsetDateTime = "2018-05-21"
-* stage[statutClinique].summary = $SCT#81323004 "fonction corporelle générale : normale"
+* stage[clinicalStatus].summary = $SCT#81323004 "fonction corporelle générale : normale"
 * note.text = "texte libre"
 
 Instance: Procedure-Exemple-1
@@ -702,7 +703,6 @@ Usage: #inline
 * qualification[savoirFaire].code.coding[savoirFaire].system = "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale"
 * qualification[savoirFaire].code.coding[savoirFaire].display = "Médecin - Oncologie, opt Onco-hématologie (SM)"
 * qualification[savoirFaire].issuer = Reference(urn:uuid:da9eb2be-5993-4e39-827b-728fe3943a93)
-
 
 Instance: Condition-Exemple-8
 InstanceOf: FRConditionDocument
@@ -784,13 +784,14 @@ Usage: #inline
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:23f1c0a3-ce38-4817-9408-7feaeb04002d"
 * actuality = #actual
-* category = $SCT#79899007 "interaction médicamenteuse"
+* category = http://terminology.hl7.org/CodeSystem/adverse-event-category#medication-mishap
+* extension[code].valueCodeableConcept = $SCT#79899007 "interaction médicamenteuse"
 * subject = Reference(urn:uuid:00f54e2e-22f2-4162-87b4-4826d855feac)
 * date = "2021-12-04"
 * detected = "2021-12-04"
 * resultingCondition = Reference(urn:uuid:a4e1cafa-05e4-40c7-82dc-641f54281671)
 * severity = $SCT#255604002 "gravité légère"
-* outcome = $SCT#1352007006 "Guérison sans séquelle"
+* extension[outcome].valueCodeableConcept = $SCT#1352007006 "Guérison sans séquelle"
 * suspectEntity.instance = Reference(urn:uuid:0409af90-4717-4a93-9800-fcf546875dc8)
 * suspectEntity.causality.assessment = $SCT#2931005 "probable"
 
@@ -1250,6 +1251,7 @@ Usage: #inline
 * authoredOn = "2021-12-04"
 * substitution.allowedCodeableConcept = $v3-substanceAdminSubstitution#G "Substitution autorisée par un produit générique"
 * note.text = "texte libre"
+* dosageInstruction.text = "Posologie à préciser"
 
 Instance: Medication-Exemple-3
 InstanceOf: FRMedicationDocument
@@ -1604,3 +1606,4 @@ Usage: #inline
 * type = $terminologie-cisis#DLU_007 "Attestation de mutuelle"
 * content.attachment.contentType = #application/pdf
 * content.attachment.data = "JVBERi0="
+
