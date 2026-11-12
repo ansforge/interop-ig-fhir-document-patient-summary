@@ -52,7 +52,7 @@ dependencies:
   hl7.fhir.eu.imaging: 1.0.0-ballot
   ihe.pharm.mpd.r4: 1.0.0-comment-2
   ans.fr.terminologies: latest
-  ans.fhir.fr.document-core: 0.1.0-heritage
+  ans.fhir.fr.document-core: current
   # ans.fr.document-core : modèle logique métier (parent de FRLMPatientSummaryDocument)
   ans.fr.document-core: current
 
