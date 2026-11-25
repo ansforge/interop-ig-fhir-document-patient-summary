@@ -1,0 +1,20 @@
+{
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/fr-patient-summary/ImplementationGuide/ans.fhir.fr.fr-patient-summary",
+  "name" : "FRPatientSummary",
+  "title" : "Volet de Synthèse Médicale (International Patient Summary - FHIR)",
+  "description" : "Volet de Synthèse Médicale (International Patient Summary) - Spécifications FHIR",
+  "status" : "draft",
+  "package-id" : "ans.fhir.fr.fr-patient-summary",
+  "ig-ver" : "0.1.0",
+  "date" : "Tue, 27 Oct, 2026 14:53:11 +0000",
+  "dateISO8601" : "2026-10-27T14:53:11+00:00",
+  "errs" : 433,
+  "warnings" : 365,
+  "hints" : 705,
+  "broken-links" : 0,
+  "suppressed-hints" : 114,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "6.0.0-snapshot1 (3)",
+  "maxMemory" : 3868055912
+}
