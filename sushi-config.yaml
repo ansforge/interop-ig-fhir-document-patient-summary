@@ -65,8 +65,6 @@ pages:
             title: Cas d'usage
         modele-logique-metier.md:
             title: Modèle logique métier
-        exigences-specifiques.md:
-            title: Exigences spécifiques
     implementations.md:
         title: Implémentations
         fhir.md:
@@ -87,7 +85,6 @@ menu:
     Fonctionnel:
         Cas d'usage: cas-usage.html
         Modèle logique métier: StructureDefinition-fr-lm-patient-summary-document.html
-        Exigences spécifiques: exigences-specifiques.html
     Implémentations:
         FHIR: fhir.html
         Mapping ML/CDA/FHIR: mapping.html
